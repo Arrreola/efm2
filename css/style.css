@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.box {
+  background: pink;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  float: right; }
+
+/*# sourceMappingURL=style.css.map */
