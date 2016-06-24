@@ -1,9 +1,77 @@
-.nav
-  background: #eee
-  +size(100px)
-  +span-columns(12)
-  height: 100px
-.navbar-logo
-  height: 60px
+$movile: "(max-width: 767px)"
+$tablet: "(min-width: 768px) and (max-width: 1023px)"
+$desktop: "(min-width: 1024px)"
+
+/*Typography Variables*/
+$font-gold: #c3b584
+$font-times: 'times new roman'
+/*Typography Mixin*/
+
+
 body
-  background:red
+  font-family: $font-times
+  margin: 0
+nav
+  width: 100%
+  background: #fff
+  position: fixed
+  top: 0
+  z-index: 99
+  box-shadow: 1px 1px 10px #333
+.nav-content
+  +outer-container
+.navbar-logo
+  height: 45px
+  margin: 12px 0
+.navbar-breadcrumbs
+  display: inline-block
+  float: right
+.navbar-crumbs
+  display: inline-block
+.navbar-crumbs a
+  color: $font-gold
+  padding: 10px 15px
+.navbar-dataroom-button
+  color: white
+  padding: 13px 30px
+  text-transform: uppercase
+  border: none
+  font-family: $font-times
+  +background(#333)
+  font-size: 12px
+/*Section 1*/
+.index-section-1
+  background-color: #333
+  height: 600px
+  position: relative
+  top: 74px
+.index-section-1-copy
+  +outer-container
+  display: block
+  margin: 0 auto
+  height: 224px
+  transform: translateY(-50%)
+  top: 50%
+  position: relative
+.index-section-hr
+  border-top: 2px solid white
+  max-width: 300px
+  margin: 0 auto
+  display: block
+.index-section-1-copy-container
+  max-width: 700px
+  display: block
+  margin: 30px auto
+  text-align: center
+  color: white
+.index-section-1-text
+  font-size: 20px
+  font-style: italic
+
+@media only screen and #{$movile}
+  nav
+    padding: 0 20px
+  .navbar-breadcrumbs
+    display: none
+
+@media only screen and #{$tablet}
