@@ -23,31 +23,6 @@ body:before {
   width: 100%;
   z-index: 9999; }
 
-.boxes {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  .boxes::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .boxes::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-.box {
-  background: pink;
-  height: 100px;
-  width: 100px;
-  float: left;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-  .box:last-child {
-    margin-right: 0; }
-
 .nav {
   background: #eee;
   height: 100px;
@@ -59,5 +34,8 @@ body:before {
   height: 100px; }
   .nav:last-child {
     margin-right: 0; }
+
+.navbar-logo {
+  height: 60px; }
 
 /*# sourceMappingURL=style.css.map */
