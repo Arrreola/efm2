@@ -1,6 +1,7 @@
 $movile: "(max-width: 767px)"
 $tablet: "(min-width: 768px) and (max-width: 1023px)"
 $desktop: "(min-width: 1024px)"
+$lateral-padding-mobile: 0 20px 0 20px
 
 /*Typography Variables*/
 $font-gold: #c3b584
@@ -70,7 +71,7 @@ nav
 
 @media only screen and #{$movile}
   nav
-    padding: 0 20px
+    padding: $lateral-padding-mobile
   .navbar-breadcrumbs
     display: none
 
