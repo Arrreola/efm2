@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700'
+@import 'https://fonts.googleapis.com/css?family=Amiri'
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i'
+
 $movile: "(max-width: 767px)"
 $tablet: "(min-width: 768px) and (max-width: 1023px)"
 $desktop: "(min-width: 1024px)"
@@ -6,14 +10,20 @@ $lateral-padding-mobile: 0 20px 0 20px
 /*Typography Variables*/
 $font-gold: #c3b584
 $font-times: 'times new roman'
-/*Typography Mixin*/
+$font-rasa: 'Rasa', serif
+$font-amiri: 'Amiri', serif
+$font-merriweather: 'Merriweather', serif
+/*Background Variables*/
+$back-gold: #c3b584
 
 
 body
   font-family: $font-times
+  font-weight: 300
   margin: 0
 nav
   width: 100%
+  height: 73px
   background: #fff
   position: fixed
   top: 0
@@ -24,29 +34,55 @@ nav
 .navbar-logo
   height: 45px
   margin: 12px 0
+.navbar-menu-icon
+  display: none
 .navbar-breadcrumbs
   display: inline-block
   float: right
+  margin: 0
 .navbar-crumbs
   display: inline-block
-.navbar-crumbs a
+.navbar-crumbs-slash
+  padding: 10px 25px
+.navbar-breadcrumbs:first-child li
+  padding-top: 26px
+.navbar-crumbs:first-child a
   color: $font-gold
-  padding: 10px 15px
+.navbar-hr
+  display: none
 .navbar-dataroom-button
+  border-radius: 3px
   color: white
   padding: 13px 30px
+  margin: 16px 0 0 25px
   text-transform: uppercase
   border: none
   font-family: $font-times
   +background(#333)
   font-size: 12px
+  transition: all .2s ease-in-out
+.navbar-dataroom-button:hover
+  padding: 15px 32px
+  +background(#444)
+  transition: all .2s ease-in-out
+  margin: 14px 0 0 20px
+.navbar-offcanvas-location
+  margin: 20px
+  list-style: none
+  color: #999
 
 /* Section 1 */
 .index-section-1
-  background-color: #333
-  height: 600px
+  // background-image: url("../img/desktop-backgrounds/section-1-back-desktop.png")
+  // background-size: cover
+  // background-position: center
+  height: 550px
   position: relative
   top: 74px
+.parallax-window
+  min-height: 400px
+  background: transparent
+  background-position: 50%
 .index-section-1-copy
   +outer-container
   display: block
@@ -68,13 +104,50 @@ nav
   color: white
 .index-section-1-text
   font-size: 20px
-  font-style: italic
+
+/* Section 2 */
+.index-section-2
+  height: 600px
+
 
 /* Media Queries */
 @media only screen and #{$movile}
   nav
     padding: $lateral-padding-mobile
-  .navbar-breadcrumbs
-    display: none
+  .navbar-menu-icon
+    float: right
+    margin: 27px 20px
+    display: inline-block
+    cursor: pointer
+  .offcanvas-menu
+    height: 100vh
+    background-color: #fff
+    width: 300px
+    display:block
+    position: absolute
+    right: -300px
+    margin-top: 0px
+    padding: 0
+    box-shadow: -4px 1px 11px rgba(0,0,0,.1)
+  .navbar-crumbs
+    display: block
+    margin: 20px auto
+    text-align: center
+  .navbar-hr
+    display: block
+    background-color: #e0e0e0
+    height: 1px
+    border: 1px
+    margin: auto 20px
+  .navbar-dataroom-button
+    margin: 0
+  .navbar-dataroom-button:hover
+    margin: 0
+  // .index-section-1
+  //   background-image: url("../img/mobile-backgrounds/section-1-back-mobile.jpg")
+  //   padding: 0 20px
+  .index-section-1-copy
+    height: 320px
+    padding: 0 20px
 
 @media only screen and #{$tablet}

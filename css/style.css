@@ -1,3 +1,6 @@
+@import 'https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Amiri';
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i';
 html {
   box-sizing: border-box; }
 
@@ -5,13 +8,15 @@ html {
   box-sizing: inherit; }
 
 /*Typography Variables */
-/*Typography Mixin */
+/*Background Variables */
 body {
   font-family: "times new roman";
+  font-weight: 300;
   margin: 0; }
 
 nav {
   width: 100%;
+  height: 73px;
   background: #fff;
   position: fixed;
   top: 0;
@@ -31,33 +36,64 @@ nav {
   height: 45px;
   margin: 12px 0; }
 
+.navbar-menu-icon {
+  display: none; }
+
 .navbar-breadcrumbs {
   display: inline-block;
-  float: right; }
+  float: right;
+  margin: 0; }
 
 .navbar-crumbs {
   display: inline-block; }
 
-.navbar-crumbs a {
-  color: #c3b584;
-  padding: 10px 15px; }
+.navbar-crumbs-slash {
+  padding: 10px 25px; }
+
+.navbar-breadcrumbs:first-child li {
+  padding-top: 26px; }
+
+.navbar-crumbs:first-child a {
+  color: #c3b584; }
+
+.navbar-hr {
+  display: none; }
 
 .navbar-dataroom-button {
+  border-radius: 3px;
   color: white;
   padding: 13px 30px;
+  margin: 16px 0 0 25px;
   text-transform: uppercase;
   border: none;
   font-family: "times new roman";
   background: #333;
   background: #333;
-  font-size: 12px; }
+  font-size: 12px;
+  transition: all 0.2s ease-in-out; }
+
+.navbar-dataroom-button:hover {
+  padding: 15px 32px;
+  background: #444;
+  background: #444;
+  transition: all 0.2s ease-in-out;
+  margin: 14px 0 0 20px; }
+
+.navbar-offcanvas-location {
+  margin: 20px;
+  list-style: none;
+  color: #999; }
 
 /* Section 1 */
 .index-section-1 {
-  background-color: #333;
-  height: 600px;
+  height: 550px;
   position: relative;
   top: 74px; }
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+  background-position: 50%; }
 
 .index-section-1-copy {
   max-width: 1200px;
@@ -88,15 +124,53 @@ nav {
   color: white; }
 
 .index-section-1-text {
-  font-size: 20px;
-  font-style: italic; }
+  font-size: 20px; }
+
+/* Section 2 */
+.index-section-2 {
+  height: 600px; }
 
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   nav {
     padding: 0 20px 0 20px; }
 
-  .navbar-breadcrumbs {
-    display: none; } }
+  .navbar-menu-icon {
+    float: right;
+    margin: 27px 20px;
+    display: inline-block;
+    cursor: pointer; }
+
+  .offcanvas-menu {
+    height: 100vh;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    right: -300px;
+    margin-top: 0px;
+    padding: 0;
+    box-shadow: -4px 1px 11px rgba(0, 0, 0, 0.1); }
+
+  .navbar-crumbs {
+    display: block;
+    margin: 20px auto;
+    text-align: center; }
+
+  .navbar-hr {
+    display: block;
+    background-color: #e0e0e0;
+    height: 1px;
+    border: 1px;
+    margin: auto 20px; }
+
+  .navbar-dataroom-button {
+    margin: 0; }
+
+  .navbar-dataroom-button:hover {
+    margin: 0; }
+
+  .index-section-1-copy {
+    height: 320px;
+    padding: 0 20px; } }
 
 /*# sourceMappingURL=style.css.map */
