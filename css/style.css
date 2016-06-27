@@ -144,9 +144,9 @@ nav {
   .offcanvas-menu {
     height: 100vh;
     background-color: #fff;
-    width: 300px;
+    width: 290px;
     position: absolute;
-    right: -300px;
+    right: -290px;
     margin-top: 0px;
     padding: 0;
     box-shadow: -4px 1px 11px rgba(0, 0, 0, 0.1); }
