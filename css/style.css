@@ -8,14 +8,13 @@ html {
   box-sizing: inherit; }
 
 .index-section-2-carousel {
-  align-items: center;
-  display: flex;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Times New Roman", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 28px;
   font-weight: 100;
   margin: 0;
   min-height: 500px;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 .slide-header {
   font-size: 48px;
@@ -25,7 +24,7 @@ html {
 p {
   margin: 0; }
 
-.carousel {
+carousel {
   justify-content: flex-start;
   overflow: hidden;
   padding: 40px 0;
@@ -37,7 +36,23 @@ p {
   flex-direction: row;
   height: 100%;
   transform: translate3d(0, 0, 0);
-  transition: transform 600ms; }
+  transition: transform 600ms;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms; }
 
 .carousel > #nav {
   bottom: 0;
@@ -45,10 +60,11 @@ p {
   position: absolute;
   text-align: center;
   width: 100vw;
-  z-index: 1; }
+  z-index: 1;
+  transform: translateY(25px); }
 
 .carousel > #nav a {
-  color: red;
+  color: white;
   font-size: 14px;
   opacity: 0.2;
   text-decoration: none; }
@@ -60,17 +76,133 @@ p {
   opacity: 1; }
 
 .carousel .slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   line-height: 1.4;
   text-align: center;
   width: 100vw; }
 
+.index-section-2-slide-header {
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  height: 63px;
+  padding: 10px;
+  color: white; }
+
+.index-section-2-heading {
+  margin: 0 30px;
+  display: inline-block; }
+
+.index-section-2-slide-hr {
+  display: inline-block;
+  width: 10%;
+  transform: translateY(5px); }
+
+.index-section-2-slide-footer {
+  width: 100%;
+  height: 150px;
+  background: #333;
+  background: #333;
+  bottom: 0;
+  margin-top: 300px; }
+
+.index-section-2-slide-footer-content div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24%; }
+
+.index-section-2-slide-footer-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 14px; }
+  .index-section-2-slide-footer-content::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.index-section-2-slide-footer-content a {
+  color: white;
+  text-decoration: none; }
+
+.index-section-2-slide-footer-m1 {
+  font-size: 30px; }
+
+.index-section-2-slide-footer-m4 a {
+  padding: 10px 20px;
+  border: 1px solid white;
+  text-align: center; }
+
+.index-section-2-slide-footer-11 {
+  height: 150px;
+  width: 1px !important;
+  padding: 0;
+  margin: 0; }
+
+@media only screen and (max-width: 767px) {
+  .carousel > #nav {
+    transform: translatey(-36px);
+    bottom: inherit; }
+
+  .slide-1 {
+    background-color: tomato; }
+
+  .slide-2 {
+    background-color: skyblue; }
+
+  .index-section-2-slide-footer {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    background: transparent;
+    bottom: 0;
+    text-align: left;
+    margin: 30px auto 30px; }
+
+  .index-section-2-slide-footer-content div {
+    display: block;
+    vertical-align: inherit;
+    width: 210px;
+    margin: 0 auto; }
+
+  .index-section-2-slide-footer-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 14px;
+    line-height: 20px; }
+    .index-section-2-slide-footer-content::after {
+      clear: both;
+      content: "";
+      display: block; }
+
+  .index-section-2-slide-footer-m1 {
+    font-size: 30px;
+    padding-bottom: 10px; }
+
+  .index-section-2-slide-footer-m4 {
+    margin-top: 30px; }
+
+  .index-section-2-slide-footer-m4 a {
+    padding: 6px 20px;
+    border: 1px solid white;
+    text-align: left;
+    margin: 10px 0;
+    width: 125px;
+    display: block; }
+
+  .index-section-2-slide-footer-11 {
+    display: none;
+    height: 0; } }
 /*Typography Variables */
 /*Background Variables */
 body {
   font-family: "times new roman";
   font-weight: 300;
-  margin: 0; }
+  margin: 0;
+  text-rendering: geometricPrecision; }
 
 nav {
   width: 100%;
@@ -191,6 +323,7 @@ nav {
 .index-section-2 {
   height: 500px; }
 
+/* For more Carousel styles, check on carousel.sass */
 /* Media Queries */
 @media only screen and (max-width: 767px) {
   nav {

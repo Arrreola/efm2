@@ -18,7 +18,7 @@ function Carousel(element) {
   this.set(0);
 }
 
-Carousel.prototype.auto = function (ms) {
+Carousel.prototype.auto = function(ms) {
   if (this._interval) {
     clearInterval(this._interval);
     this._interval = null;
@@ -26,11 +26,13 @@ Carousel.prototype.auto = function (ms) {
   if (ms) {
     this._autoDuration = ms;
     var self = this;
-    this._interval = setInterval(function () { self.next(); }, ms);
+    this._interval = setInterval(function() {
+      self.next();
+    }, ms);
   }
 }
 
-Carousel.prototype.handleEvent = function (event) {
+Carousel.prototype.handleEvent = function(event) {
   if (event.touches && event.touches.length > 0) {
     this._touchTime = +new Date;
     this._touchX1 = this._touchX2;
@@ -72,7 +74,8 @@ Carousel.prototype.handleEvent = function (event) {
       this.set(Math.round(position + offset));
       break;
     case 'transitionend':
-      var i = this._slide, count = this._countSlides();
+      var i = this._slide,
+        count = this._countSlides();
       if (i >= 0 && i < count) break;
       // The slides should wrap around. Instantly move to just outside screen on the other end.
       this._container.style.transition = 'none';
@@ -87,36 +90,41 @@ Carousel.prototype.handleEvent = function (event) {
   }
 };
 
-Carousel.prototype.next = function () {
+Carousel.prototype.next = function() {
   this.set(this._slide + 1);
 };
 
-Carousel.prototype.previous = function () {
+Carousel.prototype.previous = function() {
   this.set(this._slide - 1);
 };
 
-Carousel.prototype.set = function (i) {
+Carousel.prototype.set = function(i) {
   var count = this._countSlides();
-  if (i < 0) { i = -1; } else if (i >= count) { i = count; }
+  if (i < 0) {
+    i = -1;
+  } else if (i >= count) {
+    i = count;
+  }
   this._slide = i;
   this._container.style.transform = 'translate3d(' + (-i * 100) + 'vw, 0, 0)';
   this._updateNav();
 };
 
-Carousel.prototype._countSlides = function () {
+Carousel.prototype._countSlides = function() {
   return this._container.querySelectorAll('.slide').length;
 };
 
-Carousel.prototype._updateNav = function () {
-  var html = '', count = this._countSlides();
+Carousel.prototype._updateNav = function() {
+  var html = '',
+    count = this._countSlides();
   for (var i = 0; i < count; i++) {
     if (i > 0) html += '&nbsp;';
-    html += '<a' +  (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '" href="#">●</a>';
+    html += '<a' + (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '" href="#">●</a>';
   }
   this._nav.innerHTML = html;
 }
 
-var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function (element) {
+var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function(element) {
   var carousel = new Carousel(element);
   carousel.auto(5000);
   return carousel;
