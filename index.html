@@ -56,6 +56,7 @@ Facebook recommends large images up to 1200x630px wide.
 <!-- Scripts src -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/parallax-js/parallax.min.js"></script>
+<script src="js/carousel-js/carousel.js"></script>
 </head>
 <body>
 <nav>
@@ -88,12 +89,13 @@ Facebook recommends large images up to 1200x630px wide.
     </ul>
   </div>
 </nav>
+<div class="navbar-white-area"></div>
 <section class="index-section-1 parallax-window">
   <div class="index-section-1-copy">
     <hr class="index-section-hr"/>
     <div class="index-section-1-copy-container">
       <p class="index-section-1-text">
-             <b> EFM Capital se especializa </b>en invertir en empresas que operan bajo un <b>modelo de gestión familiar</b> y requieren mejoras en su <b>modelo de negocio.</b> Logramos que la empresa opere en un  <b>marco institucional</b> que facilite la captación de nuevos inversionistas.
+        <b>EFM Capital se especializa </b>en invertir en empresas que operan bajo un <b>modelo de gestión familiar</b> y requieren mejoras en su <b>modelo de negocio.</b> Logramos que la empresa opere en un  <b>marco institucional</b> que facilite la captación de nuevos inversionistas.
       </p>
       <p class="index-section-1-text">
            El objetivo es lograr, <b>en el corto plazo, </b>una <b>venta o asociación estratégica </b>con los principales <b>corporativos e independientes.</b>
@@ -103,9 +105,36 @@ Facebook recommends large images up to 1200x630px wide.
   </div>
 </section>
 <section class="index-section-2">
-
+  <div class="index-section-2-slide" id="slide-1">
+    <div class="index-section-2-slide-header">
+      <hr class="index-section-2-slide-hr">
+        <span>Operaciones</span>
+      <hr class="index-section-2-slide-hr">
+    </div>
+    <div class="index-section-2-slide-footer">
+      <div class="index-section-2-slide-footer-m1">Melbourne</div>
+      <div class="index-section-2-slide-footer-m2"></div>
+      <div class="index-section-2-slide-footer-m3"></div>
+    </div>
+  </div>
 </section>
 
+<section class="index-section-2-carousel">
+  <div class="carousel">
+    <div id="nav"></div>
+    <div class="container">
+      <div class="slide">
+        <span class="slide-header">Talking. Reimagined.</span>
+        <p>We’ve made it easy to s
+          care about most.</p>
+      </div>
+      <div class="slide">
+        <span class="slide-header">Tap to talk, tap to listen</span>
+        <p>Talk with anyone in your phone,<br>anytime, no matter where they are.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- <script>
   $(document).ready(function(){

@@ -7,6 +7,64 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.index-section-2-carousel {
+  align-items: center;
+  display: flex;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  margin: 0;
+  min-height: 500px;
+  padding: 0; }
+
+.slide-header {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 0.1em; }
+
+p {
+  margin: 0; }
+
+.carousel {
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  width: 100vw; }
+
+.carousel > .container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: transform 600ms; }
+
+.carousel > #nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  z-index: 1; }
+
+.carousel > #nav a {
+  color: red;
+  font-size: 14px;
+  opacity: 0.2;
+  text-decoration: none; }
+
+.carousel > #nav a:hover {
+  opacity: 0.5; }
+
+.carousel > #nav a.current {
+  opacity: 1; }
+
+.carousel .slide {
+  flex-shrink: 0;
+  line-height: 1.4;
+  text-align: center;
+  width: 100vw; }
+
 /*Typography Variables */
 /*Background Variables */
 body {
@@ -84,11 +142,14 @@ nav {
   list-style: none;
   color: #999; }
 
+.navbar-white-area {
+  height: 73px;
+  width: 100%; }
+
 /* Section 1 */
 .index-section-1 {
   height: 550px;
-  position: relative;
-  top: 74px; }
+  position: relative; }
 
 .parallax-window {
   min-height: 400px;
@@ -128,7 +189,7 @@ nav {
 
 /* Section 2 */
 .index-section-2 {
-  height: 600px; }
+  height: 500px; }
 
 /* Media Queries */
 @media only screen and (max-width: 767px) {
@@ -144,9 +205,9 @@ nav {
   .offcanvas-menu {
     height: 100vh;
     background-color: #fff;
-    width: 290px;
+    width: 270px;
     position: absolute;
-    right: -290px;
+    right: -270px;
     margin-top: 0px;
     padding: 0;
     box-shadow: -4px 1px 11px rgba(0, 0, 0, 0.1); }
@@ -172,5 +233,8 @@ nav {
   .index-section-1-copy {
     height: 320px;
     padding: 0 20px; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    padding: 0 20px 0 20px; } }
 
 /*# sourceMappingURL=style.css.map */
