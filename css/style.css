@@ -323,6 +323,26 @@ nav {
 .index-section-2 {
   height: 500px; }
 
+/* Section 3 */
+.index-section-3 {
+  height: 500px;
+  background: skyblue;
+  background: skyblue; }
+
+.index-section-3-content {
+  color: black;
+  text-align: center; }
+
+.index-section-3-heading {
+  margin: 0 30px;
+  display: inline-block;
+  font-size: 28px; }
+
+.index-section-3-slide-hr {
+  display: inline-block;
+  width: 10%;
+  transform: translateY(5px); }
+
 /* For more Carousel styles, check on carousel.sass */
 /* Media Queries */
 @media only screen and (max-width: 767px) {

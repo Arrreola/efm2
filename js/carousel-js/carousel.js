@@ -126,6 +126,6 @@ Carousel.prototype._updateNav = function() {
 
 var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function(element) {
   var carousel = new Carousel(element);
-  carousel.auto(5000);
+  carousel.auto(8000);
   return carousel;
 });
