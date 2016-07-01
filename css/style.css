@@ -24,6 +24,9 @@ html {
 p {
   margin: 0; }
 
+.carousel {
+  position: relative; }
+
 carousel {
   justify-content: flex-start;
   overflow: hidden;
@@ -55,7 +58,7 @@ carousel {
   transition: transform 600ms, -webkit-transform 600ms; }
 
 .carousel > #nav {
-  bottom: 0;
+  bottom: 35px;
   left: 0;
   position: absolute;
   text-align: center;
@@ -84,19 +87,27 @@ carousel {
   width: 100vw; }
 
 .index-section-2-slide-header {
-  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.1);
-  height: 63px;
+  height: 73px;
   padding: 10px;
-  color: white; }
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-style: italic; }
 
 .index-section-2-heading {
   margin: 0 30px;
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-style: italic; }
 
 .index-section-2-slide-hr {
   display: inline-block;
   width: 10%;
-  transform: translateY(5px); }
+  vertical-align: middle;
+  transform: translateY(5px);
+  border: 0;
+  height: 1px;
+  background-color: #333; }
 
 .index-section-2-slide-footer {
   width: 100%;
@@ -116,7 +127,8 @@ carousel {
   margin-left: auto;
   margin-right: auto;
   color: white;
-  font-size: 14px; }
+  font-size: 14px;
+  text-rendering: geometricPrecision !important; }
   .index-section-2-slide-footer-content::after {
     clear: both;
     content: "";
@@ -134,22 +146,49 @@ carousel {
   border: 1px solid white;
   text-align: center; }
 
+.index-section-2-slide-footer-m4 a:hover {
+  background-color: rgba(255, 255, 255, 0.2); }
+
 .index-section-2-slide-footer-11 {
   height: 150px;
   width: 1px !important;
   padding: 0;
   margin: 0; }
 
+.slide-1 {
+  background-image: url("../img/desktop-backgrounds/section-2-melbourne.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.slide-2 {
+  background-image: url("../img/desktop-backgrounds/section-2-lisboa.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.slide-3 {
+  background-image: url("../img/desktop-backgrounds/section-2-valencia.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.slide-4 {
+  background-image: url("../img/desktop-backgrounds/section-2-pekin.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.slide-5 {
+  background-image: url("../img/desktop-backgrounds/section-2-montevideo.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.slide-6 {
+  background-image: url("../img/desktop-backgrounds/section-2-delta.jpg");
+  background-size: cover;
+  background-position: center; }
+
 @media only screen and (max-width: 767px) {
   .carousel > #nav {
     transform: translatey(-36px);
     bottom: inherit; }
-
-  .slide-1 {
-    background-color: tomato; }
-
-  .slide-2 {
-    background-color: skyblue; }
 
   .index-section-2-slide-footer {
     width: 100%;
@@ -195,14 +234,17 @@ carousel {
 
   .index-section-2-slide-footer-11 {
     display: none;
-    height: 0; } }
+    height: 0; }
+
+  .index-section-2-carousel {
+    min-height: auto; } }
 /*Typography Variables */
 /*Background Variables */
 body {
   font-family: "times new roman";
   font-weight: 300;
   margin: 0;
-  text-rendering: geometricPrecision; }
+  text-rendering: geometricPrecision !important; }
 
 nav {
   width: 100%;
@@ -333,15 +375,27 @@ nav {
   color: black;
   text-align: center; }
 
+.index-section-3-header {
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  height: 73px;
+  padding: 10px;
+  color: white;
+  line-height: 1.4; }
+
 .index-section-3-heading {
   margin: 0 30px;
   display: inline-block;
-  font-size: 28px; }
+  font-size: 28px;
+  padding-top: 5px;
+  font-style: italic; }
 
 .index-section-3-slide-hr {
   display: inline-block;
   width: 10%;
-  transform: translateY(5px); }
+  transform: translateY(5px);
+  border: 0;
+  height: 1px;
+  background-color: white; }
 
 /* For more Carousel styles, check on carousel.sass */
 /* Media Queries */

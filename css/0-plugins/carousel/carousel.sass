@@ -19,6 +19,8 @@ $lateral-padding-mobile: 0 20px 0 20px
   margin: 0 0 .1em
 p
   margin: 0
+.carousel
+  position: relative
 carousel
   justify-content: flex-start
   overflow: hidden
@@ -48,7 +50,7 @@ carousel
   transition: transform 600ms
   transition: transform 600ms, -webkit-transform 600ms
 .carousel > #nav
-  bottom: 0
+  bottom: 35px
   left: 0
   position: absolute
   text-align: center
@@ -72,17 +74,25 @@ carousel
   text-align: center
   width: 100vw
 .index-section-2-slide-header
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1)
-  height: 63px
+  height: 73px
   padding: 10px
-  color: white
+  color: black
+  background-color: rgba(255,255,255,0.8)
+  font-style: italic
 .index-section-2-heading
   margin: 0 30px
   display: inline-block
+  vertical-align: middle
+  padding-top: 5px
+  font-style: italic
 .index-section-2-slide-hr
   display: inline-block
   width: 10%
+  vertical-align: middle
   transform: translateY(5px)
+  border: 0
+  height: 1px
+  background-color: #333
 .index-section-2-slide-footer
   width: 100%
   height: 150px
@@ -97,6 +107,7 @@ carousel
   +outer-container
   color: white
   font-size: 14px
+  text-rendering: geometricPrecision !important
 .index-section-2-slide-footer-content a
   color: white
   text-decoration: none
@@ -110,20 +121,42 @@ carousel
   padding: 10px 20px
   border: 1px solid white
   text-align: center
+.index-section-2-slide-footer-m4 a:hover
+  background-color: rgba(255,255,255,0.2)
 .index-section-2-slide-footer-11
   height: 150px
   width: 1px !important
   padding: 0
   margin: 0
+.slide-1
+  background-image: url('../img/desktop-backgrounds/section-2-melbourne.jpg')
+  background-size: cover
+  background-position: center
+.slide-2
+  background-image: url('../img/desktop-backgrounds/section-2-lisboa.jpg')
+  background-size: cover
+  background-position: center
+.slide-3
+  background-image: url('../img/desktop-backgrounds/section-2-valencia.jpg')
+  background-size: cover
+  background-position: center
+.slide-4
+  background-image: url('../img/desktop-backgrounds/section-2-pekin.jpg')
+  background-size: cover
+  background-position: center
+.slide-5
+  background-image: url('../img/desktop-backgrounds/section-2-montevideo.jpg')
+  background-size: cover
+  background-position: center
+.slide-6
+  background-image: url('../img/desktop-backgrounds/section-2-delta.jpg')
+  background-size: cover
+  background-position: center
 
 @media only screen and #{$movile}
   .carousel > #nav
     transform: translatey(-36px)
     bottom: inherit
-  .slide-1
-    background-color: tomato
-  .slide-2
-    background-color: skyblue
   .index-section-2-slide-footer
     width: 100%
     height: auto
@@ -156,3 +189,5 @@ carousel
   .index-section-2-slide-footer-11
     display: none
     height: 0
+  .index-section-2-carousel
+    min-height: auto
