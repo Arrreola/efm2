@@ -114,16 +114,21 @@ nav
 /* Section 3 */
 .index-section-3
   height: 500px
-  +background(skyblue)
+  background-image: url('../img/desktop-backgrounds/section-3-back.jpg')
+  background-size: cover
+  background-position: center
 .index-section-3-content
+  height: 500px
   color: black
   text-align: center
+  display: block
 .index-section-3-header
   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1)
   height: 73px
   padding: 10px
-  color: white
+  color: #c3b584
   line-height: 1.4
+  background-color: rgba(0,0,0,0.5)
 .index-section-3-heading
   margin: 0 30px
   display: inline-block
@@ -136,7 +141,33 @@ nav
   transform: translateY(5px)
   border: 0
   height: 1px
-  background-color: white
+  background-color: #c3b584
+.index-section-3-copy-container
+  max-width: 1200px
+  display: block
+  margin: 0 auto
+  height: 114px
+  transform: translateY(-50%)
+  top: 50%
+  position: relative
+.index-section-3-copy-content
+  max-width: 700px
+  display: block
+  margin: 0 auto
+  text-align: center
+  color: white
+  position: relative
+  top: 50%
+  transform: translateY(-110px)
+.index-section-3-link
+  padding: 6px 20px
+  border: 1px solid white
+  width: 125px
+  display: block
+  text-align: center
+  color: white
+  text-decoration: none
+  margin: 10px auto 0
 
 /* For more Carousel styles, check on carousel.sass */
 
