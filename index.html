@@ -311,7 +311,8 @@ Facebook recommends large images up to 1200x630px wide.
   </div>
   <script src="js/carousel-js/carousel.js"></script>
 </section>
-<section class="index-section-3">
+
+<section class="index-section-3 parallax-window-3">
   <div class="index-section-3-content">
     <div class="index-section-3-header">
       <hr class="index-section-3-slide-hr">
@@ -332,7 +333,51 @@ Facebook recommends large images up to 1200x630px wide.
         <a href="#" class="index-section-3-link">Ver más</a>
       </div>
   </div>
+</section>
 
+<section class="index-section-4">
+  <div class="index-section-4-header">
+    <hr class="index-section-4-slide-hr">
+      <span class="index-section-4-heading">Consejo de administración</span>
+    <hr class="index-section-4-slide-hr">
+  </div>
+  <div class="index-section-4-content">
+    <div class="index-section-4-bottom">
+      <div class="index-section-4-directors-module">
+        <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
+        <span class="index-section-4-directors-position">Partner</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-manuel-g-martinez-gaxiola">Details</a>
+      </div>
+      <div class="index-section-4-directors-module">
+        <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
+        <span class="index-section-4-directors-position">Partner</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-j-martinez-de-leon">Details</a>
+      </div>
+      <div class="index-section-4-directors-module">
+        <span class="index-section-4-directors-name">Oscar J. Moráles Rodríguez</span>
+        <span class="index-section-4-directors-position">Cienciamed CEO</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-oscar-j-morales-rodriguez">Details</a>
+      </div>
+      <div class="index-section-4-directors-module">
+        <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
+        <span class="index-section-4-directors-position">Independent advisor</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-e-martinez-rico">Details</a>
+      </div>
+      <div class="index-section-4-directors-module">
+        <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
+        <span class="index-section-4-directors-position">Independent advisor</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-lorenzo-fernandez">Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="index-section-5">
+  <div class="index-section-5-header">
+    <hr class="index-section-5-slide-hr">
+      <span class="index-section-5-heading">Equipo</span>
+    <hr class="index-section-5-slide-hr">
+  </div>
 </section>
 
 
@@ -375,6 +420,15 @@ Facebook recommends large images up to 1200x630px wide.
   }
   else {
     $('.parallax-window').parallax({imageSrc: 'img/mobile-backgrounds/section-1-back-mobile.jpg'});
+  }
+</script>
+
+<script>
+  if ( $(window).width() > 766) {
+    $('.parallax-window-3').parallax({imageSrc: 'img/desktop-backgrounds/section-3-back.jpg'});
+  }
+  else {
+    $('.parallax-window-3').parallax({imageSrc: 'img/mobile-backgrounds/section-3-back-mobile.jpg'});
   }
 </script>
 

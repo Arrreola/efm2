@@ -106,7 +106,7 @@ nav
   text-align: center
   color: white
 .index-section-1-text
-  font-size: 20px
+  font-size: 18px
 
 /* Section 2 */
 .index-section-2
@@ -114,7 +114,7 @@ nav
 /* Section 3 */
 .index-section-3
   height: 500px
-  background-image: url('../img/desktop-backgrounds/section-3-back.jpg')
+  // background-image: url('../img/desktop-backgrounds/section-3-back.jpg')
   background-size: cover
   background-position: center
 .index-section-3-content
@@ -138,7 +138,7 @@ nav
 .index-section-3-slide-hr
   display: inline-block
   width: 10%
-  transform: translateY(5px)
+  transform: translateY(2px)
   border: 0
   height: 1px
   background-color: #c3b584
@@ -159,6 +159,7 @@ nav
   position: relative
   top: 50%
   transform: translateY(-110px)
+  font-size: 18px
 .index-section-3-link
   padding: 6px 20px
   border: 1px solid white
@@ -168,7 +169,102 @@ nav
   color: white
   text-decoration: none
   margin: 10px auto 0
+  /* Section 4 */
+.index-section-4
+  height: 573px
+  color: black
+  text-align: center
+  display: block
+  position: relative
+  box-shadow: inset 0px -98px 0px #6d6e72
+.index-section-4-header
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.03 )
+  height: 73px
+  padding: 10px
+  color: #c3b584
+  line-height: 1.4
+  background-color: white
+.index-section-4-heading
+  margin: 0 30px
+  display: inline-block
+  font-size: 28px
+  padding-top: 5px
+  font-style: italic
+.index-section-4-slide-hr
+  display: inline-block
+  width: 10%
+  transform: translateY(2px)
+  border: 0
+  height: 1px
+  background-color: #c3b584
+.index-section-4-content
+  background-image: url('../img/desktop-backgrounds/section-4-back-desktop.png')
+  background-position: bottom
+  background-size: contain
+  background-repeat: no-repeat
+  height: 500px
+  position: relative
+  +outer-container
+  display: block
+.index-section-4-bottom
+  height: 97px
+  width: 100%
+  background-color: hsla(228,2%,44%,0.7)
+  position: absolute
+  bottom: 0
+.index-section-4-directors-module
+  width: 19.1%
+  display: inline-block
+  text-align: center
+  padding-top: 16px
+  color: white
+  letter-spacing: 1px
+  font-size: 12px
+.index-section-4-directors-name
+  display: block
+  font-weight: 600
+  padding-bottom: 3px
+.index-section-4-directors-position
+  display: block
+  padding-bottom: 10px
+.index-section-4-directors-button
+  display: block
+  padding: 0px 16px
+  line-height: 21px
+  margin: 0 auto
+  border: 1px solid white
+  color: white
+  width: 86px
+  text-decoration: none
 
+/* Section 5 */
+.index-section-5
+  height: 573px
+  color: black
+  text-align: center
+  display: block
+  position: relative
+  background-color: #303235
+.index-section-5-header
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1 )
+  height: 73px
+  padding: 10px
+  color: #c3b584
+  line-height: 1.4
+  background-color: #303235
+.index-section-5-heading
+  margin: 0 30px
+  display: inline-block
+  font-size: 28px
+  padding-top: 5px
+  font-style: italic
+.index-section-5-slide-hr
+  display: inline-block
+  width: 10%
+  transform: translateY(2px)
+  border: 0
+  height: 1px
+  background-color: #c3b584
 /* For more Carousel styles, check on carousel.sass */
 
 /* Media Queries */
@@ -209,6 +305,8 @@ nav
   //   padding: 0 20px
   .index-section-1-copy
     height: 320px
+    padding: 0 20px
+  .index-section-3-copy
     padding: 0 20px
 
 @media only screen and #{$tablet}
