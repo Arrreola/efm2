@@ -195,3 +195,45 @@ carousel
     height: 0
   .index-section-2-carousel
     min-height: auto
+
+/* Team Carousel*/
+.index-section-5
+  overflow: hidden
+.index-section-5-slide
+  position: relative
+  top: -50px
+  transform: translateY(50%)
+.index-section-5-member
+  width: 270px
+  text-align: center
+  display: inline-block
+  color: white
+  text-rendering: geometricPrecision
+  font-size: 13px
+  letter-spacing: 1px
+.index-section-5-member-image
+  width: 130px
+  text-align: center
+.index-section-5-member-name
+  display: block
+  font-weight: 600
+.index-section-5-member-position
+  display: block
+.index-section-5-member-area
+  display: block
+.index-section-5-member-button
+  display: block
+  padding: 0px 16px
+  line-height: 21px
+  margin: 9px auto 0
+  border: 1px solid white
+  color: white
+  width: 86px
+  text-decoration: none
+.index-section-5-carousel
+  height: 400px
+@media only screen and #{$movile}
+  .index-section-5-slide
+    position: relative
+    top: 50px
+    transform: translateY(0%)

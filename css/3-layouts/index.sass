@@ -6,15 +6,15 @@ $movile: "(max-width: 767px)"
 $tablet: "(min-width: 768px) and (max-width: 1023px)"
 $desktop: "(min-width: 1024px)"
 $lateral-padding-mobile: 0 20px 0 20px
+$efm-dark-gray: #292A2C
+$efm-gold: #c3b584
 
 /*Typography Variables*/
-$font-gold: #c3b584
 $font-times: 'times new roman'
 $font-rasa: 'Rasa', serif
 $font-amiri: 'Amiri', serif
 $font-merriweather: 'Merriweather', serif
 /*Background Variables*/
-$back-gold: #c3b584
 
 
 body
@@ -48,7 +48,7 @@ nav
 .navbar-breadcrumbs:first-child li
   padding-top: 26px
 .navbar-crumbs:first-child a
-  color: $font-gold
+  color: $efm-gold
 .navbar-hr
   display: none
 .navbar-dataroom-button
@@ -59,7 +59,7 @@ nav
   text-transform: uppercase
   border: none
   font-family: $font-times
-  +background(#333)
+  +background($efm-dark-gray)
   font-size: 12px
   transition: all .2s ease-in-out
 .navbar-dataroom-button:hover
@@ -114,7 +114,7 @@ nav
 /* Section 3 */
 .index-section-3
   height: 500px
-  // background-image: url('../img/desktop-backgrounds/section-3-back.jpg')
+  //background-image: url('../img/desktop-backgrounds/section-3-back.jpg')
   background-size: cover
   background-position: center
 .index-section-3-content
@@ -126,7 +126,7 @@ nav
   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1)
   height: 73px
   padding: 10px
-  color: #c3b584
+  color: $efm-gold
   line-height: 1.4
   background-color: rgba(0,0,0,0.5)
 .index-section-3-heading
@@ -141,7 +141,7 @@ nav
   transform: translateY(2px)
   border: 0
   height: 1px
-  background-color: #c3b584
+  background-color: $efm-gold
 .index-section-3-copy-container
   max-width: 1200px
   display: block
@@ -181,7 +181,7 @@ nav
   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.03 )
   height: 73px
   padding: 10px
-  color: #c3b584
+  color: $efm-gold
   line-height: 1.4
   background-color: white
 .index-section-4-heading
@@ -196,7 +196,7 @@ nav
   transform: translateY(2px)
   border: 0
   height: 1px
-  background-color: #c3b584
+  background-color: $efm-gold
 .index-section-4-content
   background-image: url('../img/desktop-backgrounds/section-4-back-desktop.png')
   background-position: bottom
@@ -239,19 +239,19 @@ nav
 
 /* Section 5 */
 .index-section-5
-  height: 573px
+  min-height: 500px
   color: black
   text-align: center
   display: block
   position: relative
-  background-color: #303235
+  background-color: $efm-dark-gray
 .index-section-5-header
   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1 )
   height: 73px
   padding: 10px
-  color: #c3b584
+  color: $efm-gold
   line-height: 1.4
-  background-color: #303235
+  background-color: $efm-dark-gray
 .index-section-5-heading
   margin: 0 30px
   display: inline-block
@@ -264,7 +264,72 @@ nav
   transform: translateY(2px)
   border: 0
   height: 1px
-  background-color: #c3b584
+  background-color: $efm-gold
+
+/* Section 6 */
+.index-section-6
+  min-height: 500px
+  color: white
+  text-align: center
+  display: block
+  position: relative
+  background-color: #7D7E81
+.index-section-6-header
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1)
+  height: 73px
+  padding: 10px
+  color: white
+  line-height: 1.4
+  background-color: #7D7E81
+.index-section-6-header:nth-child(2)
+  box-shadow: none
+.index-section-6-heading
+  margin: 0 30px
+  display: inline-block
+  font-size: 28px
+  padding-top: 5px
+  font-style: italic
+.index-section-6-slide-hr
+  display: inline-block
+  width: 10%
+  transform: translateY(2px)
+  border: 0
+  height: 1px
+  background-color: white
+.index-section-6-content
+  text-align: center
+  padding: 40px
+.index-section-6-images
+  margin: 0 60px
+
+/* Section 7 */
+.index-section-7-content
+  max-width: 1090px
+  margin: 0 auto
+  position: relative
+.index-section-7
+  background-color: $efm-gold
+.index-section-7-a
+  display: inline-block
+  max-width: 500px
+  margin: 30px
+.index-section-7-b
+  display: inline-block
+  max-width: 575px
+  position: absolute
+  top: 0
+  margin: 30px
+.index-section-7-text
+  line-height: 24px
+  display: block
+
+/* Section 8 */
+.index-section-8
+  text-align: center
+  background-color: $efm-dark-gray
+  color: white
+  padding: 30px
+
 /* For more Carousel styles, check on carousel.sass */
 
 /* Media Queries */
@@ -308,6 +373,28 @@ nav
     padding: 0 20px
   .index-section-3-copy
     padding: 0 20px
+  //Section 4
+  .index-section-4-slide-hr
+    display: none
+  //Section 6
+  .index-section-6
+    padding-bottom: 1px
+  //Section 7
+  .index-section-7
+    padding: 10px 0
+  .index-section-7-content
+    margin: 0 auto
+    display: block
+  .index-section-7-a
+    display: block
+    margin: 30px
+  .index-section-7-b
+    display: block
+    position: relative
+    margin: 30px
+  .index-section-7-text
+    line-height: 24px
+    display: block
 
 @media only screen and #{$tablet}
   nav
