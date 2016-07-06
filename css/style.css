@@ -679,6 +679,10 @@ nav {
   nav {
     padding: 0 20px 0 20px; }
 
+  .navbar-logo {
+    height: 38px;
+    padding: 16px 0; }
+
   .navbar-menu-icon {
     float: right;
     margin: 27px 20px;
