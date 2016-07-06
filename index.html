@@ -525,7 +525,7 @@ Facebook recommends large images up to 1200x630px wide.
     });
   });
 </script> -->
-<php></php>
+
 <script>
  $(document).ready(function() {
     if ($(window).width() < 600) {       // if width is less than 600px
@@ -537,7 +537,7 @@ Facebook recommends large images up to 1200x630px wide.
   });
 
 var MobileFunctions = function() {
-    $("#index-section-5-carousel-loads").load( "team-carousel-mobile.php");
+    $("#index-section-5-carousel-loads").load( "includes/team-carousel-mobile.html #index-section-5-carousel-loads-mobile");
     //alert("Mobile");
  }
  var DesktopFunctions = function() {
