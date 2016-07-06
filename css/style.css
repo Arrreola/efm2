@@ -428,7 +428,8 @@ nav {
   height: 500px;
   color: black;
   text-align: center;
-  display: block; }
+  display: block;
+  position: relative; }
 
 .index-section-3-header {
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.1);
@@ -723,8 +724,18 @@ nav {
   .index-section-3-copy {
     padding: 0 20px; }
 
+  .index-section-3-copy-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+
   .index-section-4-slide-hr {
     display: none; }
+
+  .index-section-4-heading {
+    margin: 0 20px;
+    font-size: 26px;
+    padding-top: 8px; }
 
   .index-section-6 {
     padding-bottom: 1px; }
