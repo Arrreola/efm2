@@ -345,28 +345,28 @@ Facebook recommends large images up to 1200x630px wide.
     <div class="index-section-4-bottom">
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
-        <span class="index-section-4-directors-position">Partner</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-manuel-g-martinez-gaxiola">Details</a>
+        <span class="index-section-4-directors-position">Socio</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-manuel-g-martinez-gaxiola">Detalles</a>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
-        <span class="index-section-4-directors-position">Partner</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-j-martinez-de-leon">Details</a>
+        <span class="index-section-4-directors-position">Socio</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-j-martinez-de-leon">Detalles</a>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Oscar J. Moráles Rodríguez</span>
-        <span class="index-section-4-directors-position">Cienciamed CEO</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-oscar-j-morales-rodriguez">Details</a>
+        <span class="index-section-4-directors-position">Director general Cienciamed</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-oscar-j-morales-rodriguez">Detalles</a>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
-        <span class="index-section-4-directors-position">Independent advisor</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-e-martinez-rico">Details</a>
+        <span class="index-section-4-directors-position">Consejero independiente</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-e-martinez-rico">Detalles</a>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
-        <span class="index-section-4-directors-position">Independent advisor</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-lorenzo-fernandez">Details</a>
+        <span class="index-section-4-directors-position">Consejero independiente</span>
+        <a class="index-section-4-directors-button" href="index.php/consejo-lorenzo-fernandez">Detalles</a>
       </div>
     </div>
   </div>
@@ -378,8 +378,8 @@ Facebook recommends large images up to 1200x630px wide.
       <span class="index-section-5-heading">Equipo</span>
     <hr class="index-section-5-slide-hr">
   </div>
-
-  <div class="carousel index-section-5-carousel">
+<!-- Carousel Desktop -->
+  <div class="carousel index-section-5-carousel carousel-desktop">
     <div class="container" id="index-section-5-carousel-loads">
 <!-- slide 1 -->
       <div class="slide">
@@ -474,6 +474,136 @@ Facebook recommends large images up to 1200x630px wide.
     </div>
     <div id="nav"></div>
   </div>
+
+
+  <!-- Mobile -->
+  <div class="carousel index-section-5-carousel carousel-mobile">
+    <div class="container" id="index-section-5-carousel-loads">
+<!-- slide 1 -->
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-1">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-everardo-h.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
+            <span class="index-section-5-member-position">Estrategia de inversión</span>
+            <span class="index-section-5-member-area">Evaluación de alternativas de inversión</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-2">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-roberto-l.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Roberto López Sánchez</span>
+            <span class="index-section-5-member-position">Órganos de gobierno</span>
+            <span class="index-section-5-member-area">Abogado corporativo</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-3">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-ricardo-d.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
+            <span class="index-section-5-member-position">Estructura y transformación</span>
+            <span class="index-section-5-member-area">Operaciones</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-4">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-carlos-a.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
+            <span class="index-section-5-member-position">Desarrollo organizacional</span>
+            <span class="index-section-5-member-area">Recursos humanos</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-5">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-luis-m.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
+            <span class="index-section-5-member-position">Estrategia de inversión</span>
+            <span class="index-section-5-member-area">Análisis financiero</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-6">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-oscar-l.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Oscar López Macal</span>
+            <span class="index-section-5-member-position">Estructura y transformación</span>
+            <span class="index-section-5-member-area">Contraloría e información financiera</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-7">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Rafael Brambila López</span>
+            <span class="index-section-5-member-position">Auditoría y soporte contable</span>
+            <span class="index-section-5-member-area">Abogado corporativo</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-8">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-alonso-m.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
+            <span class="index-section-5-member-position">Desarrollo organizacional</span>
+            <span class="index-section-5-member-area">Diseño gráfico</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-9">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-manuel-a.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
+            <span class="index-section-5-member-position">Estructura y transformación</span>
+            <span class="index-section-5-member-area">Auditoría y soporte contable</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-10">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-ana-s.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
+            <span class="index-section-5-member-position">Estructura y transformación</span>
+            <span class="index-section-5-member-area">Auditoría y soporte administrativo</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="index-section-5-slide" id="slide-11">
+          <div class="index-section-5-member">
+            <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
+            <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
+            <span class="index-section-5-member-position">Estructura y transformación</span>
+            <span class="index-section-5-member-area">Auditoría y soporte contable</span>
+            <a href="" class="index-section-5-member-button">Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="nav"></div>
+  </div>
   <script src="js/carousel-js/carousel.js"></script>
 </section>
 <section class="index-section-6">
@@ -496,6 +626,57 @@ Facebook recommends large images up to 1200x630px wide.
     <img src="img/logos/logo-execution.jpg" alt="">
   </div>
 </section>
+
+<section class="index-section-7-1">
+<!--Form-->
+  <div class="index-section-7-1-a">
+    <div class="index-section-7-header">
+      <hr class="index-section-7-slide-hr">
+        <span class="index-section-7-heading">Contacto</span>
+      <hr class="index-section-7-slide-hr">
+    </div>
+      <form action="send.php" method="post" name="pagerform" id="pagerform">
+        <div class="row-1">
+            <div class="my-placeholder">
+              <span class="">Nombre:</span>
+            </div>
+            <input type="text" name="nombre" required="true" class="required">
+        </div>
+        <div class="row-2">
+          <span class="my-placeholder">Correo:</span>
+          <input type="text" name="correo" required="true" class="required email">
+        </div>
+        <div class="row-2">
+          <span class="my-placeholder">Móvil:</span>
+          <input type="text" name="movil" required="true" class="required movil">
+        </div>
+        <div class="row-3">
+          <span class="my-placeholder">Mensaje:</span>
+          <textarea name="comentarios" required="true" class="required"></textarea>
+        </div>
+        <div class="row-4">
+          <input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">
+        </div>
+      </form>
+  </div>
+<!-- Map -->
+<script type="text/javascript">
+function initMap(){
+  var isDraggable = $(document).width() > 480 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
+
+  var mapOptions = {
+      draggable: isDraggable,
+
+      scrollwheel: false, // Prevent users to start zooming the map when scrolling down the page
+      //... options options options
+  };
+}
+</script>
+  <div class="index-section-7-1-b">
+    <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.8756277980747!2d-100.3255110314441!3d25.642253018829365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be43d33a70e1%3A0xc98f6f06fa13dcdc!2sTorre+Helicon!5e0!3m2!1ses-419!2smx!4v1468260088317" width="100%" height="470" frameborder="0" style="border:0; display:block;" allowfullscreen></iframe>
+  </div>
+</section>
+
 <section class="index-section-7">
   <div class="index-section-7-content">
     <div class="index-section-7-a">
@@ -525,6 +706,10 @@ Facebook recommends large images up to 1200x630px wide.
     });
   });
 </script> -->
+
+
+
+
 
 <script>
  $(document).ready(function() {
@@ -581,6 +766,14 @@ var MobileFunctions = function() {
   else {
     $('.parallax-window-3').parallax({imageSrc: 'img/mobile-backgrounds/section-3-back-mobile.jpg'});
   }
+</script>
+
+<!-- Form -->
+<script src="js/validate.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("#pagerform").validate();
+  });
 </script>
 
 </body>
