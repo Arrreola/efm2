@@ -379,7 +379,8 @@ carousel {
   letter-spacing: 0.3px;
   text-decoration: none;
   background-color: transparent;
-  font-family: "times new roman"; }
+  font-family: "times new roman";
+  cursor: pointer; }
 
 /*Typography Variables */
 /*Background Variables */
@@ -655,7 +656,8 @@ nav {
   border: 1px solid white;
   color: white;
   width: 86px;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 /* Section 5 */
 .index-section-5 {
