@@ -89,6 +89,7 @@ Facebook recommends large images up to 1200x630px wide.
   </div>
 </nav>
 <div class="navbar-white-area"></div>
+<div id="body-black" class="body-black"></div>
 <section class="index-section-1 parallax-window">
   <div class="index-section-1-copy">
     <hr class="index-section-hr"/>
@@ -334,19 +335,18 @@ Facebook recommends large images up to 1200x630px wide.
       </div>
   </div>
 </section>
-
 <section class="index-section-4">
   <div class="index-section-4-header">
     <hr class="index-section-4-slide-hr">
       <span class="index-section-4-heading">Consejo de administración</span>
     <hr class="index-section-4-slide-hr">
   </div>
-  <div class="index-section-4-content">
+  <div class="index-section-4-content" id="member-cards">
     <div class="index-section-4-bottom">
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
         <span class="index-section-4-directors-position">Socio</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-manuel-g-martinez-gaxiola">Detalles</a>
+        <span id="manuel-detalles" class="index-section-4-directors-button">Detalles</span>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
@@ -766,6 +766,27 @@ var MobileFunctions = function() {
   else {
     $('.parallax-window-3').parallax({imageSrc: 'img/mobile-backgrounds/section-3-back-mobile.jpg'});
   }
+</script>
+
+<!-- Include Member cards -->
+<!-- <script>
+  $("#manuel-detalles").click(function(){
+      $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
+  });
+</script> -->
+
+<!-- Include Member cards -->
+<script>
+  $("#manuel-detalles").click(function(){
+      $("#member-cards").append('<div class="member-card" id="member-card-manuel-g"><img class="member-card-img" src="img/" alt="" /><div class="member-card-text"><span class="member-card-name">Manuel G. Martínez Gaxiola</span><hr/><p>Manuel Martínez es líder en proyectos de transformación de empresas familiares, fusiones y adquisiciones.</p><p>El Sr. Martínez es licenciado y Maestro de Administracion con especialidad en Análisis Estratégico por el ITESM. Egresado del programa de Formación de Consejeros en Administración por la EGADE del ITESM, del Programa de Alta Dirección (AD-2) y del programa de Alta Dirección en Capital Privado por el IPADE.</p><button class="member-card-button">Descargar vCard</button></div></div>');
+      $('#body-black').fadeIn();
+  });
+</script>
+<script>
+  $("#body-black, .body-black").click(function() {
+    $(".member-card").fadeOut();
+    $("#body-black").fadeOut();
+  });
 </script>
 
 <!-- Form -->
