@@ -341,7 +341,8 @@ Facebook recommends large images up to 1200x630px wide.
       <span class="index-section-4-heading">Consejo de administración</span>
     <hr class="index-section-4-slide-hr">
   </div>
-  <div class="index-section-4-content" id="member-cards">
+  <div class="index-section-4-content">
+    <div id="member-cards"></div>
     <div class="index-section-4-bottom">
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
@@ -351,22 +352,22 @@ Facebook recommends large images up to 1200x630px wide.
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
         <span class="index-section-4-directors-position">Socio</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-j-martinez-de-leon">Detalles</a>
+        <span id="carlos-j-detalles"class="index-section-4-directors-button">Detalles</span>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Oscar J. Moráles Rodríguez</span>
         <span class="index-section-4-directors-position">Director general Cienciamed</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-oscar-j-morales-rodriguez">Detalles</a>
+        <span id="oscar-detalles" class="index-section-4-directors-button">Detalles</span>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
         <span class="index-section-4-directors-position">Consejero independiente</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-carlos-e-martinez-rico">Detalles</a>
+        <span id="carlos-e-detalles" class="index-section-4-directors-button">Detalles</span>
       </div>
       <div class="index-section-4-directors-module">
         <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
         <span class="index-section-4-directors-position">Consejero independiente</span>
-        <a class="index-section-4-directors-button" href="index.php/consejo-lorenzo-fernandez">Detalles</a>
+        <span id="lorenzo-detalles" class="index-section-4-directors-button">Detalles</span>
       </div>
     </div>
   </div>
@@ -778,10 +779,36 @@ var MobileFunctions = function() {
 <!-- Include Member cards -->
 <script>
   $("#manuel-detalles").click(function(){
-      $("#member-cards").append('<div class="member-card" id="member-card-manuel-g"><img class="member-card-img" src="img/" alt="" /><div class="member-card-text"><span class="member-card-name">Manuel G. Martínez Gaxiola</span><hr/><p>Manuel Martínez es líder en proyectos de transformación de empresas familiares, fusiones y adquisiciones.</p><p>El Sr. Martínez es licenciado y Maestro de Administracion con especialidad en Análisis Estratégico por el ITESM. Egresado del programa de Formación de Consejeros en Administración por la EGADE del ITESM, del Programa de Alta Dirección (AD-2) y del programa de Alta Dirección en Capital Privado por el IPADE.</p><button class="member-card-button">Descargar vCard</button></div></div>');
+      $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
       $('#body-black').fadeIn();
   });
 </script>
+<script>
+  $("#carlos-j-detalles").click(function(){
+      $("#member-cards").load('includes/member-cards.php #member-card-carlos-j');
+      $('#body-black').fadeIn();
+  });
+</script>
+<script>
+  $("#oscar-detalles").click(function(){
+      $("#member-cards").load('includes/member-cards.php #member-card-oscar-j');
+      $('#body-black').fadeIn();
+  });
+</script>
+<script>
+  $("#carlos-e-detalles").click(function(){
+      $("#member-cards").load('includes/member-cards.php #member-card-carlos-e');
+      $('#body-black').fadeIn();
+  });
+</script>
+<script>
+  $("#lorenzo-detalles").click(function(){
+      $("#member-cards").load('includes/member-cards.php #member-card-lorenzo-f');
+      $('#body-black').fadeIn();
+  });
+</script>
+
+
 <script>
   $("#body-black, .body-black").click(function() {
     $(".member-card").fadeOut();
