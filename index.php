@@ -56,6 +56,13 @@ Facebook recommends large images up to 1200x630px wide.
 <!-- Scripts src -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/parallax-js/parallax.min.js"></script>
+<!-- Form -->
+<script src="js/validate.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("#pagerform").validate();
+  });
+</script>
 </head>
 <body>
 <nav>
@@ -341,7 +348,9 @@ Facebook recommends large images up to 1200x630px wide.
       <span class="index-section-4-heading">Consejo de administración</span>
     <hr class="index-section-4-slide-hr">
   </div>
-  <div class="index-section-4-content">
+
+  <!-- Desktop -->
+  <div class="index-section-4-content carousel-desktop">
     <div id="member-cards"></div>
     <div class="index-section-4-bottom">
       <div class="index-section-4-directors-module">
@@ -371,6 +380,87 @@ Facebook recommends large images up to 1200x630px wide.
       </div>
     </div>
   </div>
+  <!-- Mobile -->
+    <div class="carousel index-section-4-m-carousel carousel-mobile">
+      <div class="container" id="index-section-4-m-carousel-loads">
+        <div class="slide">
+          <div class="index-section-4-m-slide" id="slide-1">
+            <div class="index-section-4-m-member">
+              <div class="index-section-4-m-text">
+                <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
+                <span class="index-section-4-m-member-position">Socio</span>
+                <a href="" class="index-section-4-m-member-button">Detalles</a>
+              </div>
+              <img src="img/consejo/consejo-manuel-g.png" alt="" class="index-section-4-member-image">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="index-section-4-m-slide" id="slide-2">
+            <div class="index-section-4-m-member">
+              <div class="index-section-4-m-text">
+                <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
+                <span class="index-section-4-m-member-position">Socio</span>
+                <a href="" class="index-section-4-m-member-button">Detalles</a>
+              </div>
+              <img src="img/consejo/consejo-carlos-m.png" alt="" class="index-section-4-member-image">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="index-section-4-m-slide" id="slide-3">
+            <div class="index-section-4-m-member">
+              <div class="index-section-4-m-text">
+                <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
+                <span class="index-section-4-m-member-position">Director General Cienciamed</span>
+                <a href="" class="index-section-4-m-member-button">Detalles</a>
+              </div>
+              <img src="img/consejo/consejo-oscar-j.png" alt="" class="index-section-4-member-image">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="index-section-4-m-slide" id="slide-4">
+            <div class="index-section-4-m-member">
+              <div class="index-section-4-m-text">
+                <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
+                <span class="index-section-4-m-member-position">Consejero independiente</span>
+                <a href="" class="index-section-4-m-member-button">Detalles</a>
+              </div>
+              <img src="img/consejo/consejo-carlos-e.png" alt="" class="index-section-4-member-image">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="index-section-4-m-slide" id="slide-4-m">
+            <div class="index-section-4-m-member">
+              <div class="index-section-4-m-text">
+                <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
+                <span class="index-section-4-m-member-position">Consejero independiente</span>
+                <a href="" class="index-section-4-m-member-button">Detalles</a>
+              </div>
+              <img src="img/consejo/consejo-lorenzo-f.png" alt="" class="index-section-4-member-image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="nav"></div>
+    </div>
+    <script src="js/carousel-js/carousel.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 <section class="index-section-5">
@@ -477,7 +567,7 @@ Facebook recommends large images up to 1200x630px wide.
   </div>
 
 
-  <!-- Mobile -->
+<!-- Mobile -->
   <div class="carousel index-section-5-carousel carousel-mobile">
     <div class="container" id="index-section-5-carousel-loads">
 <!-- slide 1 -->
@@ -660,6 +750,7 @@ Facebook recommends large images up to 1200x630px wide.
         </div>
       </form>
   </div>
+  <script type="text/javascript" src="validate.min.js"></script>
 <!-- Map -->
 <script type="text/javascript">
 function initMap(){
@@ -816,13 +907,7 @@ var MobileFunctions = function() {
   });
 </script>
 
-<!-- Form -->
-<script src="js/validate.js" type="text/javascript"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-      $("#pagerform").validate();
-  });
-</script>
+
 
 </body>
 </html>

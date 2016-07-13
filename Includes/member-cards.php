@@ -1,6 +1,6 @@
 <!-- Manuel G -->
 <div class="member-card" id="member-card-manuel-g">
-  <img class="member-card-img" src="img/" alt="" />
+  <img class="member-card-img" src="img/consejo/consejo-manuel-g.png" alt="" />
   <div class="member-card-text">
     <span class="member-card-name">Manuel G. Martínez Gaxiola</span>
     <hr/>
@@ -12,7 +12,7 @@
 
 <!-- Carlos J -->
 <div class="member-card" id="member-card-carlos-j">
-  <img class="member-card-img" src="img/" alt="" />
+  <img class="member-card-img" src="img/consejo/consejo-carlos-m.png" alt="" />
   <div class="member-card-text">
     <span class="member-card-name">Carlos J. Martínez de León</span>
     <hr/>
@@ -24,7 +24,7 @@
 
 <!-- Oscar J -->
 <div class="member-card" id="member-card-oscar-j">
-  <img class="member-card-img" src="img/" alt="" />
+  <img class="member-card-img" src="img/consejo/consejo-oscar-j.png" alt="" />
   <div class="member-card-text">
     <span class="member-card-name">Oscar J. Moráles Rodríguez</span>
     <hr/>
@@ -36,7 +36,7 @@
 
 <!-- Carlos E -->
 <div class="member-card" id="member-card-carlos-e">
-  <img class="member-card-img" src="img/" alt="" />
+  <img class="member-card-img" src="img/consejo/consejo-carlos-e.png" alt="" />
   <div class="member-card-text">
     <span class="member-card-name">Carlos E. Martínez Rico</span>
     <hr/>
@@ -53,7 +53,7 @@
 
 <!-- Lorenzo F -->
 <div class="member-card" id="member-card-lorenzo-f">
-  <img class="member-card-img" src="img/" alt="" />
+  <img class="member-card-img" src="img/consejo/consejo-lorenzo-f.png" alt="" />
   <div class="member-card-text">
     <span class="member-card-name">Lorenzo Fernández</span>
     <hr/>

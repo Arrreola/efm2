@@ -197,6 +197,54 @@ carousel
     display: none
     height: 0
 
+//Carousel: Consejo
+@media only screen and #{$movile}
+  .index-section-4
+    height: 470px !important
+    box-shadow: none !important
+  .index-section-4-m-text
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 101%
+    padding: 19px 0 58px
+    background-color: rgba(0,0,0,0.8)
+    font-size: 13px
+  .index-section-4-m-carousel
+    height: 397px
+    overflow: hidden
+  .index-section-4-m-carousel-loads
+  .index-section-4-m-slide
+    // position: relative
+    // top: 50px
+    // transform: translateY(0%)
+  .index-section-4-m-member
+    width: 100%
+    text-align: center
+    display: inline-block
+    color: white
+    position: relative
+  .index-section-4-member-image
+    max-width: 300px
+    height: 397px
+  .index-section-4-m-member-name
+    display: block
+    font-weight: 600
+    padding-bottom: 3px
+  .index-section-4-m-member-position
+    display: block
+    padding-bottom: 10px
+  .index-section-4-m-member-button
+    display: block
+    padding: 0px 16px
+    line-height: 21px
+    margin: 0 auto
+    border: 1px solid white
+    color: white
+    width: 86px
+    text-decoration: none
+
 /* Team Carousel*/
 .index-section-5
   overflow: hidden
@@ -246,14 +294,12 @@ carousel
   .carousel-mobile
     display: block
   .carousel-desktop
-    display: none
+    display: none !important
   .index-section-5-member
     width: 270px
     text-align: center
     display: inline-block
     color: white
-
-
 
 
 //Carousel: Team
