@@ -382,14 +382,15 @@ Facebook recommends large images up to 1200x630px wide.
   </div>
   <!-- Mobile -->
     <div class="carousel index-section-4-m-carousel carousel-mobile">
-      <div class="container" id="index-section-4-m-carousel-loads">
+      <div id="member-cards-mobile"></div>
+      <div class="container" id="index-section-4-m-carousel-loads member-cards">
         <div class="slide">
           <div class="index-section-4-m-slide" id="slide-1">
             <div class="index-section-4-m-member">
               <div class="index-section-4-m-text">
                 <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
                 <span class="index-section-4-m-member-position">Socio</span>
-                <a href="" class="index-section-4-m-member-button">Detalles</a>
+                <span id="manuel-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
               </div>
               <img src="img/consejo/consejo-manuel-g.png" alt="" class="index-section-4-member-image">
             </div>
@@ -401,7 +402,7 @@ Facebook recommends large images up to 1200x630px wide.
               <div class="index-section-4-m-text">
                 <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
                 <span class="index-section-4-m-member-position">Socio</span>
-                <a href="" class="index-section-4-m-member-button">Detalles</a>
+                <span id="carlos-j-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
               </div>
               <img src="img/consejo/consejo-carlos-m.png" alt="" class="index-section-4-member-image">
             </div>
@@ -869,10 +870,26 @@ var MobileFunctions = function() {
 
 <!-- Include Member cards -->
 <script>
-  $("#manuel-detalles").click(function(){
-      $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
+    $("#manuel-detalles-mobile").click(function(){
       $('#body-black').fadeIn();
-  });
+      if ( $(window).width() > 766) {
+              $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
+           }
+       else {
+              $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
+           }
+    });
+</script>
+<script>
+    $("#carlos-j-detalles-mobile").click(function(){
+      $('#body-black').fadeIn();
+      if ( $(window).width() > 766) {
+              $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
+           }
+       else {
+              $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
+           }
+    });
 </script>
 <script>
   $("#carlos-j-detalles").click(function(){

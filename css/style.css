@@ -289,7 +289,8 @@ carousel {
     border: 1px solid white;
     color: white;
     width: 86px;
-    text-decoration: none; } }
+    text-decoration: none;
+    cursor: pointer; } }
 /* Team Carousel */
 .index-section-5 {
   overflow: hidden; }
@@ -382,14 +383,19 @@ carousel {
   font-weight: 100;
   text-align: left; }
 
-.member-card-img {
+.member-card-img-area {
+  width: 200px;
   height: 100%;
   position: absolute;
-  width: auto;
-  display: inline-block;
   background-color: #eee;
-  border-radius: 4px 0px 0px 4px;
-  float: left; }
+  border-radius: 4px 0 0 4px; }
+
+.member-card-img {
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  left: 50%;
+  transform: translatex(-50%); }
 
 .member-card-text {
   display: inline-block;
