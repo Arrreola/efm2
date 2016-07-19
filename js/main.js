@@ -27,25 +27,29 @@ $(window).load(function () {
         });
     });
 
-    $("#manuel-detalles-mobile").click(function () {
-        $('#body-black').fadeIn();
-        if ($(window).width() > 766) {
-            $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
-        }
-        else {
-            $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
-        }
-    });
+    $("#manuel-detalles").click(function () {
+         $('#body-black').fadeIn();
+         if ($(window).width() > 766) {
+             $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
+         }
+         else {
+             $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
+         }
+     });
 
-    $("#carlos-j-detalles-mobile").click(function () {
-        $('#body-black').fadeIn();
-        if ($(window).width() > 766) {
-            $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
-        }
-        else {
-            $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
-        }
-    });
+    // $("#carlos-j-detalles-mobile").click(function () {
+    //     $('#body-black').fadeIn();
+    //     if ($(window).width() > 766) {
+    //         $("#member-cards").load('includes/member-cards.php #member-card-carlos-');
+    //     }
+    //     else {
+    //         $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
+    //     }
+    // });
+    // $("#manuel-detalles").click(function () {
+    //     $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
+    //     $('#body-black').fadeIn();
+    // });
 
     $("#carlos-j-detalles").click(function () {
         $("#member-cards").load('includes/member-cards.php #member-card-carlos-j');
@@ -79,7 +83,7 @@ var MobileFunctions = function () {
     //alert("Mobile");
 };
 var DesktopFunctions = function () {
-    alert("Desktop");
+    //     alert("Desktop");
 };
 
 if ($(window).width() > 766) {

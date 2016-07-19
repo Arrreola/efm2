@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="92767455-09ab-4aeb-ba81-7592e285f01f" name="EFM" url="http://192.99.18.188">
+        <fileTransfer host="192.99.18.188" port="21" rootFolder="/public_html/efm_4.0" password="dfeddfc5dfc7dfc2df92df98df9adf9cdf9adf92" username="clientes">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
