@@ -52,7 +52,6 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Scripts src -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/parallax-js/parallax.min.js"></script>
