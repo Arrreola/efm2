@@ -52,6 +52,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Scripts src -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/parallax-js/parallax.min.js"></script>
@@ -60,7 +61,7 @@
 <body>
 <nav>
     <div class="nav-content">
-        <img src="img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo">
+        <a href="index.php"><img src="img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo"></a>
         <figure class="navbar-menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                  id="Untitled-2" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12"
@@ -90,26 +91,43 @@
         </ul>
     </div>
 </nav>
-<div class="operaciones-section-1">
-    <span class="operaciones-section-1-heading">Aviso de Privacidad de EFM CAPITAL, S.A. de C.V.</span>
-    <p class="operaciones-section-1-text">
-        Domicilio: José Clemente Orozco 329, Valle Oriente, San Pedro Garza García, Nuevo León, México. C.P. 66278
-    </p>
-    <p class="operaciones-section-1-text">
-        La información que contiene datos personales que recibe EFM CAPITAL, S.A. de C.V., es protegida conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su Reglamento.
-    </p>
-    <p class="operaciones-section-1-text">
-        La finalidad del uso de los datos personales que recaba EFM CAPITAL, S.A. de C.V., es únicamente para uso interno, ya sea para fines comerciales, industriales, estadísticos o para fines generales de EFM CAPITAL, S.A. de C.V., y por ningún motivo será transferida o compartida a terceros salvo lo previsto bajo la ley aplicable.
-    </p>
-    <p class="operaciones-section-1-text">
-        Si el titular de los datos personales desea limitar de cualquier forma el uso de los mismos, puede enviar un correo electrónico a privacidad@efmcapital.com, o bien, puede dirigirse por escrito con acuse de recibo a la siguiente dirección: José Clemente Orozco 329, Valle Oriente, San Pedro Garza García, Nuevo León, México. C.P. 66278.
-    </p>
-    <p class="operaciones-section-1-text">
-        De igual manera, los derechos de acceso, rectificación, cancelación y oposición que desee ejercer el titular serán solicitados mediante los medios descritos en el párrafo anterior.
-    </p>
-    <p class="operaciones-section-1-text">
-        EFM CAPITAL, S.A. de C.V., comunicará por este medio cualquier cambio al presente Aviso de Privacidad. Se recomienda al titular de los datos personales que visite regularmente este sitio para actualizarse en caso de cualquier cambio a dicho Aviso.
+<div class="navbar-white-area"></div>
+
+<div class="fondo-puente-content-1">
+    <img class="fondo-puente-img-desktop"src="img/desktop-backgrounds/fondo-puente-1.png" alt="">
+    <img class="fondo-puente-img-mobile"src="img/mobile-backgrounds/fondo-puente-1-mobile.png" alt="">
+</div>
+<div class="fondo-puente-content-2">
+    <p class="fondo-puente-text">
+        En las empresas familiares con las que colaboramos, diagnosticamos y corregimos las contingencias en los diferentes aspectos de su modelo de negocio. Asimismo, cuantificamos el potencial de la industria, elaboramos el plan de negocio y ejecutamos un proceso competitivo entre compradores potenciales.
     </p>
 </div>
+<div class="fondo-puente-content-3">
+    <img class="fondo-puente-img-desktop" src="img/desktop-backgrounds/fondo-puente-2.png" alt="">
+    <img class="fondo-puente-img-mobile" src="img/mobile-backgrounds/fondo-puente-3-mobile.png" alt="">
+</div>
+
+
+
+<section class="index-section-7">
+    <div class="index-section-7-content">
+        <div class="index-section-7-a">
+            <span class="index-section-7-text">Torre Helicon, Piso 24B, José Clemente Orozco No. 329 Valle Oriente, San Pedro Garza García, Nuevo León, México. C.P. 66278 </span>
+            <span class="index-section-7-text">Teléfono: +52 (81) 1223 0890 • Email: info@efmcapital.com</span>
+            <span
+                class="index-section-7-text">Horario: Lunes a Viernes, 8:00AM a 6:00PM (Tiempo del centro de México)</span>
+        </div>
+        <div class="index-section-7-b">
+            <span
+                class="index-section-7-text"><b>Contacto para banqueros, fondos de inversión y clientes registrados:</b></span>
+            <span class="index-section-7-text">Everardo Hiarmes Martínez </span>
+            <span class="index-section-7-text">Teléfono de oficina: +52 (81) 1223 0890 </span>
+            <span class="index-section-7-text">Email: info@efmcapital.com</span>
+        </div>
+    </div>
+</section>
+<section class="index-section-8">
+    <span>Todos los derechos reservados 2016</span>
+</section>
 </body>
 </html>

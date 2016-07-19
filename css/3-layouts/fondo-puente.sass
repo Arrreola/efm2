@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700'
+@import 'https://fonts.googleapis.com/css?family=Amiri'
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i'
+
+$movile: "(max-width: 767px)"
+$tablet: "(min-width: 768px) and (max-width: 1023px)"
+$desktop: "(min-width: 1024px)"
+$lateral-padding-mobile: 0 20px 0 20px
+$efm-dark-gray: #292A2C
+$efm-gold: #c3b584
+
+/*Typography Variables*/
+$font-times: 'times new roman'
+$font-rasa: 'Rasa', serif
+$font-amiri: 'Amiri', serif
+$font-merriweather: 'Merriweather', serif
+/*Background Variables*/
+
+.fondo-puente-content-1
+  background: $efm-dark-gray
+  height: 440px
+  text-align: center
+  padding-top: 40px
+.fondo-puente-content-1 img
+  +outer-container
+  width: 100%
+.fondo-puente-content-2
+  text-align: center
+  background: no-repeat url('../img/desktop-backgrounds/fondo-puente-text-back.jpg')
+  background-size: cover
+  padding: 40px 0
+.fondo-puente-text
+  color: white
+  max-width: 600px
+  margin: 0px auto
+.fondo-puente-content-3
+  text-align: center
+  padding-top: 40px
+  height: 770px
+.fondo-puente-content-3 img
+  +outer-container
+  width: 100%
+.fondo-puente-img-mobile
+  display: none
+@media only screen and #{$movile}
+  .fondo-puente-img-desktop
+    display: none
+  .fondo-puente-img-mobile
+    display: block !important
+  .fondo-puente-content-1
+    background: $efm-dark-gray
+    height: auto
+  .fondo-puente-content-3
+    height: auto
+  .fondo-puente-content-1 img
+    width: auto
+  .fondo-puente-content-3 img
+    width: auto

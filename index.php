@@ -134,7 +134,7 @@
                                 <span>Abierto</span>
                             </div>
                             <div class="index-section-2-slide-footer-m4">
-                                <a href="#">Ficha tecnica</a>
+                                <a href="operaciones/melbourne.php">Ficha técnica</a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="index-section-2-slide-footer-m4">
                                 <a href="#">
-                                    Ficha tecnica
+                                    Ficha técnica
                                 </a>
                             </div>
                         </div>
@@ -337,7 +337,7 @@
                 Nuestra salida está orientada ala transferencia de la
                 empresa a un fondo de inversión o comprador estratégico.
             </p>
-            <a href="#" class="index-section-3-link">Ver más</a>
+            <a href="fondo-puente.php" class="index-section-3-link">Ver más</a>
         </div>
     </div>
 </section>
