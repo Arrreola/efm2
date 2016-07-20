@@ -762,9 +762,19 @@
         }
     </script>
     <div class="index-section-7-1-b">
-        <iframe class="iframe-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.8756277980747!2d-100.3255110314441!3d25.642253018829365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be43d33a70e1%3A0xc98f6f06fa13dcdc!2sTorre+Helicon!5e0!3m2!1ses-419!2smx!4v1468260088317"
-                width="100%" height="470" frameborder="0" style="border:0; display:block;" allowfullscreen></iframe>
+        <div id="map" class="index-section-7-1-b"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 25.644775, lng: -100.32451600000002},
+                    zoom: 17
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4738uIisDOYyffs-UVzfBWYAJ4AAYiC0&callback=initMap">
+        </script>
     </div>
 </section>
 
