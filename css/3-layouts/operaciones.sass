@@ -114,3 +114,19 @@ $font-merriweather: 'Merriweather', serif
   margin: 25px 0
 .operaciones-section-1-form a
   text-decoration: none
+
+@media only screen and #{$movile}
+  .operaciones-section-1
+    padding: 20px
+  .operaciones-section-1-text-box
+    @include span-columns(12)
+    display: block
+    border-bottom: 1px solid #aaa
+    border-right: none
+    padding-bottom: 40px
+  .operaciones-section-1-form
+    @include span-columns(12)
+    display: block
+    padding-bottom: 40px
+  .operaciones-section-1-form form
+    width: auto

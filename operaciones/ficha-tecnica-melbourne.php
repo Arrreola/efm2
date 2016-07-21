@@ -90,7 +90,7 @@
         </ul>
     </div>
 </nav>
-<div class="ficha-tecnica-section-1">
+<section class="ficha-tecnica-section-1">
     <div class="ficha-tecnica-header">
         <hr class="ficha-tecnica-slide-hr">
         <span class="ficha-tecnica-heading">Ficha técnica: Melbourne</span>
@@ -125,7 +125,7 @@
             <div class="operaciones-side-b-2"></div>
         </div>
     </div>
-</div>
+</section>
 <section class="index-section-7">
     <div class="index-section-7-content">
         <div class="index-section-7-a">

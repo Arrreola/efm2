@@ -90,7 +90,7 @@
         </ul>
     </div>
 </nav>
-<div class="operaciones-section-1">
+<section class="operaciones-section-1">
     <div class="operaciones-section-1-text-box">
         <span class="operaciones-section-1-heading">Aviso de Privacidad de EFM CAPITAL, S.A. de C.V.</span>
         <p class="operaciones-section-1-text">
@@ -136,7 +136,7 @@
             </div>
         </form>
     </div>
-</div>
+</section>
 <section class="index-section-7">
     <div class="index-section-7-content">
         <div class="index-section-7-a">

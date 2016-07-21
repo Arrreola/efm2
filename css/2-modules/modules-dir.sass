@@ -66,3 +66,23 @@ $efm-gold: #c3b584
   background-color: transparent
   font-family: "times new roman"
   cursor: pointer
+
+@media only screen and #{$movile}
+  .member-card
+    max-width: auto
+    min-width: auto
+    width: 90%
+    text-align: center
+  .member-card-img-area
+    position: relative
+    height: 200px
+    width: 100%
+    border-radius: 4px 4px 0 0
+  .member-card-img
+    height: 100%
+    position: initial
+    transform: translateX(0)
+  .member-card-text
+    float: none
+    width: 90%
+    text-align: left

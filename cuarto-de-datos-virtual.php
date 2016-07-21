@@ -93,21 +93,30 @@
 </nav>
 <div class="navbar-white-area"></div>
 
-<section class="fondo-puente-content-1">
-    <img class="fondo-puente-img-desktop"src="img/desktop-backgrounds/fondo-puente-1.png" alt="">
-    <img class="fondo-puente-img-mobile"src="img/mobile-backgrounds/fondo-puente-1-mobile.png" alt="">
-</section>
-<section class="fondo-puente-content-2">
-    <p class="fondo-puente-text">
-        En las empresas familiares con las que colaboramos, diagnosticamos y corregimos las contingencias en los diferentes aspectos de su modelo de negocio. Asimismo, cuantificamos el potencial de la industria, elaboramos el plan de negocio y ejecutamos un proceso competitivo entre compradores potenciales.
-    </p>
-</section>
-<section class="fondo-puente-content-3">
-    <img class="fondo-puente-img-desktop" src="img/desktop-backgrounds/fondo-puente-2.png" alt="">
-    <img class="fondo-puente-img-mobile" src="img/mobile-backgrounds/fondo-puente-3-mobile.png" alt="">
-</section>
+<section class="cuarto-datos-section-1">
+    <div class="dataroom-card">
+        <div class="dataroom-card-side-a"><span class="dataroom-card-heading">Lisboa</span>
+            <ul class="dataroom-card-list">
+                <li class="dataroom-card-list-t1">Industria <span class="golden-slash">/</span> Salud</li>
+                <li class="dataroom-card-list-t2">Cobertura <span class="golden-slash">/</span> Nacional (México)</li>
+                <li class="dataroom-card-list-t3">Tasa de crecimiento en ventas <span class="golden-slash">/</span> 20%</li>
+                <a class="dataroom-vermas" href="https://dataroom.ansarada.com/Lisboa/LoginUserProfile.asp?LanguageCode=SP" target="_blank" rel="alternate">Ver más</a>&nbsp;<span class="dataroom-card-last-text">Abierto</span>
+            </ul>
+        </div>
+    </div>
 
-
+    <div class="dataroom-card-pekin">
+        <div class="dataroom-card-side-a"><span class="dataroom-card-heading">Pekín</span>
+            <ul class="dataroom-card-list">
+                <li class="dataroom-card-list-t1">Industria <span class="golden-slash">/</span> Telecomunicaciones (Infraestructura)</li>
+                <li class="dataroom-card-list-t2">Cobertura <span class="golden-slash">/</span> Nacional (México)</li>
+                <li class="dataroom-card-list-t3">Tasa de crecimiento en ventas <span class="golden-slash">/</span> 320%</li>
+                <a class="dataroom-vermas" href="https://dataroom.ansarada.com/Pekin/LoginUserProfile.asp?LanguageCode=SP" target="_blank" rel="alternate">Ver más</a>&nbsp;<span class="dataroom-card-last-text">Cerrado</span>
+            </ul>
+        </div>
+    </div>
+    <p><a href="http://www.efmcapital.com/es/" rel="alternate"><img style="display: block; margin-left: auto; margin-right: auto;" src="/es/images/dataroom/cuarto_de_datos_r7_c2.png" alt=""></a></p>
+</section>
 
 <section class="index-section-7">
     <div class="index-section-7-content">

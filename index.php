@@ -84,7 +84,7 @@
             </li>
             <hr class="navbar-hr">
             <li class="navbar-crumbs">
-                <a href="http://efmcapital.com/data-room">
+                <a href="cuarto-de-datos-virtual.php">
                     <button class="navbar-dataroom-button">cuarto de datos virtual</button>
                 </a>
             </li>
@@ -389,7 +389,7 @@
                         <div class="index-section-4-m-text">
                             <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
                             <span class="index-section-4-m-member-position">Socio</span>
-                            <span id="manuel-detalles" class="index-section-4-m-member-button">Detalles</span>
+                            <span id="manuel-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
                         </div>
                         <img src="img/consejo/consejo-manuel-g.png" alt="" class="index-section-4-member-image">
                     </div>
@@ -413,7 +413,7 @@
                         <div class="index-section-4-m-text">
                             <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
                             <span class="index-section-4-m-member-position">Director General Cienciamed</span>
-                            <a href="" class="index-section-4-m-member-button">Detalles</a>
+                            <span id="oscar-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
                         </div>
                         <img src="img/consejo/consejo-oscar-j.png" alt="" class="index-section-4-member-image">
                     </div>
@@ -425,7 +425,7 @@
                         <div class="index-section-4-m-text">
                             <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
                             <span class="index-section-4-m-member-position">Consejero independiente</span>
-                            <a href="" class="index-section-4-m-member-button">Detalles</a>
+                            <span id="carlos-e-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
                         </div>
                         <img src="img/consejo/consejo-carlos-e.png" alt="" class="index-section-4-member-image">
                     </div>
@@ -437,7 +437,7 @@
                         <div class="index-section-4-m-text">
                             <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
                             <span class="index-section-4-m-member-position">Consejero independiente</span>
-                            <a href="" class="index-section-4-m-member-button">Detalles</a>
+                            <span id="lorenzo-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
                         </div>
                         <img src="img/consejo/consejo-lorenzo-f.png" alt="" class="index-section-4-member-image">
                     </div>
@@ -459,6 +459,7 @@
         <hr class="index-section-5-slide-hr">
     </div>
     <!-- Carousel Desktop -->
+    <div id="team-cards"></div>
     <div class="carousel index-section-5-carousel carousel-desktop">
         <div class="container" id="index-section-5-carousel-loads">
             <!-- slide 1 -->
@@ -469,28 +470,28 @@
                         <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
                         <span class="index-section-5-member-position">Estrategia de inversión</span>
                         <span class="index-section-5-member-area">Evaluación de alternativas de inversión</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="everardo-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-roberto-l.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Roberto López Sánchez</span>
                         <span class="index-section-5-member-position">Órganos de gobierno</span>
                         <span class="index-section-5-member-area">Abogado corporativo</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="roberto-l-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-ricardo-d.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Operaciones</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="ricardo-d-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-carlos-a.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
                         <span class="index-section-5-member-position">Desarrollo organizacional</span>
                         <span class="index-section-5-member-area">Recursos humanos</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="carlos-a-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -501,28 +502,28 @@
                         <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
                         <span class="index-section-5-member-position">Estrategia de inversión</span>
                         <span class="index-section-5-member-area">Análisis financiero</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="luis-m-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-oscar-l.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Oscar López Macal</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Contraloría e información financiera</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="oscar-l-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Rafael Brambila López</span>
                         <span class="index-section-5-member-position">Auditoría y soporte contable</span>
                         <span class="index-section-5-member-area">Abogado corporativo</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="rafael-b-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-alonso-m.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
                         <span class="index-section-5-member-position">Desarrollo organizacional</span>
                         <span class="index-section-5-member-area">Diseño gráfico</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="alonso-m-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -533,21 +534,21 @@
                         <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="manuel-a-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
                         <img src="img/escudos/escudo-ana-s.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Auditoría y soporte administrativo</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="ana-m-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                     <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
+                        <img src="img/escudos/escudo-nora-e.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="nora-e-detalles" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -768,7 +769,9 @@
                 var mapDiv = document.getElementById('map');
                 var map = new google.maps.Map(mapDiv, {
                     center: {lat: 25.644775, lng: -100.32451600000002},
-                    zoom: 17
+                    zoom: 17,
+                    draggable: false,
+                    scrollwheel: false
                 });
             }
         </script>
@@ -798,85 +801,8 @@
 <section class="index-section-8">
     <span>Todos los derechos reservados 2016</span>
 </section>
+
 <script>
-    $(window).load(function () {
-        if ($(window).width() < 600) {       // if width is less than 600px
-            MobileFunctions();                 // execute mobile function
-        }
-        else {                              // if width is more than 600px
-            DesktopFunctions();               // execute desktop function
-        }
-
-        $(".navbar-menu-icon").click(function () {
-            $(".offcanvas-menu").animate({
-                right: 0
-            }, 250, function () {
-                // Animation complete.
-            });
-        });
-        $("section").click(function () {
-            $(".offcanvas-menu").animate({
-                right: -300
-            }, 250, function () {
-                // Animation complete.
-            });
-        });
-
-        $("#manuel-detalles-mobile").click(function () {
-            $('#body-black').fadeIn();
-            if ($(window).width() > 766) {
-                $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
-            }
-            else {
-                $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
-            }
-        });
-
-        $("#carlos-j-detalles-mobile").click(function () {
-            $('#body-black').fadeIn();
-            if ($(window).width() > 766) {
-                $("#member-cards").load('includes/member-cards.php #member-card-manuel-g');
-            }
-            else {
-                $("#member-cards-mobile").load('includes/member-cards.php #member-card-manuel-g');
-            }
-        });
-
-        $("#carlos-j-detalles").click(function () {
-            $("#member-cards").load('includes/member-cards.php #member-card-carlos-j');
-            $('#body-black').fadeIn();
-        });
-
-        $("#oscar-detalles").click(function () {
-            $("#member-cards").load('includes/member-cards.php #member-card-oscar-j');
-            $('#body-black').fadeIn();
-        });
-
-        $("#carlos-e-detalles").click(function () {
-            $("#member-cards").load('includes/member-cards.php #member-card-carlos-e');
-            $('#body-black').fadeIn();
-        });
-
-        $("#lorenzo-detalles").click(function () {
-            $("#member-cards").load('includes/member-cards.php #member-card-lorenzo-f');
-            $('#body-black').fadeIn();
-        });
-
-        $("#body-black, .body-black").click(function () {
-            $(".member-card").fadeOut();
-            $("#body-black").fadeOut();
-        });
-
-    });//END DOM
-
-    var MobileFunctions = function () {
-        $("#index-section-5-carousel-loads").load("includes/team-carousel-mobile.html #index-section-5-carousel-loads-mobile");
-        //alert("Mobile");
-    };
-    var DesktopFunctions = function () {
-        //     alert("Desktop");
-    };
-
     if ($(window).width() > 766) {
         $('.parallax-window').parallax({imageSrc: 'img/desktop-backgrounds/section-1-back-desktop.jpg'});
     }
@@ -889,26 +815,6 @@
     }
     else {
         $('.parallax-window-3').parallax({imageSrc: 'img/mobile-backgrounds/section-3-back-mobile.jpg'});
-    }
-
-
-    function validateForm(idObj) {
-
-        var _form = $('#' + idObj);
-        var _stringVar = _form.serialize();
-
-        //console.log('cadena de variables='+_stringVar);
-
-        $.ajax({
-            method: "POST",
-            url: "send.php",
-            data: _stringVar
-        }).success(function (msg) {
-            // alert("Data Saved: " + msg);
-            if (msg == 'success')
-                $('.msg').text('GRACIAS POR ENVIAR TUS DATOS');
-
-        });
     }
 </script>
 <!-- <script>

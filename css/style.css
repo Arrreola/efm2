@@ -442,6 +442,28 @@ carousel {
   font-family: "times new roman";
   cursor: pointer; }
 
+@media only screen and (max-width: 767px) {
+  .member-card {
+    max-width: auto;
+    min-width: auto;
+    width: 90%;
+    text-align: center; }
+
+  .member-card-img-area {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-radius: 4px 4px 0 0; }
+
+  .member-card-img {
+    height: 100%;
+    position: initial;
+    transform: translateX(0); }
+
+  .member-card-text {
+    float: none;
+    width: 90%;
+    text-align: left; } }
 /*Typography Variables */
 /*Background Variables */
 body {
@@ -1166,6 +1188,34 @@ form {
 .operaciones-section-1-form a {
   text-decoration: none; }
 
+@media only screen and (max-width: 767px) {
+  .operaciones-section-1 {
+    padding: 20px; }
+
+  .operaciones-section-1-text-box {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #aaa;
+    border-right: none;
+    padding-bottom: 40px; }
+    .operaciones-section-1-text-box:last-child {
+      margin-right: 0; }
+
+  .operaciones-section-1-form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    display: block;
+    padding-bottom: 40px; }
+    .operaciones-section-1-form:last-child {
+      margin-right: 0; }
+
+  .operaciones-section-1-form form {
+    width: auto; } }
 /*Typography Variables */
 /*Background Variables */
 .fondo-puente-content-1 {
@@ -1232,5 +1282,76 @@ form {
 
   .fondo-puente-content-3 img {
     width: auto; } }
+.cuarto-datos-section-1 {
+  padding-top: 40px; }
+
+.dataroom-card {
+  background-color: #333;
+  background-image: url("../img/desktop-backgrounds/section-2-lisboa.jpg");
+  background-position: 0 center;
+  background-size: cover;
+  display: block;
+  height: 300px;
+  margin: 0 auto 60px;
+  max-width: 1200px;
+  width: 90%; }
+
+.dataroom-card-pekin {
+  background-color: #333;
+  background-image: url("../img/desktop-backgrounds/section-2-pekin.jpg");
+  background-size: cover;
+  display: block;
+  height: 300px;
+  margin: 0 auto 40px;
+  max-width: 1200px;
+  width: 90%; }
+
+.dataroom-card-side-a {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 40px 0 0;
+  position: relative;
+  vertical-align: top;
+  width: 40%;
+  height: 100%; }
+
+.dataroom-card-heading {
+  color: white;
+  font-size: 60px;
+  margin: 25px; }
+
+.dataroom-card-list {
+  list-style: outside none none;
+  margin: 25px 30px 30px;
+  padding: 0; }
+
+.dataroom-card-list li {
+  color: white;
+  line-height: 28px; }
+
+.dataroom-card-last-text {
+  color: #c3b584;
+  display: block;
+  float: right;
+  position: relative;
+  right: 35px;
+  top: 30px;
+  vertical-align: bottom; }
+
+.golden-slash {
+  color: #c3b584;
+  font-weight: 700; }
+
+.dataroom-vermas {
+  border: 1px solid #c3b584;
+  color: #c3b584;
+  display: block;
+  float: left;
+  left: 28px;
+  padding: 0 18px;
+  position: relative;
+  top: 30px;
+  vertical-align: bottom;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

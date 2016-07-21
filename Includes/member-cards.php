@@ -36,7 +36,7 @@
     <hr/>
     <p>Oscar Morales es especialista en banca privada en una banca con presencia global. Cuenta con amplio conocimiento en implementación de asesoría y manejo de portafolios de inversión con clientes de alto patrimonio.</p>
     <p>El Sr. Morales es Licenciado en Administracion de Empresas por el ITESM y está certificado en Estrategias de Inversion por la Asociación Mexicana de Intermediarios Bursátiles para asesorar a clientes en portafolios de inversión. Es egresado del Programa de Alta Dirección de Capital Privado impartido por el IPADE y actualmente cursa la Maestría en Administración de Empresas por la EGADE del ITESM.</p>
-    <a class="member-card-button">Descargar vCard</a>
+<!--    <a class="member-card-button">Descargar vCard</a>-->
   </div>
 </div>
 
@@ -55,7 +55,7 @@
       en Derecho Fiscal por la Universidad Panamericana, así como con una especialidad en la misma materia por la UNAM.
       Asimismo, obtuvoel grado de Maestría en Derecho por la Universidad de Georgetown.
     </p>
-    <a class="member-card-button">Descargar vCard</a>
+<!--    <a class="member-card-button">Descargar vCard</a>-->
   </div>
 </div>
 
@@ -74,6 +74,6 @@
     Posgrado en Dirección de Empresas por el IPADE y cursó el diplomado de The United States Mergers and Acquisitions impartido
   en New York Institute of Finance. Asimismo, ha sido profesor de finanzas en escuelas de negocios en Colombia, Argentina, Brasil,
 Guatemala, Perú y México</p>
-    <a class="member-card-button">Descargar vCard</a>
+<!--    <a class="member-card-button">Descargar vCard</a>-->
   </div>
 </div>
