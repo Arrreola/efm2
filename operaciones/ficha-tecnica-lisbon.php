@@ -90,51 +90,40 @@
         </ul>
     </div>
 </nav>
-<section class="operaciones-section-1">
-    <div class="operaciones-section-1-text-box">
-        <span class="operaciones-section-1-heading">Aviso de Privacidad de EFM CAPITAL, S.A. de C.V.</span>
-        <p class="operaciones-section-1-text">
-            Domicilio: José Clemente Orozco 329, Valle Oriente, San Pedro Garza García, Nuevo León, México. C.P. 66278
-        </p>
-        <p class="operaciones-section-1-text">
-            La información que contiene datos personales que recibe EFM CAPITAL, S.A. de C.V., es protegida conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares y su Reglamento.
-        </p>
-        <p class="operaciones-section-1-text">
-            La finalidad del uso de los datos personales que recaba EFM CAPITAL, S.A. de C.V., es únicamente para uso interno, ya sea para fines comerciales, industriales, estadísticos o para fines generales de EFM CAPITAL, S.A. de C.V., y por ningún motivo será transferida o compartida a terceros salvo lo previsto bajo la ley aplicable.
-        </p>
-        <p class="operaciones-section-1-text">
-            Si el titular de los datos personales desea limitar de cualquier forma el uso de los mismos, puede enviar un correo electrónico a privacidad@efmcapital.com, o bien, puede dirigirse por escrito con acuse de recibo a la siguiente dirección: José Clemente Orozco 329, Valle Oriente, San Pedro Garza García, Nuevo León, México. C.P. 66278.
-        </p>
-        <p class="operaciones-section-1-text">
-            De igual manera, los derechos de acceso, rectificación, cancelación y oposición que desee ejercer el titular serán solicitados mediante los medios descritos en el párrafo anterior.
-        </p>
-        <p class="operaciones-section-1-text">
-            EFM CAPITAL, S.A. de C.V., comunicará por este medio cualquier cambio al presente Aviso de Privacidad. Se recomienda al titular de los datos personales que visite regularmente este sitio para actualizarse en caso de cualquier cambio a dicho Aviso.
-        </p>
+<section class="ficha-tecnica-section-1">
+    <div class="ficha-tecnica-header">
+        <hr class="ficha-tecnica-slide-hr">
+        <span class="ficha-tecnica-heading">Ficha técnica: Lisboa</span>
+        <hr class="ficha-tecnica-slide-hr">
     </div>
-    <div class="operaciones-section-1-form">
-        <form enctype="multipart/form-data" name="pagerform" id="pageForm">
-            <div class="row-1">
-                <div class="my-placeholder">
-                    <span class="">Nombre:</span>
-                </div>
-                <input type="text" name="nombre" class="required">
+    <div class="ficha-tecnica-content">
+        <div class="operaciones-section-1-text-box">
+            <span class="operaciones-section-1-heading">Gracias por su interés en nuestros proyectos.</span>
+            <p class="operaciones-section-1-text">
+                Nuestra especialidad es preparar a las empresas mexicanas para que puedan ser receptoras de capital privado proveniente de fondos de inversión, compradores estratégicos o de Family Offices. Nos definimos como “Fondo Puente”, ya que somos un vínculo entre la empresa familiar mexicana y los profesionales del sector de Private Equity o Venture Capital.
+            </p>
+            <p class="operaciones-section-1-text">
+                El empresario que decide integrar nuevos socios o vender su compañía nos formaliza un mandato de búsqueda y establecemos un convenio de colaboración con el objetivo de corregir contingencias de índole financiero, jurídico, laboral, fiscal y comercial. Contamos con una estructura de asociación amplia; conforme a las necesidades, adquirimos acciones de la entidad legal, colocamos deuda convertible o tomamos una opción de compra preferente con un acuerdo de servicio.
+            </p>
+            <p class="operaciones-section-1-text">
+                A los especialistas del sector de fusiones y adquisiciones les proporcionamos acceso a un pipeline de empresas auditadas, así como una estructura documental que facilita el due diligence. Nuestro equipo de especialistas proporciona detalles específicos sobre las condiciones de la empresa en todas las áreas de negocio. Actualmente nos enfocamos principalmente en la industria médica, energética, telecomunicaciones y retail.
+            </p>
+        </div>
+        <div class="operaciones-section-1-form">
+            <div class="operaciones-side-b-1">
+                <img src="../img/logos/pdf-icon.png" alt="Pdf Icono">
+                <a href="/descargas/lisbon-es.pdf" target="_blank"><button class="operaciones-side-b-button-descarga">Descargar</button></a>
+                <hr>
+                <p class="operaciones-side-b-text-1">
+                    Si este proyecto cumple con sus criterios y desea participar en el proceso por favor, continúe en este enlace.
+                </p>
+                <button class="operaciones-side-b-button-descarga">Solicitar información</button>
+                <p class="operaciones-side-b-text-1">
+                    EFM Capital se reserva la decisión sobre las autorizaciones de acceso a la plataforma, conforme a sus propios criterios institucionales y no garantiza el envío del convenio de cofidencialidad.
+                </p>
             </div>
-            <div class="row-2">
-                <span class="my-placeholder">Correo:</span>
-                <input type="text" name="correo" class="required email">
-            </div>
-            <div class="row-3">
-                <div class="my-placeholder operaciones-checkbox">
-                    <input type="checkbox" name="checkbox" class="checkbox">
-                    <span class="">He leído y acepto las condiciones generales(*)</span>
-                </div>
-            </div>
-            <div class="row-4">
-                <!--<input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">-->
-                <input class="operaciones-form-button" type="button" name="enviar" id="enviar" value="Ver ficha téctnica" onclick="validateForm('pageForm')">
-            </div>
-        </form>
+            <div class="operaciones-side-b-2"></div>
+        </div>
     </div>
 </section>
 <section class="index-section-7">
@@ -163,11 +152,11 @@
         var _form = $('#' + idObj);
         var _stringVar = _form.serialize();
 
-        //console.log('cadena de variables='+_stringVar);
+    //console.log('cadena de variables='+_stringVar
 
         $.ajax({
             method: "POST",
-            url: "send-melbourne.php",
+            url: "send-operaciones.php",
             data: _stringVar
         }).success(function (msg) {
             // alert("Data Saved: " + msg);
@@ -175,7 +164,7 @@
                 $('.msg').text('GRACIAS POR ENVIAR TUS DATOS');
 
         });
-        }
+    }
 </script>
 </body>
 </html>

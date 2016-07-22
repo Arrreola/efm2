@@ -102,6 +102,7 @@
                     familiar</b> y requieren mejoras en su <b>modelo de negocio.</b> Logramos que la empresa opere en un
                 <b>marco institucional</b> que facilite la captación de nuevos inversionistas.
             </p>
+            <br>
             <p class="index-section-1-text">
                 El objetivo es lograr, <b>en el corto plazo, </b>una <b>venta o asociación estratégica </b>con los
                 principales <b>corporativos e independientes.</b>
@@ -128,7 +129,7 @@
                             <div class="index-section-2-slide-footer-m1">Melbourne</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Salud</span><br>
-                                <span>Covertura / Nacional (Mexico)</span><br>
+                                <span>Cobertura / Nacional (Mexico)</span><br>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
                                 <span>Abierto</span>
@@ -154,7 +155,7 @@
                             <div class="index-section-2-slide-footer-m1">Lisboa</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Salud</span><br>
-                                <span>Covertura / Nacional (Mexico)</span><br>
+                                <span>Cobertura / Nacional (Mexico)</span><br>
                                 <span>Tasa de crecimiento en ventas / 20%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
@@ -183,11 +184,11 @@
                             <div class="index-section-2-slide-footer-m1">Cienciamed</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Salud</span><br>
-                                <span>Covertura / Nacional (México)</span><br>
+                                <span>Cobertura / Nacional (México)</span><br>
                                 <span>Proyección en ventas 2016 / MXN $100m</span><br>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
-                                <span>Proceso de inverción y crecimiento</span>
+                                <span>Proceso de inversión y crecimiento</span>
                             </div>
                             <!-- <div class="index-section-2-slide-footer-m4">
                               <a href="#">Ficha tecnica</a>
@@ -210,7 +211,7 @@
                             <div class="index-section-2-slide-footer-m1">Pekín</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Telecomunicaciones(infraestructura)</span><br>
-                                <span>Covertura / Nacional (México)</span><br>
+                                <span>Cobertura / Nacional (México)</span><br>
                                 <span>Tasa de crecimiento en ventas / 788.5%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
@@ -239,7 +240,7 @@
                             <div class="index-section-2-slide-footer-m1">Montevideo</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Medios masivos</span><br>
-                                <span>Covertura / Regional</span><br>
+                                <span>Cobertura / Regional</span><br>
                                 <span>Tasa de crecimiento en ventas / 10%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
@@ -268,7 +269,7 @@
                             <div class="index-section-2-slide-footer-m1">Versalles</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Bebidas (industrial)</span><br>
-                                <span>Covertura / Regional</span><br>
+                                <span>Cobertura / Regional</span><br>
                                 <span>Tasa de crecimiento en ventas / 20%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
@@ -297,7 +298,7 @@
                             <div class="index-section-2-slide-footer-m1">Delta</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Alimentos, Retail</span><br>
-                                <span>Covertura / Nacional (México)</span><br>
+                                <span>Cobertura / Nacional (México)</span><br>
                                 <span>Tasa de crecimiento en ventas / 12%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
@@ -333,6 +334,7 @@
                 habilitar prácticas de de rendición de cuentas y optimizar
                 el modelo de negocio.
             </p>
+            <br>
             <p class="index-section-3-copy">
                 Nuestra salida está orientada ala transferencia de la
                 empresa a un fondo de inversión o comprador estratégico.
@@ -558,6 +560,7 @@
 
 
     <!-- Mobile -->
+    <div id="team-cards-mobile"></div>
     <div class="carousel index-section-5-carousel carousel-mobile">
         <div class="container" id="index-section-5-carousel-loads">
             <!-- slide 1 -->
@@ -568,7 +571,7 @@
                         <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
                         <span class="index-section-5-member-position">Estrategia de inversión</span>
                         <span class="index-section-5-member-area">Evaluación de alternativas de inversión</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="everardo-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -579,7 +582,7 @@
                         <span class="index-section-5-member-name">Roberto López Sánchez</span>
                         <span class="index-section-5-member-position">Órganos de gobierno</span>
                         <span class="index-section-5-member-area">Abogado corporativo</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="roberto-l-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -590,7 +593,7 @@
                         <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Operaciones</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="ricardo-d-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -601,7 +604,7 @@
                         <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
                         <span class="index-section-5-member-position">Desarrollo organizacional</span>
                         <span class="index-section-5-member-area">Recursos humanos</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="carlos-a-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -612,7 +615,7 @@
                         <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
                         <span class="index-section-5-member-position">Estrategia de inversión</span>
                         <span class="index-section-5-member-area">Análisis financiero</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="luis-m-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -623,7 +626,7 @@
                         <span class="index-section-5-member-name">Oscar López Macal</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Contraloría e información financiera</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="oscar-l-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -634,7 +637,7 @@
                         <span class="index-section-5-member-name">Rafael Brambila López</span>
                         <span class="index-section-5-member-position">Auditoría y soporte contable</span>
                         <span class="index-section-5-member-area">Abogado corporativo</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="rafael-b-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -645,7 +648,7 @@
                         <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
                         <span class="index-section-5-member-position">Desarrollo organizacional</span>
                         <span class="index-section-5-member-area">Diseño gráfico</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="alonso-m-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -656,7 +659,7 @@
                         <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="manuel-a-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -667,18 +670,18 @@
                         <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Auditoría y soporte administrativo</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="ana-m-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
             <div class="slide">
                 <div class="index-section-5-slide" id="slide-11">
                     <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
+                        <img src="img/escudos/escudo-nora-e.png" alt="" class="index-section-5-member-image">
                         <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
                         <span class="index-section-5-member-position">Estructura y transformación</span>
                         <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                        <a href="" class="index-section-5-member-button">Detalles</a>
+                        <span id="nora-e-detalles-mobile" class="index-section-5-member-button">Detalles</span>
                     </div>
                 </div>
             </div>
@@ -694,17 +697,17 @@
         <hr class="index-section-6-slide-hr">
     </div>
     <div class="index-section-6-content">
-        <img src="img/logos/logo-amexcap.png" alt="">
+        <img src="img/logos/logo-amexcap.png" class="index-section-6-images" alt="">
         <img src="img/logos/logo-laca.png" alt="" class="index-section-6-images">
-        <img src="img/logos/logo-icgn.png" alt="">
+        <img src="img/logos/logo-icgn.png" class="index-section-6-images" alt="">
     </div>
     <div class="index-section-6-header">
         <hr class="index-section-6-slide-hr">
         <span class="index-section-6-heading">Eventos</span>
         <hr class="index-section-6-slide-hr">
     </div>
-    <div class="index-section-6-content">
-        <img src="img/logos/logo-execution.jpg" alt="">
+    <div class="index-section-6-content-2">
+        <img src="img/logos/logo-execution.jpg" class="index-section-6-images-2" alt="">
     </div>
 </section>
 
@@ -734,7 +737,7 @@
             </div>
             <div class="row-3">
                 <span class="my-placeholder">Mensaje:</span>
-                <textarea name="comentarios"  class="required"></textarea>
+                <textarea class="textarea" name="comentarios"  class="required"></textarea>
             </div>
             <div class="row-4">
                 <!--<input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">-->
@@ -752,7 +755,7 @@
     <!-- Map -->
     <script type="text/javascript">
         function initMap() {
-            var isDraggable = $(document).width() > 480 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
+            var isDraggable = $(document).width() > 570 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
 
             var mapOptions = {
                 draggable: isDraggable,
@@ -775,6 +778,7 @@
                 });
             }
         </script>
+
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4738uIisDOYyffs-UVzfBWYAJ4AAYiC0&callback=initMap">
         </script>

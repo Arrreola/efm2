@@ -167,7 +167,7 @@
 
         $.ajax({
             method: "POST",
-            url: "send-melbourne.php",
+            url: "send-lisbon.php",
             data: _stringVar
         }).success(function (msg) {
             // alert("Data Saved: " + msg);

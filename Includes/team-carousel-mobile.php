@@ -7,7 +7,7 @@
         <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
         <span class="index-section-5-member-position">Estrategia de inversión</span>
         <span class="index-section-5-member-area">Evaluación de alternativas de inversión</span>
-        <a href="" class="index-section-5-member-button">Detalles</a>
+        <span id="everardo-detalles-mobile" class="index-section-5-member-button">Detalles</span>
       </div>
     </div>
   </div>

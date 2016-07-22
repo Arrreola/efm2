@@ -79,7 +79,7 @@ $(window).load(function () {
     });
 
     // $("#carlos-e-detalles").click(function () {
-    //     $("#member-cards").load('includes/member-cards.php #member-card-carlos-e');
+    //     $("#team-cards").load('includes/member-cards.php #team-card-carlos-e');
     //     $('#body-black').fadeIn();
     // });
 
@@ -92,113 +92,113 @@ $(window).load(function () {
 
 
     //TEAM CARDS
-    $("#everardo-detalles").click(function () {
+    $("#everardo-detalles, #everardo-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-everardo');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-everardo');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-everardo');
         }
     });
 
-    $("#roberto-l-detalles").click(function () {
+    $("#roberto-l-detalles, #roberto-l-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-roberto');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-everardo');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-roberto');
         }
     });
 
-    $("#ricardo-d-detalles").click(function () {
+    $("#ricardo-d-detalles, #ricardo-d-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-ricardo');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-ricardo');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-ricardo');
         }
     });
 
-    $("#carlos-a-detalles").click(function () {
+    $("#carlos-a-detalles, #carlos-a-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-carlos');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-carlos');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-carlos');
         }
     });
 
-    $("#luis-m-detalles").click(function () {
+    $("#luis-m-detalles, #luis-m-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-luis');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-luis');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-luis');
         }
     });
 
-    $("#oscar-l-detalles").click(function () {
+    $("#oscar-l-detalles, #oscar-l-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-oscar');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-oscar');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-oscar');
         }
     });
 
-    $("#rafael-b-detalles").click(function () {
+    $("#rafael-b-detalles, #rafael-b-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-rafael');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-rafael');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-rafael');
         }
     });
 
-    $("#alonso-m-detalles").click(function () {
+    $("#alonso-m-detalles, #alonso-m-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-alonso');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-alonso');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-alonso');
         }
     });
 
-    $("#manuel-a-detalles").click(function () {
+    $("#manuel-a-detalles, #manuel-a-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-manuel');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-manuel');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-manuel');
         }
     });
 
-    $("#ana-m-detalles").click(function () {
+    $("#ana-m-detalles, #ana-m-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-ana');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-ana');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-ana');
         }
     });
 
-    $("#nora-e-detalles").click(function () {
+    $("#nora-e-detalles, #nora-e-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
         if ($(window).width() > 766) {
             $("#team-cards").load('includes/team-cards.php #team-card-nora');
         }
         else {
-            $("#team-cards-mobile").load('includes/team-cards.php #member-card-nora');
+            $("#team-cards-mobile").load('includes/team-cards.php #team-card-nora');
         }
     });
 });//END DOM
