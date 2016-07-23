@@ -59,38 +59,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<nav>
-    <div class="nav-content">
-        <img src="img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo">
-        <figure class="navbar-menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                 id="Untitled-2" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12"
-                 enable-background="new 0 0 18 12" xml:space="preserve">
-        <path fill="none" d="z"/>
-                <g id="Layer_x25_201">
-                    <rect width="18" height="2"/>
-                    <rect y="5" width="18" height="2"/>
-                    <rect y="10" width="18" height="2"/>
-                </g>
-                <path fill="none" d="z"/>
-                <div xmlns="http://www.w3.org/1999/xhtml"></div>
-      </svg>
-        </figure>
-        <ul class="navbar-breadcrumbs offcanvas-menu">
-            <li class="navbar-crumbs">
-                <a href="index-ingles.html">Inglés</a>
-                <span class="navbar-crumbs-slash">/</span>
-                <a href="index.html">Español</a>
-            </li>
-            <hr class="navbar-hr">
-            <li class="navbar-crumbs">
-                <a href="cuarto-de-datos-virtual.php">
-                    <button class="navbar-dataroom-button">cuarto de datos virtual</button>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<?php @include 'includes/navbar.php' ?>
 <div class="navbar-white-area"></div>
 <div id="body-black" class="body-black"></div>
 <section class="index-section-1 parallax-window">
@@ -135,7 +104,7 @@
                                 <span>Abierto</span>
                             </div>
                             <div class="index-section-2-slide-footer-m4">
-                                <a href="operaciones/melbourne.php">Ficha técnica</a>
+                                <a target="_blank" href="melbourne.php">Ficha técnica</a>
                             </div>
                         </div>
                     </div>
@@ -155,14 +124,14 @@
                             <div class="index-section-2-slide-footer-m1">Lisboa</div>
                             <div class="index-section-2-slide-footer-m2">
                                 <span>Industria / Salud</span><br>
-                                <span>Cobertura / Nacional (Mexico)</span><br>
+                                <span>Cobertura / Nacional (México)</span><br>
                                 <span>Tasa de crecimiento en ventas / 20%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
                                 <span>Abierto</span>
                             </div>
                             <div class="index-section-2-slide-footer-m4">
-                                <a href="#">
+                                <a target="_blank" href="lisbon.php">
                                     Ficha técnica
                                 </a>
                             </div>
@@ -205,23 +174,33 @@
                         <span class="index-section-2-heading">Operaciones</span>
                         <hr class="index-section-2-slide-hr">
                     </div>
+                    <div class="index-section-2-slide-center">
+                        <div class="index-section-2-slide-center-header">
+                            <hr class="index-section-2-slide-center-hr">
+                            <span class="index-section-2-slide-center-heading">Declaración de cierre</span>
+                            <hr class="index-section-2-slide-center-hr">
+                        </div>
+                        <p class="index-section-2-slide-center-text">EFM Capital ha completado la desinversión total de su posición en Even Telecom S.A. de C.V. a través de la venta de su participación, del 50% de la empresa, a una firma líder de capital privado.</p>
+                        <p class="index-section-2-slide-center-text">Even Telecom S.A. de C.V. es una empresa dedicada al sector de las telecomunicaciones. En enero del 2015, EFM Capital tomó una posición en el capital de Even Telecom, proporcionando un análisis corporativo y financiero, y participando en la planificación estratégica de la empresa, lo cual le permitió incrementar significativamente su valor. Para el cierre del 2015, sus ventanas aumentaron en mas del 200% respecto al año anterior, convirtiendose en un proveedor seleccionado para las empresas más grandes en servicios de telecomunicación dentro de México</p>
+                        <p class="index-section-2-slide-center-text">EFM Capital continuará analizando oportunidades de inversión con alto potencial de crecimiento, brindando orientación en planeación estratégica, valor añadido en las adquisiciones y un modelo de gobernanza ajustado a los estándares internacionales.</p>
+                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
                             <div class="index-section-2-slide-footer-m1">Pekín</div>
                             <div class="index-section-2-slide-footer-m2">
-                                <span>Industria / Telecomunicaciones(infraestructura)</span><br>
+                                <span>Industria / Telecomunicaciones (infraestructura)</span><br>
                                 <span>Cobertura / Nacional (México)</span><br>
                                 <span>Tasa de crecimiento en ventas / 788.5%</span>
                             </div>
                             <div class="index-section-2-slide-footer-m3">
                                 <span>Cerrado</span>
                             </div>
-                            <!-- <div class="index-section-2-slide-footer-m4">
-                              <a href="#">
-                                Ficha tecnica
+                            <div class="index-section-2-slide-footer-m4">
+                              <a target="_blank" href="https://amexcap.com/seccion/noticias-de-la-industria/">
+                                Noticias AMEXCAP
                               </a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -315,7 +294,7 @@
             </div>
 
         </div>
-        <div id="nav"></div>
+        <div id="nav" class="nav-section-2"></div>
     </div>
     <script src="js/carousel-js/carousel.js"></script>
 </section>

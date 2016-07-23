@@ -89,8 +89,6 @@ $(window).load(function () {
     });
 
 
-
-
     //TEAM CARDS
     $("#everardo-detalles, #everardo-detalles-mobile").click(function () {
         $('#body-black').fadeIn();
@@ -204,8 +202,6 @@ $(window).load(function () {
 });//END DOM
 
 
-
-
 var MobileFunctions = function () {
     $("#index-section-5-carousel-loads").load("includes/team-carousel-mobile.html #index-section-5-carousel-loads-mobile");
     //alert("Mobile");
@@ -233,17 +229,73 @@ function validateForm(idObj) {
 
     var _form = $('#' + idObj);
     var _stringVar = _form.serialize();
+    var _urlFile = '';
+
+    //PRIMER VERIFICAMOS QUE FORMULARIO ES PARA PODER SABER A QUE ARCHIVO ENVIAR LA INFORMACIÓN
+    switch (idObj) {
+        case 'pageForm':
+            _urlFile  = 'send.php';
+            break;
+        case 'formMelbourne':
+            _urlFile  = 'send-melbourne.php';
+            break;
+        case 'formLisbon':
+            _urlFile  = 'send-lisbon.php';
+            break;
+    }
 
     //console.log('cadena de variables='+_stringVar);
 
     $.ajax({
         method: "POST",
-        url: "send.php",
+        url: _urlFile,
         data: _stringVar
     }).success(function (msg) {
         // alert("Data Saved: " + msg);
-        if (msg == 'success')
-            $('.msg').text('GRACIAS POR ENVIAR TUS DATOS');
+        if (msg == 'success'){
+
+            switch (idObj) {
+                case 'pageForm':
+                    $('.msg').text('GRACIAS POR ENVIAR TUS DATOS');
+                    break;
+                case 'formMelbourne':
+                    swal({
+                            title: "Gracias!",
+                            text: "Tus datos se enviaron correctamnete, seras redirigido a la pagina",
+                            type: "success",
+                            showCancelButton: false,
+                            confirmButtonColor: "#c3b584",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false
+                        },
+                        function(){
+                           // console.log('se ejecuta mandando a la nueva pagina');
+                            window.location = 'ficha-tecnica-melbourne.php';
+                        });
+                    break;
+                case 'formLisbon':
+                    swal({
+                            title: "Gracias!",
+                            text: "Tus datos se enviaron correctamnete, seras redirigido a la pagina",
+                            type: "success",
+                            showCancelButton: false,
+                            confirmButtonColor: "#c3b584",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false
+                        },
+                        function(){
+                            // console.log('se ejecuta mandando a la nueva pagina');
+                            window.location = 'ficha-tecnica-lisbon.php';
+                        });
+                    break;
+            }
+
+        }
+
+
 
     });
 }
+
+// MELBOURNE FORM
+

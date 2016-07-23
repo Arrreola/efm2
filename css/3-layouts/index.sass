@@ -35,28 +35,61 @@ nav
   +outer-container
 .navbar-logo
   height: 45px
-  margin: 12px 0
+  margin: 12px 0 0 20px
 .navbar-menu-icon
   display: none
 .navbar-breadcrumbs
-  display: inline-block
+  display: block
   float: right
-  margin: 0
-.navbar-crumbs
+  margin: 0 20px
+  list-style: none
+  right: 0px
+  top: 0px
+.navbar-breadcrumbs li
   display: inline-block
 .navbar-crumbs-slash
   padding: 10px 25px
-.navbar-breadcrumbs:first-child li
-  padding-top: 26px
-.navbar-crumbs:first-child a
+.navbar-crumbs-news
+  display: none !important
+.navbar-crumbs-news a
   color: $efm-gold
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 12px
+.navbar-crumbs-news a:hover
+  text-decoration: underline
+.navbar-crumbs-1
+  float: right
+  font-size: 13px
+  letter-spacing: 0.2px
+  line-height: 14px
+  margin-left: 30px
+  margin-top: 16px
+.navbar-crumbs-1 a
+  color: #333
+  display: block
+  margin: 5px 0
+  text-decoration: none
+.navbar-crumbs-1 a:first-child
+  color: #bbb
+.navbar-crumbs-1 a:hover
+  text-decoration: underline
+.language-hr
+  background-color: #ccc
+  border: medium none
+  height: 1px
+  display: none
+.navbar-crumbs-2
+  margin-top: 15px
+  position: relative
+  top: 0px
 .navbar-hr
   display: none
 .navbar-dataroom-button
   border-radius: 3px
   color: white
   padding: 13px 30px
-  margin: 16px 0 0 25px
+  margin: 0px 0 0 40px
   text-transform: uppercase
   border: none
   font-family: $font-times
@@ -91,6 +124,8 @@ nav
   margin: 0 auto
   height: 224px
   transform: translateY(-50%)
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
   top: 50%
   position: relative
 .index-section-hr
@@ -140,7 +175,9 @@ nav
 .index-section-3-slide-hr
   display: inline-block
   width: 10%
-  transform: translateY(0px)
+  transform: translateY(-2px)
+  -webkit-transform: translateY(-2px)
+  -moz-transform: translateY(-2px)
   border: 0
   height: 1px
   background-color: $efm-gold
@@ -150,6 +187,8 @@ nav
   margin: 0 auto
   height: 114px
   transform: translateY(-50%)
+  -webkit-transform: translateY(-50%)
+  -moz-transform: translateY(-50%)
   top: 50%
   position: relative
 .index-section-3-copy-content
@@ -162,6 +201,8 @@ nav
   position: relative
   top: 50%
   transform: translateY(-150px)
+  -webkit-transform: translateY(-150px)
+  -moz-transform: translateY(-150px)
   font-size: 18px
 .index-section-3-link
   display: block
@@ -201,6 +242,8 @@ nav
   display: inline-block
   width: 10%
   transform: translateY(0px)
+  -webkit-transform: translateY(0px)
+  -moz-transform: translateY(0px)
   border: 0
   height: 1px
   background-color: $efm-gold
@@ -272,6 +315,8 @@ nav
   display: inline-block
   width: 10%
   transform: translateY(0px)
+  -webkit-transform: translateY(0px)
+  -moz-transform: translateY(0px)
   border: 0
   height: 1px
   background-color: $efm-gold
@@ -296,12 +341,14 @@ nav
   margin: 0 30px
   display: inline-block
   font-size: 32px
-  padding-top: 5px
+  padding-top: 2px
   font-style: italic
 .index-section-6-slide-hr
   display: inline-block
   width: 10%
   transform: translateY(0px)
+  -webkit-transform: translateY(0px)
+  -moz-transform: translateY(0px)
   border: 0
   height: 1px
   background-color: white
@@ -318,6 +365,8 @@ nav
 .index-section-6-images:nth-child(2)
   height: 62px
   transform: translateY(5px)
+  -webkit-transform: translateY(5px)
+  -moz-transform: translateY(5px)
 .index-section-6-images:nth-child(3)
   height: 45px
 .index-section-6-images-2
@@ -351,7 +400,9 @@ nav
 .index-section-7-slide-hr
   display: inline-block
   width: 20%
-  transform: translateY(0px)
+  transform: translateY(-2px)
+  -webkit-transform: translateY(-2px)
+  -moz-transform: translateY(-2px)
   border: 0
   height: 1px
   background-color: $efm-gold
@@ -376,6 +427,20 @@ form
   font-weight: 100
   font-size: 15px
   border-radius: 3px
+  padding-left: 10px
+.required-2
+  border: none
+  background: #eee
+  box-shadow: none
+  width: 100%
+  height: 50px
+  margin-bottom: 18px
+  color: white
+  font-weight: 100
+  font-size: 15px
+  border-radius: 3px
+  color: #333
+  padding-left: 10px
 .textarea
   height: 100px
   width: 100%
@@ -383,6 +448,8 @@ form
   background: #333
   border: 0
   margin-bottom: 18px
+  color: white
+  padding-left: 10px
 .form-button
   display: block
   padding: 0px 16px
@@ -464,11 +531,32 @@ form
     background-color: #e0e0e0
     height: 1px
     border: 1px
-    margin: auto 20px
+    margin: 20px
+    display: none
   .navbar-dataroom-button
     margin: 0
   .navbar-dataroom-button:hover
     margin: 0
+  .navbar-breadcrumbs
+    margin: 0
+  .navbar-breadcrumbs li
+    display: block
+  .navbar-crumbs-news
+    margin: 0 auto
+    display: block
+    text-align: center
+  .navbar-crumbs-1
+    width: 100%
+    text-align: center
+    margin-top: 12px
+  .navbar-crumbs-1 a
+    display: inline-block
+  .navbar-crumbs-1 a:nth-child(3)
+    margin-left: 30px
+  .language-hr
+    display: none
+  .navbar-crumbs-2
+    text-align: center
   // .index-section-1
   //   background-image: url("../img/mobile-backgrounds/section-1-back-mobile.jpg")
   //   padding: 0 20px
@@ -482,6 +570,8 @@ form
     position: absolute
     top: 50%
     transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
   //Section 4
   .index-section-4-slide-hr
     display: none

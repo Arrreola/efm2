@@ -51,45 +51,16 @@
     <meta property="og:locale:alternate" content="en_US"/>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <!-- Scripts src -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="../js/parallax-js/parallax.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/parallax-js/parallax.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-<nav>
-    <div class="nav-content">
-        <a href="../index.php"><img src="../img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo"></a>
-        <figure class="navbar-menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                 id="Untitled-2" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12"
-                 enable-background="new 0 0 18 12" xml:space="preserve">
-        <path fill="none" d="z"/>
-                <g id="Layer_x25_201">
-                    <rect width="18" height="2"/>
-                    <rect y="5" width="18" height="2"/>
-                    <rect y="10" width="18" height="2"/>
-                </g>
-                <path fill="none" d="z"/>
-                <div xmlns="http://www.w3.org/1999/xhtml"></div>
-      </svg>
-        </figure>
-        <ul class="navbar-breadcrumbs offcanvas-menu">
-            <li class="navbar-crumbs">
-                <a href="index-ingles.html">Inglés</a>
-                <span class="navbar-crumbs-slash">/</span>
-                <a href="index.html">Español</a>
-            </li>
-            <hr class="navbar-hr">
-            <li class="navbar-crumbs">
-                <a href="http://efmcapital.com/data-room">
-                    <button class="navbar-dataroom-button">cuarto de datos virtual</button>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<?php @include 'includes/navbar.php' ?>
 <section class="operaciones-section-1">
     <div class="operaciones-section-1-text-box">
         <span class="operaciones-section-1-heading">Aviso de Privacidad de EFM CAPITAL, S.A. de C.V.</span>
@@ -113,16 +84,16 @@
         </p>
     </div>
     <div class="operaciones-section-1-form">
-        <form enctype="multipart/form-data" name="pagerform" id="pageForm">
+        <form enctype="multipart/form-data" name="pagerform" id="formLisbon">
             <div class="row-1">
                 <div class="my-placeholder">
                     <span class="">Nombre:</span>
                 </div>
-                <input type="text" name="nombre" class="required">
+                <input type="text" name="nombre" class="required-2">
             </div>
             <div class="row-2">
                 <span class="my-placeholder">Correo:</span>
-                <input type="text" name="correo" class="required email">
+                <input type="text" name="correo" class="required-2 email">
             </div>
             <div class="row-3">
                 <div class="my-placeholder operaciones-checkbox">
@@ -132,7 +103,7 @@
             </div>
             <div class="row-4">
                 <!--<input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">-->
-                <input class="operaciones-form-button" type="button" name="enviar" id="enviar" value="Ver ficha téctnica" onclick="validateForm('pageForm')">
+                <input class="operaciones-form-button" type="button" name="enviar" id="enviar" value="Ver ficha téctnica" onclick="validateForm('formLisbon')">
             </div>
         </form>
     </div>
@@ -157,25 +128,5 @@
 <section class="index-section-8">
     <span>Todos los derechos reservados 2016</span>
 </section>
-<script>
-    function validateForm(idObj) {
-
-        var _form = $('#' + idObj);
-        var _stringVar = _form.serialize();
-
-        //console.log('cadena de variables='+_stringVar);
-
-        $.ajax({
-            method: "POST",
-            url: "send-lisbon.php",
-            data: _stringVar
-        }).success(function (msg) {
-            // alert("Data Saved: " + msg);
-            if (msg == 'success')
-                $('.msg').text('GRACIAS POR ENVIAR TUS DATOS');
-
-        });
-        }
-</script>
 </body>
 </html>

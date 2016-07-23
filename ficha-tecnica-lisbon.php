@@ -51,49 +51,18 @@
     <meta property="og:locale:alternate" content="en_US"/>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Scripts src -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="../js/parallax-js/parallax.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/parallax-js/parallax.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-<nav>
-    <div class="nav-content">
-        <a href="../index.php"><img src="../img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo"></a>
-        <figure class="navbar-menu-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                 id="Untitled-2" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12"
-                 enable-background="new 0 0 18 12" xml:space="preserve">
-        <path fill="none" d="z"/>
-                <g id="Layer_x25_201">
-                    <rect width="18" height="2"/>
-                    <rect y="5" width="18" height="2"/>
-                    <rect y="10" width="18" height="2"/>
-                </g>
-                <path fill="none" d="z"/>
-                <div xmlns="http://www.w3.org/1999/xhtml"></div>
-      </svg>
-        </figure>
-        <ul class="navbar-breadcrumbs offcanvas-menu">
-            <li class="navbar-crumbs">
-                <a href="index-ingles.html">Inglés</a>
-                <span class="navbar-crumbs-slash">/</span>
-                <a href="index.html">Español</a>
-            </li>
-            <hr class="navbar-hr">
-            <li class="navbar-crumbs">
-                <a href="http://efmcapital.com/data-room">
-                    <button class="navbar-dataroom-button">cuarto de datos virtual</button>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<?php @include 'includes/navbar.php' ?>
 <section class="ficha-tecnica-section-1">
     <div class="ficha-tecnica-header">
         <hr class="ficha-tecnica-slide-hr">
-        <span class="ficha-tecnica-heading">Ficha técnica: Melbourne</span>
+        <span class="ficha-tecnica-heading">Ficha técnica: Lisboa</span>
         <hr class="ficha-tecnica-slide-hr">
     </div>
     <div class="ficha-tecnica-content">
@@ -111,8 +80,8 @@
         </div>
         <div class="operaciones-section-1-form">
             <div class="operaciones-side-b-1">
-                <img src="../img/logos/pdf-icon.png" alt="Pdf Icono">
-                <a href="/descargas/melbourne-es.pdf" target="_blank"><button class="operaciones-side-b-button-descarga">Descargar</button></a>
+                <img src="img/logos/pdf-icon.png" alt="Pdf Icono">
+                <a href="/descargas/lisbon-es.pdf" target="_blank"><button class="operaciones-side-b-button-descarga">Descargar</button></a>
                 <hr>
                 <p class="operaciones-side-b-text-1">
                     Si este proyecto cumple con sus criterios y desea participar en el proceso por favor, continúe en este enlace.

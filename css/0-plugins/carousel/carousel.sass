@@ -31,6 +31,8 @@ carousel
   flex-direction: row
   height: 100%
   transform: translate3d(0, 0, 0)
+  -webkit-transform: translate3d(0,0,0)
+  -moz-transform: translate3d(0,0,0)
   transition: transform 600ms
   display: -webkit-box
   display: -webkit-flex
@@ -56,6 +58,8 @@ carousel
   width: 100vw
   z-index: 1
   transform: translateY(25px)
+  -webkit-transform: translateY(25px)
+  -moz-transform: translateY(25px)
 .carousel > #nav a
   color: white
   font-size: 14px
@@ -72,6 +76,28 @@ carousel
   line-height: 1.4
   text-align: center
   width: 100vw
+.nav-section-2
+  background-color: #222
+  bottom: 27px !important
+  height: 28px
+  padding-top: 0px
+  position: absolute
+  text-align: center
+  transform: translateY(27px) !important
+  -webkit-transform: translateY(27px) !important
+  -moz-transform: translateY(27px) !important
+  width: 100vw
+  z-index: 1
+.carousel > .nav-section-2 a
+  color: white
+  font-size: 14px
+  margin: 0
+  //margin-bottom: 47px
+  opacity: 0.2
+  padding: 0
+  text-decoration: none
+  top: 0
+  vertical-align: super
 .index-section-2-slide-header
   height: 73px
   padding: 10px
@@ -89,19 +115,23 @@ carousel
   width: 10%
   vertical-align: middle
   transform: translateY(0px)
+  -webkit-transform: translateY(0px)
+  -moz-transform: translateY(0px)
   border: 0
   height: 1px
   background-color: #333
 .index-section-2-slide-footer
   width: 100%
-  height: 150px
+  height: 160px
   background-color: rgba(51, 51, 51, 0.97)
   bottom: 0
   margin-top: 300px
 .index-section-2-slide-footer-content div
   display: inline-block
   vertical-align: middle
-  width: 24%
+  width: 23%
+.index-section-2-slide-footer-content div:nth-child(3)
+  width: 26%
 .index-section-2-slide-footer-content
   +outer-container
   color: white
@@ -110,6 +140,7 @@ carousel
 .index-section-2-slide-footer-content a
   color: white
   text-decoration: none
+  border-radius: 3px
 .index-section-2-slide-footer-m1
   font-size: 24px
 .index-section-2-slide-footer-m2
@@ -123,10 +154,37 @@ carousel
 .index-section-2-slide-footer-m4 a:hover
   background-color: rgba(255,255,255,0.2)
 .index-section-2-slide-footer-11
-  height: 150px
+  height: 140px
   width: 1px !important
   padding: 0
   margin: 0
+.index-section-2-slide-center
+  font-size: 16px
+  width: 800px
+  height: 300px
+  float: right
+  background: black
+  color: white
+  padding: 0 30px
+.index-section-2-slide-center-header
+  padding: 10px
+.index-section-2-slide-center-hr
+  width: 60px
+  background: white
+  height: 1px
+  border: none
+  display: inline-block
+  transform: translatey(3px)
+  -webkit-transform: translateY(3px)
+  -moz-transform: translateY(3px)
+.index-section-2-slide-center-heading
+  text-align: center
+  font-size: 16px
+  display: inline-block
+  margin: 0 20px
+.index-section-2-slide-center-text
+  margin-bottom: 10px
+  text-align: left
 .slide-1
   background-image: url('../img/desktop-backgrounds/section-2-melbourne.jpg')
   background-size: cover
@@ -163,6 +221,8 @@ carousel
     -webkit-transition: 0.4s
   .carousel > #nav
     transform: translatey(-36px)
+    -webkit-transform: translateY(-36px)
+    -moz-transform: translateY(-36px)
     bottom: inherit
   .index-section-2-slide-footer
     width: 100%
@@ -170,7 +230,7 @@ carousel
     +background(transparent)
     bottom: 0
     text-align: left
-    margin: 30px auto 30px
+    margin: 30px auto 40px
   .index-section-2-slide-footer-content div
     display: block
     vertical-align: inherit
@@ -207,6 +267,8 @@ carousel
     bottom: 0
     left: 50%
     transform: translateX(-50%)
+    -webkit-transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
     width: 100%
     padding: 19px 0 58px
     background-color: rgba(0,0,0,0.8)
@@ -253,6 +315,8 @@ carousel
   position: relative
   top: -105px
   transform: translateY(50%)
+  -webkit-transform: translateY(50%)
+  -moz-transform: translateY(50%)
 .index-section-5-member
   width: 24%
   max-width: 270px
@@ -297,6 +361,8 @@ carousel
     position: relative
     top: 50px
     transform: translateY(0%)
+    -webkit-transform: translateY(0%)
+    -moz-transform: translateY(0%)
   .carousel-mobile
     display: block
   .carousel-desktop
