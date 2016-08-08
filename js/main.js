@@ -201,6 +201,28 @@ $(window).load(function () {
     });
 });//END DOM
 
+//MAPS
+
+
+
+function initMap() {
+
+    var myLatLng = {lat: 25.644775, lng: -100.32451600000002};
+    var mapDiv = document.getElementById('map');
+
+    var map = new google.maps.Map(mapDiv, {
+        center: {lat: 25.644775, lng: -100.32451600000002},
+        zoom: 17,
+        draggable: false,
+        scrollwheel: false
+    });
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'EFM Capital'
+    });
+}
+
 
 var MobileFunctions = function () {
     $("#index-section-5-carousel-loads").load("includes/team-carousel-mobile.html #index-section-5-carousel-loads-mobile");
@@ -297,5 +319,14 @@ function validateForm(idObj) {
     });
 }
 
+
+function fix()
+{
+    var el = this;
+    var par = el.parentNode;
+    var next = el.nextSibling;
+    par.removeChild(el);
+    setTimeout(function() {par.insertBefore(el, next);}, 0)
+}
 // MELBOURNE FORM
 

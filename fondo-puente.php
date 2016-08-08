@@ -43,7 +43,7 @@
     <!-- Open Graph data for sharing in Facebook -->
     <meta property="og:title" content="EFM Capital"/>
     <meta property="og:type" content="EFM Capital"/>
-    <meta property="og:url" content="http://www.cienciamed.com/"/>
+    <meta property="og:url" content="http://www.efmcapital.com/"/>
     <meta property="og:image" content="http://example.com/image.jpg"/>
     <meta property="og:description" content="Description Here"/>
     <meta property="og:site_name" content="EFM Capital, i.e. Moz"/>

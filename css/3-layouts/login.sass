@@ -1,0 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700'
+@import 'https://fonts.googleapis.com/css?family=Amiri'
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i'
+
+$movile: "(max-width: 767px)"
+$tablet: "(min-width: 768px) and (max-width: 1023px)"
+$desktop: "(min-width: 1024px)"
+$lateral-padding-mobile: 0 20px 0 20px
+$efm-dark-gray: #292A2C
+$efm-gold: #c3b584
+
+/*Typography Variables*/
+$font-times: 'times new roman'
+$font-rasa: 'Rasa', serif
+$font-amiri: 'Amiri', serif
+$font-merriweather: 'Merriweather', serif
+/*Background Variables*/
+
+.login-content-area
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 400px
+  text-rendering: geometricprecision
+.login-content-area-logo
+  width: 300px
+  margin: 0 auto
+  display: block
+.login-button
+  border: 1px solid $efm-gold
+  box-shadow: none
+  background: transparent
+  padding: 15px
+  border-radius: 3px
+  width: 100%
+  text-align: center
+  font-size: 15px
+  font-weight: 100
+  transition: all 0.2s ease-in-out 0s
+.login-button:hover
+  background: $efm-gold
+  color: white
+  transition: all 0.2s ease-in-out 0s
+.news-required
+  background-color: white
+  border: 1px solid #ccc
+  border-radius: 3px
+  box-shadow: none
+  color: #333
+  font-size: 15px
+  font-weight: 100
+  height: 50px
+  margin-bottom: 18px
+  padding-left: 10px
+  width: 100%
+input:focus
+  box-shadow: inset 2px 0 0 0px lightgray, inset -2px 0 0 0px lightgray

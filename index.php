@@ -43,7 +43,7 @@
     <!-- Open Graph data for sharing in Facebook -->
     <meta property="og:title" content="EFM Capital"/>
     <meta property="og:type" content="EFM Capital"/>
-    <meta property="og:url" content="http://www.cienciamed.com/"/>
+    <meta property="og:url" content="http://www.efmcapital.com/"/>
     <meta property="og:image" content="http://example.com/image.jpg"/>
     <meta property="og:description" content="Description Here"/>
     <meta property="og:site_name" content="EFM Capital, i.e. Moz"/>
@@ -67,31 +67,27 @@
         <hr class="index-section-hr"/>
         <div class="index-section-1-copy-container">
             <p class="index-section-1-text">
-                <b>EFM Capital se especializa </b>en invertir en empresas que operan bajo un <b>modelo de gestión
-                    familiar</b> y requieren mejoras en su <b>modelo de negocio.</b> Logramos que la empresa opere en un
-                <b>marco institucional</b> que facilite la captación de nuevos inversionistas.
+                EFM Capital es un fondo de inversión especializado en empresas familiares. Como fondo puente, opera de forma transaccional, optimizando y revalorizando el modelo de negocio de las empresas y minimizando el costo de oportunidad de los inversionistas en su labor por colocar capital.
             </p>
             <br>
             <p class="index-section-1-text">
-                El objetivo es lograr, <b>en el corto plazo, </b>una <b>venta o asociación estratégica </b>con los
-                principales <b>corporativos e independientes.</b>
+                La finalidad es concretar, a corto plazo, una venta o asociación estratégica con los principales fondos de capital privado nacionales e internacionales, corporativos e independientes.
             </p>
         </div>
         <hr class="index-section-hr"/>
     </div>
 </section>
-
 <section class="index-section-2-carousel">
     <div class="carousel">
+        <div class="index-section-2-slide-header">
+            <hr class="index-section-2-slide-hr">
+            <span class="index-section-2-heading">Operaciones</span>
+            <hr class="index-section-2-slide-hr">
+        </div>
         <div class="container">
             <!-- slide 1 -->
             <div class="slide slide-1">
                 <div class="index-section-2-slide" id="slide-1">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
@@ -113,11 +109,6 @@
             <!-- slide 2 -->
             <div class="slide slide-2">
                 <div class="index-section-2-slide" id="slide-1">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
@@ -142,11 +133,6 @@
             <!-- slide 3 -->
             <div class="slide slide-3">
                 <div class="index-section-2-slide" id="slide-2">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
@@ -169,12 +155,7 @@
             <!-- slide 4 -->
             <div class="slide slide-4">
                 <div class="index-section-2-slide" id="slide-3">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
-                    <div class="index-section-2-slide-center">
+                    <div class="index-section-2-slide-center mobile-hide">
                         <div class="index-section-2-slide-center-header">
                             <hr class="index-section-2-slide-center-hr">
                             <span class="index-section-2-slide-center-heading">Declaración de cierre</span>
@@ -208,11 +189,6 @@
             <!-- slide 5 -->
             <div class="slide slide-5">
                 <div class="index-section-2-slide" id="slide-4">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
@@ -237,11 +213,6 @@
             <!-- slide 6 -->
             <div class="slide slide-6">
                 <div class="index-section-2-slide" id="slide-5">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
@@ -266,11 +237,6 @@
             <!-- slide 7 -->
             <div class="slide slide-7">
                 <div class="index-section-2-slide" id="slide-6">
-                    <div class="index-section-2-slide-header">
-                        <hr class="index-section-2-slide-hr">
-                        <span class="index-section-2-heading">Operaciones</span>
-                        <hr class="index-section-2-slide-hr">
-                    </div>
                     <div class="index-section-2-slide-footer">
                         <div class="index-section-2-slide-footer-content">
                             <div class="index-section-2-slide-footer-11"></div>
@@ -292,11 +258,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div id="nav" class="nav-section-2"></div>
     </div>
-    <script src="js/carousel-js/carousel.js"></script>
 </section>
 
 <section class="index-section-3 parallax-window-3">
@@ -336,17 +300,17 @@
             <div class="index-section-4-directors-module">
                 <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
                 <span class="index-section-4-directors-position">Socio</span>
-                <span id="manuel-detalles" class="index-section-4-directors-button">Detalles</span>
+                <span id="manuel-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
             </div>
             <div class="index-section-4-directors-module">
                 <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
                 <span class="index-section-4-directors-position">Socio</span>
-                <span id="carlos-j-detalles" class="index-section-4-directors-button">Detalles</span>
+                <span id="carlos-j-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
             </div>
             <div class="index-section-4-directors-module">
                 <span class="index-section-4-directors-name">Oscar J. Moráles Rodríguez</span>
                 <span class="index-section-4-directors-position">Director general Cienciamed</span>
-                <span id="oscar-detalles" class="index-section-4-directors-button">Detalles</span>
+                <span id="oscar-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
             </div>
             <div class="index-section-4-directors-module">
                 <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
@@ -356,7 +320,7 @@
             <div class="index-section-4-directors-module">
                 <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
                 <span class="index-section-4-directors-position">Consejero independiente</span>
-                <span id="lorenzo-detalles" class="index-section-4-directors-button">Detalles</span>
+                <span id="lorenzo-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
             </div>
         </div>
     </div>
@@ -424,13 +388,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div id="nav"></div>
     </div>
-    <script src="js/carousel-js/carousel.js"></script>
-
-
 </section>
 
 <section class="index-section-5">
@@ -731,36 +691,8 @@
     </div>
 
 
-    <!-- Map -->
-    <script type="text/javascript">
-        function initMap() {
-            var isDraggable = $(document).width() > 570 ? true : false; // If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
-
-            var mapOptions = {
-                draggable: isDraggable,
-
-                scrollwheel: false, // Prevent users to start zooming the map when scrolling down the page
-                //... options options options
-            };
-        }
-    </script>
     <div class="index-section-7-1-b">
         <div id="map" class="index-section-7-1-b"></div>
-        <script>
-            function initMap() {
-                var mapDiv = document.getElementById('map');
-                var map = new google.maps.Map(mapDiv, {
-                    center: {lat: 25.644775, lng: -100.32451600000002},
-                    zoom: 17,
-                    draggable: false,
-                    scrollwheel: false
-                });
-            }
-        </script>
-
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4738uIisDOYyffs-UVzfBWYAJ4AAYiC0&callback=initMap">
-        </script>
     </div>
 </section>
 
@@ -800,16 +732,9 @@
         $('.parallax-window-3').parallax({imageSrc: 'img/mobile-backgrounds/section-3-back-mobile.jpg'});
     }
 </script>
-<!-- <script>
-  $(document).ready(function(){
-    $(".navbar-menu-icon").click(function(){
-        $(".offcanvas-menu").css('right', 0);
-    });
-    $("section").click(function(){
-      $(".offcanvas-menu").css('right', -300);
-    });
-  });
-</script> -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4738uIisDOYyffs-UVzfBWYAJ4AAYiC0&callback=initMap">
+</script>
 
 </body>
 </html>

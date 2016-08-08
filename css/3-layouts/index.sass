@@ -22,6 +22,7 @@ body
   font-weight: 300
   margin: 0
   text-rendering: geometricPrecision !important
+  min-height: 100%
   -moz-te
 nav
   width: 100%
@@ -136,7 +137,7 @@ nav
   margin: 0 auto
   display: block
 .index-section-1-copy-container
-  max-width: 510px
+  max-width: 541px
   display: block
   margin: 30px auto
   text-align: center
@@ -167,14 +168,14 @@ nav
   line-height: 1.4
   background-color: rgba(0,0,0,0.5)
 .index-section-3-heading
-  margin: 0 30px
+  margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
   font-style: italic
 .index-section-3-slide-hr
   display: inline-block
-  width: 10%
+  width: 9%
   transform: translateY(-2px)
   -webkit-transform: translateY(-2px)
   -moz-transform: translateY(-2px)
@@ -233,7 +234,7 @@ nav
   line-height: 1.4
   background-color: white
 .index-section-4-heading
-  margin: 0 30px
+  margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
@@ -305,7 +306,7 @@ nav
   line-height: 1.4
   background-color: $efm-dark-gray
 .index-section-5-heading
-  margin: 0 30px
+  margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
@@ -338,7 +339,7 @@ nav
 .index-section-6-header:nth-child(2)
   box-shadow: none
 .index-section-6-heading
-  margin: 0 30px
+  margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 2px
@@ -392,7 +393,7 @@ nav
 .index-section-7-header:nth-child(2)
   box-shadow: none
 .index-section-7-heading
-  margin: 0 30px
+  margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
@@ -480,7 +481,7 @@ form
 .index-section-7-a
   display: inline-block
   max-width: 515px
-  margin: 30px
+  margin: 30px 25px
 .index-section-7-b
   display: inline-block
   max-width: 575px
@@ -499,6 +500,15 @@ form
   padding: 30px
 
 /* For more Carousel styles, check on carousel.sass */
+.wrapper
+  padding-bottom: 200px
+footer
+  width: 100%
+  right: 0
+  bottom: 0
+  left: 0
+  text-align: left
+
 
 /* Media Queries */
 @media only screen and #{$movile}
@@ -567,11 +577,11 @@ form
   .index-section-3-copy
     padding: 0 20px
   .index-section-3-copy-content
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    -webkit-transform: translateY(-50%)
-    -moz-transform: translateY(-50%)
+    //position: absolute
+    //top: 50%
+    //transform: translateY(-50%)
+    //-webkit-transform: translateY(-50%)
+    //-moz-transform: translateY(-50%)
   //Section 4
   .index-section-4-slide-hr
     display: none
@@ -604,6 +614,7 @@ form
   .index-section-7-content
     margin: 0 auto
     display: block
+    text-align: left
   .index-section-7-a
     display: block
     margin: 30px

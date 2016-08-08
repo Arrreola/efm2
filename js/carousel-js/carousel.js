@@ -18,7 +18,7 @@ function Carousel(element) {
   this.set(0);
 }
 
-Carousel.prototype.auto = function(ms) {
+Carousel.prototype.auto = function (ms) {
   if (this._interval) {
     clearInterval(this._interval);
     this._interval = null;
@@ -26,13 +26,11 @@ Carousel.prototype.auto = function(ms) {
   if (ms) {
     this._autoDuration = ms;
     var self = this;
-    this._interval = setInterval(function() {
-      self.next();
-    }, ms);
+    this._interval = setInterval(function () { self.next(); }, ms);
   }
 }
 
-Carousel.prototype.handleEvent = function(event) {
+Carousel.prototype.handleEvent = function (event) {
   if (event.touches && event.touches.length > 0) {
     this._touchTime = +new Date;
     this._touchX1 = this._touchX2;
@@ -60,7 +58,7 @@ Carousel.prototype.handleEvent = function(event) {
       this.auto(this._autoDuration);
       break;
     case 'touchstart':
-      event.preventDefault();
+      // event.preventDefault();
       this.auto(0);
       this._container.style.transition = 'none';
       this._touchAnchorX = this._touchX1 = this._touchX2;
@@ -75,7 +73,7 @@ Carousel.prototype.handleEvent = function(event) {
       break;
     case 'transitionend':
       var i = this._slide,
-        count = this._countSlides();
+          count = this._countSlides();
       if (i >= 0 && i < count) break;
       // The slides should wrap around. Instantly move to just outside screen on the other end.
       this._container.style.transition = 'none';
@@ -114,18 +112,27 @@ Carousel.prototype._countSlides = function() {
   return this._container.querySelectorAll('.slide').length;
 };
 
-Carousel.prototype._updateNav = function() {
-  var html = '',
-    count = this._countSlides();
+Carousel.prototype._updateNav = function () {
+  var html = '', count = this._countSlides();
   for (var i = 0; i < count; i++) {
     if (i > 0) html += '&nbsp;';
-    html += '<a' + (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '" href="#">●</a>';
+    html += '<a' +  (i == this._slide ? ' class="current"' : '') + ' data-slide="' + i + '" href="#">●</a>';
   }
   this._nav.innerHTML = html;
 }
 
-var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function(element) {
+var carousels = Array.prototype.map.call(document.querySelectorAll('.carousel'), function (element) {
   var carousel = new Carousel(element);
-  carousel.auto(8000);
+  carousel.auto(9000);
   return carousel;
 });
+
+
+function fix()
+{
+  var el = this;
+  var par = el.parentNode;
+  var next = el.nextSibling;
+  par.removeChild(el);
+  setTimeout(function() {par.insertBefore(el, next);}, 0)
+}

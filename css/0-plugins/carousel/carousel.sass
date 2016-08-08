@@ -20,12 +20,12 @@ p
   margin: 0
 .carousel
   position: relative
-carousel
-  justify-content: flex-start
-  overflow: hidden
-  padding: 40px 0
-  position: relative
-  width: 100vw
+//.carousel
+//  justify-content: flex-start
+//  overflow: hidden
+//  padding: 40px 0
+//  position: relative
+//  width: 100vw
 .carousel > .container
   display: flex
   flex-direction: row
@@ -69,6 +69,8 @@ carousel
   opacity: .5
 .carousel > #nav a.current
   opacity: 1
+.index-section-2-carousel .carousel .slide
+  box-shadow: 0 -160px 0 rgba(51, 51, 51, 0.95) inset
 .carousel .slide
   -webkit-flex-shrink: 0
   -ms-flex-negative: 0
@@ -99,20 +101,26 @@ carousel
   top: 0
   vertical-align: super
 .index-section-2-slide-header
+  font-size: 32px
+  text-align: center
   height: 73px
-  padding: 10px
+  padding: 11px
   color: black
   background-color: rgba(255,255,255,0.8)
   font-style: italic
+  width: 100%
+  z-index: 9
+  position: absolute
+  top: 0
 .index-section-2-heading
-  margin: 0 30px
+  margin: 0 25px
   display: inline-block
   vertical-align: middle
   padding-top: 0px
   font-style: italic
 .index-section-2-slide-hr
   display: inline-block
-  width: 10%
+  width: 9%
   vertical-align: middle
   transform: translateY(0px)
   -webkit-transform: translateY(0px)
@@ -120,12 +128,14 @@ carousel
   border: 0
   height: 1px
   background-color: #333
+
 .index-section-2-slide-footer
   width: 100%
   height: 160px
-  background-color: rgba(51, 51, 51, 0.97)
   bottom: 0
   margin-top: 300px
+  position: absolute
+  bottom: 0
 .index-section-2-slide-footer-content div
   display: inline-block
   vertical-align: middle
@@ -160,14 +170,18 @@ carousel
   margin: 0
 .index-section-2-slide-center
   font-size: 16px
-  width: 800px
+  width: 50%
+  min-width: 725px
   height: 300px
   float: right
   background: black
   color: white
   padding: 0 30px
+  margin-top: 72px
+  margin-bottom: 160px
+  margin-right: 15px
 .index-section-2-slide-center-header
-  padding: 10px
+  padding: 11px 0 7px 0
 .index-section-2-slide-center-hr
   width: 60px
   background: white
@@ -185,6 +199,7 @@ carousel
 .index-section-2-slide-center-text
   margin-bottom: 10px
   text-align: left
+  line-height: 1.25em
 .slide-1
   background-image: url('../img/desktop-backgrounds/section-2-melbourne.jpg')
   background-size: cover
@@ -214,11 +229,12 @@ carousel
   background-size: cover
   background-position: center
 
-
 @media only screen and #{$movile}
   .index-section-2-carousel .carousel .slide
-    box-shadow: inset 0 320px 0 0 rgba(0,0,0,0.7)
+    box-shadow: inset 0 320px 0 0 rgba(0,0,0,0.7) !important
     -webkit-transition: 0.4s
+    height: 320px
+    box-shadow: none
   .carousel > #nav
     transform: translatey(-36px)
     -webkit-transform: translateY(-36px)
@@ -230,32 +246,36 @@ carousel
     +background(transparent)
     bottom: 0
     text-align: left
-    margin: 30px auto 40px
+    margin: auto
+    position: absolute
+    top: 50%
+    transform: translateY(-50px)
   .index-section-2-slide-footer-content div
     display: block
+    width: auto
     vertical-align: inherit
-    width: 210px
-    margin: 0 auto
   .index-section-2-slide-footer-content
-    +outer-container
+    width: 230px
     color: white
     font-size: 14px
     line-height: 20px
   .index-section-2-slide-footer-m1
     font-size: 30px
     padding-bottom: 10px
-  .index-section-2-slide-footer-m4
-    margin-top: 30px
   .index-section-2-slide-footer-m4 a
     padding: 6px 20px
     border: 1px solid white
     text-align: left
     margin: 10px 0
-    width: 125px
+    width: 120px
     display: block
+  .slide-4 .index-section-2-slide-footer-content div:nth-child(5) a
+    width: 164px
   .index-section-2-slide-footer-11
     display: none
     height: 0
+  .index-section-2-slide-footer-content div:nth-child(3)
+    width: auto
 
 //Carousel: Consejo
 @media only screen and #{$movile}
@@ -265,10 +285,9 @@ carousel
   .index-section-4-m-text
     position: absolute
     bottom: 0
-    left: 50%
-    transform: translateX(-50%)
-    -webkit-transform: translateY(-50%)
-    -moz-transform: translateY(-50%)
+    left: 0%
+    -webkit-transform: translateY(0%)
+    -moz-transform: translateY(0%)
     width: 100%
     padding: 19px 0 58px
     background-color: rgba(0,0,0,0.8)
@@ -298,15 +317,18 @@ carousel
     display: block
     padding-bottom: 10px
   .index-section-4-m-member-button
+    border: 1px solid white
+    border-radius: 3px
     display: block
     padding: 0px 16px
     line-height: 21px
     margin: 0 auto
-    border: 1px solid white
     color: white
     width: 86px
     text-decoration: none
     cursor: pointer
+  .index-section-4-m-member-button:hover
+    background-color: rgba(255, 255, 255, 0.2)
 
 /* Team Carousel*/
 .index-section-5
@@ -372,6 +394,8 @@ carousel
     text-align: center
     display: inline-block
     color: white
+  .mobile-hide
+    display: none
 
 
 //Carousel: Team

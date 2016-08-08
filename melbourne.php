@@ -43,7 +43,7 @@
     <!-- Open Graph data for sharing in Facebook -->
     <meta property="og:title" content="EFM Capital"/>
     <meta property="og:type" content="EFM Capital"/>
-    <meta property="og:url" content="http://www.cienciamed.com/"/>
+    <meta property="og:url" content="http://www.efmcapital.com/"/>
     <meta property="og:image" content="http://example.com/image.jpg"/>
     <meta property="og:description" content="Description Here"/>
     <meta property="og:site_name" content="EFM Capital, i.e. Moz"/>
@@ -62,7 +62,6 @@
 </head>
 <body>
 <?php @include 'includes/navbar.php' ?>
-<div class="wrapper">
 <section class="operaciones-section-1">
     <div class="operaciones-section-1-text-box">
         <span class="operaciones-section-1-heading">Aviso de Privacidad de EFM CAPITAL, S.A. de C.V.</span>
@@ -110,7 +109,7 @@
         </form>
     </div>
 </section>
-</div>
+<footer>
 <section class="index-section-7">
     <div class="index-section-7-content">
         <div class="index-section-7-a">
@@ -131,6 +130,19 @@
 <section class="index-section-8">
     <span>Todos los derechos reservados 2016</span>
 </section>
-
+</footer>
+<script>
+    $(document).ready(function() {
+        /* vp_h will hold the height of the browser window */
+        var vp_h = $(window).height();
+        /* b_g will hold the height of the html body */
+        var b_g = $('body').height();
+        /* If the body height is lower than window */
+        if(b_g < vp_h) {
+            /* Set the footer css -> position: absolute; */
+            $('footer').css("position","absolute");
+        }
+    });
+</script>
 </body>
 </html>
