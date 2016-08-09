@@ -1,6 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - efm_bd@localhost" uuid="6bc5593e-bcbd-428c-b387-be19323c99d9">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-info product="MySQL" version="5.5.42" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="efm_bd">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <table id="5" parent="1" name="admin"/>
+      <table id="6" parent="1" name="blog"/>
+      <column id="7" parent="5" name="id_usr">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="8" parent="5" name="usuario">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="9" parent="5" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="10" parent="5" name="PRIMARY">
+        <columns>id_usr</columns>
+        <primary>1</primary>
+      </key>
+      <column id="11" parent="6" name="id_not">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="6" name="tit_es">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="13" parent="6" name="tit_en">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="14" parent="6" name="desc_short_es">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="15" parent="6" name="desc_short_en">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="16" parent="6" name="info_es">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="17" parent="6" name="info_en">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="18" parent="6" name="img">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="19" parent="6" name="cate">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="20" parent="6" name="status">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="21" parent="6" name="PRIMARY">
+        <columns>id_not</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
   </data-source>
 </component>

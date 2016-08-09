@@ -11,7 +11,7 @@ if (isset($_POST['usuario']) && $_POST['usuario'] != '' && isset($_POST['passwor
             $_SESSION['idAdmin'] = '';
         endif;
         $_SESSION['idAdmin'] = $login->callback;
-        header('Location:menu.php');
+        header('Location:menu/registros/');
     endif;
 
 endif;
@@ -66,7 +66,7 @@ endif;
         <div class="login-content-area-a">
             <img class="login-content-area-logo" src="../img/logos/logo94x495x2.png" alt="Logotipo de EFM Capital">
         </div>
-        <form enctype="multipart/form-data" name="loginForm" id="loginForm" method="post" action="login.php"
+        <form enctype="multipart/form-data" name="loginForm" id="loginForm" method="post" action="index.php"
               class="login-content-area-b">
             <input type="text" name="usuario" class="news-required" placeholder="Usuario">
             <input type="password" name="password" class="news-required" placeholder="Contraseña">

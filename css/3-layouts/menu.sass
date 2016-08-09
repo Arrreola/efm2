@@ -19,12 +19,12 @@ $font-merriweather: 'Merriweather', serif
 #menu-form-style label
   margin: 25px 0 10px 0
   text-transform: uppercase
-  font-size: 14px
-  color: #555
+  font-size: 13px
 .menu-navbar
   height: 75px
   width: 100%
-  background: #333
+  background: white
+  border-bottom: 1px solid #ddd
   position: fixed
   top: 0
   z-index: 9
@@ -33,16 +33,16 @@ $font-merriweather: 'Merriweather', serif
   margin: 0
   padding: 0
 .menu-navbar-items
-  padding: 20px
+  padding: 22px 15px
 .menu-logo
-  height: 35px
+  height: 30px
 .menu-section-title
   font-size: 18px
   font-weight: 600
   text-transform: uppercase
   font-family: sans-serif
   color: #333
-  margin-top: 30px
+  margin-top: 45px
 .menu-content-area-a
   @include span-columns(7)
   @include shift(2)
@@ -64,21 +64,26 @@ $font-merriweather: 'Merriweather', serif
   padding-left: 10px
   width: 100%
 .input-class option
-  padding: 15px 15px
+  padding: 12px 15px
   border-bottom: 1px solid #ccc
 .menu-submit-button
-  background-color: $efm-gold
-  border: 1px solid #ccc
+  background: white
+  border: 1px solid $efm-gold
   border-radius: 3px
   box-shadow: none
   color: #333
-  font-size: 15px
+  font-size: 13px
   font-weight: 100
-  height: 50px
+  height: 40px
   margin-bottom: 25px
   padding-left: 10px
   width: 100%
-
+  transition: all 0.2s ease-in-out 0s
+  text-transform: uppercase
+.menu-submit-button:hover
+  background-color: $efm-gold
+  color: white
+  transform: scale(1.01)
 .tiny-class div
   margin-bottom: 30px
 input[type="file"]
@@ -94,28 +99,30 @@ input[type="file"]
   text-align: center
   font-weight: 100
   max-width: 100%
-  padding: 15px
+  padding: 12px
   border: 1px solid #ccc
   border-radius: 3px
   margin-bottom: 25px !important
 .menu-img-post-button:hover
-  background: dodgerblue
+  background: #78abdd
   color: white
   transition: all 0.2s ease-in-out 0s
 .login-button
   border: 1px solid $efm-gold
   box-shadow: none
   background: transparent
-  padding: 15px
+  padding: 12px
   border-radius: 3px
   width: 100%
   text-align: center
-  font-size: 15px
+  font-size: 13px
   font-weight: 100
   transition: all 0.2s ease-in-out 0s
+  text-transform: uppercase
 .login-button:hover
   background: $efm-gold
   color: white
+  transform: scale(1.02)
   transition: all 0.2s ease-in-out 0s
 .news-required
   background-color: white
@@ -137,14 +144,14 @@ input:focus
 #menu-form-style hr
   height: 1px
   border: 0
-  background: #eeeeee
-  margin: 30px 0
+  background: #dddddd
+  margin: 45px 0
 .menu-sidebar
   position: fixed
   left: 0
-  padding: 50px 0
-  background: #DFE1E2
-  min-width: 250px
+  padding: 75px 0
+  background: #2F323E
+  min-width: 200px
   color: #555
   font-family: sans-serif
   font-size: 12px
@@ -153,10 +160,91 @@ input:focus
 .menu-list
   list-style: none
   padding: 0
-.menu-items
-  padding: 15px 15px
+  margin: 0
+.menu-items a
+  display: block
+  padding: 20px 15px
   cursor: pointer
+  color: white
+  text-decoration: none
+  transition: all .2s ease-in-out
+.menu-items a:hover
+  border-left: 6px solid #B5BCBF
+  transition: all .2s ease-in-out
+.menu-items a:active
+  border-left: 6px solid #B5BCBF
+  transition: all .2s ease-in-out
 .menu-list hr
   height: 1px
   border: 0
-  background: #D5D7D8
+  background: #42475E
+  margin: 0px
+#listReg
+  list-style: none
+  text-transform: uppercase
+  font-size: 13px
+  padding: 0
+  font-weight: 100
+#listReg li
+  margin: 20px 0
+  display: block
+
+.menu-dashboard-title
+  font-size: 18px
+  font-weight: 600
+  text-transform: uppercase
+  font-family: sans-serif
+  color: #333
+  margin-top: 30px
+  text-decoration: none
+  display: block
+.menu-content-area-a-extra
+  display: block
+  margin: 20px auto 0
+  position: relative
+  width: 80%
+  font-family: sans-serif
+.float
+  margin: 0 45px 0px 0
+.menu-hr
+  background: #dddddd none repeat scroll 0 0
+  border: 0 none
+  height: 1px
+  margin: 30px 0
+  display: block
+  width: 100%
+.menu-icons
+  width: 15px
+  transition: all .2s ease-in-out
+.menu-icons:hover
+  transform: scale(1.4)
+  transition: all .2s ease-in-out
+  margin-top: -3px
+.menu-dashboard-agregar-post
+  border: 1px solid #ccc
+  border-radius: 3px
+  cursor: pointer
+  display: block
+  font-weight: 100
+  font-size: 13px
+  margin-bottom: 25px !important
+  max-width: 180px
+  padding: 12px
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+  color: #aaa
+  transition: all .2s ease-in-out
+.menu-dashboard-agregar-post:hover
+  color: white
+  border: 1px solid #78abdd
+  background: #78abdd
+  transform: scale(1.04)
+.menu-float-right
+  float: right
+#status
+  display: inline-block
+  margin: 0 15px 0 0
+.menu-status-checkbox
+  display: inline-block !important
+  margin: 0 !important

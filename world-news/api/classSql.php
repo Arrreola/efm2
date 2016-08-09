@@ -13,7 +13,7 @@ class consultar
     public function __construct($qry)
     {
         $conex = '';
-        require 'conect.php';
+        require 'conexion.php';
 
         $temp = array();
 
@@ -186,6 +186,7 @@ class loginUser
 
     public function __construct($usr, $pass)
     {
+        $conex = '';
         include 'conexion.php';
 
         $qryLogin = "SELECT * FROM admin WHERE usuario='{$usr}' AND password='{$pass}'";
@@ -204,7 +205,7 @@ class saveNot
 {
     //http://stackoverflow.com/questions/2552545/mysqli-prepared-statements-error-reporting
 
-    public static function crud($tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $idReg, $action)
+    public static function crud($tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status, $idReg, $action)
     {
         $conex = '';
         include 'conexion.php';
@@ -226,16 +227,16 @@ class saveNot
                     switch ($action):
 
                         case 'insert':
-                            $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                            $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)";
                             $qryResp = $stmt = $conex->prepare($qry);
                             //investivar como funciona el bind_param
-                            $bindResp = $stmt->bind_param("sssssss", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img);
+                            $bindResp = $stmt->bind_param("sssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status);
                             break;
                         case 'update':
-                            $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=? WHERE id_not=?";
+                            $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=?,cate=?,status=? WHERE id_not=?";
                             $qryResp = $stmt = $conex->prepare($qry);
                             //investivar como funciona el bind_param
-                            $bindResp = $stmt->bind_param("sssssssi", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $idReg);
+                            $bindResp = $stmt->bind_param("sssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status, $idReg);
                             break;
 
                     endswitch;
@@ -243,19 +244,21 @@ class saveNot
                 endif;
             endif;
         else:
+
+            //ESTA PARTE SE INSERTA O ACTUALIZA UN REGISTRO CUANDO NO EXISTE LA IMAGEN
             switch ($action):
 
                 case 'insert':
-                    $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en) VALUES (?, ?, ?, ?, ?, ?)";
+                    $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                     $qryResp = $stmt = $conex->prepare($qry);
                     //investivar como funciona el bind_param
-                    $bindResp = $stmt->bind_param("ssssss", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en);
+                    $bindResp = $stmt->bind_param("ssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status);
                     break;
                 case 'update':
-                    $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=? WHERE id_not=?";
+                    $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,cate=?,status=? WHERE id_not=?";
                     $qryResp = $stmt = $conex->prepare($qry);
                     //investivar como funciona el bind_param
-                    $bindResp = $stmt->bind_param("ssssssi", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $idReg);
+                    $bindResp = $stmt->bind_param("ssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status, $idReg);
                     break;
 
             endswitch;
@@ -267,7 +270,6 @@ class saveNot
 
 
         if (false === $bindResp) :
-            // again execute() is useless if you can't bind the parameters. Bail out somehow.
             die('bind_param() failed: ' . htmlspecialchars($stmt->error));
         endif;
 
@@ -281,8 +283,7 @@ class saveNot
 
     }
 
-    public
-    static function getList($id)
+    public static function getDetail($id)
     {
 
     }

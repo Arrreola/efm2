@@ -3,9 +3,9 @@ session_start();
 include 'api/controller.php';
 if (!isset($_SESSION['idAdmin'])):
     //echo 'no existe';
-    header('Location:login.php');
+    header('Location:index.php');
 else:
-    echo $_SESSION['idAdmin'];
+    //echo $_SESSION['idAdmin'];
 endif;
 
 if (!isset($_GET['action'])):
@@ -26,7 +26,8 @@ endif;
     <!-- Iso -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- INVESTIGAR EL USO DE LA ETIQUETA BASE CON HTACCESS -->
+    <base href="http://localhost:8888/efm-new/world-news/" target="_top">
     <!-- Title is the first phrase you see as a search result. -->
     <title>EFM Capital | Iniciar Sesión</title>
 
@@ -87,52 +88,36 @@ endif;
 <div class="menu-section">
     <div class="menu-sidebar">
         <ul class="menu-list">
-            <li class="menu-items">Dashboard</li>
+            <li class="menu-items">
+                <a href="menu/dashboard/">
+                    Dashboard
+                </a>
+            </li>
             <hr>
-            <li class="menu-items">Seo</li>
+            <li class="menu-items">
+                <a href="menu/seo/">
+                    Seo
+                </a>
+            </li>
             <hr>
-            <li class="menu-items">Manual</li>
+            <li class="menu-items">
+                <a href="menu/manual/">
+                    Manual
+                </a>
+            </li>
             <hr>
         </ul>
     </div>
-    <div class="menu-content-area-a">
-        <form action="menu" enctype="multipart/form-data" method="post" id="menu-form-style">
-            <p class="menu-section-title">Dashboard</p>
-            <hr>
-            <label>Sección</label>
-            <input type="hidden" name="myAction" value="<?= $myAction; ?>">
-            <?= $inputIdReg; ?>
-            <select class="input-class input-class-category" name="categoria" id="categoria">
-                <option value="1">weekly trending topic</option>
-                <option value="2">Efm capital's perspective</option>
-                <option value="3">Monthly industry perspective</option>
-            </select>
-            <hr>
-            <label for="tit_es">Titulo en español</label>
-            <input class="input-class" type="text" name="tit_es" id="tit_esp">
-            <hr>
-            <label for="tit_en">Titulo en ingles</label>
-            <input class="input-class" type="text" name="tit_en" id="tit_en">
-            <hr>
-            <label for="desc_es">Descripción corta en español</label>
-            <textarea  id="myTextarea" name="desc_short_es" id="desc_es" cols="30" rows="10"></textarea>
-            <hr>
-            <label for="desc_en">Descripción corta en ingles</label>
-            <textarea name="desc_short_en" id="desc_es" cols="30" rows="10"></textarea>
-            <hr>
-            <label for="desc_es">Descripción completa en español</label>
-            <textarea name="desc_es" id="desc_es" cols="30" rows="10"></textarea>
-            <hr>
-            <label for="desc_en">Descripción completa en ingles</label>
-            <textarea name="desc_en" id="desc_es" cols="30" rows="10"></textarea>
-            <hr>
-            <label for="imgNot" class="menu-img-post-button">Imagen del post</label>
-            <hr>
-            <input type="file" name="imgNot" id="imgNot">
+    <?php
 
-            <input class="menu-submit-button" type="submit" value="Guardar">
-        </form>
-    </div>
+    echo 'valor de sec = ' . $_GET['sec'];
+
+    if (isset($_GET['sec']) && $_GET['sec'] != ''):
+        include 'interiores/' . $_GET['sec'] . '.php';
+    else:
+        include 'interiores/dashboard.php';
+    endif;
+    ?>
 </div>
 </body>
 </html>
