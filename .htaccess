@@ -1,0 +1,10 @@
+# Activar RewriteEngine
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^es/$ index.php?len=es
+RewriteRule ^en/$ index.php?len=en
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)$ index.php?len=$1&sec=$2  [NC,L]

@@ -51,11 +51,11 @@
     <meta property="og:locale:alternate" content="en_US"/>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Scripts src -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="js/parallax-js/parallax.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/parallax-js/parallax.min.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body>
 <?php @include 'includes/navbar.php' ?>
@@ -80,7 +80,7 @@
         </div>
         <div class="operaciones-section-1-form">
             <div class="operaciones-side-b-1">
-                <img src="img/logos/pdf-icon.png" alt="Pdf Icono">
+                <img src="../img/logos/pdf-icon.png" alt="Pdf Icono">
                 <a href="/descargas/melbourne-es.pdf" target="_blank"><button class="operaciones-side-b-button-descarga">Descargar</button></a>
                 <hr>
                 <p class="operaciones-side-b-text-1">

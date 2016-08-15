@@ -2,5 +2,6 @@
 RewriteEngine on
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^inicio/([a-zA-Z0-9-]*)/$ index.php?sec=$1
 RewriteRule ^menu/([a-zA-Z0-9-]*)/$ menu.php?sec=$1
 RewriteRule ^menu/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([0-9]+)/$ menu.php?sec=$1&action=$2&idReg=$3

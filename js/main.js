@@ -5,6 +5,9 @@
  EL WINDOWN  LE DICE AL NAVEGADOR QUE TODAS LAS ETIQUTAS HAN SIDO LEIDAS Y CARGADAS
  */
 $(window).load(function () {
+
+    loadArt();
+
     if ($(window).width() < 600) {       // if width is less than 600px
         MobileFunctions();                 // execute mobile function
     }
@@ -204,7 +207,6 @@ $(window).load(function () {
 //MAPS
 
 
-
 function initMap() {
 
     var myLatLng = {lat: 25.644775, lng: -100.32451600000002};
@@ -256,13 +258,13 @@ function validateForm(idObj) {
     //PRIMER VERIFICAMOS QUE FORMULARIO ES PARA PODER SABER A QUE ARCHIVO ENVIAR LA INFORMACIÓN
     switch (idObj) {
         case 'pageForm':
-            _urlFile  = 'send.php';
+            _urlFile = 'send.php';
             break;
         case 'formMelbourne':
-            _urlFile  = 'send-melbourne.php';
+            _urlFile = 'send-melbourne.php';
             break;
         case 'formLisbon':
-            _urlFile  = 'send-lisbon.php';
+            _urlFile = 'send-lisbon.php';
             break;
     }
 
@@ -274,7 +276,7 @@ function validateForm(idObj) {
         data: _stringVar
     }).success(function (msg) {
         // alert("Data Saved: " + msg);
-        if (msg == 'success'){
+        if (msg == 'success') {
 
             switch (idObj) {
                 case 'pageForm':
@@ -290,9 +292,9 @@ function validateForm(idObj) {
                             confirmButtonText: "Ok",
                             closeOnConfirm: false
                         },
-                        function(){
-                           // console.log('se ejecuta mandando a la nueva pagina');
-                            window.location = 'ficha-tecnica-melbourne.php';
+                        function () {
+                            // console.log('se ejecuta mandando a la nueva pagina');
+                            window.location = '../secciones/ficha-tecnica-melbourne.php';
                         });
                     break;
                 case 'formLisbon':
@@ -305,9 +307,9 @@ function validateForm(idObj) {
                             confirmButtonText: "Ok",
                             closeOnConfirm: false
                         },
-                        function(){
+                        function () {
                             // console.log('se ejecuta mandando a la nueva pagina');
-                            window.location = 'ficha-tecnica-lisbon.php';
+                            window.location = '../secciones/ficha-tecnica-lisbon.php';
                         });
                     break;
             }
@@ -315,18 +317,34 @@ function validateForm(idObj) {
         }
 
 
+    });
+}
+var lastChild = 0;
+function loadArt() {
 
+    var _listHomeArtLi = $('#listHomeArt li');
+
+    if (_listHomeArtLi.length > 0) {
+        lastChild = $('#listHomeArt').find('li:last-child').data('idreg');
+    }
+
+    $.ajax({
+        method: "POST",
+        url: 'controller.php',
+        data: 'lastId=' + lastChild
+    }).success(function (msg) {
+        $('#listHomeArt').append(msg);
     });
 }
 
-
-function fix()
-{
+function fix() {
     var el = this;
     var par = el.parentNode;
     var next = el.nextSibling;
     par.removeChild(el);
-    setTimeout(function() {par.insertBefore(el, next);}, 0)
+    setTimeout(function () {
+        par.insertBefore(el, next);
+    }, 0)
 }
 // MELBOURNE FORM
 

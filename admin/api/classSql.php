@@ -205,7 +205,7 @@ class saveNot
 {
     //http://stackoverflow.com/questions/2552545/mysqli-prepared-statements-error-reporting
 
-    public static function crud($tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status, $idReg, $action)
+    public static function crud($tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status, $cf, $idReg, $action)
     {
         $conex = '';
         include 'conexion.php';
@@ -227,22 +227,29 @@ class saveNot
                     switch ($action):
 
                         case 'insert':
-                            $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)";
-                            $qryResp = $stmt = $conex->prepare($qry);
+                            $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                            $stmt = $conex->prepare($qry);
                             //investivar como funciona el bind_param
-                            $bindResp = $stmt->bind_param("sssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status);
+                            $stmt->bind_param("sssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $file, $cat, $status);
                             break;
                         case 'update':
+
+                            if (file_exists('../img/blog/' . $cf)):
+                                unlink('../img/blog/' . $cf);
+                            endif;
+
                             $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=?,cate=?,status=? WHERE id_not=?";
-                            $qryResp = $stmt = $conex->prepare($qry);
+                            $stmt = $conex->prepare($qry);
                             //investivar como funciona el bind_param
-                            $bindResp = $stmt->bind_param("sssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $img, $cat, $status, $idReg);
+                            $stmt->bind_param("sssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $file, $cat, $status, $idReg);
                             break;
 
                     endswitch;
 
                 endif;
+
             endif;
+
         else:
 
             //ESTA PARTE SE INSERTA O ACTUALIZA UN REGISTRO CUANDO NO EXISTE LA IMAGEN
@@ -250,27 +257,18 @@ class saveNot
 
                 case 'insert':
                     $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-                    $qryResp = $stmt = $conex->prepare($qry);
+                    $stmt = $conex->prepare($qry);
                     //investivar como funciona el bind_param
-                    $bindResp = $stmt->bind_param("ssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status);
+                    $stmt->bind_param("ssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status);
                     break;
                 case 'update':
                     $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,cate=?,status=? WHERE id_not=?";
-                    $qryResp = $stmt = $conex->prepare($qry);
+                    $stmt = $conex->prepare($qry);
                     //investivar como funciona el bind_param
-                    $bindResp = $stmt->bind_param("ssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status, $idReg);
+                    $stmt->bind_param("ssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status, $idReg);
                     break;
 
             endswitch;
-        endif;
-
-        if (false === $qryResp) :
-            die('prepare() failed: ' . htmlspecialchars($conex->error));
-        endif;
-
-
-        if (false === $bindResp) :
-            die('bind_param() failed: ' . htmlspecialchars($stmt->error));
         endif;
 
         $resp = $stmt->execute();

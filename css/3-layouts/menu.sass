@@ -1,6 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Rasa:300,400,500,600,700'
-@import 'https://fonts.googleapis.com/css?family=Amiri'
-@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i'
 @import 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700'
 
 $movile: "(max-width: 767px)"
@@ -27,15 +24,30 @@ $font-merriweather: 'Merriweather', serif
   border-bottom: 1px solid #ddd
   position: fixed
   top: 0
-  z-index: 9
+  z-index: 1
+  //padding-left: 200px
+  transition: all 0.4s ease-in-out 0s
 .menu-navbar-list
   list-style: none
   margin: 0
   padding: 0
+.menu-item-logo
+  height: 74px
+  padding: 22px
 .menu-navbar-items
-  padding: 22px 15px
+  padding: 28px 30px
+  float: right
+.menu-navbar-items a
+  color: #333
+.menu-navbar-items-logo
+  text-align: center
+  float: none
+  display: none
+  position: absolute
+  right: 50%
+  transform: translatex(25%)
 .menu-logo
-  height: 30px
+  height: 24px
 .menu-section-title
   font-size: 18px
   font-weight: 600
@@ -44,10 +56,11 @@ $font-merriweather: 'Merriweather', serif
   color: #333
   margin-top: 45px
 .menu-content-area-a
-  @include span-columns(7)
+  @include span-columns(8)
   @include shift(2)
   background: white
   margin-top: 75px
+  transition: all .4s ease-in-out
 .menu-content-area-a label
   font-family: sans-serif
   font-size: 16px
@@ -149,7 +162,7 @@ input:focus
 .menu-sidebar
   position: fixed
   left: 0
-  padding: 75px 0
+  padding: 0
   background: #2F323E
   min-width: 200px
   color: #555
@@ -157,6 +170,8 @@ input:focus
   font-size: 12px
   text-transform: uppercase
   height: 100%
+  transition: all .4s ease-in-out
+  z-index: 2
 .menu-list
   list-style: none
   padding: 0
@@ -168,11 +183,12 @@ input:focus
   color: white
   text-decoration: none
   transition: all .2s ease-in-out
+  border-left: 0px solid #3C404F
 .menu-items a:hover
-  border-left: 6px solid #B5BCBF
+  border-left: 6px solid #3C404F
   transition: all .2s ease-in-out
 .menu-items a:active
-  border-left: 6px solid #B5BCBF
+  border-left: 6px solid #3C404F
   transition: all .2s ease-in-out
 .menu-list hr
   height: 1px
@@ -224,7 +240,7 @@ input:focus
   border: 1px solid #ccc
   border-radius: 3px
   cursor: pointer
-  display: block
+  display: inline-block
   font-weight: 100
   font-size: 13px
   margin-bottom: 25px !important
@@ -240,6 +256,10 @@ input:focus
   border: 1px solid #78abdd
   background: #78abdd
   transform: scale(1.04)
+.menu-dashboard-select
+  width: 200px
+  display: inline-block
+  margin: 0 20px
 .menu-float-right
   float: right
 #status
@@ -248,3 +268,77 @@ input:focus
 .menu-status-checkbox
   display: inline-block !important
   margin: 0 !important
+.menu-item-name
+  margin-left: 30px
+.menu-icons-sidebar
+  width: 20px
+  margin-right: 10px
+  position: absolute
+  transform: translateY(-25%)
+.menu-mobile-trigger
+  border-radius: 0 0 8px
+  height: 45px
+  position: absolute
+  transform: translate(13px, 13px)
+  display: block
+  width: 45px
+  transition: all .4s ease-in-out
+.menu-icon-trigger
+  margin: 10px 11px
+  position: absolute
+  width: 25px
+  opacity: 0
+  cursor: pointer
+.red-button
+  background: #D36E71
+  color: white
+@media only screen and #{$tablet, $movile}
+  .menu-content-area-a
+    @include span-columns(10)
+    @include shift(1)
+    transition: all .4s ease-in-out
+    margin-top: 75px
+  .menu-navbar
+    margin-left: 10px
+    transition: all 0.4s ease-in-out 0s
+    z-index: 1
+  .menu-navbar-left
+    margin-left: 200px
+    transition: all 0.4s ease-in-out 0s
+  .menu-sidebar
+    left: -190px
+    transition: all .4s ease-in-out
+    z-index: 2
+  .menu-sidebar-active
+    left: 0px !important
+    transition: all .4s ease-in-out
+  .menu-icon-trigger
+    margin: 10px 11px
+    position: absolute
+    width: 25px
+    opacity: 1
+  .menu-mobile-trigger
+    border-radius: 0 0 8px
+    height: 45px
+    position: fixed
+    transform: translate(13px, 13px)
+    display: block
+    width: 45px
+    z-index: 9
+  .menu-mobile-trigger-active
+    border-radius: 0 0 8px
+    height: 45px
+    position: fixed
+    transform: translate(195px, 13px) !important
+    display: block
+    width: 50px !important
+    z-index: 9
+  .menu-logo
+    height: 30px
+  .menu-item-logo
+    display: none
+  .menu-navbar-items-logo
+    display: block
+    transition: all 0.4s ease-in-out 0s
+    padding-top: 22px
+  .input-class

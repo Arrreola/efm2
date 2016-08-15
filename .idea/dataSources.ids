@@ -70,6 +70,7 @@
       </column>
       <column id="20" parent="6" name="status">
         <data-type>int(11)|0</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
       </column>
       <key id="21" parent="6" name="PRIMARY">
         <columns>id_not</columns>

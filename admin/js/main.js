@@ -2,7 +2,9 @@
  * Created by v09 on 02/08/16.
  */
 $(window).load(function () {
-
+    if (_flagClass == 1) {
+        $(".menu-img-post-button").addClass("red-button");
+    }
     if ($('textarea').length) {
         tinymce.init({
             selector: 'textarea',
@@ -84,3 +86,25 @@ function loginForm() {
     });
 }
 */
+$(window).load(function () {
+    $(".menu-mobile-trigger").click(function () {
+        $(this).toggleClass("menu-mobile-trigger-active")
+        $(".menu-sidebar").toggleClass("menu-sidebar-active")
+    });
+});
+
+$(document).ready(function () {
+    if ($('textarea').length) {
+        tinymce.init({
+            selector: 'textarea',
+            theme: 'modern',
+            height: 150,
+            plugins: [
+                'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+                'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+                'save table contextmenu directionality emoticons template paste textcolor code'
+            ],
+            toolbar: 'insertfile undo redo | styleselect fontsizeselect fontselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor | code'
+        });
+    }
+})

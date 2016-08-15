@@ -1,0 +1,238 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700'
+
+
+$movile: "(max-width: 767px)"
+$tablet: "(min-width: 768px) and (max-width: 1023px)"
+$desktop: "(min-width: 1024px)"
+$lateral-padding-mobile: 0 20px 0 20px
+$efm-dark-gray: #292A2C
+$efm-gold: #c3b584
+
+/*Typography Variables*/
+$font-times: 'times new roman'
+$font-rasa: 'Rasa', serif
+$font-amiri: 'Amiri', serif
+$font-baskerville: 'Libre baskerville', serif
+/*Background Variables*/
+
+.outer-container
+  +outer-container
+  font-family: $font-baskerville
+  font-weight: 100
+  padding: 0 120px
+.welcome-banner
+  +outer-container
+  padding: 0 58px
+  height: 120px
+  text-align: center
+  display: block
+  margin-top: 40px
+  margin-bottom: 40px
+.welcome-banner-black
+  background: black
+  height: 100%
+  margin: 0 58px
+.wn-h1
+  @include span-columns(12)
+  color: white
+  font-size: 40px
+  font-family: $font-baskerville
+  font-weight: 100
+  margin: 20px 0 10px
+  text-transform: uppercase
+.wn-subheading
+  height: 18px
+  color: white
+  margin: 0 0 30px
+.wn-section-1
+  margin-bottom: 40px
+.wn-section-topic
+  font-size: 17px
+  font-family: $font-baskerville
+  font-weight: 800
+  text-transform: uppercase
+  margin: 0
+.wn-hr
+  margin: 15px 0 20px
+.wn-section-1-topic-container
+  height: 400px
+  background: #aaa
+  padding: 0 26.5px
+
+.wn-section-1-topic-heading
+  @include span-columns(7)
+  color: white
+  font-size: 34px
+  font-weight: 400
+  line-height: 40px
+  margin: 30px 0 15px
+  display: block
+.wn-section-1-topic-description
+  @include span-columns(6)
+  color: white
+  font-size: 15px
+  line-height: 20px
+
+// WN SECTION 2
+
+.wn-section-2
+  height: 510px
+  margin-bottom: 10px
+.wn-section-2-perspective-container
+  height: 450px
+  position: relative
+.wn-section-2-post-contain-1, .wn-section-2-post-contain-2
+  padding: 0
+.wn-section-2-post-area
+  @include span-columns(4)
+  margin-bottom: 40px
+.wn-section-2-post-img
+  display: block
+  height: 200px
+  width: 100%
+  background: #eee
+.wn-section-2-post-heading
+  font-size: 24px
+  line-height: 30px
+  font-weight: 100
+.wn-section-2-post-description
+  font-size: 15px
+  line-height: 20px
+.wn-section-2-more-post-text
+  display: inline-block
+  font-weight: 800
+  font-size: 15px
+  line-height: 20px
+  transform: translateY(-10px)
+  margin-left: 20px
+.wn-section-2-more-post-text a
+  text-decoration: none
+  color: black
+
+.wn-section-2-more-post
+  bottom: 0
+  right: 0
+  position: absolute
+.wn-section-2-more-post-icon-box
+  display: inline-block
+  width: 30px
+  height: 30px
+  border: 1px solid black
+.wn-section-2-more-post-icon
+  width: 15px
+  height: 15px
+.wn-hr-industry-1
+  height: 1px
+  background: black
+  border: 0px
+  width: 105px
+  position: absolute
+  bottom: -13px
+  right: 0
+
+
+//WN SECTION 3
+.wn-section-3
+  height: 510px
+  margin-bottom: 10px
+  position: relative
+.wn-section-3-container
+  height: 400px
+  background: #aaa
+  padding: 0 26.5px
+  position: relative
+  margin-bottom: 30px
+.wn-section-3-heading
+  @include span-columns(4)
+  color: white
+  font-size: 36px
+  line-height: 40px
+  margin: 30px 0 15px
+  display: block
+.wn-section-3-date
+  @include span-columns(12)
+  color: white
+  display: block
+.wn-section-3-download
+  position: absolute
+  bottom: 0
+  margin-bottom: 30px
+.wn-section-3-download-icon
+  width: 27px
+  height: 30px
+  display: inline-block
+.wn-section-3-download-text
+  color: white
+  font-size: 15px
+  line-height: 20px
+  transform: translateY(-10px)
+  display: inline-block
+.wn-hr-download
+  margin: 0
+  height: 1px
+  background: white
+  border: none
+  width: 80px
+  position: absolute
+  bottom: 5px
+  right: 0
+.wn-section-3-more-post
+  position: absolute
+  bottom: 0
+  right: 0
+.wn-section-3-more-post-icon-box
+  display: inline-block
+  width: 30px
+  height: 30px
+  border: 1px solid black
+.wn-section-3-more-post-icon
+  width: 15px
+  height: 15px
+.wn-section-3-more-post-text
+  display: inline-block
+  font-weight: 800
+  font-size: 15px
+  line-height: 20px
+  transform: translateY(-10px)
+  margin-left: 20px
+.wn-hr-industry
+  height: 1px
+  background: black
+  border: 0px
+  width: 185px
+  position: absolute
+  bottom: -3px
+  right: 0
+
+  // SECTION 4
+.wn-subheading
+  height: 18px
+  color: white
+  margin: 0 0 30px
+.wn-section-4
+  margin-bottom: 40px
+.wn-section-topic
+  font-size: 17px
+  font-family: $font-baskerville
+  font-weight: 800
+  text-transform: uppercase
+  margin: 0
+.wn-hr
+  margin: 15px 0 20px
+.wn-section-4-topic-container
+  height: 400px
+  background: #aaa
+  padding: 0 26.5px
+.wn-section-4-topic-heading
+  @include span-columns(7)
+  color: white
+  font-size: 34px
+  font-weight: 400
+  line-height: 40px
+  margin: 30px 0 15px
+  display: block
+.wn-section-4-topic-description
+  @include span-columns(6)
+  color: white
+  font-size: 15px
+  line-height: 20px
