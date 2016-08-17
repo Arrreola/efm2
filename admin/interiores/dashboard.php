@@ -7,11 +7,9 @@
         <hr>
         <label>Sección</label>
         <select class="input-class input-class-category" name="categoria" id="categoria">
-            <option value="1" <?= $opt1 ?>>weekly trending topic</option>
-            <option value="2" <?= $opt2 ?>>Efm capital's perspective</option>
-            <option value="3" <?= $opt3 ?>>Monthly industry perspective</option>
-            <option value="4" <?= $opt4 ?>>Events</option>
+            <?= $opt; ?>
         </select>
+
         <hr>
         <label for="tit_es">Titulo en español</label>
         <input class="input-class" type="text" name="tit_es" id="tit_esp" value="<?= $tit_es; ?>">
@@ -20,8 +18,7 @@
         <input class="input-class" type="text" name="tit_en" id="tit_en" value="<?= $tit_en; ?>">
         <hr>
         <label for="desc_es">Descripción corta en español</label>
-        <textarea id="myTextarea" name="desc_short_es" id="desc_es" cols="30"
-                  rows="10"><?= $desc_short_es; ?></textarea>
+        <textarea id="myTextarea" name="desc_short_es" id="desc_es" cols="30" rows="10"><?= $desc_short_es; ?></textarea>
         <hr>
         <label for="desc_en">Descripción corta en ingles</label>
         <textarea name="desc_short_en" id="desc_es" cols="30" rows="10"><?= $desc_short_en; ?></textarea>

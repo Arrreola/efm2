@@ -9,7 +9,7 @@ else:
 endif;
 
 if (!isset($_GET['action'])):
-    $myAction = 'insert';
+        $myAction = 'insert';
 else:
     if ($_GET['action'] == 'update'):
         $myAction = $_GET['action'];
@@ -61,6 +61,13 @@ endif;
                 <a href="menu/registros/">
                     <img class="menu-icons-sidebar" src="../img/icons/icons-04.svg" alt="">
                     <span class="menu-item-name">Dashboard</span>
+                </a>
+            </li>
+            <hr>
+            <li class="menu-items">
+                <a href="menu/categorias/">
+                    <img class="menu-icons-sidebar" src="../img/icons/icons-04.svg" alt="">
+                    <span class="menu-item-name">Categorias</span>
                 </a>
             </li>
             <hr>

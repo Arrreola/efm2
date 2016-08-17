@@ -59,21 +59,6 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'registros'):
 
         $xtraQry = ' WHERE cate=' . $_POST['categoria'];
 
-        switch ($_POST['categoria']):
-            case 1:
-                $opt1 = 'selected="selected"';
-                break;
-            case 2:
-                $opt2 = 'selected="selected"';
-                break;
-            case 3:
-                $opt3 = 'selected="selected"';
-                break;
-            case 4:
-                $opt4 = 'selected="selected"';
-                break;
-        endswitch;
-
     else:
         $xtraQry = '';
     endif;
@@ -112,6 +97,27 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'registros'):
                     </li>';
 
     endfor;
+
+    $qryGetCat = 'SELECT * FROM categorias';
+    $conGetCat = new consultar($qryGetCat);
+    $rowGetCat = $conGetCat->listRtn;
+    $totGetCat = count($rowGetCat);
+    for ($f = 0; $f < $totGetCat; $f++):
+
+        if (isset($_POST['categoria']) && $_POST['categoria'] != ''):
+
+            if ($_POST['categoria'] == $rowGetCat[$f]['id_cate']):
+                $class = 'selected="selected"';
+            else:
+                $class = '';
+            endif;
+
+        endif;
+
+        $opt .= '<option value="' . $rowGetCat[$f]['id_cate'] . '" ' . $class . '>' . $rowGetCat[$f]['tit_es'] . '</option>';
+
+    endfor;
+
 endif;
 
 if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
@@ -150,6 +156,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
 
 //ACCION DEL UPDATE
     if (isset($_GET['action']) && $_GET['action'] == 'update'):
+
         $qryUpd = 'SELECT * FROM blog WHERE id_not=' . $_GET['idReg'];
         $conUpd = new consultar($qryUpd);
         $rowUpd = $conUpd->listRtn;
@@ -161,18 +168,6 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         $info_es = html_entity_decode($rowUpd[0]['info_es']);
         $info_en = html_entity_decode($rowUpd[0]['info_en']);
         $status = html_entity_decode($rowUpd[0]['status']);
-
-        switch ($rowUpd[0]['cate']):
-            case 1:
-                $opt1 = 'selected="selected"';
-                break;
-            case 2:
-                $opt2 = 'selected="selected"';
-                break;
-            case 3:
-                $opt3 = 'selected="selected"';
-                break;
-        endswitch;
 
         if ($rowUpd[0]['img'] != ''):
             $img = "<img src='../img/blog/{$rowUpd[0]['img']}' />";
@@ -187,8 +182,79 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         endif;
     endif;
 
+    //OBTENGO LAS CATEGORIAS YA INGTESADAS
+    $qryGetCat = 'SELECT * FROM categorias';
+    $conGetCat = new consultar($qryGetCat);
+    $rowGetCat = $conGetCat->listRtn;
+    $totGetCat = count($rowGetCat);
+    for ($f = 0; $f < $totGetCat; $f++):
 
+        if (isset($_GET['idReg']) && $_GET['idReg'] != ''):
+
+            if ($rowUpd[0]['cate'] == $rowGetCat[$f]['id_cate']):
+                $class = 'selected="selected"';
+            else:
+                $class = '';
+            endif;
+
+        endif;
+
+        $opt .= '<option value="' . $rowGetCat[$f]['id_cate'] . '" ' . $class . '>' . $rowGetCat[$f]['tit_es'] . '</option>';
+
+    endfor;
 endif;
 
-//ACCION DEL DELETE
-//echo 'sec = ' . $_GET['sec'] . ' - action = ' . $_GET['action'] . ' - idReg = ' . $_GET['idReg'];
+
+// SECCION CATEGORIAS
+if (isset($_GET['sec']) && $_GET['sec'] == 'categorias'):
+
+    if (isset($_POST['myAction']) && $_POST['myAction'] != ''):
+
+        $tit_es = toolMethods::GetSQLValueString($_POST['tit_es'], 'text', true);
+        $tit_en = toolMethods::GetSQLValueString($_POST['tit_en'], 'text', true);
+
+        if (isset($_POST['idReg'])):
+            $idReg = $_POST['idReg'];
+        else:
+            $idReg = '';
+        endif;
+
+        if (isset($_POST['myAction']) && $_POST['myAction'] != ''):
+            $insert = cateLen::crud($tit_es, $tit_en, $idReg, $_POST['myAction']);
+            header('location:../../menu/categorias/');
+        endif;
+
+    endif;
+
+    if (isset($_GET['action']) && $_GET['action'] == 'update'):
+        $qryUpd = 'SELECT * FROM categorias WHERE id_cate=' . $_GET['idReg'];
+        $conUpd = new consultar($qryUpd);
+        $rowUpd = $conUpd->listRtn;
+
+        $tit_es = html_entity_decode($rowUpd[0]['tit_es']);
+        $tit_en = html_entity_decode($rowUpd[0]['tit_en']);
+
+    endif;
+
+    $qryCat = 'SELECT * FROM categorias';
+    $conCat = new consultar($qryCat);
+    $rowCat = $conCat->listRtn;
+    $totCat = count($rowCat);
+
+    for ($c = 0; $c < $totCat; $c++):
+
+        $listCat .= '<hr class="menu-hr">
+                     <li>
+                        <span class="float">
+                            ' . $rowCat[$c]['tit_es'] . '
+                        </span>
+                        <div class="menu-float-right">
+                             <a href="menu/categorias/update/' . $rowCat[$c]['id_cate'] . '/" class="float menu-editar"><img class="menu-icons" src="../img/icons/icons-03.svg" alt="Agregar"></a>
+                             <a href="menu/categorias/delete/' . $rowCat[$c]['id_cate'] . '/" class="float menu-borrar"><img class="menu-icons" src="../img/icons/icons-02.svg" alt="Eliminar"></a>
+                        </div>
+                     </li>';
+
+    endfor;
+
+
+endif;

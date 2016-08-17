@@ -13,7 +13,7 @@ $(window).load(function () {
             toolbar3: "code styleselect formatselect fontsizeselect ",
             height: 600,
             plugins: "paste media link image autoresize",
-            fontsize_formats: '15pt 18pt 24pt 36pt',
+            fontsize_formats: '15px 18px 24px 36px',
             font_formats: 'Libre Baskerville=Libre Baskerville ; Helvetica=helvetica ;',
             content_css: '../css/style.css',
             theme_advanced_resizing: "true",

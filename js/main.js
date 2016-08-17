@@ -6,7 +6,7 @@
  */
 $(window).load(function () {
 
-    loadArt();
+    loadArt('');
 
     if ($(window).width() < 600) {       // if width is less than 600px
         MobileFunctions();                 // execute mobile function
@@ -258,13 +258,13 @@ function validateForm(idObj) {
     //PRIMER VERIFICAMOS QUE FORMULARIO ES PARA PODER SABER A QUE ARCHIVO ENVIAR LA INFORMACIÓN
     switch (idObj) {
         case 'pageForm':
-            _urlFile = 'send.php';
+            _urlFile = 'secciones/send.php';
             break;
         case 'formMelbourne':
-            _urlFile = 'send-melbourne.php';
+            _urlFile = 'secciones/send-melbourne.php';
             break;
         case 'formLisbon':
-            _urlFile = 'send-lisbon.php';
+            _urlFile = 'secciones/send-lisbon.php';
             break;
     }
 
@@ -320,20 +320,27 @@ function validateForm(idObj) {
     });
 }
 var lastChild = 0;
-function loadArt() {
+var _totalChild = '';
+function loadArt(_flagClick) {
 
     var _listHomeArtLi = $('#listHomeArt li');
 
-    if (_listHomeArtLi.length > 0) {
-        lastChild = $('#listHomeArt').find('li:last-child').data('idreg');
+    if (_listHomeArtLi.length > 1) {
+        _totalChild = _listHomeArtLi.length;
+        lastChild = $('#listHomeArt li:nth-child(' + (_totalChild - 1) + ')').data('idreg');
+        //console.log('lastChild = ' + lastChild);
+    }
+
+    if (_flagClick != '') {
+        _flagClick = 'click';
     }
 
     $.ajax({
         method: "POST",
         url: 'controller.php',
-        data: 'lastId=' + lastChild
+        data: 'lastId=' + lastChild + '&_flagClick=' + _flagClick
     }).success(function (msg) {
-        $('#listHomeArt').append(msg);
+        $('#listHomeArt').prepend(msg);
     });
 }
 

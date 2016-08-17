@@ -57,6 +57,7 @@ include 'controller.php';
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 
     <!-- Scripts src -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -122,7 +123,11 @@ if (isset($_GET['sec']) && $_GET['sec'] != ''):
             break;
         case 'noticias':
         case 'news':
-            $sec = 'noticia';
+            $sec = 'noticias';
+            break;
+        case 'noticia':
+        case 'new':
+            $sec = 'detalle';
             break;
         default:
             $sec = $_GET['sec'];

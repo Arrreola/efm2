@@ -15,10 +15,10 @@
         <hr class="wn-hr">
         <div class="wn-section-1-topic-container" style="background:url('<?= $imgWTT; ?>')">
             <h3 class="wn-section-1-topic-heading">
-                <?= $titWTT; ?>
+                <a href="<?= $linkWTT; ?>"> <?= $titWTT; ?></a>
             </h3>
             <div class="wn-section-1-topic-description">
-                <?= $excWTT; ?>
+                <a href="<?= $linkWTT; ?>"><?= $excWTT; ?></a>
             </div>
         </div>
     </section>
@@ -31,6 +31,8 @@
         <hr class="wn-hr">
         <div class="wn-section-2-perspective-container">
             <ul id="listHomeArt" class="wn-section-2-post-contain-1">
+
+                <li class="clearFloat"></li>
             </ul>
             <!-- MORE ARTICLES BUTTON -->
             <div class="wn-section-2-more-post">
@@ -38,7 +40,7 @@
                     <img src="" alt="" class="wn-section-2-more-post-icon">
                 </div>
                 <div class="wn-section-2-more-post-text">
-                    <a href="javascript:loadArt()">More articles</a>
+                    <a href="javascript:loadArt('true')">More articles</a>
                     <hr class="wn-hr-industry-1">
                 </div>
             </div>
@@ -54,9 +56,12 @@
         <hr class="wn-hr">
         <div class="wn-section-3-container" style="background:url('<?= $imgMIA; ?>');">
         <span class="wn-section-3-heading">
-            <?= $titMIA; ?>
+            <a href="<?= $linkMIA ?>"> <?= $titMIA; ?> </a>
         </span>
             <span class="wn-section-3-date">August 2016 </span>
+            <div class="wn-section-1-topic-description">
+                <a href="<?= $linkWTT; ?>"><?= $excMIA; ?></a>
+            </div>
             <div class="wn-section-3-download">
                 <img src="img/icons/icons-08.svg" alt="" class="wn-section-3-download-icon">
                 <span class="wn-section-3-download-text">Download</span>
@@ -82,10 +87,10 @@
         <hr class="wn-hr">
         <div class="wn-section-4-topic-container" style="background:url('<?= $imgEvent; ?>');">
             <h3 class="wn-section-4-topic-heading">
-                <?= $titEvent; ?>
+                <a href="<?= $linkEvent ?>"><?= $titEvent; ?></a>
             </h3>
             <div class="wn-section-4-topic-description">
-                <?= $excEvent; ?>
+                <a href=" <?= $linkEvent ?>"><?= $excEvent; ?></a>
             </div>
         </div>
     </section>

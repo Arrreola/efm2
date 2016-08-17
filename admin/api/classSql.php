@@ -209,7 +209,8 @@ class saveNot
     {
         $conex = '';
         include 'conexion.php';
-
+        $url_es = toolMethods::urls_amigables($tit_es);
+        $url_en = toolMethods::urls_amigables($tit_en);
         if ($img['name'] != ''):
 
             $archivo = $img['name'];
@@ -224,13 +225,14 @@ class saveNot
 
                 if (copy($img['tmp_name'], $folder_foto)) :
 
+
                     switch ($action):
 
                         case 'insert':
-                            $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                            $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status,url_es,url_en) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
                             $stmt = $conex->prepare($qry);
                             //investivar como funciona el bind_param
-                            $stmt->bind_param("sssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $file, $cat, $status);
+                            $stmt->bind_param("sssssssiiss", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $file, $cat, $status, $url_es, $url_en);
                             break;
                         case 'update':
 
@@ -238,10 +240,10 @@ class saveNot
                                 unlink('../img/blog/' . $cf);
                             endif;
 
-                            $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=?,cate=?,status=? WHERE id_not=?";
+                            $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=?,cate=?,status=?,url_es=?,url_en=? WHERE id_not=?";
                             $stmt = $conex->prepare($qry);
                             //investivar como funciona el bind_param
-                            $stmt->bind_param("sssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $file, $cat, $status, $idReg);
+                            $stmt->bind_param("sssssssiissi", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $file, $cat, $status, $url_es, $url_en, $idReg);
                             break;
 
                     endswitch;
@@ -256,16 +258,16 @@ class saveNot
             switch ($action):
 
                 case 'insert':
-                    $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,cate,status) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                    $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,cate,status,url_es,url_en) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
                     $stmt = $conex->prepare($qry);
                     //investivar como funciona el bind_param
-                    $stmt->bind_param("ssssssii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status);
+                    $stmt->bind_param("ssssssiiss", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status, $url_es, $url_en);
                     break;
                 case 'update':
-                    $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,cate=?,status=? WHERE id_not=?";
+                    $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,cate=?,status=?,url_es=?,url_en=? WHERE id_not=?";
                     $stmt = $conex->prepare($qry);
                     //investivar como funciona el bind_param
-                    $stmt->bind_param("ssssssiii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status, $idReg);
+                    $stmt->bind_param("ssssssiissi", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $cat, $status, $url_es, $url_en, $idReg);
                     break;
 
             endswitch;
@@ -283,6 +285,52 @@ class saveNot
 
     public static function getDetail($id)
     {
+
+    }
+}
+
+class cateLen
+{
+    public static function crud($tit_es, $tit_en, $idReg, $action)
+    {
+        $conex = '';
+        require 'conexion.php';
+
+        $url_es = toolMethods::urls_amigables($tit_es);
+        $url_en = toolMethods::urls_amigables($tit_en);
+
+        switch ($action):
+            case'insert':
+
+                $qry = "INSERT INTO categorias (tit_es,tit_en,url_es,url_en) VALUES (?, ?, ?, ?)";
+                $stmt = $conex->prepare($qry);
+                //investivar como funciona el bind_param
+                $stmt->bind_param("ssss", $tit_es, $tit_en, $url_es, $url_en);
+
+                break;
+            case 'update':
+
+                $qry = "UPDATE categorias SET tit_es = ?,tit_en = ?,url_es = ?,url_en = ? WHERE id_cate = ?";
+                $stmt = $conex->prepare($qry);
+                //investivar como funciona el bind_param
+                $stmt->bind_param("ssssi", $tit_es, $tit_en, $url_es, $url_en, $idReg);
+
+                break;
+            case 'delete':
+                $qry = "DELETE FROM categorias WHERE id_cate = ?";
+                $stmt = $conex->prepare($qry);
+                //investivar como funciona el bind_param
+                $stmt->bind_param("i", $idReg);
+                break;
+        endswitch;
+
+        $resp = $stmt->execute();
+        if (false === $resp) :
+            die('execute() failed: ' . htmlspecialchars($stmt->error));
+        endif;
+
+        $stmt->close();
+        $conex->close();
 
     }
 }
