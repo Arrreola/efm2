@@ -99,6 +99,7 @@ $(document).ready(function () {
             selector: 'textarea',
             theme: 'modern',
             height: 150,
+            fontsize_formats: '15px 18px 24px 36px',
             plugins: [
                 'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
                 'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',

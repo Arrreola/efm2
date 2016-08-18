@@ -37,6 +37,7 @@
             </ul>
         </div>
         <div class="tiny-style">
+            <img src="img/blog/<?= $imgNOT; ?> " alt="" class="wn-nt-img">
             <?= $infNOT; ?>
         </div>
     </section>
