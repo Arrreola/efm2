@@ -49,9 +49,9 @@
                 </div>
                 <span class="wn-section-3-more-post-text">
                     <?php if ($len == 'es'): ?>
-                        Más análisis de industria
+                        Más trending topic
                     <?php else: ?>
-                        More Industry Analysis
+                        More trending topic
                     <?php endif; ?>
                 </span>
             </a>
@@ -82,7 +82,7 @@
 
                 <span class="wn-section-3-more-post-text">
                     <?php if ($len == 'es'): ?>
-                        Más EN Perspectiva
+                        Más en Perspectiva
                     <?php else: ?>
                         More In Perspective
                     <?php endif; ?>
@@ -123,9 +123,6 @@
                 </div>
             </div>
             <img src="<?= $imgMIA; ?>" class="blackout-img"/>
-            <ul id="cat_3">
-
-            </ul>
         </div>
         <!-- MORE ARTICLES BUTTON -->
         <div class="wn-section-3-more-post">
@@ -175,9 +172,9 @@
                 </div>
                 <span class="wn-section-3-more-post-text">
                     <?php if ($len == 'es'): ?>
-                        Más análisis de industria
+                        Más eventos
                     <?php else: ?>
-                        More Industry Analysis
+                        More events
                     <?php endif; ?>
                 </span>
             </a>
