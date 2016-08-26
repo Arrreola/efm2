@@ -27,10 +27,17 @@
             <?php
             for ($i = 0; $i < $totFindPost; $i++):
 
+                if ($len == 'en'):
+                    $sec = 'new';
+                else:
+                    $sec = 'noticia';
+                endif;
+
                 $titlePost = html_entity_decode($rowFindPost[$i]['tit_' . $len]);
                 $excerPost = html_entity_decode($rowFindPost[$i]['desc_short_' . $len]);
                 $fecha = toolMethods::dia_semana($rowFindPost[$i]['fecha'], $len);
                 $urlPost = html_entity_decode($rowFindPost[$i]['url_' . $len]);
+                $imgPost = 'img.php?file=img/blog/' . $rowFindPost[$i]['img'] . '&ancho=219&alto=219&cut';
 
                 //Sacamos la relacion de los tags que tiene cada post
                 $qryRlTgs = 'SELECT * FROM rel_tags WHERE id_post=' . $rowFindPost[$i]['id_not'];
@@ -50,14 +57,15 @@
                         $listTagsPost .= '<li class="hf-news-elements-li-tag"><a href="' . $len . '/tag/' . $urlTag . '"> ' . $nameTag . '</a></li>';
                     endfor;
                 endif;
+
                 ?>
                 <li class="hf-news-element">
-                    <a href="<?= $len ?>/<?= $nameCatPost ?>/<?php $urlPost; ?>">
+                    <a href="<?= $len ?>/<?= $sec; ?>/<?= $nameCatPost ?>/<?= $urlPost; ?>">
                         <h3 class="hf-news-element-h3">
                             <?= $titlePost; ?>
                         </h3>
                         <div class="hf-news-element-description">
-                            <img class="hf-news-element-img" src="img/blog/hf-prueba.png" alt="">
+                            <img class="hf-news-element-img" src="<?= $imgPost; ?>" alt="">
                             <p class="hf-news-element-bodytext">
                                 <?= $excerPost; ?>
                             </p>
@@ -74,6 +82,7 @@
             <?php endfor; ?>
         </ul>
     </div>
+    <!--
     <div class="hf-content-filter">
         <form action="" method="get" class="hf-content-news-form">
             <input class="hf-content-filter-search-input" type="text" name="Buscar" placeholder="Buscar">
@@ -82,14 +91,14 @@
             <?= $cat; ?>
         </ul>
 
-        <!--        <hr class="hf-content-filter-hr">-->
+
         <div class="hf-content-filter-articulos">
             <p class="hf-content-filter-heading">Articulos mas leidos</p>
             <ul class="hf-content-filter-ul-mas-leidos">
                 <?= $moreVisit; ?>
             </ul>
         </div>
-        <!--        <hr class="hf-content-filter-hr">-->
+
         <div class="hf-content-filter-tags">
             <p class="hf-content-filter-heading">Etiquetas</p>
             <div id="contTags">
@@ -99,7 +108,7 @@
                 <a href="javascript:void(0)" class="hf-content-filter-li-tags-ver-mas btnVerMas">Ver más</a>
             </div>
         </div>
-        <!--            <hr class="hf-content-filter-hr">-->
+
         <div class="hf-content-filter-archivos">
             <p class="hf-content-filter-heading">Archivos</p>
             <ul id="listArch" class="hf-content-filter-ul-archivos">
@@ -107,4 +116,5 @@
             </ul>
         </div>
     </div>
+    -->
 </div>

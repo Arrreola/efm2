@@ -95,6 +95,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'operaciones' || isset($_GET['sec']) 
 
 endif;
 
+//CATEGORIA
 if (isset($_GET['sec']) && $_GET['sec'] == 'categoria' || isset($_GET['sec']) && $_GET['sec'] == 'category' || isset($_GET['sec']) && $_GET['sec'] == 'tag'):
 
     if ($len == 'en'):
@@ -194,6 +195,11 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'categoria' || isset($_GET['sec']) &&
         $rowFindPost = $conFindPost->listRtn;
         $totFindPost = count($rowFindPost);
 
+        if ($len == 'en'):
+            $urlCompuesta = $rowFindCat[0]['url_es'];
+        else:
+            $urlCompuesta = $rowFindCat[0]['url_en'];
+        endif;
         $nameCatPost = $_GET['nameReg'];
 
     endif;
@@ -227,6 +233,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'categoria' || isset($_GET['sec']) &&
 
 endif;
 
+//CUARTO DE DATOS VIRTUAL
 if (isset($_GET['sec']) && $_GET['sec'] == 'virtual-data-room' || isset($_GET['sec']) && $_GET['sec'] == 'cuarto-de-datos-virtual'):
     if ($len == 'en'):
         $getLen = 'es';
@@ -237,6 +244,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'virtual-data-room' || isset($_GET['s
     endif;
 endif;
 
+//NOTICIAS
 if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GET['sec'] == 'noticias'):
 
     if ($len == 'en'):
