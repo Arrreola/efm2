@@ -1485,6 +1485,29 @@ footer {
     padding: 0 20px 0 20px; } }
 /*Typography Variables */
 /*Background Variables */
+.op-ul {
+  font-size: 0; }
+
+.op-ul .op-li-side-a {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%; }
+
+.op-ul .op-li-side-b {
+  display: inline-block;
+  height: 350px;
+  vertical-align: top;
+  width: 70%; }
+
+.op-ul .op-li-side-b img {
+  width: 100%; }
+
+.op-ul .op-li-elements .op-statement p {
+  color: #000000; }
+
+.op-ul .op-li-elements .op-li-content p {
+  color: #ffffff; }
+
 .operaciones-section-1 {
   max-width: 1200px;
   margin-left: auto;

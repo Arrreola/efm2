@@ -11,38 +11,69 @@ $font-rasa: 'Rasa', serif
 $font-amiri: 'Amiri', serif
 $font-merriweather: 'Merriweather', serif
 /*Background Variables*/
+.op-ul
+  font-size: 0
+
+.op-ul .op-li-side-a
+  display: inline-block
+  vertical-align: top
+  width: 30%
+
+.op-ul .op-li-side-b
+  display: inline-block
+  height: 350px
+  vertical-align: top
+  width: 70%
+
+.op-ul .op-li-side-b img
+  width: 100%
+
+.op-ul .op-li-elements .op-statement p
+  color: #000000
+
+.op-ul .op-li-elements .op-li-content p
+  color: #ffffff
 
 .operaciones-section-1
   +outer-container
   margin-top: 73px
+
 .operaciones-section-1-text-box
   @include span-columns(8)
   margin: 30px 0
   display: inline-block
   border-right: 1px solid #aaa
   padding: 0 40px 0 20px
+
 .operaciones-section-1-heading
   font-weight: 800
   margin-bottom: 1em
   display: block
+
 .operaciones-section-1-text
   margin-bottom: 1em
   line-height: 1.3em
+
 .operaciones-section-1-form
   @include span-columns(4)
   display: inline-block
   position: relative
+
 .operaciones-section-1-form form
   position: relative
+
 .operaciones-checkbox
   margin-bottom: 25px
+
 .operaciones-section-1-form .required
   color: black !important
+
 .required[type="checkbox"]
   display: inline-block
   height: 15px
   margin-bottom: 10px
   width: 15px
+
 .operaciones-form-button
   background-color: transparent
   border: 1px solid #c3b584
@@ -54,24 +85,28 @@ $font-merriweather: 'Merriweather', serif
   padding: 0 16px
   text-decoration: none
   width: 128px
+
 .operaciones-form-button:hover
   background: $efm-gold
   color: white
   transition: all .2s ease-in-out
+
 .ficha-tecnica-header
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.03 )
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.03)
   height: 73px
   padding: 10px
   color: $efm-gold
   line-height: 1.4
   background-color: white
   text-align: center
+
 .ficha-tecnica-heading
   margin: 0 30px
   display: inline-block
   font-size: 28px
   padding-top: 5px
   font-style: italic
+
 .ficha-tecnica-slide-hr
   display: inline-block
   width: 10%
@@ -79,18 +114,23 @@ $font-merriweather: 'Merriweather', serif
   border: 0
   height: 1px
   background-color: $efm-gold
+
 .ficha-tecnica-content
   +outer-container
   padding-left: 20px
+
 .ficha-tecnica-section-1
   margin-top: 73px
+
 .operaciones-side-b-1
   text-align: center
   padding: 20px
+
 .operaciones-side-b-1 img
   height: 60px
   width: auto
   margin-top: 30px
+
 .operaciones-side-b-button-descarga
   background-color: transparent
   border: 1px solid #c3b584
@@ -102,18 +142,22 @@ $font-merriweather: 'Merriweather', serif
   padding: 0 16px
   text-decoration: none
   margin: 10px auto
+
 .operaciones-side-b-button-descarga:hover
   background: $efm-gold
   color: white
   transition: all .2s ease-in-out
+
 .operaciones-side-b-1 hr
   height: 1px
   border: none
   color: #aaa
   background: #aaa
   margin: 25px auto
+
 .operaciones-side-b-text-1
   margin: 25px 0
+
 .operaciones-section-1-form a
   text-decoration: none
 
