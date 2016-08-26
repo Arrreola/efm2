@@ -1,6 +1,6 @@
 function Carousel(element) {
   this._autoDuration = 0;
-  this._container = element.querySelector('.container');
+  this._container = element.querySelector('.container-slide-2');
   this._interval = null;
   this._nav = element.querySelector('#nav');
   this._slide = 0;
@@ -45,6 +45,7 @@ Carousel.prototype.handleEvent = function (event) {
     case 'blur':
       this.auto(0);
       break;
+    //CLICK
     case 'click':
       if (event.target.parentNode != this._nav) break;
       var i = parseInt(event.target.dataset.slide);
@@ -109,7 +110,7 @@ Carousel.prototype.set = function(i) {
 };
 
 Carousel.prototype._countSlides = function() {
-  return this._container.querySelectorAll('.slide').length;
+  return this._container.querySelectorAll('.container-slide-2').length;
 };
 
 Carousel.prototype._updateNav = function () {

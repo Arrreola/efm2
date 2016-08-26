@@ -1,5 +1,7 @@
 # Activar RewriteEngine
 RewriteEngine on
+
+#Regla general para los demás casos
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^es/$ index.php?len=es
@@ -7,5 +9,16 @@ RewriteRule ^en/$ index.php?len=en
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^descarga/([a-zA-Z0-9_-]+(.[a-z0-9-]+)*)$ descarga.php?&pdf=$1  [NC,L]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)$ index.php?len=$1&sec=$2  [NC,L]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)$ index.php?len=$1&sec=$2&nameReg=$3  [NC,L]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)$ index.php?len=$1&sec=$2&cat=$3&url=$4  [NC,L]

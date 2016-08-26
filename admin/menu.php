@@ -9,7 +9,7 @@ else:
 endif;
 
 if (!isset($_GET['action'])):
-        $myAction = 'insert';
+    $myAction = 'insert';
 else:
     if ($_GET['action'] == 'update'):
         $myAction = $_GET['action'];
@@ -27,7 +27,8 @@ endif;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- INVESTIGAR EL USO DE LA ETIQUETA BASE CON HTACCESS -->
-    <base href="http://localhost:8888/efm-new/admin/" target="_top">
+    <base href="http://clientes.v09.mx/efm_4.0/admin/" target="_top">
+    <!--<base href="http://localhost:8888/EFM/admin/menu" target="_top">-->
     <!-- Title is the first phrase you see as a search result. -->
     <title>EFM Capital | Iniciar Sesión</title>
 
@@ -42,8 +43,12 @@ endif;
         <li class="menu-navbar-items menu-navbar-items-logo">
             <img class="menu-logo" alt="Logotipo EFM" src="../img/logos/logo94x495x2.png">
         </li>
-        <li class="menu-navbar-items">
-            <a href="#">EFM World News</a>
+        <li class="menu-navbar-items-dash">
+            <a target="_blank" href="../es/noticias">
+                <button class="navbar-dataroom-button">
+                    Forum
+                </button>
+            </a>
         </li>
     </ul>
 </div>
@@ -71,25 +76,35 @@ endif;
                 </a>
             </li>
             <hr>
+
             <li class="menu-items">
-                <a href="menu/seo/">
+                <a href="menu/reg-operaciones/">
                     <img class="menu-icons-sidebar" src="../img/icons/icons-05.svg" alt="">
-                    <span class="menu-item-name">Seo</span>
+                    <span class="menu-item-name">Operaciones</span>
                 </a>
             </li>
             <hr>
+
             <li class="menu-items">
-                <a href="menu/manual/">
+                <a href="menu/estados/">
                     <img class="menu-icons-sidebar" src="../img/icons/icons-06.svg" alt="">
-                    <span class="menu-item-name">Manual</span>
+                    <span class="menu-item-name">Edo Operaciones</span>
                 </a>
             </li>
             <hr>
+
+            <li class="menu-items">
+                <a href="menu/tags/">
+                    <img class="menu-icons-sidebar" src="../img/icons/icons-06.svg" alt="">
+                    <span class="menu-item-name">Tags</span>
+                </a>
+            </li>
+
         </ul>
     </div>
     <?php
 
-   echo 'valor de sec = ' . $_GET['sec'];
+    //echo 'valor de sec = ' . $_GET['sec'];
 
     if (isset($_GET['sec']) && $_GET['sec'] != ''):
         include 'interiores/' . $_GET['sec'] . '.php';

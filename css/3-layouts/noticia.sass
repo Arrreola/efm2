@@ -1,19 +1,25 @@
+ul
+  margin: 0
+  padding: 0
+
 .wn-nt-section-1-topic-heading
-  max-width: 710px
   color: black
-  font-size: 30px
+  font-size: 36px
   font-weight: 400
   line-height: 40px
   margin: 10px 0 10px
   display: block
+
 .wn-nt-date
   font-size: 13px
   margin: 0 0 20px
   display: block
+
 .wn-nt-social-list
   list-style: none
   padding: 0
   font-family: sans-serif
+
 .wn-nt-social-icon
   display: inline-block
   border-radius: 2px
@@ -23,17 +29,21 @@
   margin-right: 10px
   min-width: 40px
   text-align: center
+
 .wn-nt-social-icon i
   font-size: 15px
+
 .wn-nt-social-icon:hover
   opacity: 0.8
   transition: all 0.2s ease-in-out 0s
+
 .wn-nt-social-icon a
   color: white
   height: 100%
   padding: 12px 13px 8px
   display: block
   text-decoration: none
+
 .wn-nt-social-icon-text
   display: inline-block
   font-weight: 400
@@ -42,15 +52,25 @@
   position: relative
   top: -4px
   border-left: 1px solid rgba(255, 255, 255, 0.3)
+
 .facebook
   background: #516eab
+
 .twitter
   background: #29c5f6
+
 .google
   background: #eb4026
+
 .linked
   background: #0076b1
+
 .wn-nt-img
-  width: auto
+  width: 100%
   margin-bottom: 20px
   margin-top: 10px
+
+
+@media only screen and #{$movile}
+  .wn-nt-social-icon:first-child
+    margin-bottom: 10px

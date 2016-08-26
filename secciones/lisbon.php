@@ -78,15 +78,15 @@
                 <div class="my-placeholder">
                     <span class=""><?php if ($len == 'es'): ?>Nombre:<?php else: ?>Name:<?php endif; ?></span>
                 </div>
-                <input type="text" name="nombre" class="required-2">
+                <input type="text" name="nombre" data-namefield="<?php if ($len == 'es'): ?>nombre<?php else: ?>name<?php endif; ?>" class="required-2 required">
             </div>
             <div class="row-2">
                 <span class="my-placeholder"><?php if ($len == 'es'): ?>Correo:<?php else: ?>Email:<?php endif; ?></span>
-                <input type="text" name="correo" class="required-2 email">
+                <input type="text" name="correo" data-namefield="<?php if ($len == 'es'): ?>correo<?php else: ?>email<?php endif; ?>" class="required-2 required email">
             </div>
             <div class="row-3">
                 <div class="my-placeholder operaciones-checkbox">
-                    <input type="checkbox" name="checkbox" class="checkbox">
+                    <input type="checkbox" name="condiciones" data-namefield="<?php if ($len == 'es'): ?>condiciones<?php else: ?>conditions<?php endif; ?>" class="checkbox required">
                     <span class="">
                         <?php if ($len == 'es'): ?>
                             He leído y acepto las condiciones generales(*)
@@ -99,7 +99,7 @@
             <div class="row-4">
                 <!--<input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">-->
                 <input class="operaciones-form-button" type="button" name="enviar" id="enviar"
-                       value="<?php if ($len == 'es'): ?>Ver ficha técnica<?php else: ?>See data sheet<?php endif; ?>" onclick="validateForm('formLisbon')">
+                       value="<?php if ($len == 'es'): ?>Ver ficha técnica<?php else: ?>See data sheet<?php endif; ?>" onclick="valFormularios('formLisbon')">
             </div>
         </form>
     </div>

@@ -43,278 +43,48 @@
                 class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></span>
             <hr class="index-section-2-slide-hr">
         </div>
-        <div class="container">
-            <!-- slide 1 -->
-            <div class="slide slide-1">
-                <div class="index-section-2-slide" id="slide-1">
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div class="index-section-2-slide-footer-m1">Melbourne</div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Salud</span><br>
-                                    <span>Cobertura / Nacional (Mexico)</span><br>
-                                <?php else: ?>
-                                    <!-- INGLES -->
-                                    <span>Industry / Health</span><br>
-                                    <span>Cobertura / Nacional (Mexico)</span><br>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span><?php if ($len == 'es'): ?>Abierto <?php else: ?>Open <?php endif; ?></span>
-                            </div>
-                            <div class="index-section-2-slide-footer-m4">
-                                <a target="_blank"
-                                   href="<?= $len; ?>/melbourne"><?php if ($len == 'es'): ?>Ficha técnica<?php else: ?> Prospectus <?php endif; ?></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="slide slide-2">
-                <div class="index-section-2-slide" id="slide-1">
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div
-                                class="index-section-2-slide-footer-m1"><?php if ($len == 'es'): ?> Lisboa<?php else: ?>Lisbon<?php endif; ?></div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Salud</span><br>
-                                    <span>Cobertura / Nacional (México)</span><br>
-                                    <span>Tasa de crecimiento en ventas / 20%</span>
-                                <?php else: ?>
-                                    <span>Industry / Health</span><br>
-                                    <span>Coverage / National (Mexico)</span><br>
-                                    <span>Sales growth rate / 20%</span>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span><?php if ($len == 'es'): ?>Abierto<?php else: ?>Open<?php endif; ?></span>
-                            </div>
-                            <div class="index-section-2-slide-footer-m4">
-                                <a target="_blank" href="<?= $len; ?>/lisbon">
-                                    <?php if ($len == 'es'): ?>Ficha técnica<?php else: ?>Prospectus<?php endif; ?>
-                                </a>
+        <div class="sliderOperaciones">
+            <!-- slide 1 MELBOURNE -->
+            <ul class="bxslider">
+                <?php
+                for ($o = 0; $o < $totOp; $o++):
+
+                    //SELECCIONANDO EL ESTADO
+                    $qryChkSt = 'SELECT * FROM statuspro WHERE id_st =' . $rowOp[$o]['edo'];
+                    $conChkSt = new consultar($qryChkSt);
+                    $rowChkSt = $conChkSt->listRtn;
+
+                    if ($rowOp[$o]['btn_' . $len] != '' && $rowOp[$o]['btn_' . $len] != 'NULL' && $rowOp[$o]['btn_' . $len] != NULL):
+                        $btnFT = '<a href="' . $rowOp[$o]['linkBtn_' . $len] . '">' . $rowOp[$o]['btn_' . $len] . '</a>';
+                    endif;
+
+                    ?>
+                    <li class="slide slide-1"
+                        style="background:url('img/operaciones/<?= $rowOp[$o]['img']; ?>') no-repeat center / cover;">
+                        <div class="index-section-2-slide" id="slide-1">
+                            <div class="op-li-elements">
+                                <div class="op-li-side-b"
+                                     style="background:url('img/operaciones/<?= $rowOp[$o]['img']; ?>') no-repeat center / cover;"></div>
+                                <div class="op-li-side-a">
+                                    <div class="op-li-header">
+                                        <h2 class="op-heading-project"><?= $rowOp[$o]['tit_' . $len]; ?></h2>
+                                        <p class="op-status-project"><?= $rowChkSt[0]['edo_' . $len]; ?></p>
+                                    </div>
+                                    <div class="op-li-content">
+                                        <?= html_entity_decode($rowOp[$o]['desc_short_' . $len]); ?>
+                                    </div>
+
+                                    <div class="btnExtra"> <?= $btnFT; ?></div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slide 3 -->
-            <div class="slide slide-3">
-                <div class="index-section-2-slide" id="slide-2">
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div class="index-section-2-slide-footer-m1">Cienciamed</div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Salud</span><br>
-                                    <span>Cobertura / Nacional (México)</span><br>
-                                    <span>Proyección en ventas 2016 / MXN $100m</span><br>
-                                <?php else: ?>
-                                    <span>Industry / Health</span><br>
-                                    <span>Coverage / National (Mexico)</span><br>
-                                    <span>Sales projection 2016 / MXN $100m</span><br>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span>
-                                    <?php if ($len == 'es'): ?>
-                                        Proceso de inversión y crecimiento
-                                    <?php else: ?>
-                                        Investment and growth process
-                                    <?php endif; ?>
-                                </span>
-                            </div>
-                            <!-- <div class="index-section-2-slide-footer-m4">
-                              <a href="#">Ficha tecnica</a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slide 4 -->
-            <div class="slide slide-4">
-                <div class="index-section-2-slide" id="slide-3">
-                    <div class="index-section-2-slide-center mobile-hide">
-                        <div class="index-section-2-slide-center-header">
-                            <hr class="index-section-2-slide-center-hr">
-                            <span class="index-section-2-slide-center-heading">
-                                <?php if ($len == 'es'): ?>
-                                    Declaración de cierre
-                                <?php else: ?>
-                                    Closing Statement
-                                <?php endif; ?>
-                            </span>
-                            <hr class="index-section-2-slide-center-hr">
-                        </div>
-                        <?php if ($len == 'es'): ?>
-                            <p class="index-section-2-slide-center-text">EFM Capital ha completado la desinversión total
-                                de
-                                su posición en Even Telecom S.A. de C.V. a través de la venta de su participación, del
-                                50%
-                                de la empresa, a una firma líder de capital privado.</p>
-                            <p class="index-section-2-slide-center-text">Even Telecom S.A. de C.V. es una empresa
-                                dedicada
-                                al sector de las telecomunicaciones. En enero del 2015, EFM Capital tomó una posición en
-                                el
-                                capital de Even Telecom, proporcionando un análisis corporativo y financiero, y
-                                participando
-                                en la planificación estratégica de la empresa, lo cual le permitió incrementar
-                                significativamente su valor. Para el cierre del 2015, sus ventanas aumentaron en mas del
-                                200% respecto al año anterior, convirtiendose en un proveedor seleccionado para las
-                                empresas
-                                más grandes en servicios de telecomunicación dentro de México</p>
-                            <p class="index-section-2-slide-center-text">EFM Capital continuará analizando oportunidades
-                                de
-                                inversión con alto potencial de crecimiento, brindando orientación en planeación
-                                estratégica, valor añadido en las adquisiciones y un modelo de gobernanza ajustado a los
-                                estándares internacionales.</p>
-                            <!-- INGLES -->
-                        <?php else: ?>
-                            <p class="index-section-2-slide-center-text">
-                                EFM Capital fully divested its position in Even Telecom S.A. de C.V., trough the sale of
-                                its 50% ownership of the company to a leading private equity firm.
-                            </p>
-                            <p class="index-section-2-slide-center-text">
-                                Even Telecom S.A. de C.V. is a company engaged in the telecommunications sector. On
-                                January, 1, 2015, EFM Capital took a position in the capital of Even Telecom, providing
-                                corporate and financial analysis work and strategic planning to the company, enabling it
-                                to increase its value. Sales for year-end 2015 increased over 200% from previous year
-                                and this growth propelled the company to become one of the selected providers for some
-                                of the largest telecommunications service providers in Mexico.
-                            </p>
-                            <p class="index-section-2-slide-center-text">
-                                EFM Capital will continue analyzing investment opportunities with high growth potential
-                                to provide oriented strategic planning, value added acquicitions and international
-                                governance model.
-                            </p>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div class="index-section-2-slide-footer-m1">Pekín</div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Telecomunicaciones (infraestructura)</span><br>
-                                    <span>Cobertura / Nacional (México)</span><br>
-                                    <span>Tasa de crecimiento en ventas / 788.5%</span>
-                                <?php else: ?>
-                                    <span>Industry / Telecomunications (infraestructure)</span><br>
-                                    <span>Coverage / National (Mexico)</span><br>
-                                    <span>Sales growth rate / 788.5%</span>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span><?php if ($len == 'es'): ?>Cerrado<?php else: ?>Closed<?php endif; ?></span>
-                            </div>
-                            <div class="index-section-2-slide-footer-m4">
-                                <a target="_blank" href="https://amexcap.com/seccion/noticias-de-la-industria/">
-                                    <?php if ($len == 'es'): ?>Noticias AMEXCAP<?php else: ?>AMEXCAP news<?php endif; ?>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slide 5 -->
-            <div class="slide slide-5">
-                <div class="index-section-2-slide" id="slide-4">
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div class="index-section-2-slide-footer-m1">Montevideo</div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Medios masivos</span><br>
-                                    <span>Cobertura / Regional</span><br>
-                                    <span>Tasa de crecimiento en ventas / 10%</span>
-                                <?php else: ?>
-                                    <span>Industry / Mass media</span><br>
-                                    <span>Coverage / Regional</span><br>
-                                    <span>Sales growth rate / 10%</span>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span><?php if ($len == 'es'): ?>Cerrado<?php else: ?>Closed<?php endif; ?></span>
-                            </div>
-                            <!-- <div class="index-section-2-slide-footer-m4">
-                              <a href="#">
-                                Ficha tecnica
-                              </a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slide 6 -->
-            <div class="slide slide-6">
-                <div class="index-section-2-slide" id="slide-5">
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div
-                                class="index-section-2-slide-footer-m1"><?php if ($len == 'es'): ?>Versalles<?php else: ?>Versailles<?php endif; ?></div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Bebidas (industrial)</span><br>
-                                    <span>Cobertura / Regional</span><br>
-                                    <span>Tasa de crecimiento en ventas / 20%</span>
-                                <?php else: ?>
-                                    <span>Industry/ Beverages (industrial)</span><br>
-                                    <span>Coverage / Regional</span><br>
-                                    <span>Sales growth rate / 20%</span>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span><?php if ($len == 'es'): ?>Cerrado<?php else: ?>Closed<?php endif; ?></span>
-                            </div>
-                            <!-- <div class="index-section-2-slide-footer-m4">
-                              <a href="#">
-                                Ficha tecnica
-                              </a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- slide 7 -->
-            <div class="slide slide-7">
-                <div class="index-section-2-slide" id="slide-6">
-                    <div class="index-section-2-slide-footer">
-                        <div class="index-section-2-slide-footer-content">
-                            <div class="index-section-2-slide-footer-11"></div>
-                            <div class="index-section-2-slide-footer-m1">Delta</div>
-                            <div class="index-section-2-slide-footer-m2">
-                                <?php if ($len == 'es'): ?>
-                                    <span>Industria / Alimentos, Retail</span><br>
-                                    <span>Cobertura / Nacional (México)</span><br>
-                                    <span>Tasa de crecimiento en ventas / 12%</span>
-                                <?php else: ?>
-                                    <span>Industry / Food, Retail</span><br>
-                                    <span>Coverage / National (Mexico)</span><br>
-                                    <span>Sales growth rate / 12%</span>
-                                <?php endif; ?>
-                            </div>
-                            <div class="index-section-2-slide-footer-m3">
-                                <span><?php if ($len == 'es'): ?>Cerrado<?php else: ?>Closed<?php endif; ?></span>
-                            </div>
-                            <!-- <div class="index-section-2-slide-footer-m4">
-                              <a href="#">
-                                Ficha tecnica
-                              </a>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    </li>
+                <?php endfor; ?>
+            </ul>
+
         </div>
-        <div id="nav" class="nav-section-2"></div>
+
     </div>
 </section>
 
@@ -327,34 +97,34 @@
             <hr class="index-section-3-slide-hr">
         </div>
         <div class="index-section-3-copy-content">
-            <?php if ($len == 'es'): ?>
-                <p class="index-section-3-copy">
+
+            <p class="index-section-3-copy">
+                <?php if ($len == 'es'): ?>
                     Nuestra visión se enfoca en modelo transaccional en el que
                     realizamos inversiones como fondo de capital privado para
-                    habilitar prácticas de de rendición de cuentas y optimizar
+                    habilitar prácticas de rendición de cuentas y optimizar
                     el modelo de negocio.
-                </p>
-                <br>
-                <p class="index-section-3-copy">
-                    Nuestra salida está orientada ala transferencia de la
-                    empresa a un fondo de inversión o comprador estratégico.
-                </p>
-                <a href="fondo-puente.php" class="index-section-3-link">Ver más</a>
-            <?php else: ?>
-                <p class="index-section-3-copy">
-                    Our vision is focused on a transactional model in wich we commit private equity, enable
+                <?php else: ?>
+                    Our vision is focused on a transactional model in which we commit private equity, enable
                     accountability practices and optimize the business culture.
-                </p>
-                <br>
-                <p class="index-section-3-copy">
+                <?php endif; ?>
+            </p>
+            <br>
+            <p class="index-section-3-copy">
+                <?php if ($len == 'es'): ?>
+                    Nuestra salida está orientada a la transferencia de la
+                    empresa a un fondo de inversión o comprador estratégico.
+                <?php else: ?>
                     Our exit is aimed towards facilitating the transfer of the company to a new investment fund or
                     strategic buyer.
-                </p>
-                <a href="fondo-puente.php" class="index-section-3-link">Read more</a>
-            <?php endif; ?>
+                <?php endif; ?>
+            </p>
+            <a href="<?= $len ?>/<?php if ($len == 'es'): ?>fondo-puente<?php else: ?>bridge-fund<?php endif; ?>"
+               class="index-section-3-link"><?php if ($len == 'es'): ?>Ver más<?php else: ?>See more<?php endif; ?></a>
         </div>
     </div>
 </section>
+
 <section class="index-section-4">
     <div class="index-section-4-header">
         <hr class="index-section-4-slide-hr">
@@ -365,549 +135,466 @@
 
     <!-- Desktop -->
     <div class="index-section-4-content carousel-desktop">
-        <div id="member-cards"></div>
         <div class="index-section-4-bottom">
             <div class="index-section-4-directors-module">
-                <?php if ($len == 'es'): ?>
-                    <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
-                    <span class="index-section-4-directors-position">Socio</span>
-                    <span id="manuel-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
-                <?php else: ?>
-                    <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
-                    <span class="index-section-4-directors-position">Partner</span>
-                    <span id="manuel-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Details</span>
-                <?php endif; ?>
+
+                <span class="index-section-4-directors-name">Manuel G. Martínez Gaxiola</span>
+                <span class="index-section-4-directors-position">
+                    <?php if ($len == 'es'): ?>Socio<?php else: ?>Partner<?php endif; ?>
+                </span>
+                <span id="manuel-detalles" data-anchor="member-card-manuel-g" class="index-section-4-directors-button"
+                      ontouchend="this.onclick=fix">
+                    <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
+                </span>
+
             </div>
             <div class="index-section-4-directors-module">
-                <?php if ($len == 'es'): ?>
-                    <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
-                    <span class="index-section-4-directors-position">Socio</span>
-                    <span id="carlos-j-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
-                <?php else: ?>
-                    <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
-                    <span class="index-section-4-directors-position">Partner</span>
-                    <span id="carlos-j-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Details</span>
-                <?php endif; ?>
+
+                <span class="index-section-4-directors-name">Carlos J. Martínez de León</span>
+                <span class="index-section-4-directors-position">
+                        <?php if ($len == 'es'): ?>Socio<?php else: ?>Partner<?php endif; ?>
+                </span>
+                <span id="carlos-j-detalles" data-anchor="member-card-carlos-j" class="index-section-4-directors-button"
+                      ontouchend="this.onclick=fix">
+                        <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
+                </span>
+
             </div>
             <div class="index-section-4-directors-module">
-                <?php if ($len == 'es'): ?>
-                    <span class="index-section-4-directors-name">Oscar J. Moráles Rodríguez</span>
-                    <span class="index-section-4-directors-position">Director general Cienciamed</span>
-                    <span id="oscar-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
-                <?php else: ?>
-                    <span class="index-section-4-directors-name">Oscar J. Moráles Rodríguez</span>
-                    <span class="index-section-4-directors-position">Cienciamed CEO</span>
-                    <span id="oscar-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Details</span>
-                <?php endif; ?>
+
+                <span class="index-section-4-directors-name">Oscar J. Morales Rodríguez</span>
+                <span
+                    class="index-section-4-directors-position"><?php if ($len == 'es'): ?>Director general Cienciamed<?php else: ?>Cienciamed CEO<?php endif; ?></span>
+                <span id="oscar-detalles" data-anchor="member-card-oscar-j" class="index-section-4-directors-button"
+                      ontouchend="this.onclick=fix"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+
             </div>
             <div class="index-section-4-directors-module">
-                <?php if ($len == 'es'): ?>
-                    <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
-                    <span class="index-section-4-directors-position">Consejero independiente</span>
-                    <span id="carlos-e-detalles" class="index-section-4-directors-button">Detalles</span>
-                <?php else: ?>
-                    <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
-                    <span class="index-section-4-directors-position">Independent advisor</span>
-                    <span id="carlos-e-detalles" class="index-section-4-directors-button">Details</span>
-                <?php endif; ?>
+
+                <span class="index-section-4-directors-name">Carlos E. Martínez Rico</span>
+
+                <span class="index-section-4-directors-position">
+                    <?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?>
+                </span>
+
+                <span id="carlos-e-detalles" data-anchor="member-card-carlos-e"
+                      class="index-section-4-directors-button">
+                    <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
+                </span>
+
             </div>
             <div class="index-section-4-directors-module">
-                <?php if ($len == 'es'): ?>
-                    <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
-                    <span class="index-section-4-directors-position">Consejero independiente</span>
-                    <span id="lorenzo-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Detalles</span>
-                <?php else: ?>
-                    <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
-                    <span class="index-section-4-directors-position">Independent advisor</span>
-                    <span id="lorenzo-detalles" class="index-section-4-directors-button" ontouchend="this.onclick=fix">Details</span>
-                <?php endif; ?>
+
+                <span class="index-section-4-directors-name">Lorenzo Fernández Alonso</span>
+                <span class="index-section-4-directors-position">
+                        <?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?>
+                    </span>
+                <span id="lorenzo-detalles" data-anchor="member-card-lorenzo-f" class="index-section-4-directors-button"
+                      ontouchend="this.onclick=fix">
+                        <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
+                    </span>
             </div>
         </div>
     </div>
-    <!-- Mobile -->
+
+    <!-- Mobile MEMBERS CARDS -->
     <div class="carousel index-section-4-m-carousel carousel-mobile">
-        <div id="member-cards-mobile"></div>
-        <div class="container" id="index-section-4-m-carousel-loads member-cards">
-            <div class="slide">
-                <div class="index-section-4-m-slide" id="slide-1">
+        <ul class="sliderMbrMbl" id="index-section-4-m-carousel-loads member-cards">
+
+                <li class="index-section-4-m-slide" id="slide-1">
                     <div class="index-section-4-m-member">
                         <div class="index-section-4-m-text">
-                            <?php if ($len == 'es'): ?>
-                                <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
-                                <span class="index-section-4-m-member-position">Socio</span>
-                                <span id="manuel-detalles-mobile"
-                                      class="index-section-4-m-member-button">Detalles</span>
-                            <?php else: ?>
-                                <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
-                                <span class="index-section-4-m-member-position">Partner</span>
-                                <span id="manuel-detalles-mobile" class="index-section-4-m-member-button">Details</span>
-                            <?php endif; ?>
+                            <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
+                            <span class="index-section-4-m-member-position">
+                                <?php if ($len == 'es'): ?>Socio<?php else: ?>Partner<?php endif; ?>
+                            </span>
+                            <span id="manuel-detalles-mobile" data-anchor="member-card-manuel-g"
+                                  class="index-section-4-m-member-button">
+                                <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
+                            </span>
+
                         </div>
                         <img src="img/consejo/consejo-manuel-g.png" alt="" class="index-section-4-member-image">
                     </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-4-m-slide" id="slide-2">
+                </li>
+
+                <li class="index-section-4-m-slide" id="slide-2">
                     <div class="index-section-4-m-member">
                         <div class="index-section-4-m-text">
-                            <?php if ($len == 'es'): ?>
-                                <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
-                                <span class="index-section-4-m-member-position">Socio</span>
-                                <span id="carlos-j-detalles-mobile"
-                                      class="index-section-4-m-member-button">Detalles</span>
-                            <?php else: ?>
-                                <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
-                                <span class="index-section-4-m-member-position">Partner</span>
-                                <span id="carlos-j-detalles-mobile"
-                                      class="index-section-4-m-member-button">Details</span>
-                            <?php endif; ?>
+
+                            <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
+                            <span class="index-section-4-m-member-position">
+                                    <?php if ($len == 'es'): ?>Socio<?php else: ?>Partner<?php endif; ?>
+                                </span>
+                            <span id="carlos-j-detalles-mobile" data-anchor="member-card-carlos-j"
+                                  class="index-section-4-m-member-button">
+                                    <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
+                                </span>
+
                         </div>
                         <img src="img/consejo/consejo-carlos-m.png" alt="" class="index-section-4-member-image">
                     </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-4-m-slide" id="slide-3">
+                </li>
+
+                <li class="index-section-4-m-slide" id="slide-3">
                     <div class="index-section-4-m-member">
                         <div class="index-section-4-m-text">
-                            <?php if ($len == 'es'): ?>
-                                <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
-                                <span class="index-section-4-m-member-position">Director General Cienciamed</span>
-                                <span id="oscar-detalles-mobile" class="index-section-4-m-member-button">Detalles</span>
-                            <?php else: ?>
-                                <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
-                                <span class="index-section-4-m-member-position">Cienciamed CEO</span>
-                                <span id="oscar-detalles-mobile" class="index-section-4-m-member-button">Details</span>
-                            <?php endif; ?>
+                            <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
+                            <span
+                                class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Director general Cienciamed<?php else: ?>Cienciamed CEO<?php endif; ?></span>
+                            <span id="oscar-detalles-mobile" data-anchor="member-card-oscar-j"
+                                  class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                         </div>
                         <img src="img/consejo/consejo-oscar-j.png" alt="" class="index-section-4-member-image">
                     </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-4-m-slide" id="slide-4">
+                </li>
+
+                <li class="index-section-4-m-slide" id="slide-4">
                     <div class="index-section-4-m-member">
                         <div class="index-section-4-m-text">
-                            <?php if ($len == 'es'): ?>
-                                <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
-                                <span class="index-section-4-m-member-position">Consejero independiente</span>
-                                <span id="carlos-e-detalles-mobile"
-                                      class="index-section-4-m-member-button">Detalles</span>
-                            <?php else: ?>
-                                <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
-                                <span class="index-section-4-m-member-position">Independent Advisor</span>
-                                <span id="carlos-e-detalles-mobile"
-                                      class="index-section-4-m-member-button">Details</span>
-                            <?php endif; ?>
+
+                            <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
+                            <span
+                                class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?></span>
+                            <span id="carlos-e-detalles-mobile" data-anchor="member-card-carlos-e"
+                                  class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+
                         </div>
                         <img src="img/consejo/consejo-carlos-e.png" alt="" class="index-section-4-member-image">
                     </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-4-m-slide" id="slide-4-m">
+                </li>
+
+                <li class="index-section-4-m-slide" id="slide-4-m">
                     <div class="index-section-4-m-member">
                         <div class="index-section-4-m-text">
-                            <?php if ($len == 'es'): ?>
-                                <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
-                                <span class="index-section-4-m-member-position">Consejero independiente</span>
-                                <span id="lorenzo-detalles-mobile"
-                                      class="index-section-4-m-member-button">Detalles</span>
-                            <?php else: ?>
-                                <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
-                                <span class="index-section-4-m-member-position">Independent Advisor</span>
-                                <span id="lorenzo-detalles-mobile"
-                                      class="index-section-4-m-member-button">Details</span>
-                            <?php endif; ?>
+                            <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
+                            <span
+                                class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?></span>
+                            <span id="lorenzo-detalles-mobile" data-anchor="member-card-lorenzo-f"
+                                  class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                         </div>
                         <img src="img/consejo/consejo-lorenzo-f.png" alt="" class="index-section-4-member-image">
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="nav"></div>
+                </li>
+
+        </ul>
     </div>
 </section>
-
+<!-- EQUIPO -->
 <section class="index-section-5">
     <div class="index-section-5-header">
         <hr class="index-section-5-slide-hr">
-        <span class="index-section-5-heading">Equipo</span>
+        <span class="index-section-5-heading"> <?php if ($len == 'es'): ?>Equipo<?php else: ?>Team<?php endif; ?></span>
         <hr class="index-section-5-slide-hr">
     </div>
-    <!-- Carousel Desktop -->
-    <div id="team-cards"></div>
-    <div class="carousel index-section-5-carousel carousel-desktop">
-        <div class="container" id="index-section-5-carousel-loads">
-            <!-- slide 1 -->
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-1">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-everardo-h.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
-                            <span class="index-section-5-member-position">Estrategia de inversión</span>
-                            <span class="index-section-5-member-area">Evaluación de alternativas de inversión</span>
-                            <span id="everardo-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
-                            <span class="index-section-5-member-position">Investment strategy</span>
-                            <span class="index-section-5-member-area">Evaluation of investment strategies</span>
-                            <span id="everardo-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-roberto-l.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Roberto López Sánchez</span>
-                            <span class="index-section-5-member-position">Órganos de gobierno</span>
-                            <span class="index-section-5-member-area">Abogado corporativo</span>
-                            <span id="roberto-l-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Roberto López Sánchez</span>
-                            <span class="index-section-5-member-position">Governing bodies</span>
-                            <span class="index-section-5-member-area">Corporate lawyer</span>
-                            <span id="roberto-l-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-ricardo-d.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Operaciones</span>
-                            <span id="ricardo-d-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Operations</span>
-                            <span id="ricardo-d-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-carlos-a.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
-                            <span class="index-section-5-member-position">Desarrollo organizacional</span>
-                            <span class="index-section-5-member-area">Recursos humanos</span>
-                            <span id="carlos-a-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
-                            <span class="index-section-5-member-position">Organization development</span>
-                            <span class="index-section-5-member-area">Human resources</span>
-                            <span id="carlos-a-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-2">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-luis-m.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
-                            <span class="index-section-5-member-position">Estrategia de inversión</span>
-                            <span class="index-section-5-member-area">Análisis financiero</span>
-                            <span id="luis-m-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
-                            <span class="index-section-5-member-position">Investment strategy</span>
-                            <span class="index-section-5-member-area">Financial analysis</span>
-                            <span id="luis-m-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-oscar-l.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Oscar López Macal</span>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Contraloría e información financiera</span>
-                            <span id="oscar-l-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Oscar López Macal</span>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Controller and financial information</span>
-                            <span id="oscar-l-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Rafael Brambila López</span>
-                            <span class="index-section-5-member-position">Auditoría y soporte contable</span>
-                            <span class="index-section-5-member-area">Abogado corporativo</span>
-                            <span id="rafael-b-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Rafael Brambila López</span>
-                            <span class="index-section-5-member-position">Governing bodies</span>
-                            <span class="index-section-5-member-area">Corporate lawyer</span>
-                            <span id="rafael-b-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-alonso-m.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
-                            <span class="index-section-5-member-position">Desarrollo organizacional</span>
-                            <span class="index-section-5-member-area">Diseño gráfico</span>
-                            <span id="alonso-m-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
-                            <span class="index-section-5-member-position">Organization development</span>
-                            <span class="index-section-5-member-area">Design and corporate image</span>
-                            <span id="alonso-m-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-3">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-manuel-a.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                            <span id="manuel-a-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Audit and accounting support</span>
-                            <span id="manuel-a-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-ana-s.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Auditoría y soporte administrativo</span>
-                            <span id="ana-m-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Audit and management support</span>
-                            <span id="ana-m-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-nora-e.png" alt="" class="index-section-5-member-image">
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                            <span id="nora-e-detalles" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Audit and accounting support</span>
-                            <span id="nora-e-detalles" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="nav"></div>
-    </div>
 
+    <!-- Carousel Desktop -->
+
+    <div class="carousel index-section-5-carousel carousel-desktop">
+
+        <ul class="sliderTmDsktp" id="index-section-5-carousel-loads">
+
+            <!-- slide 1 -->
+
+            <li class="index-section-5-slide" id="slide-1">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-everardo-h.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estrategia de inversión <?php else: ?>Investment strategy<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Evaluación de alternativas de inversión <?php else: ?>Evaluation of investment strategies<?php endif; ?></span>
+                    <span id="everardo-detalles" data-anchor="team-card-everardo"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-roberto-l.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Roberto López Sánchez</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Órganos de gobierno <?php else: ?>Governing bodies<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Abogado corporativo <?php else: ?>Corporate lawyer<?php endif; ?></span>
+                    <span id="roberto-l-detalles" data-anchor="team-card-roberto"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-ricardo-d.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Operaciones<?php else: ?>Operations<?php endif; ?></span>
+                    <span id="ricardo-d-detalles" data-anchor="team-card-ricardo"
+                          class="index-section-5-member-button"> <?php if ($len == 'es'): ?>Detalles <?php else: ?>Details<?php endif; ?></span>
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-carlos-a.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Desarrollo organizacional<?php else: ?>Organization development<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Recursos humanos<?php else: ?>Human resources<?php endif; ?></span>
+                    <span id="carlos-a-detalles" data-anchor="team-card-carlos"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+            </li>
+
+            <li class="index-section-5-slide" id="slide-2">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-luis-m.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estrategia de inversión<?php else: ?>Investment strategy<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Análisis financiero<?php else: ?>Financial analysis<?php endif; ?></span>
+                    <span id="luis-m-detalles" data-anchor="team-card-luis"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-oscar-l.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Oscar López Macal</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Contraloría e información financiera<?php else: ?>Controller and financial information<?php endif; ?></span>
+                    <span id="oscar-l-detalles" data-anchor="team-card-oscar"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Rafael Brambila López</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Órganos de gobierno<?php else: ?>Governing bodies<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Abogado corporativo<?php else: ?>Corporate lawyer<?php endif; ?></span>
+                    <span id="rafael-b-detalles" data-anchor="team-card-rafael"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-alonso-m.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Desarrollo organizacional<?php else: ?>Organization development<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Diseño e imagen corporativa<?php else: ?>Design and corporate image<?php endif; ?></span>
+                    <span id="alonso-m-detalles" data-anchor="team-card-alonso"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+            </li>
+
+            <li class="index-section-5-slide" id="slide-3">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-manuel-a.png" alt="" class="index-section-5-member-image">
+
+                    <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación <?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Auditoría y soporte contable <?php else: ?>Audit and accounting support<?php endif; ?></span>
+                    <span id="manuel-a-detalles" data-anchor="team-card-manuel"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles <?php else: ?>Details<?php endif; ?></span>
+
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-ana-s.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Auditoría y soporte administrativo<?php else: ?>Audit and management support<?php endif; ?></span>
+                    <span id="ana-m-detalles" data-anchor="team-card-ana"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-nora-e.png" alt="" class="index-section-5-member-image">
+
+                    <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Auditoría y soporte contable<?php else: ?>Audit and accounting support<?php endif; ?></span>
+                    <span id="nora-e-detalles" data-anchor="team-card-nora"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                </div>
+            </li>
+
+        </ul>
+    </div>
 
     <!-- Mobile -->
     <div id="team-cards-mobile"></div>
     <div class="carousel index-section-5-carousel carousel-mobile">
-        <div class="container" id="index-section-5-carousel-loads">
+        <ul class="sliderTmMbl" id="index-section-5-carousel-loads">
             <!-- slide 1 -->
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-1">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-everardo-h.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estrategia de inversión</span>
-                            <span class="index-section-5-member-area">Evaluación de alternativas de inversión</span>
-                            <span id="everardo-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Investment strategy</span>
-                            <span class="index-section-5-member-area">Evaluation of investment strategies</span>
-                            <span id="everardo-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+
+            <li class="index-section-5-slide" id="slide-1">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-everardo-h.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Everardo Hiarmes Martínez</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estrategia de inversión<?php else: ?>Investment strategy<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Evaluación de alternativas de inversión<?php else: ?>Evaluation of investment strategies<?php endif; ?></span>
+                    <span id="everardo-detalles-mobile" data-anchor="team-card-everardo"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-2">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-roberto-l.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Roberto López Sánchez</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Órganos de gobierno</span>
-                            <span class="index-section-5-member-area">Abogado corporativo</span>
-                            <span id="roberto-l-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Governing bodies</span>
-                            <span class="index-section-5-member-area">Corporate lawyer</span>
-                            <span id="roberto-l-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 2 -->
+
+            <li class="index-section-5-slide" id="slide-2">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-roberto-l.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Roberto López Sánchez</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Órganos de gobierno<?php else: ?>Governing bodies<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Abogado corporativo<?php else: ?>Corporate lawyer<?php endif; ?></span>
+                    <span id="roberto-l-detalles-mobile" data-anchor="team-card-roberto"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-3">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-ricardo-d.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Operaciones</span>
-                            <span id="ricardo-d-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Operations</span>
-                            <span id="ricardo-d-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 3 -->
+
+            <li class="index-section-5-slide" id="slide-3">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-ricardo-d.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Ricardo Díaz Salinas</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Operaciones<?php else: ?><?php endif; ?>
+                        Operations</span>
+                    <span id="ricardo-d-detalles-mobile" data-anchor="team-card-ricardo"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-4">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-carlos-a.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Desarrollo organizacional</span>
-                            <span class="index-section-5-member-area">Recursos humanos</span>
-                            <span id="carlos-a-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Organization development</span>
-                            <span class="index-section-5-member-area">Human resources</span>
-                            <span id="carlos-a-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 4 -->
+
+            <li class="index-section-5-slide" id="slide-4">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-carlos-a.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Carlos A. Tamez Nevárez</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Desarrollo organizacional<?php else: ?>Organization development<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Recursos humanos<?php else: ?>Human resources<?php endif; ?></span>
+                    <span id="carlos-a-detalles-mobile" data-anchor="team-card-carlos"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-5">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-luis-m.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estrategia de inversión</span>
-                            <span class="index-section-5-member-area">Análisis financiero</span>
-                            <span id="luis-m-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Investment strategy</span>
-                            <span class="index-section-5-member-area">Financial analysis</span>
-                            <span id="luis-m-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 5 -->
+
+            <li class="index-section-5-slide" id="slide-5">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-luis-m.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Luis M. de Villa Zabroky</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estrategia de inversión<?php else: ?>Investment strategy<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Análisis financiero<?php else: ?>Financial analysis<?php endif; ?></span>
+                    <span id="luis-m-detalles-mobile" data-anchor="team-card-luis"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-6">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-oscar-l.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Oscar López Macal</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Contraloría e información financiera</span>
-                            <span id="oscar-l-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Controller and financial information</span>
-                            <span id="oscar-l-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 6 -->
+
+            <li class="index-section-5-slide" id="slide-6">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-oscar-l.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Oscar López Macal</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Contraloría e información financiera<?php else: ?>Controller and financial information<?php endif; ?></span>
+                    <span id="oscar-l-detalles-mobile" data-anchor="team-card-oscar"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-7">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Rafael Brambila López</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Auditoría y soporte contable</span>
-                            <span class="index-section-5-member-area">Abogado corporativo</span>
-                            <span id="rafael-b-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Governing bodies</span>
-                            <span class="index-section-5-member-area">Corporate lawyer</span>
-                            <span id="rafael-b-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 7 -->
+
+            <li class="index-section-5-slide" id="slide-7">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-rafael-b.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Rafael Brambila López</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Auditoría y soporte contable<?php else: ?>Governing bodies<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Abogado corporativo<?php else: ?><?php endif; ?>
+                        Corporate lawyer</span>
+                    <span id="rafael-b-detalles-mobile" data-anchor="team-card-rafael"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-8">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-alonso-m.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Desarrollo organizacional</span>
-                            <span class="index-section-5-member-area">Diseño gráfico</span>
-                            <span id="alonso-m-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Organization development</span>
-                            <span class="index-section-5-member-area">Design and corporate image</span>
-                            <span id="alonso-m-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 8 -->
+
+            <li class="index-section-5-slide" id="slide-8">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-alonso-m.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">J. Alonso Muñoz Fernández</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Desarrollo organizacional<?php else: ?>Organization development<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Diseño gráfico<?php else: ?>Design and corporate image<?php endif; ?></span>
+                    <span id="alonso-m-detalles-mobile" data-anchor="team-card-alonso"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-9">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-manuel-a.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                            <span id="manuel-a-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Audit and accounting support</span>
-                            <span id="manuel-a-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 9 -->
+
+            <li class="index-section-5-slide" id="slide-9">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-manuel-a.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Manuel A. Meza Cañedo</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Auditoría y soporte contable<?php else: ?>Audit and accounting support<?php endif; ?></span>
+                    <span id="manuel-a-detalles-mobile" data-anchor="team-card-manuel"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-10">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-ana-s.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Auditoría y soporte administrativo</span>
-                            <span id="ana-m-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Audit and management support</span>
-                            <span id="ana-m-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 10 -->
+
+            <li class="index-section-5-slide" id="slide-10">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-ana-s.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Ana M. Soto Valenzuela</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Auditoría y soporte administrativo<?php else: ?>Audit and management support<?php endif; ?></span>
+                    <span id="ana-m-detalles-mobile" data-anchor="team-card-ana"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="index-section-5-slide" id="slide-11">
-                    <div class="index-section-5-member">
-                        <img src="img/escudos/escudo-nora-e.png" alt="" class="index-section-5-member-image">
-                        <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
-                        <?php if ($len == 'es'): ?>
-                            <span class="index-section-5-member-position">Estructura y transformación</span>
-                            <span class="index-section-5-member-area">Auditoría y soporte contable</span>
-                            <span id="nora-e-detalles-mobile" class="index-section-5-member-button">Detalles</span>
-                        <?php else: ?>
-                            <span class="index-section-5-member-position">Structure and transformation</span>
-                            <span class="index-section-5-member-area">Audit and accounting support</span>
-                            <span id="nora-e-detalles-mobile" class="index-section-5-member-button">Details</span>
-                        <?php endif; ?>
-                    </div>
+            </li>
+
+            <!-- slide 11 -->
+
+            <li class="index-section-5-slide" id="slide-11">
+                <div class="index-section-5-member">
+                    <img src="img/escudos/escudo-nora-e.png" alt="" class="index-section-5-member-image">
+                    <span class="index-section-5-member-name">Nora A. Echeverría Estrada</span>
+                    <span
+                        class="index-section-5-member-position"><?php if ($len == 'es'): ?>Estructura y transformación<?php else: ?>Structure and transformation<?php endif; ?></span>
+                    <span
+                        class="index-section-5-member-area"><?php if ($len == 'es'): ?>Auditoría y soporte contable<?php else: ?>Audit and accounting support<?php endif; ?></span>
+                    <span id="nora-e-detalles-mobile" data-anchor="team-card-nora"
+                          class="index-section-5-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                 </div>
-            </div>
-        </div>
-        <div id="nav"></div>
+            </li>
+
+        </ul>
     </div>
-    <script src="js/carousel-js/carousel.js"></script>
 </section>
 <section class="index-section-6">
     <div class="index-section-6-header">
@@ -917,18 +604,11 @@
         <hr class="index-section-6-slide-hr">
     </div>
     <div class="index-section-6-content">
-        <img src="img/logos/logo-amexcap.png" class="index-section-6-images" alt="">
-        <img src="img/logos/logo-laca.png" alt="" class="index-section-6-images">
-        <img src="img/logos/logo-icgn.png" class="index-section-6-images" alt="">
-    </div>
-    <div class="index-section-6-header">
-        <hr class="index-section-6-slide-hr">
-        <span
-            class="index-section-6-heading"><?php if ($len == 'es'): ?>Eventos<?php else: ?>Events<?php endif; ?></span>
-        <hr class="index-section-6-slide-hr">
-    </div>
-    <div class="index-section-6-content-2">
-        <img src="img/logos/logo-execution.jpg" class="index-section-6-images-2" alt="">
+        <a href="https://amexcap.com/"><img src="img/logos/logo-amexcap.png" class="index-section-6-images" alt=""></a>
+        <a href="https://lavca.org/"><img src="img/logos/logo-laca.png" alt=""
+                                          class="index-section-6-images image-2"></a>
+        <a href="https://www.icgn.org/"><img src="img/logos/logo-icgn.png" class="index-section-6-images image-3"
+                                             alt=""></a>
     </div>
 </section>
 
@@ -982,4 +662,3 @@
         <div id="map" class="index-section-7-1-b"></div>
     </div>
 </section>
-

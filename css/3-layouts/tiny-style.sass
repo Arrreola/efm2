@@ -4,12 +4,20 @@
   background: black
   padding: 0
   border: none
+  width: 100%
+  display: inline-block
 .tiny-style span
   font-family: "Libre baskerville" !important
+  word-spacing: -1px
 .tiny-img-left
-  margin-right: 30px
+  padding-right: 30px
+.tiny-img-rigth
+  margin-left: 30px
+.tiny-img-real-size
+  width: auto
 .tiny-img-contain
   width: 100%
+  text-align: center
 .tiny-10
   width: 9%
   display: inline-block
@@ -37,7 +45,91 @@
 .tiny-90
   width: 89%
   display: inline-block
+.vertical-align-top
+  vertical-align: top
+.tiny-3-columns
+  width: 33%
+  display: inline-block
+  vertical-align: top
+  padding-right: 17px
 .tiny-right-padding
   padding-right: 30px
+  float: left
+.tiny-3-columns:nth-child(4)
+  padding-right: 0!important
 .tiny-left-padding
   padding-left: 30px
+//SPECIFIC STYLES
+.tiny-box-secuence
+  width: 218px
+  padding: 40px 0
+  background: #ededed
+  display: inline-block
+  text-align: center
+.tiny-box-secuence-1
+  float: left
+  padding: 30px 0
+  margin: 0 5px 0 0
+.tiny-box-plus-secuence
+  position: relative
+  display: inline-block
+  margin: 0 5px
+.background-gray
+  background: #f6f6f6
+  padding: 20px 0
+  // MOVILE STYLES
+@media only screen and #{$movile}
+  .tiny-10
+    width: 100%
+    display: inline-block
+  .tiny-20
+    width: 100%
+    display: inline-block
+  .tiny-30
+    width: 100%
+    display: inline-block
+  .tiny-40
+    width: 100%
+    display: inline-block
+  .tiny-50
+    width: 100%
+    display: inline-block
+  .tiny-60
+    width: 100%
+    display: inline-block
+  .tiny-70
+    width: 100%
+    display: inline-block
+  .tiny-80
+    width: 100%
+    display: inline-block
+  .tiny-90
+    width: 100%
+    display: inline-block
+  .tiny-3-columns
+    width: 100%
+    display: inline-block
+    vertical-align: top
+    margin-bottom: 20px
+  .tiny-right-padding
+    padding-right: 30px
+    float: left
+  .tiny-left-padding
+    padding-left: 30px
+  .tiny-box-secuence
+    text-align: center
+    display: block
+    margin: 0 auto
+    float: none
+  .tiny-box-secuence-1
+    float: none
+    margin: 10px auto
+  .tiny-box-plus-secuence
+    display: block
+    margin: 10px auto
+    text-align: center
+    position: relative
+    width: 10px
+
+
+

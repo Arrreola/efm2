@@ -11,15 +11,12 @@ $font-rasa: 'Rasa', serif
 $font-amiri: 'Amiri', serif
 $font-merriweather: 'Merriweather', serif
 /*Background Variables*/
-
+.fondo-puente-content-area
+  +outer-container
 .fondo-puente-content-1
   background: $efm-dark-gray
-  height: 440px
-  text-align: center
-  padding-top: 40px
-.fondo-puente-content-1 img
-  +outer-container
-  width: 100%
+  padding: 80px 0 80px
+
 .fondo-puente-content-2
   text-align: center
   background: no-repeat url('../img/desktop-backgrounds/fondo-puente-text-back.jpg')
@@ -27,17 +24,190 @@ $font-merriweather: 'Merriweather', serif
   padding: 40px 0
 .fondo-puente-text
   color: white
-  max-width: 600px
-  margin: 0px auto
+  max-width: 700px
+  margin: 0px auto 4px
+  font-size: 18px
 .fondo-puente-content-3
   text-align: center
-  padding-top: 40px
-  height: 770px
-.fondo-puente-content-3 img
-  +outer-container
-  width: 100%
+  padding-top: 80px
+  padding-bottom: 80px
+
 .fondo-puente-img-mobile
   display: none
+
+.fondo-puente-content-1-table-divicion
+  width: 1px
+  background: $efm-gold
+  min-height: 200px
+  height: 100%
+  display: inline-block
+  margin: 0 20px
+.fondo-puente-content-1-table-a
+  display: inline-block
+  max-width: 48%
+  display: inline-block
+  vertical-align: top
+.fondo-puente-content-1-table-b
+  display: inline-block
+  max-width: 47%
+  display: inline-block
+  vertical-align: top
+  float: right
+.fondo-puente-content-1-heading
+  color: white
+  font-size: 24px
+  max-width: 800px
+
+  text-align: center
+  margin: 0 auto 80px
+  font-weight: 100
+.fondo-puente-content-1-table-img
+  width: 45px
+  height: auto
+  display: inline-block
+  vertical-align: top
+.fondo-puente-content-1-table-a-right
+  display: inline-block
+  text-align: left
+  margin-left: 20px
+  width: 86%
+.fondo-puente-content-1-table-a-heading
+  display: block
+  color: $efm-gold
+  font-size: 24px
+  vertical-align: top
+  margin-bottom: 10px
+.fondo-puente-content-1-table-a-1
+  margin-bottom: 50px
+.fondo-puente-content-1-table-a-1:nth-child(2)
+  margin-bottom: 0px
+.fondo-puente-content-1-table-a-text
+  color: white
+  font-size: 18px
+
+
+// SECTION 2
+
+.fondo-puente-content-2-heading
+  color: black
+  font-size: 24px
+  max-width: 800px
+  font-family: "Libre baskerville", serif
+  text-align: center
+  margin: 0 auto 53px
+  padding-bottom: 20px
+  width: 350px
+  font-weight: 100
+.fondo-puente-content-2-timeline
+  +outer-container
+//.fondo-puente-content-2-time:first-child:before
+//  content:
+//.fondo-puente-content-2-time:last-child:before
+//  content:
+.timeline-1
+  height: 30px
+  width: 12%
+  background: #7c7d80
+  display: inline-block
+  margin: 0
+  border: 0
+.timeline-2
+  height: 30px
+  width: 64%
+  background: $efm-dark-gray
+  display: inline-block
+  margin: 0
+  border: 0
+.timeline-3
+  height: 30px
+  width: 23%
+  background: $efm-gold
+  display: inline-block
+  margin: 0
+  border: 0
+
+  // AQUI COMIENZA LAS 3 COLUMNAS
+.fondo-puente-content-3
+  +outer-container
+
+.fondo-puente-content-2-triad
+  margin-top: 20px
+.fondo-puente-content-2-triad-a
+  @include span-columns(4)
+.fondo-puente-content-2-triad-b
+  @include span-columns(4)
+.fondo-puente-content-2-triad-c
+  @include span-columns(4)
+.fondo-puente-content-2-time
+  color: black
+  text-align: center
+.fondo-puente-content-2-triad-img
+  height: 45px
+  margin: 30px 0 10px
+.fondo-puente-content-2-triad-heading
+  color: black
+  display: block
+  font-size: 28px
+  text-align: center
+.fondo-puente-content-2-triad-ul
+  list-style: none
+  padding-left: 14px
+.fondo-puente-content-2-triad-li
+  text-align: left
+  margin-bottom: 20px
+.fondo-puente-content-2-triad-centered
+  width: 78%
+  margin: 0 auto
+  display: block
+  position: relative
+.fondo-puente-content-2-triad-centered .fondo-puente-hr-divition
+  border: 0px
+  height: 1px
+  background: black
+  margin: 25px 0
+.fondo-puente-content-2-time-2
+  display: none
+.fondo-puente-content-2-triad-li:before
+  content: "- "
+  position: absolute
+  transform: translateX(-13px)
+.fondo-puente-content-area
+  padding: 0 20px!important
+.fondo-puente-pointer-line-1
+  width: 40px
+  height: 20px
+  border-top: 0px
+  border-botton: 1px solid black
+  border-left: 1px solid black
+  border-right: 0px
+  position: absolute
+  top: -16px
+  margin-left: 20px
+.fondo-puente-pointer-line-2
+  border-left: 0 none
+  border-right: 1px solid black
+  border-top: 0 none
+  height: 15px
+  left: 50%
+  margin: 0 auto
+  position: absolute
+  top: -16px
+  width: 1px
+.fondo-puente-pointer-line-3
+  width: 40px
+  height: 20px
+  border-top: 0px
+  border-botton: 1px solid black
+  border-right: 1px solid black
+  border-left: 0px
+  position: absolute
+  top: -16px
+  margin-right: 20px
+  right: 0
+
+
+
+
 @media only screen and #{$movile}
   .fondo-puente-img-desktop
     display: none
@@ -46,9 +216,60 @@ $font-merriweather: 'Merriweather', serif
   .fondo-puente-content-1
     background: $efm-dark-gray
     height: auto
+    padding: 40px 20px 2px
   .fondo-puente-content-3
     height: auto
-  .fondo-puente-content-1 img
+  .fondo-puente-content-1-table-divicion
+    display: none
+  .fondo-puente-content-1-table-a
+    display: block
+    margin: 0 auto
+    max-width: 90%
+  .fondo-puente-content-1-table-a-right
+    width: 76%
+  .fondo-puente-content-1-table-b
+    display: block
+    float: none
+    margin: 0 auto
+    max-width: 90%
+  .fondo-puente-content-2-timeline
+    display: none
+  .fondo-puente-content-2-triad-a
+    @include span-columns(12)
+  .fondo-puente-content-2-triad-b
+    @include span-columns(12)
+  .fondo-puente-content-2-triad-c
+    @include span-columns(12)
+  .fondo-puente-content-2-triad-centered .fondo-puente-hr-divition
+    margin: 20px 0
     width: 100%
-  .fondo-puente-content-3 img
-    width: 100%
+  .fondo-puente-content-3
+    padding: 80px 20px 40px
+  .fondo-puente-content-2-heading
+    width: auto
+    margin: 0
+    padding-bottom: 0
+  .fondo-puente-content-2-time-2
+    display: block
+  .fondo-puente-content-2-time
+    display: none
+  .fondo-puente-text
+    padding: 0 20px
+    font-size: 18px
+  .index-section-7-a-a-legal
+    padding: 30px 20px
+  .fondo-puente-content-1-table-a-1:nth-child(2)
+    margin-bottom: 50px
+  .fondo-puente-content-3
+    padding: 40px 20px
+  .fondo-puente-content-2-heading
+    margin: 0
+    padding: 0
+  .fondo-puente-content-area
+    padding: 0 20px
+  .fondo-puente-pointer-line-1
+    display: none
+  .fondo-puente-pointer-line-2
+    display: none
+  .fondo-puente-pointer-line-3
+    display: none

@@ -16,29 +16,33 @@ $font-amiri: 'Amiri', serif
 $font-merriweather: 'Merriweather', serif
 /*Background Variables*/
 
-
 body
   font-family: $font-times
   font-weight: 300
   margin: 0
   text-rendering: geometricPrecision !important
   min-height: 100%
-  -moz-te
+  padding-top: 73px
+
 nav
   width: 100%
   height: 73px
-  background: #fff
+  background: #ffffff
   position: fixed
   top: 0
-  z-index: 99
+  z-index: 999999
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2)
+
 .nav-content
   +outer-container
+
 .navbar-logo
   height: 45px
   margin: 12px 0 0 20px
+
 .navbar-menu-icon
   display: none
+
 .navbar-breadcrumbs
   display: block
   float: right
@@ -46,79 +50,96 @@ nav
   list-style: none
   right: 0px
   top: 0px
+
 .navbar-breadcrumbs li
   display: inline-block
+
 .navbar-crumbs-slash
   padding: 10px 25px
-.navbar-crumbs-news
-  display: none !important
+
 .navbar-crumbs-news a
   color: $efm-gold
   text-decoration: none
   text-transform: uppercase
   font-size: 12px
+
 .navbar-crumbs-news a:hover
   text-decoration: underline
+
 .navbar-crumbs-1
   float: right
   font-size: 13px
   letter-spacing: 0.2px
   line-height: 14px
-  margin-left: 30px
+  margin-left: 21px
   margin-top: 16px
+
 .navbar-crumbs-1 a
-  color: #333
   display: block
-  margin: 5px 0
+  margin: 13px 0
   text-decoration: none
-.navbar-crumbs-1 a:first-child
-  color: #bbb
+  color: black
+
+.navbar-crumbs-selected
+  color: #aaa !important
+
 .navbar-crumbs-1 a:hover
   text-decoration: underline
+
 .language-hr
   background-color: #ccc
   border: medium none
   height: 1px
   display: none
+
 .navbar-crumbs-2
   margin-top: 15px
   position: relative
   top: 0px
+
 .navbar-hr
   display: none
+
 .navbar-dataroom-button
   border-radius: 3px
   color: white
   padding: 13px 30px
-  margin: 0px 0 0 40px
+  margin: 0px 0 0 20px
   text-transform: uppercase
   border: none
   font-family: $font-times
+  cursor: pointer
   +background($efm-dark-gray)
   font-size: 12px
   transition: all .2s ease-in-out
+
 .navbar-dataroom-button:hover
   +background(#444)
   transition: all .2s ease-in-out
+
 .navbar-offcanvas-location
   margin: 20px
   list-style: none
   color: #999
+
 .navbar-white-area
   height: 73px
   width: 100%
 
 /* Section 1 */
 .index-section-1
+  background: #333333
   // background-image: url("../img/desktop-backgrounds/section-1-back-desktop.png")
   // background-size: cover
   // background-position: center
   height: 550px
   position: relative
+
 .parallax-window
   min-height: 400px
   background: transparent
   background-position: 50%
+
 .index-section-1-copy
   +outer-container
   display: block
@@ -129,6 +150,7 @@ nav
   -moz-transform: translateY(-50%)
   top: 50%
   position: relative
+
 .index-section-hr
   border: none
   height: 1px
@@ -136,12 +158,14 @@ nav
   max-width: 485px
   margin: 0 auto
   display: block
+
 .index-section-1-copy-container
   max-width: 541px
   display: block
   margin: 30px auto
   text-align: center
   color: white
+
 .index-section-1-text
   font-size: 18px
 
@@ -149,30 +173,37 @@ nav
 .index-section-2
   height: 500px
 /* Section 3 */
+.backGroundGray
+  background: #333333
+
 .index-section-3
   height: 500px
   //background-image: url('../img/desktop-backgrounds/section-3-back.jpg')
   background-size: cover
   background-position: center
+
 .index-section-3-content
   height: 500px
   color: black
   text-align: center
   display: block
   position: relative
+
 .index-section-3-header
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.1)
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.1)
   height: 73px
   padding: 10px
   color: $efm-gold
   line-height: 1.4
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0, 0, 0, 0.5)
+
 .index-section-3-heading
   margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
   font-style: italic
+
 .index-section-3-slide-hr
   display: inline-block
   width: 9%
@@ -182,6 +213,7 @@ nav
   border: 0
   height: 1px
   background-color: $efm-gold
+
 .index-section-3-copy-container
   max-width: 1200px
   display: block
@@ -192,6 +224,7 @@ nav
   -moz-transform: translateY(-50%)
   top: 50%
   position: relative
+
 .index-section-3-copy-content
   text-rendering: geometricprecision !important
   max-width: 510px
@@ -205,6 +238,7 @@ nav
   -webkit-transform: translateY(-150px)
   -moz-transform: translateY(-150px)
   font-size: 18px
+
 .index-section-3-link
   display: block
   padding: 6px 16px
@@ -217,28 +251,33 @@ nav
   font-size: 16px
   text-decoration: none
   cursor: pointer
+
 .index-section-3-link:hover
   background-color: rgba(255, 255, 255, 0.2)
-  /* Section 4 */
+/* Section 4 */
 .index-section-4
+  background: #ffffff
   height: 573px
   color: black
   text-align: center
   display: block
   position: relative
-  box-shadow: inset 0px -110px 0px hsla(240,2%,24%,1)
+  box-shadow: inset 0px -110px 0px hsla(240, 2%, 24%, 1)
+
 .index-section-4-header
   height: 85px
   padding: 20px
   color: $efm-gold
   line-height: 1.4
   background-color: white
+
 .index-section-4-heading
   margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
   font-style: italic
+
 .index-section-4-slide-hr
   display: inline-block
   width: 10%
@@ -248,6 +287,7 @@ nav
   border: 0
   height: 1px
   background-color: $efm-gold
+
 .index-section-4-content
   background-image: url('../img/desktop-backgrounds/section-4-back-desktop.png')
   background-position: bottom
@@ -257,12 +297,14 @@ nav
   position: relative
   +outer-container
   display: block
+
 .index-section-4-bottom
   height: 110px
   width: 100%
-  background-color: hsla(228,2%,24%,0.7)
+  background-color: hsla(228, 2%, 24%, 0.7)
   position: absolute
   bottom: 0
+
 .index-section-4-directors-module
   width: 19.1%
   display: inline-block
@@ -271,13 +313,16 @@ nav
   color: white
   font-size: 14px
   text-rendering: geometricprecision !important
+
 .index-section-4-directors-name
   display: block
   font-weight: 600
   padding-bottom: 3px
+
 .index-section-4-directors-position
   display: block
   padding-bottom: 17px
+
 .index-section-4-directors-button
   border-radius: 3px
   display: block
@@ -289,6 +334,7 @@ nav
   width: 90px
   text-decoration: none
   cursor: pointer
+
 .index-section-4-directors-button:hover
   background-color: rgba(255, 255, 255, 0.2)
 /* Section 5 */
@@ -299,12 +345,14 @@ nav
   display: block
   position: relative
   background-color: $efm-dark-gray
+
 .index-section-5-header
   height: 73px
   padding: 10px
   color: $efm-gold
   line-height: 1.4
   background-color: $efm-dark-gray
+
 .index-section-5-heading
   margin: 0 25px
   display: inline-block
@@ -312,6 +360,7 @@ nav
   padding-top: 5px
   font-style: italic
   font-weight: 100
+
 .index-section-5-slide-hr
   display: inline-block
   width: 10%
@@ -324,26 +373,30 @@ nav
 
 /* Section 6 */
 .index-section-6
-  min-height: 440px
+  min-height: 220px
   color: white
   text-align: center
   display: block
   position: relative
   background-color: #7D7E81
+
 .index-section-6-header
   height: 73px
   padding: 10px
   color: white
   line-height: 1.4
   background-color: rgba(0, 0, 20, 0.15)
+
 .index-section-6-header:nth-child(2)
   box-shadow: none
+
 .index-section-6-heading
   margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 2px
   font-style: italic
+
 .index-section-6-slide-hr
   display: inline-block
   width: 10%
@@ -353,51 +406,70 @@ nav
   border: 0
   height: 1px
   background-color: white
+
 .index-section-6-content
   text-align: center
-  padding: 30px 0 50px 0
+  padding: 40px 0 50px 0
+
 .index-section-6-content-2
   padding: 32px 0 0px 0
+
 .index-section-6-images:first-child
   padding-left: 60px
+
 .index-section-6-images
   margin: 0 60px
   height: 38px
+
 .index-section-6-images:nth-child(2)
   height: 62px
   transform: translateY(5px)
   -webkit-transform: translateY(5px)
   -moz-transform: translateY(5px)
+
+.image-2
+  height: 55px
+
+.image-3
+  height: 40px
+
 .index-section-6-images:nth-child(3)
   height: 45px
+
 .index-section-6-images-2
   height: 83px
 /* Map */
 .index-section-7-1
   background-color: #292A2C
   height: 570px
+
 .index-section-7-1-a
   width: 49%
   display: inline-block
+
 .index-section-7-1-b
   width: 50%
   right: 0
   display: inline-block
   position: absolute
+
 .index-section-7-header
   height: 73px
   padding: 15px
   color: $efm-gold
   line-height: 1.4
   text-align: center
+
 .index-section-7-header:nth-child(2)
   box-shadow: none
+
 .index-section-7-heading
   margin: 0 25px
   display: inline-block
   font-size: 32px
   padding-top: 5px
   font-style: italic
+
 .index-section-7-slide-hr
   display: inline-block
   width: 20%
@@ -413,10 +485,12 @@ form
   display: block
   margin: 20px auto 0
   position: relative
+
 .my-placeholder
   display: block
   color: #c3b584
   margin-bottom: 5px
+
 .required
   border: none
   background-color: #333
@@ -429,6 +503,7 @@ form
   font-size: 15px
   border-radius: 3px
   padding-left: 10px
+
 .required-2
   border: none
   background: #eee
@@ -442,6 +517,7 @@ form
   border-radius: 3px
   color: #333
   padding-left: 10px
+
 .textarea
   height: 100px
   width: 100%
@@ -451,6 +527,7 @@ form
   margin-bottom: 18px
   color: white
   padding-left: 10px
+
 .form-button
   display: block
   padding: 0px 16px
@@ -463,10 +540,12 @@ form
   background-color: transparent
   font-family: "times new roman"
   font-size: 16px
+
 .form-button:hover
   background: $efm-gold
   color: white
   transition: all .2s ease-in-out
+
 #map
   width: 100%
   height: 570px
@@ -476,18 +555,31 @@ form
   max-width: 1190px
   margin: 0 auto
   position: relative
+
 .index-section-7
   background-color: $efm-gold
+
+.index-section-7-a-a
+  background: #eeeeee
+  display: block
+
+.index-section-7-a-a-legal
+  +outer-container
+  padding: 30px 0
+  font-size: 11px
+
 .index-section-7-a
   display: inline-block
   max-width: 515px
   margin: 30px 25px
+
 .index-section-7-b
   display: inline-block
   max-width: 575px
   position: absolute
   top: 0
   margin: 30px
+
 .index-section-7-text
   line-height: 22px
   display: block
@@ -502,6 +594,7 @@ form
 /* For more Carousel styles, check on carousel.sass */
 .wrapper
   padding-bottom: 200px
+
 footer
   width: 100%
   right: 0
@@ -509,6 +602,88 @@ footer
   left: 0
   text-align: left
 
+.request-data-form-container
+  +outer-container
+  margin-bottom: 40px
+  margin-top: 40px
+
+.request-data-form
+  max-width: 500px
+  margin: 0 auto
+  display: block
+
+.slide-1 .op-li-elements
+  height: 500px
+  padding-top: 73px
+  font-size: 0
+
+.slide-1 .op-li-elements .op-li-side-a
+  background: black none repeat scroll 0 0
+  display: inline-block
+  float: left
+  min-width: 360px
+  position: absolute
+  vertical-align: top
+  z-index: 99999
+  height: 416px
+.slide-1 .op-li-side-a
+  padding-left: 53px
+.slide-1 .op-li-elements .op-li-side-b
+  background: red
+  display: inline-block
+  float: right
+  height: 100%
+  padding-left: 30%
+  position: relative
+  width: 100%
+  z-index: 0
+
+.slide-1 .op-li-elements a
+  border: 1px solid white
+  padding: 10px 20px
+  text-align: center
+  border-radius: 3px
+  color: white
+  text-decoration: none
+  font-size: 16px
+.slide-1 .op-li-side-a .op-li-content:nth-child(2)
+  margin-top: 0
+.slide-1 .op-li-elements a:hover
+  background-color: rgba(255, 255, 255, 0.2)
+
+.slide-1 .op-li-elements
+  border-bottom: 0
+
+.op-li-elements
+  text-align: left
+
+.op-li-elements-header
+  color: white
+  padding-bottom: 20px
+  border-bottom: 1px solid white
+
+.op-li-elements .op-li-header h2
+  font-size: 28px
+  display: block
+  margin: 0
+
+.op-li-elements .op-li-elements h2
+  margin-top: 30px
+
+.op-li-elements .op-li-header p
+  font-size: 18px
+  display: block
+
+.op-li-elements .op-li-content h2
+  color: $efm-gold
+  font-size: 18px
+  font-weight: 100
+  margin-bottom: 2px
+  margin-top: 21px
+
+.op-li-elements p
+  color: white
+  font-size: 18px
 
 /* Media Queries */
 @media only screen and #{$movile}
@@ -531,7 +706,7 @@ footer
     right: -270px
     margin-top: 0px
     padding: 0
-    box-shadow: -4px 1px 11px rgba(0,0,0,.1)
+    box-shadow: -4px 1px 11px rgba(0, 0, 0, .1)
   .navbar-crumbs
     display: block
     margin: 20px auto
@@ -552,7 +727,7 @@ footer
   .navbar-breadcrumbs li
     display: block
   .navbar-crumbs-news
-    margin: 0 auto
+    margin: 20px auto
     display: block
     text-align: center
   .navbar-crumbs-1
@@ -577,11 +752,11 @@ footer
   .index-section-3-copy
     padding: 0 20px
   .index-section-3-copy-content
-    //position: absolute
-    //top: 50%
-    //transform: translateY(-50%)
-    //-webkit-transform: translateY(-50%)
-    //-moz-transform: translateY(-50%)
+  //position: absolute
+  //top: 50%
+  //transform: translateY(-50%)
+  //-webkit-transform: translateY(-50%)
+  //-moz-transform: translateY(-50%)
   //Section 4
   .index-section-4-slide-hr
     display: none

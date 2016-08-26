@@ -37,6 +37,11 @@ $font-merriweather: 'Merriweather', serif
 .menu-navbar-items
   padding: 28px 30px
   float: right
+.menu-navbar-items-dash
+  padding: 16px 30px
+  float: right
+.menu-navbar-items-dash a
+  color: #333
 .menu-navbar-items a
   color: #333
 .menu-navbar-items-logo
@@ -202,7 +207,7 @@ input:focus
   padding: 0
   font-weight: 100
 #listReg li
-  margin: 20px 0
+  margin: 35px 0
   display: block
 
 .menu-dashboard-title
@@ -222,6 +227,9 @@ input:focus
   font-family: sans-serif
 .float
   margin: 0 45px 0px 0
+  max-width: 700px
+  display: inline-block
+  line-height: 17px
 .menu-hr
   background: #dddddd none repeat scroll 0 0
   border: 0 none
@@ -292,6 +300,11 @@ input:focus
 .red-button
   background: #D36E71
   color: white
+.dash-cite
+  color: #999
+  display: block
+  margin-top: 5px
+  position: absolute
 @media only screen and #{$tablet, $movile}
   .menu-content-area-a
     @include span-columns(10)

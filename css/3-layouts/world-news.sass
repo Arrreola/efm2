@@ -16,11 +16,33 @@ $font-baskerville: 'Libre baskerville', serif
 ul
   list-style-type: none
 
+.text-decoration-none
+  text-decoration: none !important
+
+.wn-extra-post-container
+  margin-top: 20px
+
 .outer-container
   +outer-container
   font-family: $font-baskerville
   font-weight: 100
   padding: 0 120px
+
+.image-blackshadow
+  background: rgba(0, 0, 0, 0.4)
+  width: 100%
+  height: 100%
+  position: absolute
+  background: black
+
+.floatContent
+  height: 100%
+  margin-left: 30px
+  position: absolute
+  z-index: 1
+
+.wn-section-content-container
+  padding: 0 26.5px 20px
 
 .welcome-banner
   +outer-container
@@ -28,8 +50,10 @@ ul
   height: 120px
   text-align: center
   display: block
-  margin-top: 40px
-  margin-bottom: 40px
+  margin: 40px auto
+
+.welcome-banner-black a
+  text-decoration: none !important
 
 .welcome-banner-black
   background: black
@@ -42,7 +66,7 @@ ul
   font-size: 40px
   font-family: $font-baskerville
   font-weight: 100
-  margin: 20px 0 10px
+  margin: 22px 0 2px
   text-transform: uppercase
 
 .wn-subheading
@@ -50,8 +74,15 @@ ul
   color: white
   margin: 0 0 30px
 
+.wn-subheading a
+  text-decoration: none
+
 .wn-section-1
-  margin-bottom: 40px
+  margin-bottom: 10px
+  position: relative
+
+.wn-section-1 a
+  text-decoration: none
 
 .wn-section-topic
   font-size: 17px
@@ -59,6 +90,7 @@ ul
   font-weight: 800
   text-transform: uppercase
   margin: 0
+  display: inline-block
 
 .wn-hr
   margin: 15px 0 20px
@@ -68,8 +100,10 @@ ul
 
 .wn-section-1-topic-container
   height: 400px
-  background: #aaa
-  padding: 0 26.5px
+  overflow: hidden
+  position: relative
+  background: black
+  margin-bottom: 20px
 
 .wn-section-1-topic-heading
   @include span-columns(7)
@@ -79,10 +113,14 @@ ul
   line-height: 40px
   margin: 30px 0 15px
   display: block
+  padding-right: 37px
 
 .wn-section-1-topic-heading a
   text-decoration: none
   color: white
+
+.ipad-padding
+  padding-top: 4px
 
 .wn-section-1-topic-description
   @include span-columns(6)
@@ -97,16 +135,29 @@ ul
 
 .wn-section-2
   margin-bottom: 10px
+  position: relative
 
 .wn-section-2-perspective-container
   position: relative
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  filter: grayscale(100%)
 
 .wn-section-2-post-contain-1, .wn-section-2-post-contain-2
   padding: 0
+  font-family: "Libre baskerville" !important
 
 .wn-section-2-post-area
-  @include span-columns(4)
+  width: 31.7616%
   margin-bottom: 40px
+  display: inline-block
+  margin-right: 2.35765%
+  vertical-align: top
+  font-family: "Libre baskerville" !important
+
+.wn-section-2-post-area:nth-child(3n+3)
+  margin-right: 0 !important
 
 .wn-section-2-post-img
   display: block
@@ -114,10 +165,28 @@ ul
   width: 100%
   background: #eee
 
+.wn-section-2-post-date
+  margin: 17px 0 10px
+  font-weight: 100
+  font-size: 16px
+
 .wn-section-2-post-heading
-  font-size: 24px
+  font-size: 22px
+  margin: 10px 0 10px
   line-height: 30px
   font-weight: 100
+
+.wn-section-2-post-area a
+  text-decoration: none
+  color: black
+  font-family: "Libre baskerville" !important
+
+.wn-section-2-post-area a span
+  font-family: "Libre baskerville" !important
+  font-size: 15px !important
+
+#listHomeArt h3 a
+  line-height: 1.2em
 
 .wn-section-2-post-description
   font-size: 15px
@@ -129,7 +198,7 @@ ul
   font-size: 15px
   line-height: 20px
   transform: translateY(-10px)
-  margin-left: 20px
+  margin-left: 10px
 
 .wn-section-2-more-post-text a
   text-decoration: none
@@ -149,31 +218,34 @@ ul
 .wn-section-2-more-post-icon
   width: 15px
   height: 15px
+  margin: 6px
 
 .wn-hr-industry-1
   height: 1px
   background: black
   border: 0px
-  width: 105px
-  position: absolute
+  width: 100%
   bottom: -13px
   right: 0
 
 //WN SECTION 3
 .wn-section-3
-  height: 510px
   margin-bottom: 10px
   position: relative
 
 .wn-section-3-container
   height: 400px
-  background: #aaa
-  padding: 0 26.5px
   position: relative
-  margin-bottom: 30px
+  margin-bottom: 20px
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  filter: grayscale(100%)
+  overflow: hidden
+  position: relative
 
 .wn-section-3-heading
-  @include span-columns(4)
+  //@include span-columns(5)
   color: white
   font-size: 36px
   line-height: 40px
@@ -185,20 +257,24 @@ ul
   text-decoration: none
 
 .wn-section-3-date
-  @include span-columns(12)
+  //@include span-columns(12)
   color: white
   display: block
   margin-bottom: 15px
 
 .wn-section-3-download
-  position: absolute
   bottom: 0
-  margin-bottom: 30px
+  margin-bottom: 20px
+  position: absolute
+
+.wn-section-3-download a
+  text-decoration: none
 
 .wn-section-3-download-icon
   width: 27px
   height: 30px
   display: inline-block
+  margin-right: 5px
 
 .wn-section-3-download-text
   color: white
@@ -212,51 +288,67 @@ ul
   height: 1px
   background: white
   border: none
-  width: 80px
-  position: absolute
+  width: 100%
   bottom: 5px
   right: 0
+  transform: translateY(-6px)
+
+.clearFloat
+  clear: both
 
 .wn-section-3-more-post
-  position: absolute
-  bottom: 0
-  right: 0
+  display: block
+  float: right
 
 .wn-section-3-more-post-icon-box
   display: inline-block
   width: 30px
   height: 30px
   border: 1px solid black
+  margin-right: 10px
 
 .wn-section-3-more-post-icon
   width: 15px
   height: 15px
+  margin: 6px
 
 .wn-section-3-more-post-text
   display: inline-block
   font-weight: 800
   font-size: 15px
-  line-height: 20px
-  transform: translateY(-10px)
-  margin-left: 20px
+  vertical-align: top
+  margin-top: 5px
+  color: black
+  text-decoration: none
+
+.wn-section-3-more-post a
+  display: block
+  text-decoration: none
 
 .wn-hr-industry
   height: 1px
   background: black
   border: 0px
-  width: 185px
-  position: absolute
-  bottom: -3px
-  right: 0
+  width: 100%
+  transform: translateY(-12px)
+
+.download-section-3-contain
+  display: inline-block
 
 // SECTION 4
 .wn-subheading
   height: 18px
   color: white
   margin: 0 0 30px
+  font-family: "Libre baskerville", serif
+  font-size: 15px
+
+.wn-subheading a
+  text-decoration: none
 
 .wn-section-4
-  margin-bottom: 40px
+  margin-bottom: 80px
+  position: relative
 
 .wn-section-topic
   font-size: 17px
@@ -266,12 +358,14 @@ ul
   margin: 0
 
 .wn-hr
-  margin: 15px 0 20px
+  margin: 15px 0 17px
 
 .wn-section-4-topic-container
   height: 400px
-  background: #aaa
-  padding: 0 26.5px
+  background: black
+  overflow: hidden
+  position: relative
+  margin-bottom: 20px
 
 .wn-section-4-topic-heading
   @include span-columns(7)
@@ -281,6 +375,11 @@ ul
   line-height: 40px
   margin: 30px 0 15px
   display: block
+  padding-right: 37px
+
+.wn-section-4-topic-heading a
+  color: white
+  text-decoration: none
 
 .wn-section-4-topic-description
   @include span-columns(6)
@@ -288,5 +387,254 @@ ul
   font-size: 15px
   line-height: 20px
 
+.wn-section-4-topic-description a
+  color: white
+  text-decoration: none
+
 .clearFloat
   clear: both
+
+.blackout-img
+  width: 100%
+  position: absolute
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  filter: grayscale(100%)
+  opacity: 0.5
+  left: 0
+
+//TABLET STYLES
+@media only screen and #{$movile}
+  .outer-container
+    padding: 0 20px
+
+  .welcome-banner
+    padding: 0px
+    margin: 123px auto 40px
+
+  .welcome-banner-black
+    margin: 0px
+
+  .wn-h1
+    @include span-columns(12)
+    color: white
+    font-size: 40px
+    font-family: $font-baskerville
+    font-weight: 100
+    margin: 22px 0 2px
+    text-transform: uppercase
+
+  .wn-section-1-topic-container
+    height: auto
+    min-height: 400px
+    -webkit-filter: grayscale(100%)
+    -moz-filter: grayscale(100%)
+    -ms-filter: grayscale(100%)
+    filter: grayscale(100%)
+  .wn-section-1-topic-heading
+    @include span-columns(12)
+    color: white
+    font-size: 28px
+    font-weight: 400
+    line-height: 33px
+    margin: 30px 0 15px
+    display: block
+
+  .wn-section-1-topic-description
+    @include span-columns(12)
+    color: white
+    font-size: 15px
+    line-height: 20px
+    float: none
+
+  .wn-section-2-post-area
+    width: 100%
+    margin-bottom: 40px
+    display: inline-block
+    vertical-align: top
+
+  .wn-section-2-more-post-text
+    display: inline-block
+    font-weight: 800
+    font-size: 15px
+    line-height: 20px
+    transform: translateY(-10px)
+    margin-left: 10px
+
+  .wn-section-2-more-post-text a
+    text-decoration: none
+    color: black
+
+  .wn-section-2-more-post
+    bottom: 0
+    right: 0
+    position: absolute
+
+  .wn-section-2-more-post-icon-box
+    display: inline-block
+    width: 30px
+    height: 30px
+    border: 1px solid black
+
+  .wn-section-2-more-post-icon
+    width: 15px
+    height: 15px
+
+  .wn-hr-industry-1
+    height: 1px
+    background: black
+    border: 0px
+    width: 105px
+    position: absolute
+    bottom: -13px
+    right: 0
+
+  //WN SECTION 3
+  .wn-section-3
+    height: 510px
+    margin-bottom: 10px
+    position: relative
+
+  .wn-section-3-container
+    height: 400px
+    position: relative
+    margin-bottom: 20px
+    background: black
+
+  .wn-section-3-heading
+    @include span-columns(12)
+    color: white
+    font-size: 28px
+    line-height: 33px
+    margin: 30px 0 15px
+    display: block
+
+  .wn-section-3-heading a
+    color: white
+    text-decoration: none
+
+  .wn-section-3-date
+    @include span-columns(12)
+    color: white
+    display: block
+    margin-bottom: 15px
+
+  .wn-section-3-download
+    position: absolute
+    bottom: 0
+    margin-bottom: 30px
+
+  .wn-section-3-download-icon
+    width: 27px
+    height: 30px
+    display: inline-block
+
+  .wn-section-3-download-text
+    color: white
+    font-size: 15px
+    line-height: 20px
+    transform: translateY(-10px)
+    display: inline-block
+
+  .wn-hr-download
+    margin: 0
+    height: 1px
+    background: white
+    border: none
+    width: 100%
+    bottom: 5px
+    right: 0
+    transform: translateY(-6px)
+
+  .wn-section-3-more-post
+    position: absolute
+    bottom: -20px
+    right: 0
+
+  .wn-section-3-more-post-icon-box
+    display: inline-block
+    width: 30px
+    height: 30px
+    border: 1px solid black
+
+  .wn-section-3-more-post-icon
+    width: 15px
+    height: 15px
+    margin: 6px
+
+  .wn-section-3-more-post-text
+    display: inline-block
+    font-weight: 800
+    font-size: 15px
+    line-height: 20px
+    transform: translateY(-10px)
+    margin-left: 20px
+    text-decoration: none
+
+  .wn-hr-industry
+    height: 1px
+    background: black
+    border: 0px
+    width: 185px
+
+.text-decoration-none
+  text-decoration: none !important
+
+  // SECTION 4
+  .wn-subheading
+    height: 18px
+    color: white
+    margin: 0 0 30px
+
+  .ipad-padding
+    padding-top: 4px
+
+  .wn-subheading a
+  text-decoration: none
+
+  .wn-section-4
+    margin-bottom: 40px
+
+  .wn-section-topic
+    font-size: 17px
+    font-family: $font-baskerville
+    font-weight: 800
+    text-transform: uppercase
+    margin: 0
+
+  .wn-hr
+    margin: 15px 0 20px
+
+  .wn-section-4-topic-container
+    height: auto
+    min-height: 400px
+
+  .wn-section-4-topic-heading
+    @include span-columns(12)
+    color: white
+    font-size: 28px
+    font-weight: 400
+    line-height: 33px
+    margin: 30px 0 15px
+    display: block
+  .wn-section-4-topic-heading a
+    color: white
+    text-decoration: none
+  .wn-section-4-topic-description
+    @include span-columns(12)
+    color: white
+    font-size: 15px
+    line-height: 20px
+    display: block
+    float: none
+  .wn-section-4-topic-description a
+    color: white
+    text-decoration: none
+  .clearFloat
+    clear: both
+  .blackout-img
+    width: auto
+    height: 100%
+  .index-section-7-a-a-legal
+    padding: 20px 20px

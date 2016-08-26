@@ -1,0 +1,200 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700'
+
+.hf-container
+  @include outer-container
+
+// GENERAL: CONTENEDOR IZQUIERDO Y DERECHO
+.hf-content-news
+  @include span-columns(8)
+
+.hf-content-filter
+  @include span-columns(4)
+
+// CONTENEDOR NOTICIAS
+
+.hf-news-element
+  border-bottom: 1px solid #dcdcdc
+  height: 320px
+  padding: 30px 0
+
+.hf-news-element:first-child
+  padding-top: 10px
+
+.hf-news-element > li
+  border-bottom: 1px solid #dcdcdc
+
+.hf-news-element-h3
+  font-size: 15px
+  font-weight: 700px
+  line-height: 20px
+  margin-top: 0px
+
+.hf-news-element-description
+  display: block
+
+.hf-news-element-img
+  @include span-columns(4)
+  height: 150px
+
+.hf-news-element-bodytext
+  @include span-columns(8)
+  text-align: justify
+  font-size: 14px
+  line-height: 22px
+
+.hf-news-element-extra
+  @include span-columns(12)
+  display: block
+  margin-top: 15px
+
+.hf-news-element-date
+  font-size: 14px
+  font-family: 'Open Sans', sans-serif
+  display: block
+
+.hf-news-elements-tag-sec-name
+  font-size: 15px
+  font-family: 'Open Sans', sans-serif
+  display: inline-block
+
+.hf-news-element-ul-tags
+  list-style: none
+  padding: 0px
+  display: inline-block
+
+.hf-news-elements-li-tag-name
+  display: inline-block
+  text-decoration: none
+  color: #706f6f
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+
+.hf-news-elements-li-tag-name:first-letter
+  text-transform: uppercase
+
+.hf-news-elements-li-tag
+  display: inline-block
+  text-decoration: underline
+  color: #706f6f
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+
+// CONTENEDOR FILTROS
+.hf-content-news-form
+  width: 105%
+  position: relative
+  left: -8px
+  margin-top: 10px
+
+.hf-content-filter-search-input
+  width: 100%
+  height: 30px
+  background-color: #f0f0f0
+  border-radius: 15px
+  margin-bottom: 30px
+  border: none
+  padding-left: 20px
+
+.hf-content-filter-ul-cat
+  padding-left: 20px
+  padding-bottom: 25px
+  border-bottom: 1px solid black
+
+.hf-content-filter-li-cat
+  font-size: 15px
+  margin-bottom: 5px
+
+.hf-content-filter-li-cat-selected
+  font-weight: 700
+
+.hf-content-filter-li-cat-selected::before
+  content: '>'
+  position: absolute
+  margin: 0 -19px
+
+//Articulos mas leidos
+.hf-content-filter-heading
+  font-size: 15px
+  font-weight: 700
+  margin-bottom: 15px
+
+.hf-content-filter-articulos
+  padding: 30px 0
+  border-bottom: 1px solid black
+
+.hf-content-filter-ul-mas-leidos
+  padding: 0
+  list-style: none
+
+.hf-content-filter-li-mas-leidos
+  padding-left: 10px
+  border-left: 1px solid #dcdcdc
+  font-size: 15px
+  margin-bottom: 25px
+
+.hf-content-filter-li-mas-leidos:last-child
+  margin-bottom: 0px
+
+.hf-content-filter-ul-tags
+  padding: 0
+  list-style: none
+  margin: 10px 0 20px
+
+.hf-content-filter-li-tags
+  line-height: 20px
+  font-size: 15px
+  font-family: 'Open Sans', sans-serif
+  color: #262729
+
+.hf-content-filter-li-tags-ver-mas
+  font-size: 15px
+  text-decoration: underline
+  color: black
+  font-family: 'Open Sans', sans-serif
+
+.hf-content-filter-tags
+  padding: 30px 0
+  border-bottom: 1px solid black
+
+.hf-content-filter-archivos
+  padding: 30px 0
+
+.hf-content-filter-archivos-año
+  font-size: 15px
+  text-decoration: underline
+  color: black
+  margin-bottom: 15px
+
+.hf-content-filter-ul-archivos
+  padding: 0
+  list-style-type: none
+
+.hf-content-filter-li-archivos
+  margin-bottom: 15px
+  font-size: 15px
+
+.btnVerMas a
+  display: block
+  margin-bottom: 20px
+  text-align: left
+
+#contTags
+  height: 180px
+  margin-bottom: 10px
+  overflow: hidden
+
+#listTags li, #listArch li
+  margin-bottom: 10px
+
+#listTags li a, #listArch li a
+  color: #5f5f5f
+  font-size: 13px
+
+.fechasMenu > a
+  display: block
+  padding-bottom: 3px
+  text-decoration: underline
+
+.subMenuMes
+  display: none
+  margin-top: 6px

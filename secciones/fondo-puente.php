@@ -1,102 +1,304 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- Iso -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Title is the first phrase you see as a search result. -->
-    <title>EFM Capital</title>
-
-    <!-- Description of your website. Max 160 Characters-->
-    <meta name="description" content="Page description. No longer than 155 characters."/>
-
-
-    <!-- Most important word to use on specific page. / No more than 10 keyword phrases -->
-    <meta name="keywords" content="words">
-
-    <!-- Favicon -->
-
-    <!-- Allows robots to crawl your website. https://yoast.com/robots-meta-tags/ -->
-    <meta name="robots" content="selection">
-
-    <!-- Schema.org markup for Google+ and Pinterest  http://schema.org/docs/gs.html-->
-    <meta itemprop="name" content="The Name or Title Here">
-    <meta itemprop="description" content="This is the page description">
-    <meta itemprop="image" content="http://www.example.com/image.jpg">
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="EFM Capital">
-    <meta name="twitter:site" content="@publisher_handle">
-    <meta name="twitter:title" content="Page Title">
-    <meta name="twitter:description" content="Page description less than 200 characters">
-    <meta name="twitter:creator" content="@author_handle">
-    <meta name="twitter:image" content="http://www.example.com/image.jpg">
-
-    <!--
-    Twitter thumbnail: 120x120px
-    Twitter large image: 280x150px
-    Facebook: Standards vary, but an image at least 200x200px works best.
-    Facebook recommends large images up to 1200x630px wide.
-    -->
-
-    <!-- Open Graph data for sharing in Facebook -->
-    <meta property="og:title" content="EFM Capital"/>
-    <meta property="og:type" content="EFM Capital"/>
-    <meta property="og:url" content="http://www.efmcapital.com/"/>
-    <meta property="og:image" content="http://example.com/image.jpg"/>
-    <meta property="og:description" content="Description Here"/>
-    <meta property="og:site_name" content="EFM Capital, i.e. Moz"/>
-    <meta property="og:locale:alternate" content="es_MX"/>
-    <meta property="og:locale:alternate" content="en_US"/>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Scripts src -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="js/parallax-js/parallax.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
-<body>
-<?php @include 'includes/navbar.php' ?>
-<div class="navbar-white-area"></div>
-
 <section class="fondo-puente-content-1">
-    <img class="fondo-puente-img-desktop"src="img/desktop-backgrounds/fondo-puente-1.png" alt="">
-    <img class="fondo-puente-img-mobile"src="img/mobile-backgrounds/fondo-puente-1-mobile.png" alt="">
+    <div class="fondo-puente-content-area">
+            <h2 class="fondo-puente-content-1-heading">
+                <?php if ($len == 'es'): ?>
+                    Minimizamos el costo de oportunidad incurrido por el
+                    inversionista en su labor por colocar capital en cuatro etapas:
+                <?php else: ?>
+                    We minimize the opportunity cost incurred by the <br>investor
+                    when looking to place capital in four stages:
+                <?php endif; ?>
+            </h2>
+
+            <!-- AQUI INICIA LA TABLA -->
+            <div class="fondo-puente-content-1-table">
+                <!-- AQUI ESTA EL LADO A DE LA TABLA -->
+                <div class="fondo-puente-content-1-table-a">
+                    <div class="fondo-puente-content-1-table-a-1">
+                        <img class="fondo-puente-content-1-table-img" src="img/icons/fp-tabla-1.png" alt="">
+                        <div class="fondo-puente-content-1-table-a-right">
+                            <span class="fondo-puente-content-1-table-a-heading">
+                                <?php if ($len == 'es'): ?>
+                                    Búsqueda
+                                <?php else: ?>
+                                    Search of opportunities
+                                <?php endif; ?>
+                            </span>
+                            <span class="fondo-puente-content-1-table-a-text">
+                                <?php if ($len == 'es'): ?>
+                                    Mantenemos un portafolio de compañías auditadas listas para ser adquiridas.
+                                <?php else: ?>
+                                    We keep a portfolio of audited businesses ready to receive investment.
+                                <?php endif; ?>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fondo-puente-content-1-table-a-1">
+                        <img class="fondo-puente-content-1-table-img" src="img/icons/fp-tabla-2.png" alt="">
+                        <div class="fondo-puente-content-1-table-a-right">
+                            <span class="fondo-puente-content-1-table-a-heading">
+                                Control
+                            </span>
+                            <span class="fondo-puente-content-1-table-a-text">
+                                <?php if ($len == 'es'): ?>
+                                    Tomamos control de las compañías en nuestro portafolio y alineamos sus intereses con el objetivo de los inversionistas prospecto.
+                                <?php else: ?>
+                                    We take control of the companies in our portfolio and align their interests with the objective of prospective investors.
+                                <?php endif; ?>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="fondo-puente-content-1-table-divicion"></div>-->
+
+                <!-- AQUI ESTA EL LADO B DE LA TABLA -->
+                <div class="fondo-puente-content-1-table-b">
+                    <div class="fondo-puente-content-1-table-a-1">
+                        <img class="fondo-puente-content-1-table-img" src="img/icons/fp-tabla-3.png" alt="">
+                        <div class="fondo-puente-content-1-table-a-right">
+                            <span class="fondo-puente-content-1-table-a-heading">
+                                <?php if ($len == 'es'): ?>
+                                    Transparencia
+                                <?php else: ?>
+                                    Transparency
+                                <?php endif; ?>
+                            </span>
+                            <span class="fondo-puente-content-1-table-a-text">
+                                <?php if ($len == 'es'): ?>
+                                    Proveemos una plataforma virtual con un elevado nivel en la organización de la información para facilitar el proceso de auditoría.
+                                <?php else: ?>
+                                    We provide a virtual platform with a high level of organization of all relevant information to facilitate the due diligence process.
+                                <?php endif; ?>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fondo-puente-content-1-table-a-1">
+                        <img class="fondo-puente-content-1-table-img" src="img/icons/fp-tabla-4.png" alt="">
+                        <div class="fondo-puente-content-1-table-a-right">
+                            <span class="fondo-puente-content-1-table-a-heading">
+                                <?php if ($len == 'es'): ?>
+                                    Certeza
+                                <?php else: ?>
+                                    Certainty
+                                <?php endif; ?>
+                            </span>
+                            <span class="fondo-puente-content-1-table-a-text">
+                                <?php if ($len == 'es'): ?>
+                                    Se implementan  prácticas de gobierno corporativo en las empresas; y durante el proceso, nos acompañan firmas con presencia internacional en las áreas fiscal y jurídica para brindar mayor certidumbre al inversionista.
+                                <?php else: ?>
+                                    We implement corporate governance practices in the companies; and during the process, trust and assurance is given to the investor through our alliance with firms of international presence in the legal and tax field.
+                                <?php endif; ?>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- AQUI YA TERMINO LA TABLA -->
+    </div>
 </section>
 <section class="fondo-puente-content-2">
     <p class="fondo-puente-text">
-        En las empresas familiares con las que colaboramos, diagnosticamos y corregimos las contingencias en los diferentes aspectos de su modelo de negocio. Asimismo, cuantificamos el potencial de la industria, elaboramos el plan de negocio y ejecutamos un proceso competitivo entre compradores potenciales.
+        <?php if ($len == 'es'): ?>
+            En las empresas familiares con las que colaboramos, diagnosticamos y corregimos las contingencias en los diferentes aspectos de su modelo de negocio. Asimismo, cuantificamos el potencial de la industria, elaboramos el plan de negocio y ejecutamos un proceso competitivo entre compradores potenciales.
+        <?php else: ?>
+            In the family-owned businesses with whom we collaborate, we diagnose and correct existing contingencies in their business model.
+            We quantify the industry potential, develop the business plan and carry out a competitive process among potential buyers.
+        <?php endif; ?>
     </p>
 </section>
 <section class="fondo-puente-content-3">
-    <img class="fondo-puente-img-desktop" src="img/desktop-backgrounds/fondo-puente-2.png" alt="">
-    <img class="fondo-puente-img-mobile" src="img/mobile-backgrounds/fondo-puente-3-mobile.png" alt="">
-</section>
+    <h3 class="fondo-puente-content-2-heading">
+        <?php if ($len == 'es'): ?>
+            Proceso de inversión
+        <?php else: ?>
+            Investment process
+        <?php endif; ?>
+    </h3>
+    <div class="fondo-puente-content-2-timeline">
+        <hr class="timeline-1">
+        <hr class="timeline-2">
+        <hr class="timeline-3">
+    </div>
+    <div class="fondo-puente-content-2-triad">
+        <div class="fondo-puente-content-2-triad-a">
+            <div class="fondo-puente-content-2-triad-centered">
+                <hr class="fondo-puente-pointer-line-1">
+                <p class="fondo-puente-content-2-time">
+                    <?php if ($len == 'es'): ?>
+                        15 días - 1 mes
+                    <?php else: ?>
+                        15 days - 1 month
+                    <?php endif; ?>
+                </p>
+                <img class="fondo-puente-content-2-triad-img" src="img/icons/fp-triad-1.png" alt="">
+                <p class="fondo-puente-content-2-triad-heading">
+                    <?php if ($len == 'es'): ?>
+                        Evaluación
+                    <?php else: ?>
+                        Evaluation
+                    <?php endif; ?>
+                </p>
+                <p class="fondo-puente-content-2-time-2">15 días - 1 mes</p>
+                <hr class="fondo-puente-hr-divition">
+                <ul class="fondo-puente-content-2-triad-ul">
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Creación de <i>pipeline</i> de oportunidades.
+                        <?php else: ?>
+                            Opportunity pipeline creation.
+                        <?php endif; ?>
 
-
-
-<section class="index-section-7">
-    <div class="index-section-7-content">
-        <div class="index-section-7-a">
-            <span class="index-section-7-text">Torre Helicon, Piso 24B, José Clemente Orozco No. 329 Valle Oriente, San Pedro Garza García, Nuevo León, México. C.P. 66278 </span>
-            <span class="index-section-7-text">Teléfono: +52 (81) 1223 0890 • Email: info@efmcapital.com</span>
-            <span
-                class="index-section-7-text">Horario: Lunes a Viernes, 8:00AM a 6:00PM (Tiempo del centro de México)</span>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Análisis y selección de alternativas de inversión.
+                        <?php else: ?>
+                            Analysis and selection of investment alternatives.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Alineación de intereses.
+                        <?php else: ?>
+                            Alignment of interests.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Construcción de expectativas de valor y proyecciones.
+                        <?php else: ?>
+                            Construction of value expectations and projections.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Ejecución del convenio de colaboración.
+                        <?php else: ?>
+                            Execution of partnership agreement.
+                        <?php endif; ?>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="index-section-7-b">
-            <span
-                class="index-section-7-text"><b>Contacto para banqueros, fondos de inversión y clientes registrados:</b></span>
-            <span class="index-section-7-text">Everardo Hiarmes Martínez </span>
-            <span class="index-section-7-text">Teléfono de oficina: +52 (81) 1223 0890 </span>
-            <span class="index-section-7-text">Email: info@efmcapital.com</span>
+
+        <div class="fondo-puente-content-2-triad-b">
+            <div class="fondo-puente-content-2-triad-centered">
+                <hr class="fondo-puente-pointer-line-2">
+                <p class="fondo-puente-content-2-time">
+                    <?php if ($len == 'es'): ?>
+                        4 - 6 meses
+                    <?php else: ?>
+                        4 - 6 months
+                    <?php endif; ?>
+                </p>
+                <img class="fondo-puente-content-2-triad-img" src="img/icons/fp-triad-2.png" alt="">
+                <p class="fondo-puente-content-2-triad-heading">
+                    <?php if ($len == 'es'): ?>
+                        Transformación
+                    <?php else: ?>
+                        Transformation
+                    <?php endif; ?>
+                </p>
+                <p class="fondo-puente-content-2-time-2">
+                    <?php if ($len == 'es'): ?>
+                        4 - 6 meses
+                    <?php else: ?>
+                        4 - 6 months
+                    <?php endif; ?>
+                </p>
+                <hr class="fondo-puente-hr-divition">
+                <ul class="fondo-puente-content-2-triad-ul">
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Implementación de prácticas de gobierno corporativo bajo los principios de <i>ILPA</i> e <i>ICGN</i>.
+                        <?php else: ?>
+                            Implementation of corporate governance practices under ILPA and ICGN principles.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Fomento de rendición de cuentas y mejora de la operación y administración de la empresa.
+                        <?php else: ?>
+                            Encouragement of accountability and improvement of the management and operation of the business.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Identificación y corrección de contingencias.
+                        <?php else: ?>
+                            Identification and correction of contingencies.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Normalización de la información.
+                        <?php else: ?>
+                            Normalization of information.
+                        <?php endif; ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fondo-puente-content-2-triad-c">
+            <div class="fondo-puente-content-2-triad-centered">
+                <hr class="fondo-puente-pointer-line-3">
+                <p class="fondo-puente-content-2-time">
+                    <?php if ($len == 'es'): ?>
+                        1 - 2 meses
+                    <?php else: ?>
+                        1 - 2 months
+                    <?php endif; ?>
+                    </p>
+                <img class="fondo-puente-content-2-triad-img" src="img/icons/fp-triad-3.png" alt="">
+                <p class="fondo-puente-content-2-triad-heading">
+                    <?php if ($len == 'es'): ?>
+                        Desinversión
+                    <?php else: ?>
+                        Disinvestment
+                    <?php endif; ?>
+                    </p>
+                <p class="fondo-puente-content-2-time-2">
+                    <?php if ($len == 'es'): ?>
+                        1 - 2 meses
+                    <?php else: ?>
+                        1 - 2 meses
+                    <?php endif; ?>
+                    </p>
+                <hr class="fondo-puente-hr-divition">
+                <ul class="fondo-puente-content-2-triad-ul">
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Expansión del universo de compradores prospecto.
+                        <?php else: ?>
+                            Accrual potential buyers or strategic partners.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Proceso competitivo entre candidatos selectos a invertir o adquirir la empresa.
+                        <?php else: ?>
+                            Competitive process among selected candidates to invest or acquire the company.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Gestión de peticiones de oferta.
+                        <?php else: ?>
+                            Management of indicative offers.
+                        <?php endif; ?>
+                    </li>
+                    <li class="fondo-puente-content-2-triad-li">
+                        <?php if ($len == 'es'): ?>
+                            Configuración de documentos de cierre.
+                        <?php else: ?>
+                            Accomplishment of a binding offer.
+                        <?php endif; ?>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    </div>
 </section>
-<section class="index-section-8">
-    <span>Todos los derechos reservados 2016</span>
-</section>
-</body>
-</html>

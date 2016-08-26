@@ -6,7 +6,8 @@ include 'controller.php';
 <head>
     <!-- Iso -->
     <meta charset="UTF-8">
-    <base href="http://localhost:8888/efm-new/" target="_top">
+    <!--    <base href="http://localhost:8888/efm-new/" target="_top">-->
+    <base href="http://clientes.v09.mx/efm_4.0/" target="_top">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Title is the first phrase you see as a search result. -->
@@ -58,17 +59,22 @@ include 'controller.php';
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
-    <!-- Scripts src -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="js/parallax-js/parallax.min.js"></script>
-    <script src="js/sweetalert.min.js"></script>
-    <script src="js/main.js"></script>
 </head>
 <body>
+<div id="overlay" class="overlay" onclick="showLight('','')"></div>
+
+<div id="Lightbox" class="sugerencias">
+    <div id="btn_cerrar_term"><a href="javascript:void(0)" onclick="showLight('','')">x</a></div>
+    <div id="infoBox">
+
+    </div>
+</div>
 <nav>
     <div class="nav-content">
-        <a href="index.php"><img src="img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo"></a>
+        <a href="<?= $len; ?>/"><img src="img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo"></a>
         <figure class="navbar-menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                  id="Untitled-2" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12"
@@ -85,34 +91,42 @@ include 'controller.php';
         </figure>
         <ul class="navbar-breadcrumbs offcanvas-menu">
             <li class="navbar-crumbs-news hide-mobile">
-                <a href="#">World news</a>
+
+                <?php if ($len == 'es'): ?>
+                    <a href="es/noticias">
+                        <button class="navbar-dataroom-button">
+                            Fórum
+                        </button>
+                    </a>
+                <?php else: ?>
+                    <a href="en/news">
+                        <button class="navbar-dataroom-button">
+                            Forum
+                        </button>
+                    </a>
+                <?php endif; ?>
+
             </li>
             <li class="navbar-crumbs-2">
-                <a target="_blank" href="cuarto-de-datos-virtual/">
+                <a target="_blank"
+                   href="<?= $len; ?>/<?= ($len == 'es') ? 'cuarto-de-datos-virtual' : 'virtual-data-room'; ?>">
                     <button class="navbar-dataroom-button">
                         <?php if ($len == 'es'): ?>
                             cuarto de datos virtual
                         <?php else: ?>
-                            virtual data room
+                            virtual data  room
                         <?php endif; ?>
                     </button>
                 </a>
             </li>
+
             <hr class="navbar-hr">
             <li class="navbar-crumbs-1">
-
-                <a href="en/<?= $_GET['sec']; ?>"> <?php if ($len == 'es'): ?>Inglés<?php else: ?>English<?php endif; ?></a>
-                <hr class="language-hr">
-                <a href="es/<?= $_GET['sec']; ?>"> <?php if ($len == 'es'): ?>Español<?php else: ?>Spanish<?php endif; ?></a>
-
-
+                <a href="<?= $_getLen; ?>/<?= $urlCompuesta; ?>"><?php if ($len == 'en'): ?>Español<?php else: ?>English<?php endif; ?></a>
             </li>
         </ul>
     </div>
 </nav>
-<div class="navbar-white-area"></div>
-<div id="body-black" class="body-black"></div>
-
 <?php
 if (isset($_GET['sec']) && $_GET['sec'] != ''):
 
@@ -131,6 +145,26 @@ if (isset($_GET['sec']) && $_GET['sec'] != ''):
             break;
         default:
             $sec = $_GET['sec'];
+            break;
+        case 'cuarto-de-datos-virtual':
+        case 'virtual-data-room':
+            $sec = 'cuarto-de-datos-virtual';
+            break;
+        case'ficha-tecnica-melbourne':
+        case'prospectus-melbourne':
+            $sec = 'ficha-tecnica-melbourne';
+            break;
+        case'ficha-tecnica-lisboa':
+        case'prospectus-lisbon':
+            $sec = 'ficha-tecnica-lisbon';
+            break;
+        case'operaciones':
+        case'operations':
+            $sec = 'historial-operaciones';
+            break;
+        case'categoria':
+        case'category':
+            $sec = 'historial-forum';
             break;
     endswitch;
 
@@ -192,24 +226,29 @@ endif;
         <?php endif; ?>
     </section>
 </footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- parallax -->
+<script src="js/parallax-js/parallax.min.js"></script>
+<!--<script src="js/carousel-js/carousel.js"></script>-->
+<script src="js/sweetalert.min.js"></script>
 <script>
-    if ($(window).width() > 766) {
-        $('.parallax-window').parallax({imageSrc: 'img/desktop-backgrounds/section-1-back-desktop.jpg'});
-    }
-    else {
-        $('.parallax-window').parallax({imageSrc: 'img/mobile-backgrounds/section-1-back-mobile.jpg'});
-    }
+    var _len = "<?= $len; ?>";
+    var _cat = "<?= $_GET['cat']; ?>";
 
     if ($(window).width() > 766) {
+        $('.parallax-window').parallax({imageSrc: 'img/desktop-backgrounds/section-1-back-desktop.jpg'});
         $('.parallax-window-3').parallax({imageSrc: 'img/desktop-backgrounds/section-3-back.jpg'});
-    }
-    else {
+    } else {
+        $('.parallax-window').parallax({imageSrc: 'img/mobile-backgrounds/section-1-back-mobile.jpg'});
         $('.parallax-window-3').parallax({imageSrc: 'img/mobile-backgrounds/section-3-back-mobile.jpg'});
     }
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4738uIisDOYyffs-UVzfBWYAJ4AAYiC0&callback=initMap">
 </script>
-
+<!--Scripts src-->
+<script src="js/main.js"></script>
 </body>
 </html>

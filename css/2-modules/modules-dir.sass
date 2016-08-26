@@ -7,6 +7,7 @@ $efm-gold: #c3b584
   position: fixed
   z-index: 99
   display: none
+
 .member-card
   max-width: 850px
   min-width: 800px
@@ -16,11 +17,13 @@ $efm-gold: #c3b584
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
-  box-shadow: -3px 4px 5px rgba(0,0,0,.1)
+  box-shadow: -3px 4px 5px rgba(0, 0, 0, .1)
   z-index: 99
   font-family: "times new roman"
   font-weight: 100
   text-align: left
+  height: 400px
+
 .member-card-img-area
   width: 200px
   height: 100%
@@ -28,30 +31,37 @@ $efm-gold: #c3b584
   background-color: #eee
   border-radius: 4px 0 0 4px
   overflow: hidden
+
 .member-card-img
   height: 100%
   position: relative
   margin: 0 auto
   left: 50%
   transform: translatex(-50%)
+
 .member-card-text
   display: inline-block
   width: 600px
   padding: 26px 20px
   float: right
+
 .member-card-name
   color: $efm-gold
   display: inline-block
   font-size: 28px
   font-style: italic
+
 .member-card-text
   color: white
+
 .member-card-text p
   margin-top: 10px
+
 .member-card-text hr
   border: 0
   height: 1px
   background-color: $efm-gold
+
 .member-card-button
   display: block
   padding: 0px 16px
@@ -59,7 +69,7 @@ $efm-gold: #c3b584
   margin-top: 20px
   border: 1px solid $efm-gold
   color: $efm-gold
-  width: 133px
+  width: 136px
   font-size: 14px
   font-weight: 100
   letter-spacing: 0.3px
@@ -68,17 +78,66 @@ $efm-gold: #c3b584
   font-family: "times new roman"
   cursor: pointer
 
+/* L I G H T B O X*/
+
+.overlay_full
+  background-color: #000000 !important
+  height: 100%
+  left: 0
+  margin: auto
+  opacity: 0.7
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 100
+
+#Lightbox
+  height: 400px
+  left: 50%
+  margin-left: -400px
+  margin-top: -200px
+  position: fixed
+  top: 50%
+  width: 800px
+  z-index: 200
+
+#infoBox
+  display: block
+  font-size: 17px
+  height: 400px
+  width: 800px
+
+.sugerencias
+  display: none
+  z-index: 600
+
+.sugerencias2
+  display: block
+  z-index: 600
+
+#btn_cerrar_term a
+  color: #ffffff
+  display: block
+  font-size: 16px
+  height: 28px
+  left: 50%
+  margin-left: 361px
+  margin-top: 15px
+  position: absolute
+  text-align: center
+  width: 28px
+  z-index: 300
+
 @media only screen and #{$movile}
+  #btn_cerrar_term a
+    color: #000000
   .member-card
-    max-width: auto
-    min-width: auto
     width: 90%
     text-align: center
-    top: 20%
-    transform: translate(-50%, 0%)
+    top: none
     min-width: inherit
     overflow: scroll
-    height: 75%
+    height: 90%
   .member-card-img-area
     position: relative
     height: 200px
@@ -93,3 +152,25 @@ $efm-gold: #c3b584
     float: none
     width: 90%
     text-align: left
+
+  // L I G T H B O X
+
+  #Lightbox
+    height: 90%
+    left: 50%
+    margin-left: -45%
+    margin-top: -52%
+    position: relative
+    top: 50%
+    width: 90%
+    z-index: 900000
+
+  #infoBox
+    height: 90%
+    width: 100%
+
+  #btn_cerrar_term a
+    color: black
+    margin-left: 109px
+    margin-top: -14%
+    text-decoration: none
