@@ -72,10 +72,10 @@
                         </div>
                         <div class="hf-news-element-extra">
                             <span class="hf-news-element-date"><?= $fecha; ?></span>
-                            <span class="hf-news-elements-tag-sec-name">Etiquetas:</span>
+                            <!--<span class="hf-news-elements-tag-sec-name">Etiquetas:</span>
                             <ul class="hf-news-element-ul-tags">
-                                <?= $listTagsPost; ?>
-                            </ul>
+                                <?/*= $listTagsPost; */?>
+                            </ul>-->
                         </div>
                     </a>
                 </li>

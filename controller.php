@@ -196,9 +196,9 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'categoria' || isset($_GET['sec']) &&
         $totFindPost = count($rowFindPost);
 
         if ($len == 'en'):
-            $urlCompuesta = $rowFindCat[0]['url_es'];
+            $urlCompuesta = 'categoria/' . $rowFindCat[0]['url_es'];
         else:
-            $urlCompuesta = $rowFindCat[0]['url_en'];
+            $urlCompuesta = 'category/' . $rowFindCat[0]['url_en'];
         endif;
         $nameCatPost = $_GET['nameReg'];
 
