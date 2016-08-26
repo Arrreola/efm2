@@ -39,8 +39,7 @@
     <div class="carousel">
         <div class="index-section-2-slide-header">
             <hr class="index-section-2-slide-hr">
-            <span
-                class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></span>
+            <a href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>" class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></a>
             <hr class="index-section-2-slide-hr">
         </div>
         <div class="sliderOperaciones">

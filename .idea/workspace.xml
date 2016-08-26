@@ -2,84 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264b6f0a-5473-40fe-9f0d-5cda3a52b1b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/descarga.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.sass" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/cuarto-de-datos-virtual.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/ficha-tecnica-lisbon.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/ficha-tecnica-melbourne.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/fondo-puente.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/lisbon.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/melbourne.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/send-lisbon.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/send-melbourne.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/send-operaciones.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/en/send.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blog/bd73eb_bridgefun-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/desktop-backgrounds/flor-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/desktop-backgrounds/gusano-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/desktop-backgrounds/section-1-back-desktop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/.htaccess" afterPath="$PROJECT_DIR$/admin-25-agost/.htaccess" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/api/classSql.php" afterPath="$PROJECT_DIR$/admin-25-agost/api/classSql.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/api/conexion.php" afterPath="$PROJECT_DIR$/admin-25-agost/api/conexion.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/api/controller.php" afterPath="$PROJECT_DIR$/admin-25-agost/api/controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/includes/navbar.php" afterPath="$PROJECT_DIR$/admin-25-agost/includes/navbar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin-25-agost/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/interiores/categorias.php" afterPath="$PROJECT_DIR$/admin-25-agost/interiores/categorias.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/interiores/dashboard.php" afterPath="$PROJECT_DIR$/admin-25-agost/interiores/dashboard.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/interiores/manual.php" afterPath="$PROJECT_DIR$/admin-25-agost/interiores/manual.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/interiores/registros.php" afterPath="$PROJECT_DIR$/admin-25-agost/interiores/registros.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/interiores/seo.php" afterPath="$PROJECT_DIR$/admin-25-agost/interiores/seo.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/jquery-1.11.3.js" afterPath="$PROJECT_DIR$/admin-25-agost/js/jquery-1.11.3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/js/main.js" afterPath="$PROJECT_DIR$/admin-25-agost/js/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/menu.php" afterPath="$PROJECT_DIR$/admin-25-agost/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/18b51cfe964feed4af022185154a0501fc6e4128/carousel.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/18b51cfe964feed4af022185154a0501fc6e4128/carousel.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/fondo-puente.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/fondo-puente.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/index.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/index.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/layouts-dir.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/layouts-dir.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/login.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/login.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/menu.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/menu.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/noticia.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/noticia.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/operaciones.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/operaciones.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/tiny-style.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/tiny-style.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/world-news.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/world-news.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/a0f5718aa0331b7ba5a44027f51dc02a15eef110/modules-dir.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/a0f5718aa0331b7ba5a44027f51dc02a15eef110/modules-dir.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/desktop-backgrounds/section-1-back-desktop.jpg" afterPath="$PROJECT_DIR$/img/desktop-backgrounds/section-1-back-desktop.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/v09.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/v09.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Includes/member-cards.php" afterPath="$PROJECT_DIR$/Includes/member-cards.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.php" afterPath="$PROJECT_DIR$/controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" afterPath="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/2-modules/modules-dir.sass" afterPath="$PROJECT_DIR$/css/2-modules/modules-dir.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/fondo-puente.sass" afterPath="$PROJECT_DIR$/css/3-layouts/fondo-puente.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/index.sass" afterPath="$PROJECT_DIR$/css/3-layouts/index.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/layouts-dir.sass" afterPath="$PROJECT_DIR$/css/3-layouts/layouts-dir.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/login.sass" afterPath="$PROJECT_DIR$/css/3-layouts/login.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/menu.sass" afterPath="$PROJECT_DIR$/css/3-layouts/menu.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/noticia.sass" afterPath="$PROJECT_DIR$/css/3-layouts/noticia.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/operaciones.sass" afterPath="$PROJECT_DIR$/css/3-layouts/operaciones.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/tiny-style.sass" afterPath="$PROJECT_DIR$/css/3-layouts/tiny-style.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/world-news.sass" afterPath="$PROJECT_DIR$/css/3-layouts/world-news.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/team-cards.php" afterPath="$PROJECT_DIR$/includes/team-cards.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/carousel-js/carousel.js" afterPath="$PROJECT_DIR$/js/carousel-js/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/cuarto-de-datos-virtual.php" afterPath="$PROJECT_DIR$/secciones/cuarto-de-datos-virtual.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/detalle.php" afterPath="$PROJECT_DIR$/secciones/detalle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/ficha-tecnica-lisbon.php" afterPath="$PROJECT_DIR$/secciones/ficha-tecnica-lisbon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/ficha-tecnica-melbourne.php" afterPath="$PROJECT_DIR$/secciones/ficha-tecnica-melbourne.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/fondo-puente.php" afterPath="$PROJECT_DIR$/secciones/fondo-puente.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/home.php" afterPath="$PROJECT_DIR$/secciones/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/lisbon.php" afterPath="$PROJECT_DIR$/secciones/lisbon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/melbourne.php" afterPath="$PROJECT_DIR$/secciones/melbourne.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/noticias.php" afterPath="$PROJECT_DIR$/secciones/noticias.php" />
     </list>
     <ignored path="efm-new.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,10 +40,10 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.7920792">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.34955752">
+        <splitter split-orientation="horizontal" split-proportion="0.46847346">
           <split-first>
             <leaf>
-              <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+              <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/index.php">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="711">
@@ -129,18 +60,18 @@
               <file leaf-file-name="index.sass" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/css/3-layouts/index.sass">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="432">
-                      <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+                    <state relative-caret-position="92">
+                      <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="carousel.sass" pinned="false" current-in-tab="true">
+              <file leaf-file-name="carousel.sass" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="63">
-                      <caret line="377" column="19" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
+                    <state relative-caret-position="500">
+                      <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
                       <folding />
                     </state>
                   </provider>
@@ -163,10 +94,10 @@
               <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/secciones/home.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="389">
-                      <caret line="299" column="52" selection-start-line="299" selection-start-column="52" selection-end-line="299" selection-end-column="52" />
+                    <state relative-caret-position="-672">
+                      <caret line="41" column="96" selection-start-line="41" selection-start-column="96" selection-end-line="41" selection-end-column="96" />
                       <folding>
-                        <marker date="1472239996000" expanded="true" signature="2582:2619" ph="SELECT * FRO... statuspro" />
+                        <marker date="1472240730000" expanded="true" signature="2658:2695" ph="SELECT * FRO... statuspro" />
                       </folding>
                     </state>
                   </provider>
@@ -181,8 +112,8 @@
           <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+                <state relative-caret-position="600">
+                  <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
                   <folding>
                     <element signature="e#1300#1752#0" expanded="false" />
                     <element signature="e#1792#2193#0" expanded="false" />
@@ -259,16 +190,16 @@
         <option value="$PROJECT_DIR$/css/3-layouts/historial-operaciones.sass" />
         <option value="$PROJECT_DIR$/admin/api/controller.php" />
         <option value="$PROJECT_DIR$/admin/api/classSql.php" />
-        <option value="$PROJECT_DIR$/controller.php" />
         <option value="$PROJECT_DIR$/css/3-layouts/operaciones.sass" />
         <option value="$PROJECT_DIR$/secciones/request-info.php" />
         <option value="$PROJECT_DIR$/js/carousel-js/carousel.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/jquery.bxslider.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/3-layouts/index.sass" />
-        <option value="$PROJECT_DIR$/css/jquery.bxslider.css" />
-        <option value="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" />
         <option value="$PROJECT_DIR$/secciones/home.php" />
+        <option value="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" />
+        <option value="$PROJECT_DIR$/controller.php" />
       </list>
     </option>
   </component>
@@ -341,6 +272,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efm-new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efm-new" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3-layouts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efm-new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efm-new" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0-plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efm-new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="efm-new" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0-plugins" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carousel" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,12 +478,12 @@
       <workItem from="1472045702915" duration="24121000" />
       <workItem from="1472132719996" duration="31697000" />
       <workItem from="1472166702622" duration="13943000" />
-      <workItem from="1472215997994" duration="19775000" />
+      <workItem from="1472215997994" duration="20509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="526332000" />
+    <option name="totallyTimeSpent" value="527066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,7 +583,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/secciones/home.php</url>
-          <line>391</line>
+          <line>390</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
@@ -1041,70 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-          <folding>
-            <element signature="e#430#619#0#PHP" expanded="false" />
-            <element signature="e#621#861#0#PHP" expanded="false" />
-            <element signature="e#863#1134#0#PHP" expanded="false" />
-            <element signature="e#1136#1401#0#PHP" expanded="false" />
-            <element signature="e#1403#1698#0#PHP" expanded="false" />
-            <element signature="e#1700#2147#0#PHP" expanded="false" />
-            <element signature="e#2149#7326#0#PHP" expanded="false" />
-            <element signature="e#2851#3173#0#PHP" expanded="false" />
-            <element signature="e#3365#3668#0#PHP" expanded="false" />
-            <element signature="e#3905#5146#0#PHP" expanded="false" />
-            <element signature="e#7328#7655#0#PHP" expanded="false" />
-            <element signature="e#7657#13155#0#PHP" expanded="false" />
-            <element signature="e#13181#15624#0#PHP" expanded="false" />
-            <marker date="1472233435000" expanded="true" signature="279:316" ph="SELECT * FRO... operaciones" />
-            <marker date="1472233435000" expanded="true" signature="279:325" ph="SELECT * FRO... operaciones" />
-            <marker date="1472233435000" expanded="true" signature="1999:2043" ph="SELECT * FRO... operaciones" />
-            <marker date="1472233435000" expanded="true" signature="2695:2719" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="3014:3157" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="3233:3251" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="3525:3610" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="3525:3652" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="3745:3830" ph="SELECT id,YE... " />
-            <marker date="1472233435000" expanded="true" signature="3986:4320" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="4101:4271" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="4389:4559" ph="SELECT id_no... " />
-            <marker date="1472233435000" expanded="true" signature="4920:5079" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="5470:5645" ph="..." />
-            <marker date="1472233435000" expanded="true" signature="5873:5887" ph="SELECT * FRO... " />
-            <marker date="1472233435000" expanded="true" signature="5873:5923" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="5873:5948" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="6070:6100" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="6473:6502" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="6473:6515" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="6473:6516" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="6473:6517" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="6473:6541" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="6473:6542" ph="SELECT * FRO... tags" />
-            <marker date="1472233435000" expanded="true" signature="6706:6742" ph="SELECT * FRO... rel_tags" />
-            <marker date="1472233435000" expanded="true" signature="6968:7000" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="8368:8392" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="8781:8855" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="9396:9436" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="9666:9726" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="9877:9917" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="11424:11498" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="12038:12078" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="12310:12384" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="12876:12916" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="13300:13352" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="13598:13637" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="14240:14310" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="14466:14530" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="15940:16020" ph="SELECT * FRO... categorias" />
-            <marker date="1472233435000" expanded="true" signature="16197:16287" ph="SELECT * FRO... blog" />
-            <marker date="1472233435000" expanded="true" signature="16407:16447" ph="SELECT * FRO... categorias" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/3-layouts/operaciones.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -1129,22 +1054,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="233" column="0" selection-start-line="233" selection-start-column="4" selection-end-line="233" selection-end-column="54" />
-          <folding>
-            <element signature="e#5264#6558#0#PHP" expanded="false" />
-            <marker date="1472235694000" expanded="true" signature="6903:6929" ph="..." />
-            <marker date="1472235694000" expanded="true" signature="7126:7152" ph="..." />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="600">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="e#1300#1752#0" expanded="false" />
             <element signature="e#1792#2193#0" expanded="false" />
@@ -1161,36 +1082,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/index.sass">
+    <entry file="file://$PROJECT_DIR$/secciones/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="-672">
+          <caret line="41" column="96" selection-start-line="41" selection-start-column="96" selection-end-line="41" selection-end-column="96" />
+          <folding>
+            <marker date="1472240730000" expanded="true" signature="2658:2695" ph="SELECT * FRO... statuspro" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/index.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="92">
+          <caret line="328" column="19" selection-start-line="328" selection-start-column="19" selection-end-line="328" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="377" column="19" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
+        <state relative-caret-position="500">
+          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/secciones/home.php">
+    <entry file="file://$PROJECT_DIR$/controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="299" column="52" selection-start-line="299" selection-start-column="52" selection-end-line="299" selection-end-column="52" />
+        <state relative-caret-position="612">
+          <caret line="87" column="37" selection-start-line="87" selection-start-column="37" selection-end-line="87" selection-end-column="37" />
           <folding>
-            <marker date="1472239996000" expanded="true" signature="2582:2619" ph="SELECT * FRO... statuspro" />
+            <element signature="e#430#619#0#PHP" expanded="false" />
+            <element signature="e#621#861#0#PHP" expanded="false" />
+            <element signature="e#863#1134#0#PHP" expanded="false" />
+            <element signature="e#1136#1401#0#PHP" expanded="false" />
+            <element signature="e#1403#1698#0#PHP" expanded="false" />
+            <element signature="e#2143#7320#0#PHP" expanded="false" />
+            <element signature="e#2845#3167#0#PHP" expanded="false" />
+            <element signature="e#3359#3662#0#PHP" expanded="false" />
+            <element signature="e#3899#5140#0#PHP" expanded="false" />
+            <element signature="e#7322#7649#0#PHP" expanded="false" />
+            <element signature="e#7651#13149#0#PHP" expanded="false" />
+            <element signature="e#13175#15618#0#PHP" expanded="false" />
+            <marker date="1472240893000" expanded="true" signature="279:316" ph="SELECT * FRO... operaciones" />
+            <marker date="1472240893000" expanded="true" signature="279:325" ph="SELECT * FRO... operaciones" />
+            <marker date="1472240893000" expanded="true" signature="1999:2037" ph="SELECT * FRO... operaciones" />
+            <marker date="1472240893000" expanded="true" signature="2689:2713" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="3008:3151" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="3227:3245" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="3519:3604" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="3519:3646" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="3739:3824" ph="SELECT id,YE... " />
+            <marker date="1472240893000" expanded="true" signature="3980:4314" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="4095:4265" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="4383:4553" ph="SELECT id_no... " />
+            <marker date="1472240893000" expanded="true" signature="4914:5073" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="5464:5639" ph="..." />
+            <marker date="1472240893000" expanded="true" signature="5867:5881" ph="SELECT * FRO... " />
+            <marker date="1472240893000" expanded="true" signature="5867:5917" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="5867:5942" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="6064:6094" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="6467:6496" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="6467:6509" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="6467:6510" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="6467:6511" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="6467:6535" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="6467:6536" ph="SELECT * FRO... tags" />
+            <marker date="1472240893000" expanded="true" signature="6700:6736" ph="SELECT * FRO... rel_tags" />
+            <marker date="1472240893000" expanded="true" signature="6962:6994" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="8362:8386" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="8775:8849" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="9390:9430" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="9660:9720" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="9871:9911" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="11418:11492" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="12032:12072" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="12304:12378" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="12870:12910" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="13294:13346" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="13592:13631" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="14234:14304" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="14460:14524" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="15934:16014" ph="SELECT * FRO... categorias" />
+            <marker date="1472240893000" expanded="true" signature="16191:16281" ph="SELECT * FRO... blog" />
+            <marker date="1472240893000" expanded="true" signature="16401:16441" ph="SELECT * FRO... categorias" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="233" column="0" selection-start-line="233" selection-start-column="4" selection-end-line="233" selection-end-column="54" />
+          <folding>
+            <element signature="e#5264#6558#0#PHP" expanded="false" />
+            <marker date="1472235694000" expanded="true" signature="6903:6929" ph="..." />
+            <marker date="1472235694000" expanded="true" signature="7126:7152" ph="..." />
           </folding>
         </state>
       </provider>

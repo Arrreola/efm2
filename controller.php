@@ -88,7 +88,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'operaciones' || isset($_GET['sec']) 
         $urlCompuesta = 'operations';
     endif;
 
-    $qryOp = 'SELECT * FROM operaciones WHERE statuspro= 3';
+    $qryOp = 'SELECT * FROM operaciones WHERE edo= 3';
     $conOp = new consultar($qryOp);
     $rowOp = $conOp->listRtn;
     $totOp = count($rowOp);
