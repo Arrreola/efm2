@@ -23,6 +23,7 @@
     <hr class="wn-hr">
 
     <div class="hf-content-news">
+
         <ul class="hf-news-list">
             <?php
             for ($i = 0; $i < $totFindPost; $i++):
@@ -74,16 +75,16 @@
                             <span class="hf-news-element-date"><?= $fecha; ?></span>
                             <!--<span class="hf-news-elements-tag-sec-name">Etiquetas:</span>
                             <ul class="hf-news-element-ul-tags">
-                                <?/*= $listTagsPost; */?>
+                                <?= $listTagsPost;?>
                             </ul>-->
                         </div>
                     </a>
                 </li>
             <?php endfor; ?>
         </ul>
+
     </div>
-    <!--
-    <div class="hf-content-filter">
+    <!-- <div class="hf-content-filter">
         <form action="" method="get" class="hf-content-news-form">
             <input class="hf-content-filter-search-input" type="text" name="Buscar" placeholder="Buscar">
         </form>
@@ -115,6 +116,5 @@
                 <?= $listFecha; ?>
             </ul>
         </div>
-    </div>
-    -->
+    </div> -->
 </div>

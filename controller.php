@@ -21,6 +21,7 @@ if (!isset($_GET['sec'])):
     $totOp = count($rowOp);
 endif;
 
+//MELBOURNE
 if (isset($_GET['sec']) && $_GET['sec'] == 'melbourne'):
     if ($len == 'en'):
         $getLen = 'es';
@@ -30,6 +31,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'melbourne'):
     $urlCompuesta = $_GET['sec'];
 endif;
 
+//LISBON
 if (isset($_GET['sec']) && $_GET['sec'] == 'lisbon' || isset($_GET['sec']) && $_GET['sec'] == 'lisboa'):
 
     if ($len == 'en'):
@@ -42,6 +44,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'lisbon' || isset($_GET['sec']) && $_
 
 endif;
 
+//PROSPECTUS MELBOURNE
 if (isset($_GET['sec']) && $_GET['sec'] == 'prospectus-melbourne' || isset($_GET['sec']) && $_GET['sec'] == 'ficha-tecnica-melbourne'):
 
     if ($len == 'en'):
@@ -54,6 +57,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'prospectus-melbourne' || isset($_GET
 
 endif;
 
+//PROSPECTUS PUENTE
 if (isset($_GET['sec']) && $_GET['sec'] == 'prospectus-lisbon' || isset($_GET['sec']) && $_GET['sec'] == 'ficha-tecnica-lisboa'):
 
     if ($len == 'en'):
@@ -65,7 +69,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'prospectus-lisbon' || isset($_GET['s
     $urlCompuesta = $_GET['sec'];
 
 endif;
-
+//FONDO PUENTE
 if (isset($_GET['sec']) && $_GET['sec'] == 'fondo-puente' || isset($_GET['sec']) && $_GET['sec'] == 'bridge-fund'):
 
     if ($len == 'en'):
@@ -78,6 +82,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'fondo-puente' || isset($_GET['sec'])
 
 endif;
 
+//OPERACIONES
 if (isset($_GET['sec']) && $_GET['sec'] == 'operaciones' || isset($_GET['sec']) && $_GET['sec'] == 'operations'):
 
     if ($len == 'en'):
