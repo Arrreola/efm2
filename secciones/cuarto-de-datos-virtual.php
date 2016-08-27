@@ -57,10 +57,9 @@
             </ul>
         </div>
     </div>
-    <p>
-        <a href="http://www.efmcapital.com/es/" rel="alternate">
-            <img style="display: block; margin-left: auto; margin-right: auto;"
-                 src="/es/images/dataroom/cuarto_de_datos_r7_c2.png" alt="">
+    <!--<p>
+        <a href="http://www.efmcapital.com/es/" tar rel="alternate">
+            <img style="display: block; margin-left: auto; margin-right: auto;"  src="/es/images/dataroom/cuarto_de_datos_r7_c2.png" alt="">
         </a>
-    </p>
+    </p>-->
 </section>

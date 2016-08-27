@@ -24,6 +24,22 @@ html {
   font-weight: 300;
   margin: 0 0 0.1em; }
 
+#btnVerMasOp {
+  margin-top: 20px;
+  position: absolute;
+  right: 60px;
+  z-index: 1; }
+
+#btnVerMasOp a {
+  background: #000000 none repeat scroll 0 0;
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none; }
+
 p {
   margin: 0; }
 
@@ -124,6 +140,9 @@ p {
   z-index: 9;
   position: absolute;
   top: 0; }
+
+.sliderOperaciones .bx-wrapper .bx-has-controls-direction a {
+  margin-top: 14px; }
 
 .index-section-2-heading {
   color: #333333;
@@ -266,6 +285,33 @@ p {
   background-size: cover;
   background-position: center; }
 
+#formOperations {
+  width: 500px; }
+
+.request-data-form-container {
+  height: 650px; }
+
+.sliderRqst li {
+  height: 650px; }
+
+.request-data-checkbox-area {
+  display: block;
+  margin-bottom: 10px; }
+
+.request-data-aviso {
+  margin: 20px 0; }
+
+.request-data-controles {
+  text-align: center;
+  margin: 20px 0; }
+
+.request-data-controles span {
+  margin: 10px 40px; }
+
+.request-data-controles span a {
+  color: black;
+  text-decoration: none; }
+
 @media only screen and (max-width: 767px) {
   .index-section-2-carousel .carousel .slide {
     box-shadow: inset 0 320px 0 0 rgba(0, 0, 0, 0.7) !important;
@@ -322,7 +368,11 @@ p {
     height: 0; }
 
   .index-section-2-slide-footer-content div:nth-child(3) {
-    width: auto; } }
+    width: auto; }
+
+  .required-2 input[type="checkbox"] {
+    width: 10px;
+    height: 10px; } }
 @media only screen and (max-width: 767px) {
   .index-section-4 {
     height: 470px !important;
@@ -1085,9 +1135,14 @@ nav {
   height: 83px; }
 
 /* Map */
+.msg {
+  color: #ffffff;
+  margin: 40px auto;
+  text-align: center; }
+
 .index-section-7-1 {
   background-color: #292A2C;
-  height: 570px; }
+  height: 640px; }
 
 .index-section-7-1-a {
   width: 49%;
@@ -1195,7 +1250,7 @@ form {
 
 #map {
   width: 100%;
-  height: 570px;
+  height: 640px;
   background-color: grey; }
 
 /* Section 7 */
@@ -1491,6 +1546,7 @@ footer {
 .op-ul .op-li-side-a {
   display: inline-block;
   vertical-align: top;
+  padding: 22px 27px;
   width: 30%; }
 
 .op-ul .op-li-side-b {
@@ -1507,6 +1563,11 @@ footer {
 
 .op-ul .op-li-elements .op-li-content p {
   color: #ffffff; }
+
+.op-ul .op-status-project {
+  color: #ffffff;
+  display: block;
+  font-size: 14px; }
 
 .operaciones-section-1 {
   max-width: 1200px;
@@ -1906,17 +1967,16 @@ footer {
 .fondo-puente-pointer-line-1 {
   width: 40px;
   height: 20px;
-  border-top: 0px;
-  border-botton: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 0px;
+  border-style: none none solid solid;
+  border-width: 0 0 2px 2px;
+  border-color: black;
   position: absolute;
   top: -16px;
   margin-left: 20px; }
 
 .fondo-puente-pointer-line-2 {
   border-left: 0 none;
-  border-right: 1px solid black;
+  border-right: 2px solid black;
   border-top: 0 none;
   height: 15px;
   left: 50%;
@@ -1928,10 +1988,9 @@ footer {
 .fondo-puente-pointer-line-3 {
   width: 40px;
   height: 20px;
-  border-top: 0px;
-  border-botton: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 0px;
+  border-style: none solid solid none;
+  border-width: 0 2px 2px 0;
+  border-color: black;
   position: absolute;
   top: -16px;
   margin-right: 20px;
@@ -3314,6 +3373,9 @@ ul {
   top: -4px;
   border-left: 1px solid rgba(255, 255, 255, 0.3); }
 
+.wn-section-topic a {
+  color: #000000; }
+
 .facebook {
   background: #516eab; }
 
@@ -3527,16 +3589,18 @@ ul {
   .hf-content-filter:last-child {
     margin-right: 0; }
 
+.hf-news-list {
+  margin-bottom: 40px; }
+
 .hf-news-list li a {
   color: #000000;
+  display: block;
+  padding-top: 30px;
   text-decoration: none; }
 
 .hf-news-list .hf-news-element + .hf-news-element {
-  border-top: 1px solid #dcdcdc; }
-
-.hf-news-element {
-  height: 320px;
-  padding: 30px 0; }
+  border-top: 1px solid #dcdcdc;
+  margin-top: 30px; }
 
 .hf-news-element:first-child {
   padding-top: 10px; }
@@ -3557,8 +3621,7 @@ ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
-  height: 150px; }
+  width: 23.23176%; }
   .hf-news-element-img:last-child {
     margin-right: 0; }
 
@@ -3574,14 +3637,8 @@ ul {
     margin-right: 0; }
 
 .hf-news-element-extra {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
   display: block;
   margin-top: 15px; }
-  .hf-news-element-extra:last-child {
-    margin-right: 0; }
 
 .hf-news-element-date {
   font-size: 14px;

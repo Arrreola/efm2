@@ -201,6 +201,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         $desc_es = toolMethods::GetSQLValueString($_POST['desc_es'], 'text', true);
         $desc_en = toolMethods::GetSQLValueString($_POST['desc_en'], 'text', true);
         $cate = toolMethods::GetSQLValueString($_POST['categoria'], 'int', true);
+        $sem = toolMethods::GetSQLValueString($_POST['sem'], 'int', true);
 
         if (isset($_POST['idReg'])):
             $idReg = $_POST['idReg'];
@@ -221,7 +222,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         endif;
 
         if (isset($_POST['myAction']) && $_POST['myAction'] != ''):
-            $insert = saveNot::crud($tit_es, $tit_en, $desc_short_es, $desc_short_en, $desc_es, $desc_en, $_FILES, $_POST['selImg'], $cate, $_POST['relTags'], $status, $destacar, $idReg, $_POST['myAction']);
+            $insert = saveNot::crud($tit_es, $tit_en, $desc_short_es, $desc_short_en, $desc_es, $desc_en, $_FILES, $_POST['selImg'], $cate, $_POST['relTags'], $status, $destacar, $sem, $idReg, $_POST['myAction']);
             header('location:../../menu/registros/');
         endif;
 
@@ -248,6 +249,10 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         endif;
         if ($rowUpd[0]['info_en'] != NULL && $rowUpd[0]['info_en'] != "NULL"):
             $info_en = html_entity_decode($rowUpd[0]['info_en']);
+        endif;
+
+        if ($rowUpd[0]['sem'] != NULL && $rowUpd[0]['sem'] != "NULL"):
+            $sem = html_entity_decode($rowUpd[0]['sem']);
         endif;
 
 

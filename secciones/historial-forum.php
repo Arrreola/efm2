@@ -18,7 +18,7 @@
 <!-- AQUI COMIENZA EL HISTORIAL  -->
 <div class="outer-container">
     <h2 class="wn-section-topic">
-        <?php if ($len == 'es'): ?>Trending topic semanal<?php else: ?>Weekly Trending Topic<?php endif; ?>
+        <?= $rowFindCat[0]['tit_' . $len]; ?>
     </h2>
     <hr class="wn-hr">
 
@@ -36,7 +36,7 @@
 
                 $titlePost = html_entity_decode($rowFindPost[$i]['tit_' . $len]);
                 $excerPost = html_entity_decode($rowFindPost[$i]['desc_short_' . $len]);
-                $fecha = toolMethods::dia_semana($rowFindPost[$i]['fecha'], $len);
+                $fecha = toolMethods::dia_semana($rowFindPost[$i]['fecha'], 'mdy', $len);
                 $urlPost = html_entity_decode($rowFindPost[$i]['url_' . $len]);
                 $imgPost = 'img.php?file=img/blog/' . $rowFindPost[$i]['img'] . '&ancho=219&alto=219&cut';
 
@@ -66,16 +66,21 @@
                             <?= $titlePost; ?>
                         </h3>
                         <div class="hf-news-element-description">
-                            <img class="hf-news-element-img" src="<?= $imgPost; ?>" alt="">
-                            <p class="hf-news-element-bodytext">
+
+                            <div class="hf-news-element-img">
+                                <img src="<?= $imgPost; ?>" alt="">
+                            </div>
+
+                            <div class="hf-news-element-bodytext">
                                 <?= $excerPost; ?>
-                            </p>
+                            </div>
+                            <div class="clearFloat"></div>
                         </div>
                         <div class="hf-news-element-extra">
                             <span class="hf-news-element-date"><?= $fecha; ?></span>
                             <!--<span class="hf-news-elements-tag-sec-name">Etiquetas:</span>
                             <ul class="hf-news-element-ul-tags">
-                                <?= $listTagsPost;?>
+                                <?= $listTagsPost; ?>
                             </ul>-->
                         </div>
                     </a>

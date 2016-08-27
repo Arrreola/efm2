@@ -60,7 +60,7 @@ include 'controller.php';
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <!-- bxSlider CSS file -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="css/jquery.bxslider.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -165,6 +165,10 @@ if (isset($_GET['sec']) && $_GET['sec'] != ''):
         case'categoria':
         case'category':
             $sec = 'historial-forum';
+            break;
+        case'request-info':
+        case'pedir-informacion':
+            $sec = 'request-info-5-steps';
             break;
     endswitch;
 

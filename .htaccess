@@ -9,7 +9,7 @@ RewriteRule ^en/$ index.php?len=en
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^descarga/([a-zA-Z0-9_-]+(.[a-z0-9-]+)*)$ descarga.php?&pdf=$1  [NC,L]
+RewriteRule ^descarga/([a-zA-Z0-9-]*)/([a-zA-Z0-9_-]+(.[a-z0-9-]+)*)$ descarga.php?path=$1&pdf=$2  [NC,L]
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f

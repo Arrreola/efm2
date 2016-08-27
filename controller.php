@@ -49,11 +49,28 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'prospectus-melbourne' || isset($_GET
 
     if ($len == 'en'):
         $getLen = 'es';
+        $rqstForm = 'request-info';
     else:
         $getLen = 'en';
+        $rqstForm = 'pedir-informacion';
     endif;
 
     $urlCompuesta = $_GET['sec'];
+
+endif;
+
+//PROSPECTUS REQUEST INFO / PEDIR INFORMACION
+if (isset($_GET['sec']) && $_GET['sec'] == 'request-info' || isset($_GET['sec']) && $_GET['sec'] == 'pedir-informacion'):
+
+    if ($len == 'en'):
+        $getLen = 'es';
+        $rqstForm = 'pedir-informacion';
+    else:
+        $getLen = 'en';
+        $rqstForm = 'request-info';
+    endif;
+
+    $urlCompuesta = $rqstForm;
 
 endif;
 
@@ -195,7 +212,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'categoria' || isset($_GET['sec']) &&
         $conFindCat = new consultar($qryFindCat);
         $rowFindCat = $conFindCat->listRtn;
 
-        $qryFindPost = 'SELECT * FROM blog WHERE cate=' . $rowFindCat[0]['id_cate'];
+        $qryFindPost = 'SELECT * FROM blog WHERE cate=' . $rowFindCat[0]['id_cate'] . ' ORDER BY fecha DESC';
         $conFindPost = new consultar($qryFindPost);
         $rowFindPost = $conFindPost->listRtn;
         $totFindPost = count($rowFindPost);
@@ -251,15 +268,17 @@ endif;
 
 //NOTICIAS
 if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GET['sec'] == 'noticias'):
-
+    $fechaPost = '';
     if ($len == 'en'):
         $getLen = 'es';
         $urlCompuesta = 'noticias';
         $catName = 'category';
+        $week = ', Week ';
     else:
         $getLen = 'en';
         $urlCompuesta = 'news';
         $catName = 'categoria';
+        $week = ', Sem. ';
     endif;
 
     $notLen = '';
@@ -294,8 +313,8 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GE
         $imgWTT = '';
     endif;
     $idWTT = $rowWTT[0]['id_not'];
-
-    $fechaPost = toolMethods::dia_semana($rowWTT[0]['fecha'], 'my', $len);
+    $fechaPostWTT = toolMethods::dia_semana($rowWTT[0]['fecha'], 'my', $len);
+    $fechaPostWTT = $fechaPostWTT . $week . $rowWTT[0]['sem'];
 
     // BUSCAMOS EL NOMBRE DE LA CATEGORIA
     $qrySEM = 'SELECT * FROM categorias WHERE id_cate=1';
@@ -358,6 +377,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GE
     $urlMIA = $rowMIA[0]['url_' . $len];
     $titMIA = $rowMIA[0]['tit_' . $len];
     $excMIA = html_entity_decode($rowMIA[0]['desc_short_' . $len]);
+    $urlPDF = $rowMIA[0]['pdf_' . $len];
     if (file_exists('img/blog/' . $rowMIA[0]['img'])):
         $imgMIA = 'img/blog/' . $rowMIA[0]['img'];
     else:
@@ -365,8 +385,8 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GE
     endif;
     $idMIA = $rowMIA[0]['id_not'];
     $pdfLink = $rowMIA[0]['pdf_' . $len];
-    $fechaPost = toolMethods::dia_semana($rowMIA[0]['fecha'], 'my', $len);
-
+    $fechaPostMIA = toolMethods::dia_semana($rowMIA[0]['fecha'], 'my', $len);
+    //$fechaPost = $fechaPost.$week.$rowMIA[0]['sem'];
     $qryMEN = 'SELECT * FROM categorias WHERE id_cate=3';
     $conMEN = new consultar ($qryMEN);
     $rowMEN = $conMEN->listRtn;
@@ -387,7 +407,8 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GE
     else:
         $imgEvent = '';
     endif;
-    $fechaPost = toolMethods::dia_semana($rowEvent[0]['fecha'], 'my', $len);
+    $fechaPostEvent = toolMethods::dia_semana($rowEvent[0]['fecha'], 'my', $len);
+    //$fechaPost = $fechaPost.$week.$rowEvent[0]['sem'];
     $qryEVN = "SELECT * FROM categorias WHERE id_cate=4";
     $conEVN = new consultar ($qryEVN);
     $rowEVN = $conEVN->listRtn;
@@ -398,6 +419,17 @@ endif;
 
 //DETALLE DE LA NOTICIA
 if (isset($_GET['sec']) && $_GET['sec'] == 'new' || isset($_GET['sec']) && $_GET['sec'] == 'noticia'):
+
+    if ($len == 'en'):
+        //CONSTRUIMOS EL URL DEL DETALLE DE LA NOTICIA EN ESPAÑOL
+        $catSec = 'category';
+        $sec = 'noticia/';
+        $getLen = 'es';
+    else:
+        $catSec = 'categoria';
+        $sec = 'new/';
+        $getLen = 'en';
+    endif;
 
     $qryNOT = "SELECT * FROM blog WHERE url_{$len}='{$_GET['url']}'";
     $conNOT = new consultar ($qryNOT);
@@ -410,22 +442,13 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'new' || isset($_GET['sec']) && $_GET
     $conMEN = new consultar ($qryMEN);
     $rowMEN = $conMEN->listRtn;
     $nameCateMEN = html_entity_decode($rowMEN[0]['tit_' . $len]);
+    $urlCateMEN = html_entity_decode($rowMEN[0]['url_' . $len]);
 
     //$conteoPost = conteoPost::countVisit($rowNOT[0]['id_not'], $rowMEN[0]['id_cate']);
 
     $fecha = toolMethods::dia_semana($rowNOT[0]['fecha'], 'mdy', $len);
 
     // COMPOSICION DE LA URL PARA INGLES O ESPAÑOL
-
-    if ($len == 'en'):
-        //CONSTRUIMOS EL URL DEL DETALLE DE LA NOTICIA EN ESPAÑOL
-        $sec = 'noticia/';
-        $getLen = 'es';
-    else:
-        $sec = 'new/';
-        $getLen = 'en';
-    endif;
-
     $qryCatEs = 'SELECT * FROM categorias WHERE url_' . $len . '="' . $_GET['cat'] . '"';
     $conCatEs = new consultar($qryCatEs);
     $rowCatEs = $conCatEs->listRtn;
@@ -503,7 +526,7 @@ if (isset($_POST['lastId']) && $_POST['lastId'] != ''):
     $rowECP = $conECP->listRtn;
     $totECP = count($rowECP);
 
-    $qryPERS = 'SELECT * FROM categorias WHERE id_cate=2';
+    $qryPERS = 'SELECT * FROM categorias WHERE id_cate=' . $idCat;
     $conPERS = new consultar ($qryPERS);
     $rowPERS = $conPERS->listRtn;
     $nameCatePERS = $rowPERS[0]['url_' . $_POST['len']];
@@ -526,7 +549,7 @@ if (isset($_POST['lastId']) && $_POST['lastId'] != ''):
 
             $listArt .= '<li class="wn-section-2-post-area" data-idreg="' . $rowECP[$e]['id_not'] . '">
                             <a href=" ' . $linkECP . '  ">
-                                <img src="img/blog/' . $rowECP[$e]['img'] . '" alt="" class="wn-section-2-post-img">
+                                <img src="img.php?file=img/blog/' . $rowECP[$e]['img'] . '&ancho=305&alto=200&cut" alt="">
                             </a>
                             <p>' . $fecha . '</p>
                             <h3 class="wn-section-2-post-heading">

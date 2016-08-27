@@ -97,214 +97,218 @@
       <column id="33" parent="7" name="pdf_en">
         <data-type>text|0</data-type>
       </column>
-      <key id="34" parent="7" name="PRIMARY">
+      <column id="34" parent="7" name="sem">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="35" parent="7" name="PRIMARY">
         <columns>id_not</columns>
         <primary>1</primary>
       </key>
-      <column id="35" parent="8" name="id_cate">
+      <column id="36" parent="8" name="id_cate">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="36" parent="8" name="tit_es">
+      <column id="37" parent="8" name="tit_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="37" parent="8" name="tit_en">
+      <column id="38" parent="8" name="tit_en">
         <data-type>text|0</data-type>
       </column>
-      <column id="38" parent="8" name="url_es">
+      <column id="39" parent="8" name="url_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="39" parent="8" name="url_en">
+      <column id="40" parent="8" name="url_en">
         <data-type>text|0</data-type>
       </column>
-      <index id="40" parent="8" name="categorias_id_cate_uindex">
+      <index id="41" parent="8" name="categorias_id_cate_uindex">
         <columns>id_cate</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="41" parent="8" name="PRIMARY">
+      <key id="42" parent="8" name="PRIMARY">
         <columns>id_cate</columns>
         <primary>1</primary>
       </key>
-      <key id="42" parent="8" name="categorias_id_cate_uindex">
+      <key id="43" parent="8" name="categorias_id_cate_uindex">
         <columns>id_cate</columns>
         <underlying-index>categorias_id_cate_uindex</underlying-index>
       </key>
-      <column id="43" parent="9" name="id_op">
+      <column id="44" parent="9" name="id_op">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="44" parent="9" name="tit_es">
+      <column id="45" parent="9" name="tit_es">
         <mandatory>1</mandatory>
         <data-type>text|0</data-type>
       </column>
-      <column id="45" parent="9" name="tit_en">
+      <column id="46" parent="9" name="tit_en">
         <mandatory>1</mandatory>
         <data-type>text|0</data-type>
       </column>
-      <column id="46" parent="9" name="desc_short_es">
+      <column id="47" parent="9" name="desc_short_es">
         <mandatory>1</mandatory>
         <data-type>text|0</data-type>
       </column>
-      <column id="47" parent="9" name="desc_short_en">
+      <column id="48" parent="9" name="desc_short_en">
         <mandatory>1</mandatory>
         <data-type>text|0</data-type>
       </column>
-      <column id="48" parent="9" name="info_es">
+      <column id="49" parent="9" name="info_es">
         <mandatory>1</mandatory>
         <data-type>text|0</data-type>
       </column>
-      <column id="49" parent="9" name="info_en">
+      <column id="50" parent="9" name="info_en">
         <mandatory>1</mandatory>
         <data-type>text|0</data-type>
       </column>
-      <column id="50" parent="9" name="img">
+      <column id="51" parent="9" name="img">
         <data-type>text|0</data-type>
       </column>
-      <column id="51" parent="9" name="edo">
+      <column id="52" parent="9" name="edo">
         <data-type>int(11)|0</data-type>
       </column>
-      <column id="52" parent="9" name="status">
+      <column id="53" parent="9" name="status">
         <data-type>int(11)|0</data-type>
         <default-expression>&apos;0&apos;</default-expression>
       </column>
-      <column id="53" parent="9" name="url_es">
+      <column id="54" parent="9" name="url_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="54" parent="9" name="url_en">
+      <column id="55" parent="9" name="url_en">
         <data-type>text|0</data-type>
       </column>
-      <column id="55" parent="9" name="fecha">
+      <column id="56" parent="9" name="fecha">
         <data-type>date|0</data-type>
       </column>
-      <column id="56" parent="9" name="btn_es">
+      <column id="57" parent="9" name="btn_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="57" parent="9" name="btn_en">
+      <column id="58" parent="9" name="btn_en">
         <data-type>text|0</data-type>
       </column>
-      <column id="58" parent="9" name="linkBtn_es">
+      <column id="59" parent="9" name="linkBtn_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="59" parent="9" name="linkBtn_en">
+      <column id="60" parent="9" name="linkBtn_en">
         <data-type>text|0</data-type>
       </column>
-      <index id="60" parent="9" name="id_op">
+      <index id="61" parent="9" name="id_op">
         <columns>id_op</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="61" parent="9" name="PRIMARY">
+      <key id="62" parent="9" name="PRIMARY">
         <columns>id_op</columns>
         <primary>1</primary>
       </key>
-      <key id="62" parent="9" name="id_op">
+      <key id="63" parent="9" name="id_op">
         <columns>id_op</columns>
         <underlying-index>id_op</underlying-index>
       </key>
-      <column id="63" parent="10" name="id">
+      <column id="64" parent="10" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="64" parent="10" name="id_post">
+      <column id="65" parent="10" name="id_post">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
       </column>
-      <column id="65" parent="10" name="id_tag">
+      <column id="66" parent="10" name="id_tag">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
       </column>
-      <index id="66" parent="10" name="unique_id">
+      <index id="67" parent="10" name="unique_id">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="67" parent="10" name="PRIMARY">
+      <key id="68" parent="10" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <key id="68" parent="10" name="unique_id">
+      <key id="69" parent="10" name="unique_id">
         <columns>id</columns>
         <underlying-index>unique_id</underlying-index>
       </key>
-      <column id="69" parent="11" name="id_st">
+      <column id="70" parent="11" name="id_st">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="70" parent="11" name="edo_es">
+      <column id="71" parent="11" name="edo_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="71" parent="11" name="edo_en">
+      <column id="72" parent="11" name="edo_en">
         <data-type>text|0</data-type>
       </column>
-      <index id="72" parent="11" name="statuspro_id_st_uindex">
+      <index id="73" parent="11" name="statuspro_id_st_uindex">
         <columns>id_st</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="73" parent="11" name="PRIMARY">
+      <key id="74" parent="11" name="PRIMARY">
         <columns>id_st</columns>
         <primary>1</primary>
       </key>
-      <key id="74" parent="11" name="statuspro_id_st_uindex">
+      <key id="75" parent="11" name="statuspro_id_st_uindex">
         <columns>id_st</columns>
         <underlying-index>statuspro_id_st_uindex</underlying-index>
       </key>
-      <column id="75" parent="12" name="id_tag">
+      <column id="76" parent="12" name="id_tag">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="76" parent="12" name="tit_es">
+      <column id="77" parent="12" name="tit_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="77" parent="12" name="tit_en">
+      <column id="78" parent="12" name="tit_en">
         <data-type>text|0</data-type>
       </column>
-      <column id="78" parent="12" name="url_es">
+      <column id="79" parent="12" name="url_es">
         <data-type>text|0</data-type>
       </column>
-      <column id="79" parent="12" name="url_en">
+      <column id="80" parent="12" name="url_en">
         <data-type>text|0</data-type>
       </column>
-      <index id="80" parent="12" name="tags_id_tag_uindex">
+      <index id="81" parent="12" name="tags_id_tag_uindex">
         <columns>id_tag</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="81" parent="12" name="PRIMARY">
+      <key id="82" parent="12" name="PRIMARY">
         <columns>id_tag</columns>
         <primary>1</primary>
       </key>
-      <key id="82" parent="12" name="tags_id_tag_uindex">
+      <key id="83" parent="12" name="tags_id_tag_uindex">
         <columns>id_tag</columns>
         <underlying-index>tags_id_tag_uindex</underlying-index>
       </key>
-      <column id="83" parent="13" name="idVist">
+      <column id="84" parent="13" name="idVist">
         <mandatory>1</mandatory>
         <data-type>int(11)|0</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="84" parent="13" name="idPost">
+      <column id="85" parent="13" name="idPost">
         <data-type>int(11)|0</data-type>
       </column>
-      <column id="85" parent="13" name="idCat">
+      <column id="86" parent="13" name="idCat">
         <data-type>int(11)|0</data-type>
       </column>
-      <index id="86" parent="13" name="visitPost_idVist_uindex">
+      <index id="87" parent="13" name="visitPost_idVist_uindex">
         <columns>idVist</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="87" parent="13" name="PRIMARY">
+      <key id="88" parent="13" name="PRIMARY">
         <columns>idVist</columns>
         <primary>1</primary>
       </key>
-      <key id="88" parent="13" name="visitPost_idVist_uindex">
+      <key id="89" parent="13" name="visitPost_idVist_uindex">
         <columns>idVist</columns>
         <underlying-index>visitPost_idVist_uindex</underlying-index>
       </key>

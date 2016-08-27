@@ -34,7 +34,7 @@
                     </h3>
 
                     <div class="wn-section-1-topic-description">
-                        <p><?= $fechaPost; ?></p>
+                        <p><?= $fechaPostWTT; ?></p>
                         <?= $excWTT; ?>
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                 </div>
                 <span class="wn-section-3-more-post-text">
                     <?php if ($len == 'es'): ?>
-                        Más trending topic
+                        Más trending topics
                     <?php else: ?>
-                        More trending topic
+                        More trending topics
                     <?php endif; ?>
                 </span>
             </a>
@@ -82,9 +82,9 @@
 
                 <span class="wn-section-3-more-post-text">
                     <?php if ($len == 'es'): ?>
-                        Más en Perspectiva
+                        Más artículos
                     <?php else: ?>
-                        More In Perspective
+                        More articles
                     <?php endif; ?>
                 </span>
             </a>
@@ -107,11 +107,11 @@
                     <span> <?= $titMIA; ?> </span>
                 </div>
                 <div class="wn-section-3-date">
-                    <?= $fechaPost; ?>
+                    <?= $fechaPostMIA; ?>
                 </div>
 
                 <div class="wn-section-3-download">
-                    <a href="<?= $len; ?>/<?= $catName; ?>/<?= $arrHeader[2][1]; ?>">
+                    <a href="descarga/pdf/<?= $urlPDF ?>">
                         <img src="img/icons/icons-08.svg" alt="" class="wn-section-3-download-icon">
                         <div class="download-section-3-contain">
                         <span class="wn-section-3-download-text">
@@ -124,7 +124,7 @@
             </div>
             <img src="<?= $imgMIA; ?>" class="blackout-img"/>
         </div>
-        <!-- MORE ARTICLES BUTTON -->
+        <!-- MORE ARTICLES BUTTON
         <div class="wn-section-3-more-post">
             <a href="<?= $len; ?>/<?= $catName; ?>/<?= $arrHeader[2][1]; ?>">
                 <div class="wn-section-3-more-post-icon-box">
@@ -139,7 +139,7 @@
                 </span>
             </a>
         </div>
-        <div class="clearFloat"></div>
+        <div class="clearFloat"></div>-->
 
     </section>
     <!-- SECTION 4 -->
@@ -157,7 +157,7 @@
                 </h3>
 
                 <div class="wn-section-4-topic-description">
-                    <p><?= $fechaPost; ?></p>
+                    <p><?= $fechaPostEvent; ?></p>
                     <a href="<?= $linkEvent ?>"><?= $excEvent; ?></a>
                 </div>
             </div>

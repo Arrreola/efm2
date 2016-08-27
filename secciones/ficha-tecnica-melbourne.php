@@ -50,7 +50,7 @@
         <div class="operaciones-section-1-form">
             <div class="operaciones-side-b-1">
                 <img src="img/logos/pdf-icon.png" alt="Pdf Icono">
-                <a href="descarga/melbourne-<?= $len; ?>.pdf" target="_blank">
+                <a href="descarga/ficha/melbourne-<?= $len; ?>.pdf" target="_blank">
                     <button
                         class="operaciones-side-b-button-descarga"><?php if ($len == 'es'): ?>Descargar <?php else: ?>Download <?php endif; ?></button>
                 </a>
@@ -63,7 +63,7 @@
                         If this project meets your criteria and wish to participate in the process please follow this link:
                     <?php endif; ?>
                 </p>
-                <a href="es/request-info" class="operaciones-side-b-button-descarga">
+                <a href="<?= $len; ?>/<?= $rqstForm; ?>" class="operaciones-side-b-button-descarga">
                     <?php if ($len == 'es'): ?>
                     Solicitar información
                     <?php else: ?>

@@ -39,8 +39,11 @@
     <div class="carousel">
         <div class="index-section-2-slide-header">
             <hr class="index-section-2-slide-hr">
-            <a href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>" class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></a>
+            <span href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>" class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></span>
             <hr class="index-section-2-slide-hr">
+
+            <div id="btnVerMasOp"><a href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>"><?php if ($len == 'es'): ?>Operaciones cerradas <?php else: ?> Closed operations <?php endif; ?></a></div>
+
         </div>
         <div class="sliderOperaciones">
             <!-- slide 1 MELBOURNE -->
@@ -55,6 +58,8 @@
 
                     if ($rowOp[$o]['btn_' . $len] != '' && $rowOp[$o]['btn_' . $len] != 'NULL' && $rowOp[$o]['btn_' . $len] != NULL):
                         $btnFT = '<a href="' . $rowOp[$o]['linkBtn_' . $len] . '">' . $rowOp[$o]['btn_' . $len] . '</a>';
+                    else:
+                        $btnFT = '';
                     endif;
 
                     ?>
@@ -603,11 +608,9 @@
         <hr class="index-section-6-slide-hr">
     </div>
     <div class="index-section-6-content">
-        <a href="https://amexcap.com/"><img src="img/logos/logo-amexcap.png" class="index-section-6-images" alt=""></a>
-        <a href="https://lavca.org/"><img src="img/logos/logo-laca.png" alt=""
-                                          class="index-section-6-images image-2"></a>
-        <a href="https://www.icgn.org/"><img src="img/logos/logo-icgn.png" class="index-section-6-images image-3"
-                                             alt=""></a>
+        <a href="https://amexcap.com/" target="_blank"><img src="img/logos/logo-amexcap.png" class="index-section-6-images" alt=""></a>
+        <a href="https://lavca.org/" target="_blank"><img src="img/logos/logo-laca.png" alt="" class="index-section-6-images image-2"></a>
+        <a href="https://www.icgn.org/" target="_blank"><img src="img/logos/logo-icgn.png" class="index-section-6-images image-3" alt=""></a>
     </div>
 </section>
 
@@ -626,27 +629,25 @@
                 <div class="my-placeholder">
                     <span class=""><?php if ($len == 'es'): ?>Nombre:<?php else: ?>Name:<?php endif; ?></span>
                 </div>
-                <input type="text" name="nombre" class="required">
+                <input type="text" name="nombre" class="required" data-namefield="<?php if ($len == 'es'): ?>nombre<?php else: ?>name<?php endif; ?>">
             </div>
             <div class="row-2">
                 <span class="my-placeholder"><?php if ($len == 'es'): ?>Correo:<?php else: ?>Email<?php endif; ?></span>
-                <input type="text" name="correo" class="required email">
+                <input type="text" name="correo" class="required email" data-namefield="<?php if ($len == 'es'): ?>correo<?php else: ?>email<?php endif; ?>">
             </div>
             <div class="row-2">
                 <span
                     class="my-placeholder"><?php if ($len == 'es'): ?>Móvil:<?php else: ?>Mobile:<?php endif; ?></span>
-                <input type="text" name="movil" class="required movil">
+                <input type="text" name="movil" class="required movil" data-namefield="<?php if ($len == 'es'): ?>móvil<?php else: ?>mobile<?php endif; ?>">
             </div>
             <div class="row-3">
                 <span
                     class="my-placeholder"><?php if ($len == 'es'): ?>Mensaje:<?php else: ?>Message:<?php endif; ?></span>
-                <textarea class="textarea" name="comentarios" class="required"></textarea>
+                <textarea class="textarea" name="comentarios" class="required" data-namefield="<?php if ($len == 'es'): ?>mensaje<?php else: ?>message<?php endif; ?>"></textarea>
             </div>
             <div class="row-4">
                 <!--<input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">-->
-                <input class="form-button" type="button" name="enviar" id="enviar"
-                       value="<?php if ($len == 'es'): ?>Enviar<?php else: ?>Send<?php endif; ?>"
-                       onclick="validateForm('pageForm')">
+                <input class="form-button" type="button" name="enviar" id="enviar" value="<?php if ($len == 'es'): ?>Enviar<?php else: ?>Send<?php endif; ?>" onclick="valFormularios('pageForm')">
             </div>
 
             <div class="msg">

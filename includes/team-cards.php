@@ -228,7 +228,7 @@
                     authorized by the Tribunal Superior de Justicia del Estado de Nuevo León. </p>
             <?php endif; ?>
             <a class="member-card-button" href="vcards/vcards-team/oscar_lopez_macal.vcf">
-                <?php if ($len == 'es'): ?>
+                <?php if ($_GET['len'] == 'es'): ?>
                     Descargar vCard
                 <?php else: ?>
                     Download vCard
@@ -255,7 +255,7 @@
                     por la Universidad de Leiden y cuenta con la Especialidad en Derecho Financiero por la Universidad
                     Panamericana.</p>
             <?php else: ?>
-                <p>_Rafael Brambila specializes in merger and acquisition processes for both Mexican and foreign
+                <p>Rafael Brambila specializes in merger and acquisition processes for both Mexican and foreign
                     companies,
                     collaborating with Mexican investors. Mr. Brambila has vast knowledge working in due diligence
                     processes
@@ -267,7 +267,7 @@
                     and the legal regularization of companies.</p>
             <?php endif; ?>
             <a class="member-card-button" href="vcards/vcards-team/rafael_brambila_lopez.vcf">
-                <?php if ($len == 'es'): ?>
+                <?php if ($_GET['len'] == 'es'): ?>
                     Descargar vCard
                 <?php else: ?>
                     Download vCard
@@ -302,7 +302,7 @@
                 <p/>
             <?php endif; ?>
             <a class="member-card-button" href="vcards/vcards-team/j_alonso-muñoz_fernandez.vcf">
-                <?php if ($len == 'es'): ?>
+                <?php if ($_GET['len'] == 'es'): ?>
                     Descargar vCard
                 <?php else: ?>
                     Download vCard
@@ -329,7 +329,7 @@
             <?php endif; ?>
             <!--        <p>El Sr.</p>-->
             <a class="member-card-button" href="vcards/vcards-team/manuel_a_meza_cañedo.vcf">
-                <?php if ($len == 'es'): ?>
+                <?php if ($_GET['len'] == 'es'): ?>
                     Descargar vCard
                 <?php else: ?>
                     Download vCard
@@ -357,7 +357,7 @@
             <?php endif; ?>
             <!--        <p>El Sr.</p>-->
             <a class="member-card-button" href="vcards/vcards-team/ana_m_soto_valenzuela.vcf">
-                <?php if ($len == 'es'): ?>
+                <?php if ($_GET['len'] == 'es'): ?>
                     Descargar vCard
                 <?php else: ?>
                     Download vCard

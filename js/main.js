@@ -13,6 +13,8 @@ var tipo = '';
 $(document).ready(function () {
 
     $('.bxslider').bxSlider({
+        auto: true,
+        pause: 6000,
         preloadImages: 'visible',
         responsive: true,
         touchEnabled: true,
@@ -37,6 +39,38 @@ $(document).ready(function () {
         oneToOneTouch: true,
         swipeThreshold: 50,
         preventDefaultSwipeX: true
+    });
+
+    /*$('.sliderRqstData').bxSlider({
+     preloadImages: 'visible',
+     responsive: true,
+     touchEnabled: true,
+     oneToOneTouch: true,
+     swipeThreshold: 50,
+     preventDefaultSwipeX: true
+     });*/
+
+    var slider_next = "";
+    var slider_back = "";
+
+    if (_len == 'es') {
+        slider_next = 'Siguiente paso';
+        slider_back = 'Volver';
+
+    }
+    else {
+        slider_next = "Next step";
+        slider_back = "Go back";
+    }
+
+    $('.sliderRqst').bxSlider({
+        pager: false,
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: slider_next,
+        prevText: slider_back
     });
 
     if (_cat == '') {
@@ -245,6 +279,9 @@ function validateForm(idObj) {
         case 'formLisbon':
             _urlFile = 'secciones/send-lisbon.php';
             break;
+        case 'formOperations':
+            _urlFile = 'secciones/send-5-steps.php';
+            break;
     }
 
     $.ajax({
@@ -254,6 +291,7 @@ function validateForm(idObj) {
     }).success(function (msg) {
         // alert("Data Saved: " + msg);
         if (msg == 'success') {
+
             if (_len == 'es') {
                 _textmsg = 'Tus datos se enviaron correctamente,\n serás redirigido a la página.';
 
@@ -266,7 +304,7 @@ function validateForm(idObj) {
                 case 'pageForm':
 
                     if (_len == 'es') {
-                        _respPageForm = 'GRACIAS POR ENVIAR TUS DATOS';
+                        _respPageForm = '¡Su mensaje ha sido enviado!';
                     }
                     else {
                         _respPageForm = "Your information was correctly sent,\n you'll be redirected to the next page.";
@@ -282,7 +320,7 @@ function validateForm(idObj) {
                         _fileUrl = 'ficha-tecnica-melbourne';
                     }
                     else {
-                        _titleSwal = "Your information was correctly sent,\n you'll be redirected to the next page.";
+                        _titleSwal = "¡Thank You!";
                         _fileUrl = 'prospectus-melbourne';
                     }
 
@@ -300,6 +338,7 @@ function validateForm(idObj) {
                             window.location = _len + '/' + _fileUrl;
                         });
                     break;
+
                 case 'formLisbon':
 
                     if (_len == 'es') {
@@ -324,6 +363,26 @@ function validateForm(idObj) {
                             // console.log('se ejecuta mandando a la nueva pagina');
                             window.location = _len + '/' + _fileUrl;
                         });
+                    break;
+
+                case 'formOperations':
+
+                    if (_len == 'es') {
+                        _titleSwal = '¡Gracias!';
+                    }
+                    else {
+                        _titleSwal = "¡Thank You!";
+                    }
+
+                    swal({
+                        title: _titleSwal,
+                        text: _textmsg,
+                        type: "success",
+                        showCancelButton: false,
+                        confirmButtonColor: "#c3b584",
+                        confirmButtonText: "Ok",
+                        closeOnConfirm: false
+                    });
                     break;
             }
 
@@ -497,7 +556,7 @@ function validarEmail(email) {
     // alert("Error: La dirección de correo " + email + " es incorrecta.");
         return 'fail';
 }
-//
+
 function fix() {
     var el = this;
     var par = el.parentNode;
@@ -510,7 +569,6 @@ function fix() {
 
 var lastChild = 0;
 var _totalChild = '';
-
 
 // WTT
 function loadArt(_lastId, _flagClick, _kat, _container, _kind) {

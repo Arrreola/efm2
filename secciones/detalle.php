@@ -18,7 +18,7 @@
 <div class="outer-container">
     <section class="wn-section-1">
         <h2 class="wn-section-topic">
-            <?= $nameCateMEN; ?>
+            <a href="<?= $len; ?>/<?= $catSec; ?>/<?= $urlCateMEN; ?>"><?= $nameCateMEN; ?></a>
         </h2>
         <hr class="wn-hr">
         <div class="wn-nt-include-module">

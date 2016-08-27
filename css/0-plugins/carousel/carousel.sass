@@ -18,6 +18,22 @@ $lateral-padding-mobile: 0 20px 0 20px
   font-weight: 300
   margin: 0 0 .1em
 
+#btnVerMasOp
+  margin-top: 20px
+  position: absolute
+  right: 60px
+  z-index: 1
+
+#btnVerMasOp a
+  background: #000000 none repeat scroll 0 0
+  color: #ffffff
+  display: block
+  font-size: 18px
+  font-style: italic
+  padding: 15px
+  text-align: center
+  text-decoration: none
+
 p
   margin: 0
 
@@ -124,6 +140,9 @@ p
   z-index: 9
   position: absolute
   top: 0
+
+.sliderOperaciones .bx-wrapper .bx-has-controls-direction a
+  margin-top: 14px
 
 .index-section-2-heading
   color: #333333
@@ -264,6 +283,33 @@ p
   background-size: cover
   background-position: center
 
+#formOperations
+  width: 500px
+
+.request-data-form-container
+  height: 650px
+
+.sliderRqst li
+  height: 650px
+
+.request-data-checkbox-area
+  display: block
+  margin-bottom: 10px
+
+.request-data-aviso
+  margin: 20px 0
+
+.request-data-controles
+  text-align: center
+  margin: 20px 0
+
+.request-data-controles span
+  margin: 10px 40px
+
+.request-data-controles span a
+  color: black
+  text-decoration: none
+
 @media only screen and #{$movile}
   .index-section-2-carousel .carousel .slide
     box-shadow: inset 0 320px 0 0 rgba(0, 0, 0, 0.7) !important
@@ -311,6 +357,9 @@ p
     height: 0
   .index-section-2-slide-footer-content div:nth-child(3)
     width: auto
+  .required-2 input[type="checkbox"]
+    width: 10px
+    height: 10px
 
 //Carousel: Consejo
 @media only screen and #{$movile}

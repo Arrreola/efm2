@@ -12,16 +12,18 @@
   @include span-columns(4)
 
 // CONTENEDOR NOTICIAS
+.hf-news-list
+  margin-bottom: 40px
+
 .hf-news-list li a
   color: #000000
+  display: block
+  padding-top: 30px
   text-decoration: none
 
 .hf-news-list .hf-news-element + .hf-news-element
   border-top: 1px solid #dcdcdc
-
-.hf-news-element
-  height: 320px
-  padding: 30px 0
+  margin-top: 30px
 
 .hf-news-element:first-child
   padding-top: 10px
@@ -39,8 +41,7 @@
   display: block
 
 .hf-news-element-img
-  @include span-columns(4)
-  height: 150px
+  @include span-columns(3)
 
 .hf-news-element-bodytext
   @include span-columns(8)
@@ -49,7 +50,6 @@
   line-height: 22px
 
 .hf-news-element-extra
-  @include span-columns(12)
   display: block
   margin-top: 15px
 

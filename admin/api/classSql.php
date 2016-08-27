@@ -246,7 +246,7 @@ class loginUser
 
 class saveNot
 {
-    public static function crud($tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $imgArray, $cf, $cat, $art_rel, $status, $destacar, $idReg, $action)
+    public static function crud($tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $imgArray, $cf, $cat, $art_rel, $status, $destacar, $sem, $idReg, $action)
     {
         $conex = '';
         $arrayPic = [];
@@ -287,9 +287,9 @@ class saveNot
 
                 if ($action == 'insert') :
 
-                    $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status,url_es,url_en,fecha,destacar,pdf_es,pdf_en) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,NOW(),?,?,?)";
+                    $qry = "INSERT INTO blog (tit_es,tit_en,desc_short_es,desc_short_en,info_es,info_en,img,cate,status,url_es,url_en,fecha,destacar,pdf_es,pdf_en,sem) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,NOW(),?,?,?,?)";
                     $stmt = $conex->prepare($qry);
-                    $stmt->bind_param("sssssssiississ", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $arrayPic[0], $cat, $status, $url_es, $url_en, $destacar, $arrayPic[1], $arrayPic[2]);
+                    $stmt->bind_param("sssssssiississi", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $arrayPic[0], $cat, $status, $url_es, $url_en, $destacar, $arrayPic[1], $arrayPic[2], $sem);
                     $resp = $stmt->execute();
                     if (false === $resp) :
                         die('execute() failed: ' . htmlspecialchars($stmt->error));
@@ -312,13 +312,14 @@ class saveNot
                         self::unlinkFiles($urlFolder, $cf[2]);
                     endif;
 
-                    $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=?,cate=?,status=?,url_es=?,url_en=?,destacar=?,pdf_es=?,pdf_en=? WHERE id_not=?";
+                    $qry = "UPDATE blog SET tit_es=?,tit_en=?,desc_short_es=?,desc_short_en=?,info_es=?,info_en=?,img=?,cate=?,status=?,url_es=?,url_en=?,destacar=?,pdf_es=?,pdf_en=?,sem=? WHERE id_not=?";
                     $stmt = $conex->prepare($qry);
-                    $stmt->bind_param("sssssssiississi", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $arrayPic[0], $cat, $status, $url_es, $url_en, $destacar, $arrayPic[1], $arrayPic[2], $idReg);
+                    $stmt->bind_param("sssssssiississii", $tit_es, $tit_en, $ds_es, $ds_en, $desc_es, $desc_en, $arrayPic[0], $cat, $status, $url_es, $url_en, $destacar, $arrayPic[1], $arrayPic[2], $sem, $idReg);
                     $resp = $stmt->execute();
                     if (false === $resp) :
                         die('execute() failed: ' . htmlspecialchars($stmt->error));
                     endif;
+
                     $new_id = $idReg;
 
                 endif;
