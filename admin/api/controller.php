@@ -241,12 +241,15 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         if ($rowUpd[0]['desc_short_es'] != NULL && $rowUpd[0]['desc_short_es'] != "NULL"):
             $desc_short_es = html_entity_decode($rowUpd[0]['desc_short_es']);
         endif;
+
         if ($rowUpd[0]['desc_short_en'] != NULL && $rowUpd[0]['desc_short_en'] != "NULL"):
             $desc_short_en = html_entity_decode($rowUpd[0]['desc_short_en']);
         endif;
+
         if ($rowUpd[0]['info_es'] != NULL && $rowUpd[0]['info_es'] != "NULL"):
             $info_es = html_entity_decode($rowUpd[0]['info_es']);
         endif;
+
         if ($rowUpd[0]['info_en'] != NULL && $rowUpd[0]['info_en'] != "NULL"):
             $info_en = html_entity_decode($rowUpd[0]['info_en']);
         endif;
@@ -255,11 +258,10 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
             $sem = html_entity_decode($rowUpd[0]['sem']);
         endif;
 
-
         $status = $rowUpd[0]['status'];
         $destac = $rowUpd[0]['destacar'];
 
-        $currentImage = array($rowUpd[0]['img'], $rowUpd[0]['pdfEs'], $rowUpd[0]['pdfEn']);
+        $currentImage = array($rowUpd[0]['img'], $rowUpd[0]['pdf_es'], $rowUpd[0]['pdf_en']);
 
         if ($rowUpd[0]['img'] != ''):
             $img = "<img src='../img/blog/{$rowUpd[0]['img']}' />";
@@ -272,9 +274,11 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'dashboard'):
         if ($status != 0):
             $status = 'checked="checked"';
         endif;
+
         if ($destac == 1):
             $destacar = 'checked="checked"';
         endif;
+
     endif;
 
     //OBTENGO LAS CATEGORIAS YA INGTESADAS

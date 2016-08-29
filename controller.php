@@ -12,13 +12,219 @@ if ($len == 'es'):
 else:
     $_getLen = 'es';
 endif;
-
+//HOME
 if (!isset($_GET['sec'])):
+
+    $fechaPost = '';
+
+    if ($len == 'en'):
+        $getLen = 'es';
+        $urlCompuesta = 'noticias';
+        $catName = 'category';
+        $week = ', Week ';
+    else:
+        $getLen = 'en';
+        $urlCompuesta = 'news';
+        $catName = 'categoria';
+        $week = ', Sem. ';
+    endif;
+
+    $notLen = '';
+    if ($len == "es"):
+        $notLen = "noticia";
+    else:
+        $notLen = "new";
+    endif;
+
+    //=========================================================//
+    //================= WEEKLY TRENDY TOPIC ==================//
+    //========================================================//
+    $qryWTT = 'SELECT * FROM blog WHERE cate=1 AND destacar=1 ORDER by fecha DESC LIMIT 1';
+    $conWTT = new consultar($qryWTT);
+    $rowWTT = $conWTT->listRtn;
+    $urlWTT = $rowWTT[0]['url_' . $len];
+    $titWTT = html_entity_decode($rowWTT[0]['tit_' . $len]);
+    $excWTT = html_entity_decode($rowWTT[0]['desc_short_' . $len]);
+
+    $imgWTT = 'img/blog/' . $rowWTT[0]['img'];
+
+    $idWTT = $rowWTT[0]['id_not'];
+    $fechaPostWTT = toolMethods::dia_semana($rowWTT[0]['fecha'], 'my', $len);
+    $fechaPostWTT = $fechaPostWTT . $week . $rowWTT[0]['sem'];
+
+    // BUSCAMOS EL NOMBRE DE LA CATEGORIA
+    $qrySEM = 'SELECT * FROM categorias WHERE id_cate=1';
+    $conSEM = new consultar($qrySEM);
+    $rowSEM = $conSEM->listRtn;
+    $nameCateSEM = $rowSEM[0]['url_' . $len];
+    $linkWTT = $len . "/" . $notLen . "/" . $nameCateSEM . "/" . $urlWTT;
+
+    if (file_exists($imgWTT)):
+
+        $li_WTT = '<li class="wn-section-2-post-area">
+                    <h2>' . html_entity_decode($rowSEM[0]['tit_' . $len]) . '</h2>
+                    <a href="' . $linkWTT . '">
+                        <img src="' . $imgWTT . '" alt="" class="wn-section-2-post-img">
+                    </a>
+        
+                    <date class="wn-section-2-post-date">' . $fechaPostWTT . '</date>
+        
+                    <h3 class="wn-section-2-post-heading">
+                        <a href="' . $linkWTT . '">' . $titWTT . '</a>
+                    </h3>
+        
+                </li>';
+
+    else:
+        $imgWTT = '';
+    endif;
+
+    //===================================================//
+    //================= IN PERSPECTIVE ==================//
+    //===================================================//
+    $qryECP = 'SELECT * FROM blog WHERE cate=2 ORDER BY fecha DESC LIMIT 1';
+    $conECP = new consultar($qryECP);
+    $rowECP = $conECP->listRtn;
+    $totECP = count($rowECP);
+
+    //NOMBRE DE LA CATEGORIA 2
+    $qryPERS = 'SELECT * FROM categorias WHERE id_cate=2';
+    $conPERS = new consultar ($qryPERS);
+    $rowPERS = $conPERS->listRtn;
+    $nameCatePERS = $rowPERS[0]['url_' . $len];
+
+    $notLen = '';
+
+    if ($_POST['len'] == "es"):
+        $notLen = "noticia";
+    else:
+        $notLen = "new";
+    endif;
+
+    if (file_exists('img/blog/' . $rowECP[0]['img'])):
+
+        $urlECP = $rowECP[0]['url_' . $len];
+        $linkECP = $len . "/" . $notLen . "/" . $nameCatePERS . "/" . $urlECP;
+        $fechaLi = toolMethods::dia_semana($rowECP[0]['fecha'], 'mdy', $len);
+
+        $li_IN .= '<li class="wn-section-2-post-area">
+                    
+                    <h2>' . html_entity_decode($rowPERS[0]['tit_' . $len]) . '</h2>
+                    
+                    <a href=" ' . $linkECP . '  ">
+                        <img src="img/blog/' . $rowECP[0]['img'] . ' " alt="" class="wn-section-2-post-img">
+                    </a>
+                    
+                    <date class="wn-section-2-post-date">' . $fechaLi . '</date>
+                    
+                    <h3 class="wn-section-2-post-heading">
+                       <a href=" ' . $linkECP . '"> ' . html_entity_decode($rowECP[0]['tit_' . $len . '']) . ' </a>
+                    </h3>
+   
+                  </li>';
+
+    endif;
+
+
+    //==============================================================//
+    //================= MONTHLY ANALYSIS INDUSTRY ==================//
+    //==============================================================//
+    $qryMIA = 'SELECT * FROM blog WHERE cate=3 AND destacar=1 ORDER BY fecha DESC LIMIT 1';
+    $conMIA = new consultar($qryMIA);
+    $rowMIA = $conMIA->listRtn;
+    $urlMIA = $rowMIA[0]['url_' . $len];
+    $titMIA = $rowMIA[0]['tit_' . $len];
+    $excMIA = html_entity_decode($rowMIA[0]['desc_short_' . $len]);
+    $urlPDF = $rowMIA[0]['pdf_' . $len];
+    if (file_exists('img/blog/' . $rowMIA[0]['img'])):
+        $imgMIA = 'img/blog/' . $rowMIA[0]['img'];
+    else:
+        $imgMIA = '';
+    endif;
+    $idMIA = $rowMIA[0]['id_not'];
+    $pdfLink = $rowMIA[0]['pdf_' . $len];
+    $fechaPostMIA = toolMethods::dia_semana($rowMIA[0]['fecha'], 'my', $len);
+    //$fechaPost = $fechaPost.$week.$rowMIA[0]['sem'];
+    $qryMEN = 'SELECT * FROM categorias WHERE id_cate=3';
+    $conMEN = new consultar ($qryMEN);
+    $rowMEN = $conMEN->listRtn;
+    $nameCateMEN = $rowMEN[0]['url_' . $len];
+
+    $linkMIA = $len . "/" . $notLen . "/" . $nameCateMEN . "/" . $urlMIA;
+
+    if (file_exists('img/blog/' . $rowECP[0]['img'])):
+
+        $li_MIA .= '<li class="wn-section-2-post-area">
+
+                        <h2>' . html_entity_decode($rowMEN[0]['tit_' . $len]) . '</h2>
+                        
+                        <a href=" ' . $linkMIA . '  ">
+                            <img src="img/blog/' . $rowECP[0]['img'] . ' " alt="" class="wn-section-2-post-img">
+                        </a>
+                        
+                        <date class="wn-section-2-post-date">' . $fechaPostMIA . '</date>
+                        
+                        <h3 class="wn-section-2-post-heading">
+                           <a href=" ' . $linkMIA . '"> ' . html_entity_decode($rowECP[0]['tit_' . $len . '']) . ' </a>
+                        </h3>
+       
+                      </li>';
+
+    endif;
+
+    //=============================================//
+    //================= EVENTOS ==================//
+    //============================================//
+
+    $qryEvent = "SELECT * FROM blog WHERE cate=4 AND destacar=1 ORDER BY fecha DESC LIMIT 1";
+    $conEvent = new consultar($qryEvent);
+    $rowEvent = $conEvent->listRtn;
+    $urlEvent = $rowEvent[0]['url_' . $len];
+    $titEvent = $rowEvent[0]['tit_' . $len];
+    $excEvent = html_entity_decode($rowEvent[0]['desc_short_' . $len]);
+
+    if (file_exists('img/blog/' . $rowEvent[0]['img'])):
+        $imgEvent = 'img/blog/' . $rowEvent[0]['img'];
+    else:
+        $imgEvent = '';
+    endif;
+
+    $fechaPostEvent = toolMethods::dia_semana($rowEvent[0]['fecha'], 'my', $len);
+    //$fechaPost = $fechaPost.$week.$rowEvent[0]['sem'];
+    $qryEVN = "SELECT * FROM categorias WHERE id_cate=4";
+    $conEVN = new consultar ($qryEVN);
+    $rowEVN = $conEVN->listRtn;
+    $nameCateEVN = $rowEVN[0]['tit_' . $len];
+    $linkEvent = $len . "/" . $notLen . "/" . $nameCateEVN . "/" . $urlEvent;
+    $idEVN = $rowEVN[0]['id_not'];
+
+    if (file_exists('img/blog/' . $rowEVN[0]['img'])):
+
+        $li_Event .= '<li class="wn-section-2-post-area">
+
+                        <h2>' . html_entity_decode($rowEVN[0]['tit_' . $len]) . '</h2>
+
+                        <a href=" ' . $linkEvent . '  ">
+                            <img src="img/blog/' . $rowEvent[0]['img'] . ' " alt="" class="wn-section-2-post-img">
+                        </a>
+                        
+                        <date class="wn-section-2-post-date">' . $fechaPostEvent . '</date>
+                        
+                        <h3 class="wn-section-2-post-heading">
+                           <a href=" ' . $linkEvent . '"> ' . html_entity_decode($rowEvent[0]['tit_' . $len . '']) . ' </a>
+                        </h3>
+       
+                      </li>';
+
+    endif;
+
+
     //OPERACIONES
     $qryOp = 'SELECT * FROM operaciones WHERE edo=2 OR edo=4';
     $conOp = new consultar($qryOp);
     $rowOp = $conOp->listRtn;
     $totOp = count($rowOp);
+
 endif;
 
 //MELBOURNE
@@ -86,6 +292,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'prospectus-lisbon' || isset($_GET['s
     $urlCompuesta = $_GET['sec'];
 
 endif;
+
 //FONDO PUENTE
 if (isset($_GET['sec']) && $_GET['sec'] == 'fondo-puente' || isset($_GET['sec']) && $_GET['sec'] == 'bridge-fund'):
 
@@ -268,7 +475,9 @@ endif;
 
 //NOTICIAS
 if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GET['sec'] == 'noticias'):
+
     $fechaPost = '';
+
     if ($len == 'en'):
         $getLen = 'es';
         $urlCompuesta = 'noticias';
@@ -305,13 +514,15 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GE
     $conWTT = new consultar($qryWTT);
     $rowWTT = $conWTT->listRtn;
     $urlWTT = $rowWTT[0]['url_' . $len];
-    $titWTT = $rowWTT[0]['tit_' . $len];
+    $titWTT = html_entity_decode($rowWTT[0]['tit_' . $len]);
     $excWTT = html_entity_decode($rowWTT[0]['desc_short_' . $len]);
+
     if (file_exists('img/blog/' . $rowWTT[0]['img'])):
         $imgWTT = 'img/blog/' . $rowWTT[0]['img'];
     else:
         $imgWTT = '';
     endif;
+
     $idWTT = $rowWTT[0]['id_not'];
     $fechaPostWTT = toolMethods::dia_semana($rowWTT[0]['fecha'], 'my', $len);
     $fechaPostWTT = $fechaPostWTT . $week . $rowWTT[0]['sem'];
@@ -415,6 +626,7 @@ if (isset($_GET['sec']) && $_GET['sec'] == 'news' || isset($_GET['sec']) && $_GE
     $nameCateEVN = $rowEVN[0]['tit_' . $len];
     $linkEvent = $len . "/" . $notLen . "/" . $nameCateEVN . "/" . $urlEvent;
     $idEVN = $rowEVN[0]['id_not'];
+
 endif;
 
 //DETALLE DE LA NOTICIA

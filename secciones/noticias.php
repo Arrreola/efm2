@@ -16,8 +16,9 @@
     </div>
 </section>
 
-<!-- SECTION 1 -->
+<!-- OUTER CONTAINER -->
 <div class="outer-container">
+    <!--    SECTION 1 WTT-->
     <section class="wn-section-1">
 
         <h2 class="wn-section-topic">
@@ -59,7 +60,7 @@
         <div class="clearFloat"></div>
 
     </section>
-    <!-- SECTION 2 -->
+    <!-- SECTION 2 IN PERSPECTIVE -->
     <section class="wn-section-2">
 
         <h2 class="wn-section-topic">
@@ -92,7 +93,7 @@
         <div class="clearFloat"></div>
 
     </section>
-    <!-- SECTION 3 -->
+    <!-- SECTION 3 MONTHLY -->
     <section class="wn-section-3">
 
         <h2 class="wn-section-topic">
@@ -100,49 +101,42 @@
         </h2>
 
         <hr class="wn-hr">
-        <div class="wn-section-3-container image-blackshadow">
-
-            <div class="floatContent">
-                <div class="wn-section-3-heading">
-                    <span> <?= $titMIA; ?> </span>
+        <div class="wn-section-3-container">
+            <div class="wn-section-3-side-a">
+                <div class="floatContent">
+                    <div class="wn-section-3-heading">
+                        <span> <?= $titMIA; ?> </span>
+                    </div>
+                    <div class="wn-section-3-date">
+                        <?= $fechaPostMIA; ?>
+                    </div>
                 </div>
-                <div class="wn-section-3-date">
-                    <?= $fechaPostMIA; ?>
+                <img src="<?= $imgMIA; ?>" class="blackout-img"/>
+            </div>
+            <div class="wn-section-3-side-b">
+
+                <div class="">
+                    <?= $excMIA; ?>
                 </div>
 
+                <!-- VER PDF BOTTON -->
                 <div class="wn-section-3-download">
-                    <a href="descarga/pdf/<?= $urlPDF ?>">
+                    <a href="<?= $urlPDF ?>">
                         <img src="img/icons/icons-08.svg" alt="" class="wn-section-3-download-icon">
                         <div class="download-section-3-contain">
                         <span class="wn-section-3-download-text">
-                              <?php if ($len == 'es'): ?> Descarga<?php else: ?> Download <?php endif; ?>
+                              <?php if ($len == 'es'): ?>Ver pdf<?php else: ?>Read pdf<?php endif; ?>
                         </span>
                             <hr class="wn-hr-download">
                         </div>
                     </a>
                 </div>
+
             </div>
-            <img src="<?= $imgMIA; ?>" class="blackout-img"/>
         </div>
-        <!-- MORE ARTICLES BUTTON
-        <div class="wn-section-3-more-post">
-            <a href="<?= $len; ?>/<?= $catName; ?>/<?= $arrHeader[2][1]; ?>">
-                <div class="wn-section-3-more-post-icon-box">
-                    <img src="img/icons/icons-m-08.png" alt="" class="wn-section-3-more-post-icon">
-                </div>
-                <span class="wn-section-3-more-post-text">
-                    <?php if ($len == 'es'): ?>
-                        Más análisis de industria
-                    <?php else: ?>
-                        More Industry Analysis
-                    <?php endif; ?>
-                </span>
-            </a>
-        </div>
-        <div class="clearFloat"></div>-->
 
     </section>
-    <!-- SECTION 4 -->
+    <!-- SECTION 4 EVENTOS -->
     <section class="wn-section-4">
 
         <h2 class="wn-section-topic">

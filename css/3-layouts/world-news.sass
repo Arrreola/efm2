@@ -40,6 +40,8 @@ ul
   margin-left: 30px
   position: absolute
   z-index: 1
+.wn-section-3 .floatContent
+  width: 50%
 
 .wn-section-content-container
   padding: 0 26.5px 20px
@@ -148,13 +150,44 @@ ul
   padding: 0
   font-family: "Libre baskerville" !important
 
+
+.index-section-noticias
+  @include outer-container
+  font-size: 0
+  margin: 0 auto 50px
+#index-noticias .wn-section-2-post-area
+  width: 23%
+  margin-right: 0
+#index-noticias .wn-section-2-post-area + .wn-section-2-post-area
+  margin-left: 30px
+.index-section-noticias .index-section-4-header
+  text-align: center
+  margin-bottom: 16px
+  background: transparent
+#index-noticias h2
+  font-family: "Times New Roman"
+  font-size: 18px
+  font-weight: 800
+  height: 40px
+  margin: 10px 0 0
+  text-align: center
+#index-noticias .wn-section-2-post-heading
+  font-family: "Times New Roman"
+  font-size: 18px
+  font-weight: 200
+  line-height: 18px
+#index-noticias .wn-section-2-post-area a
+  text-decoration: none
+  color: black
+  font-family: "Times New Roman"
+
 .wn-section-2-post-area
   width: 31.7616%
   margin-bottom: 40px
   display: inline-block
   margin-right: 2.35765%
   vertical-align: top
-  font-family: "Libre baskerville" !important
+  font-family: "Libre baskerville"
 
 .wn-section-2-post-area:nth-child(3n+3)
   margin-right: 0 !important
@@ -179,10 +212,10 @@ ul
 .wn-section-2-post-area a
   text-decoration: none
   color: black
-  font-family: "Libre baskerville" !important
+  font-family: "Libre baskerville"
 
 .wn-section-2-post-area a span
-  font-family: "Libre baskerville" !important
+  font-family: "Libre baskerville"
   font-size: 15px !important
 
 #listHomeArt h3 a
@@ -277,7 +310,7 @@ ul
   margin-right: 5px
 
 .wn-section-3-download-text
-  color: white
+  color: black
   font-size: 15px
   line-height: 20px
   transform: translateY(-10px)
@@ -286,7 +319,7 @@ ul
 .wn-hr-download
   margin: 0
   height: 1px
-  background: white
+  background: black
   border: none
   width: 100%
   bottom: 5px
@@ -324,6 +357,25 @@ ul
 .wn-section-3-more-post a
   display: block
   text-decoration: none
+.wn-section-3-side-a
+  height: 100%
+  width: 50%
+  display: inline-block
+  overflow: hidden
+  background: black
+.wn-section-3-side-a .blackout-img
+  height: 100%
+  width: auto
+  position: relative
+.wn-section-3-side-b
+  right: 0
+  height: 100%
+  width: 49%
+  display: inline-block
+  padding: 30px
+  background: white
+
+
 
 .wn-hr-industry
   height: 1px
@@ -531,7 +583,7 @@ ul
     display: inline-block
 
   .wn-section-3-download-text
-    color: white
+    color: black
     font-size: 15px
     line-height: 20px
     transform: translateY(-10px)
@@ -540,7 +592,7 @@ ul
   .wn-hr-download
     margin: 0
     height: 1px
-    background: white
+    background: black
     border: none
     width: 100%
     bottom: 5px

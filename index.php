@@ -6,7 +6,7 @@ include 'controller.php';
 <head>
     <!-- Iso -->
     <meta charset="UTF-8">
-    <!--    <base href="http://localhost:8888/efm-new/" target="_top">-->
+<!--    <base href="http://localhost:8888/efm-new/" target="_top">-->
     <base href="http://clientes.v09.mx/efm_4.0/" target="_top">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -74,7 +74,7 @@ include 'controller.php';
 </div>
 <nav>
     <div class="nav-content">
-        <a href="<?= $len; ?>/"><img src="img/logos/logo94x495x2.png" alt="Logotipo EFM" class="navbar-logo"></a>
+        <a href="<?= $len; ?>/"><img src="img/logos/logo-efm-03.svg" alt="Logotipo EFM" class="navbar-logo"></a>
         <figure class="navbar-menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                  id="Untitled-2" x="0px" y="0px" width="18px" height="12px" viewBox="0 0 18 12"

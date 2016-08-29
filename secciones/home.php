@@ -1,3 +1,4 @@
+<!-- BIENVENIDA -->
 <section class="index-section-1 parallax-window">
     <div class="index-section-1-copy">
         <hr class="index-section-hr"/>
@@ -35,19 +36,78 @@
         <hr class="index-section-hr"/>
     </div>
 </section>
+
+<!-- NOTICIAS -->
+<section class="index-section-noticias">
+    <div class="index-section-4-header">
+        <hr class="index-section-4-slide-hr">
+        <span
+            class="index-section-4-heading"><?php if ($len == 'es'): ?>Spotlights de Fórum<?php else: ?>Forum spotlights<?php endif; ?></span>
+        <hr class="index-section-4-slide-hr">
+    </div>
+    <ul id="index-noticias">
+        <?= $li_WTT; ?>
+        <?= $li_IN; ?>
+        <?= $li_MIA; ?>
+        <?= $li_Event; ?>
+    </ul>
+</section>
+
+<!-- FONDO PUENTE -->
+<section class="index-section-3 parallax-window-3">
+    <div class="index-section-3-content">
+        <div class="index-section-3-header">
+            <hr class="index-section-3-slide-hr">
+            <span
+                class="index-section-3-heading"><?php if ($len == 'es'): ?>Fondo puente<?php else: ?>Bridge fund<?php endif; ?></span>
+            <hr class="index-section-3-slide-hr">
+        </div>
+        <div class="index-section-3-copy-content">
+
+            <p class="index-section-3-copy">
+                <?php if ($len == 'es'): ?>
+                    Nuestra visión se enfoca en modelo transaccional en el que
+                    realizamos inversiones como fondo de capital privado para
+                    habilitar prácticas de rendición de cuentas y optimizar
+                    el modelo de negocio.
+                <?php else: ?>
+                    Our vision is focused on a transactional model in which we commit private equity, enable
+                    accountability practices and optimize the business culture.
+                <?php endif; ?>
+            </p>
+            <br>
+            <p class="index-section-3-copy">
+                <?php if ($len == 'es'): ?>
+                    Nuestra salida está orientada a la transferencia de la
+                    empresa a un fondo de inversión o comprador estratégico.
+                <?php else: ?>
+                    Our exit is aimed towards facilitating the transfer of the company to a new investment fund or
+                    strategic buyer.
+                <?php endif; ?>
+            </p>
+            <a href="<?= $len ?>/<?php if ($len == 'es'): ?>fondo-puente<?php else: ?>bridge-fund<?php endif; ?>"
+               class="index-section-3-link"><?php if ($len == 'es'): ?>Ver más<?php else: ?>See more<?php endif; ?></a>
+        </div>
+    </div>
+</section>
+
+<!-- OPERACIONES -->
 <section class="index-section-2-carousel">
     <div class="carousel">
         <div class="index-section-2-slide-header">
             <hr class="index-section-2-slide-hr">
-            <span href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>" class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></span>
+            <span href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>"
+                  class="index-section-2-heading"><?php if ($len == 'es'): ?>Operaciones <?php else: ?> Operations <?php endif; ?></span>
             <hr class="index-section-2-slide-hr">
 
-            <div id="btnVerMasOp"><a href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>"><?php if ($len == 'es'): ?>Operaciones cerradas <?php else: ?> Closed operations <?php endif; ?></a></div>
+            <div id="btnVerMasOp"><a
+                    href="<?= $len; ?>/<?php if ($len == 'es'): ?>operaciones<?php else: ?>operations<?php endif; ?>"><?php if ($len == 'es'): ?>Operaciones cerradas <?php else: ?> Closed operations <?php endif; ?></a>
+            </div>
 
         </div>
         <div class="sliderOperaciones">
             <!-- slide 1 MELBOURNE -->
-            <ul class="bxslider">
+            <ul class="bxslider bxslider-operaciones">
                 <?php
                 for ($o = 0; $o < $totOp; $o++):
 
@@ -92,43 +152,7 @@
     </div>
 </section>
 
-<section class="index-section-3 parallax-window-3">
-    <div class="index-section-3-content">
-        <div class="index-section-3-header">
-            <hr class="index-section-3-slide-hr">
-            <span
-                class="index-section-3-heading"><?php if ($len == 'es'): ?>Fondo puente<?php else: ?>Bridge fund<?php endif; ?></span>
-            <hr class="index-section-3-slide-hr">
-        </div>
-        <div class="index-section-3-copy-content">
-
-            <p class="index-section-3-copy">
-                <?php if ($len == 'es'): ?>
-                    Nuestra visión se enfoca en modelo transaccional en el que
-                    realizamos inversiones como fondo de capital privado para
-                    habilitar prácticas de rendición de cuentas y optimizar
-                    el modelo de negocio.
-                <?php else: ?>
-                    Our vision is focused on a transactional model in which we commit private equity, enable
-                    accountability practices and optimize the business culture.
-                <?php endif; ?>
-            </p>
-            <br>
-            <p class="index-section-3-copy">
-                <?php if ($len == 'es'): ?>
-                    Nuestra salida está orientada a la transferencia de la
-                    empresa a un fondo de inversión o comprador estratégico.
-                <?php else: ?>
-                    Our exit is aimed towards facilitating the transfer of the company to a new investment fund or
-                    strategic buyer.
-                <?php endif; ?>
-            </p>
-            <a href="<?= $len ?>/<?php if ($len == 'es'): ?>fondo-puente<?php else: ?>bridge-fund<?php endif; ?>"
-               class="index-section-3-link"><?php if ($len == 'es'): ?>Ver más<?php else: ?>See more<?php endif; ?></a>
-        </div>
-    </div>
-</section>
-
+<!-- DIRECTIVOS -->
 <section class="index-section-4">
     <div class="index-section-4-header">
         <hr class="index-section-4-slide-hr">
@@ -205,85 +229,86 @@
     <div class="carousel index-section-4-m-carousel carousel-mobile">
         <ul class="sliderMbrMbl" id="index-section-4-m-carousel-loads member-cards">
 
-                <li class="index-section-4-m-slide" id="slide-1">
-                    <div class="index-section-4-m-member">
-                        <div class="index-section-4-m-text">
-                            <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
-                            <span class="index-section-4-m-member-position">
+            <li class="index-section-4-m-slide" id="slide-1">
+                <div class="index-section-4-m-member">
+                    <div class="index-section-4-m-text">
+                        <span class="index-section-4-m-member-name">Manuel G. Martínez Gaxiola</span>
+                        <span class="index-section-4-m-member-position">
                                 <?php if ($len == 'es'): ?>Socio<?php else: ?>Partner<?php endif; ?>
                             </span>
-                            <span id="manuel-detalles-mobile" data-anchor="member-card-manuel-g"
-                                  class="index-section-4-m-member-button">
+                        <span id="manuel-detalles-mobile" data-anchor="member-card-manuel-g"
+                              class="index-section-4-m-member-button">
                                 <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
                             </span>
 
-                        </div>
-                        <img src="img/consejo/consejo-manuel-g.png" alt="" class="index-section-4-member-image">
                     </div>
-                </li>
+                    <img src="img/consejo/consejo-manuel-g.png" alt="" class="index-section-4-member-image">
+                </div>
+            </li>
 
-                <li class="index-section-4-m-slide" id="slide-2">
-                    <div class="index-section-4-m-member">
-                        <div class="index-section-4-m-text">
+            <li class="index-section-4-m-slide" id="slide-2">
+                <div class="index-section-4-m-member">
+                    <div class="index-section-4-m-text">
 
-                            <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
-                            <span class="index-section-4-m-member-position">
+                        <span class="index-section-4-m-member-name">Carlos J. Martínez de León</span>
+                        <span class="index-section-4-m-member-position">
                                     <?php if ($len == 'es'): ?>Socio<?php else: ?>Partner<?php endif; ?>
                                 </span>
-                            <span id="carlos-j-detalles-mobile" data-anchor="member-card-carlos-j"
-                                  class="index-section-4-m-member-button">
+                        <span id="carlos-j-detalles-mobile" data-anchor="member-card-carlos-j"
+                              class="index-section-4-m-member-button">
                                     <?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?>
                                 </span>
 
-                        </div>
-                        <img src="img/consejo/consejo-carlos-m.png" alt="" class="index-section-4-member-image">
                     </div>
-                </li>
+                    <img src="img/consejo/consejo-carlos-m.png" alt="" class="index-section-4-member-image">
+                </div>
+            </li>
 
-                <li class="index-section-4-m-slide" id="slide-3">
-                    <div class="index-section-4-m-member">
-                        <div class="index-section-4-m-text">
-                            <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
-                            <span
-                                class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Director general Cienciamed<?php else: ?>Cienciamed CEO<?php endif; ?></span>
-                            <span id="oscar-detalles-mobile" data-anchor="member-card-oscar-j"
-                                  class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
-                        </div>
-                        <img src="img/consejo/consejo-oscar-j.png" alt="" class="index-section-4-member-image">
+            <li class="index-section-4-m-slide" id="slide-3">
+                <div class="index-section-4-m-member">
+                    <div class="index-section-4-m-text">
+                        <span class="index-section-4-m-member-name">Oscar J. Moráles Rodríguez</span>
+                        <span
+                            class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Director general Cienciamed<?php else: ?>Cienciamed CEO<?php endif; ?></span>
+                        <span id="oscar-detalles-mobile" data-anchor="member-card-oscar-j"
+                              class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                     </div>
-                </li>
+                    <img src="img/consejo/consejo-oscar-j.png" alt="" class="index-section-4-member-image">
+                </div>
+            </li>
 
-                <li class="index-section-4-m-slide" id="slide-4">
-                    <div class="index-section-4-m-member">
-                        <div class="index-section-4-m-text">
+            <li class="index-section-4-m-slide" id="slide-4">
+                <div class="index-section-4-m-member">
+                    <div class="index-section-4-m-text">
 
-                            <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
-                            <span
-                                class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?></span>
-                            <span id="carlos-e-detalles-mobile" data-anchor="member-card-carlos-e"
-                                  class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
+                        <span class="index-section-4-m-member-name">Carlos E. Martínez Rico</span>
+                        <span
+                            class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?></span>
+                        <span id="carlos-e-detalles-mobile" data-anchor="member-card-carlos-e"
+                              class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
 
-                        </div>
-                        <img src="img/consejo/consejo-carlos-e.png" alt="" class="index-section-4-member-image">
                     </div>
-                </li>
+                    <img src="img/consejo/consejo-carlos-e.png" alt="" class="index-section-4-member-image">
+                </div>
+            </li>
 
-                <li class="index-section-4-m-slide" id="slide-4-m">
-                    <div class="index-section-4-m-member">
-                        <div class="index-section-4-m-text">
-                            <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
-                            <span
-                                class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?></span>
-                            <span id="lorenzo-detalles-mobile" data-anchor="member-card-lorenzo-f"
-                                  class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
-                        </div>
-                        <img src="img/consejo/consejo-lorenzo-f.png" alt="" class="index-section-4-member-image">
+            <li class="index-section-4-m-slide" id="slide-4-m">
+                <div class="index-section-4-m-member">
+                    <div class="index-section-4-m-text">
+                        <span class="index-section-4-m-member-name">Lorenzo Fernández Alonso</span>
+                        <span
+                            class="index-section-4-m-member-position"><?php if ($len == 'es'): ?>Consejero independiente<?php else: ?>Independent advisor<?php endif; ?></span>
+                        <span id="lorenzo-detalles-mobile" data-anchor="member-card-lorenzo-f"
+                              class="index-section-4-m-member-button"><?php if ($len == 'es'): ?>Detalles<?php else: ?>Details<?php endif; ?></span>
                     </div>
-                </li>
+                    <img src="img/consejo/consejo-lorenzo-f.png" alt="" class="index-section-4-member-image">
+                </div>
+            </li>
 
         </ul>
     </div>
 </section>
+
 <!-- EQUIPO -->
 <section class="index-section-5">
     <div class="index-section-5-header">
@@ -600,6 +625,8 @@
         </ul>
     </div>
 </section>
+
+<!-- AFILIACIONES -->
 <section class="index-section-6">
     <div class="index-section-6-header">
         <hr class="index-section-6-slide-hr">
@@ -608,12 +635,16 @@
         <hr class="index-section-6-slide-hr">
     </div>
     <div class="index-section-6-content">
-        <a href="https://amexcap.com/" target="_blank"><img src="img/logos/logo-amexcap.png" class="index-section-6-images" alt=""></a>
-        <a href="https://lavca.org/" target="_blank"><img src="img/logos/logo-laca.png" alt="" class="index-section-6-images image-2"></a>
-        <a href="https://www.icgn.org/" target="_blank"><img src="img/logos/logo-icgn.png" class="index-section-6-images image-3" alt=""></a>
+        <a href="https://amexcap.com/" target="_blank"><img src="img/logos/logo-amexcap.png"
+                                                            class="index-section-6-images" alt=""></a>
+        <a href="https://lavca.org/" target="_blank"><img src="img/logos/logo-laca.png" alt=""
+                                                          class="index-section-6-images image-2"></a>
+        <a href="https://www.icgn.org/" target="_blank"><img src="img/logos/logo-icgn.png"
+                                                             class="index-section-6-images image-3" alt=""></a>
     </div>
 </section>
 
+<!-- MAP Y FOOTER -->
 <section class="index-section-7-1">
     <!--Form-->
 
@@ -629,25 +660,31 @@
                 <div class="my-placeholder">
                     <span class=""><?php if ($len == 'es'): ?>Nombre:<?php else: ?>Name:<?php endif; ?></span>
                 </div>
-                <input type="text" name="nombre" class="required" data-namefield="<?php if ($len == 'es'): ?>nombre<?php else: ?>name<?php endif; ?>">
+                <input type="text" name="nombre" class="required"
+                       data-namefield="<?php if ($len == 'es'): ?>nombre<?php else: ?>name<?php endif; ?>">
             </div>
             <div class="row-2">
                 <span class="my-placeholder"><?php if ($len == 'es'): ?>Correo:<?php else: ?>Email<?php endif; ?></span>
-                <input type="text" name="correo" class="required email" data-namefield="<?php if ($len == 'es'): ?>correo<?php else: ?>email<?php endif; ?>">
+                <input type="text" name="correo" class="required email"
+                       data-namefield="<?php if ($len == 'es'): ?>correo<?php else: ?>email<?php endif; ?>">
             </div>
             <div class="row-2">
                 <span
                     class="my-placeholder"><?php if ($len == 'es'): ?>Móvil:<?php else: ?>Mobile:<?php endif; ?></span>
-                <input type="text" name="movil" class="required movil" data-namefield="<?php if ($len == 'es'): ?>móvil<?php else: ?>mobile<?php endif; ?>">
+                <input type="text" name="movil" class="required movil"
+                       data-namefield="<?php if ($len == 'es'): ?>móvil<?php else: ?>mobile<?php endif; ?>">
             </div>
             <div class="row-3">
                 <span
                     class="my-placeholder"><?php if ($len == 'es'): ?>Mensaje:<?php else: ?>Message:<?php endif; ?></span>
-                <textarea class="textarea" name="comentarios" class="required" data-namefield="<?php if ($len == 'es'): ?>mensaje<?php else: ?>message<?php endif; ?>"></textarea>
+                <textarea class="textarea" name="comentarios" class="required"
+                          data-namefield="<?php if ($len == 'es'): ?>mensaje<?php else: ?>message<?php endif; ?>"></textarea>
             </div>
             <div class="row-4">
                 <!--<input class="form-button" type="submit" name="enviar" id="enviar" value="Enviar">-->
-                <input class="form-button" type="button" name="enviar" id="enviar" value="<?php if ($len == 'es'): ?>Enviar<?php else: ?>Send<?php endif; ?>" onclick="valFormularios('pageForm')">
+                <input class="form-button" type="button" name="enviar" id="enviar"
+                       value="<?php if ($len == 'es'): ?>Enviar<?php else: ?>Send<?php endif; ?>"
+                       onclick="valFormularios('pageForm')">
             </div>
 
             <div class="msg">

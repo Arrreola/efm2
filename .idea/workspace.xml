@@ -2,40 +2,354 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264b6f0a-5473-40fe-9f0d-5cda3a52b1b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secciones/request-info-5-steps.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/18b51cfe964feed4af022185154a0501fc6e4128/carousel.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/18b51cfe964feed4af022185154a0501fc6e4128/carousel.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/fondo-puente.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/fondo-puente.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/historial-forum.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/historial-forum.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/index.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/index.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/noticia.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/noticia.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/operaciones.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/operaciones.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/v09.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/v09.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_assign-inputs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_contains-falsy.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_contains.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_is-length.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_is-light.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_is-number.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_is-size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_modular-scale.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_px-to-em.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_px-to-rem.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_shade.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_strip-units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_tint.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_transition-property-name.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/14ed6a1bad7f2323ec0ac82c6cb8e5e2b3c65077/_unpack.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/18b51cfe964feed4af022185154a0501fc6e4128/carousel.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_animation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_appearance.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_backface-visibility.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_background-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_background.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_border-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_calc.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_filter.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_flex-box.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_font-face.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_font-feature-settings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_hidpi-media-query.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_hyphens.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_image-rendering.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_keyframes.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_linear-gradient.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_perspective.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_placeholder.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_radial-gradient.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_selection.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_text-decoration.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_transform.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_transition.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1ac0d0066b2e692a2643bd3f27aec2bfdd112ed1/_user-select.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/cuarto-de-datos-virtual.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/fondo-puente.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/historial-forum.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/historial-operaciones.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/index.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/layouts-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/login.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/menu.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/noticia.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/operaciones.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/tiny-style.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/1fba0c1230fe0e64290c6fcb4f2895c3404710f1/world-news.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/2526d47f1efaf4079124b5fff1a58a0d50289c1a/style.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/28a81f7d10fc00a76233dfc97cfc93bf52294e69/index.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/28a81f7d10fc00a76233dfc97cfc93bf52294e69/layouts-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/2b6dc11a757753e2c19faa9445c599e759814284/base-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/2be8352d412edd594b35bc2ef08bc7ac870b78e5/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/cuarto-de-datos-virtual.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/fondo-puente.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/index.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/layouts-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/login.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/menu.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3a60da1ad8d086d23eaab04b9e30c00144855fbd/operaciones.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_convert-units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_directional-values.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_font-source-declaration.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_gradient-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_linear-angle-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_linear-gradient-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_linear-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_linear-side-corner-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_radial-arg-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_radial-gradient-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_radial-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_render-gradients.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_shape-size-stripper.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/3fcda80dbb41c30c7b6d29941b80eb9553734334/_str-to-num.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_assign-inputs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_contains-falsy.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_contains.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_is-length.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_is-light.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_is-number.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_is-size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_modular-scale.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_px-to-em.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_px-to-rem.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_shade.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_strip-units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_tint.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_transition-property-name.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/51ae5f473f94ebab1be5af6fd5a23d49a69b7dde/_unpack.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/578ba3abf51585691a4ded4a72cfb161db996613/base-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_box-sizing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_direction-context.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_display-context.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_fill-parent.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_media.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_omega.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_outer-container.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_pad.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_private.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_row.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_shift.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_span-columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_to-deprecate.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5954c9c30733263beddacb07e141301ed48fe980/_visual-grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_animation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_appearance.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_backface-visibility.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_background-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_background.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_border-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_calc.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_filter.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_flex-box.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_font-face.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_font-feature-settings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_hidpi-media-query.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_hyphens.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_image-rendering.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_keyframes.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_linear-gradient.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_perspective.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_placeholder.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_radial-gradient.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_selection.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_text-decoration.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_transform.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_transition.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5c3189686bf7ee3428a782f6bbdca9d880b3621d/_user-select.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5cfaf39d7bdc3b9a90ba232a450da3e7d7875629/_new-breakpoint.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/5cfaf39d7bdc3b9a90ba232a450da3e7d7875629/_private.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/69275df169f6cf317138f061fe1014cd66bb088f/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_convert-units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_directional-values.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_font-source-declaration.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_gradient-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_linear-angle-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_linear-gradient-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_linear-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_linear-side-corner-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_radial-arg-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_radial-gradient-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_radial-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_render-gradients.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_shape-size-stripper.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/77abf43ea5731ccec6b20c74f1aed90ab45d3054/_str-to-num.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/7bdb97d16b523dcb6014981e1b11da1b4896aaba/_bourbon-deprecated-upcoming.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/7bdb97d16b523dcb6014981e1b11da1b4896aaba/_bourbon.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8144189de59e3a1dc1a4223608ec3274a125382c/_disable-warnings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8144189de59e3a1dc1a4223608ec3274a125382c/_grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8144189de59e3a1dc1a4223608ec3274a125382c/_visual-grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_animation.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_appearance.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_backface-visibility.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_background-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_background.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_border-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_calc.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_filter.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_flex-box.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_font-face.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_font-feature-settings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_hidpi-media-query.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_hyphens.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_image-rendering.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_keyframes.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_linear-gradient.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_perspective.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_placeholder.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_radial-gradient.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_selection.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_text-decoration.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_transform.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_transition.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/826ff95bc32ce4e7b69bebefb22b76c2076bd294/_user-select.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/83b69625f1e6af7cf149e0b46e24a75881399634/_neat-helpers.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/83b69625f1e6af7cf149e0b46e24a75881399634/_neat.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_box-sizing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_direction-context.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_display-context.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_fill-parent.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_media.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_omega.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_outer-container.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_pad.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_private.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_row.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_shift.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_span-columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_to-deprecate.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/8583b2a91d1f07a2b23b944a3c29ccd4524c2f41/_visual-grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_border-color.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_border-radius.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_border-style.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_border-width.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_buttons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_ellipsis.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_font-stacks.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_hide-text.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_margin.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_padding.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_position.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_prefixer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_retina-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_text-inputs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_timing-functions.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_triangle.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9547d8e5bbc6f2aea6eb8b51ffb6e705396e1e80/_word-wrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9f3ed713ded9aa22f1c04b16d1dcd95ced3d630a/_new-breakpoint.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/9f3ed713ded9aa22f1c04b16d1dcd95ced3d630a/_private.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/a0f5718aa0331b7ba5a44027f51dc02a15eef110/modules-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/a9e4b3af78b9e0226d34e837903760126bdad321/modules-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_assign-inputs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_contains-falsy.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_contains.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_is-length.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_is-light.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_is-number.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_is-size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_modular-scale.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_px-to-em.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_px-to-rem.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_shade.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_strip-units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_tint.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_transition-property-name.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aac50cb5cb2109990e64fe853f5163c961a50897/_unpack.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_border-color.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_border-radius.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_border-style.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_border-width.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_buttons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_ellipsis.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_font-stacks.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_hide-text.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_margin.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_padding.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_position.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_prefixer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_retina-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_text-inputs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_timing-functions.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_triangle.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/aae44a82e0935de984270b981be9ebe502871c34/_word-wrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ac60d348283f0f8f9aca479364217d52731f7aee/_disable-warnings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ac60d348283f0f8f9aca479364217d52731f7aee/_grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ac60d348283f0f8f9aca479364217d52731f7aee/_visual-grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b0a1a2cfa2796166dca6a00a8efbe18ce256b6ba/_neat-helpers.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b0a1a2cfa2796166dca6a00a8efbe18ce256b6ba/_neat.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b435a44c6313f3abf12763a485356d4a1754fd5f/_neat-helpers.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b435a44c6313f3abf12763a485356d4a1754fd5f/_neat.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b9dbfb858adc399324d4b38fa23e7db47c8a76bf/_disable-warnings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b9dbfb858adc399324d4b38fa23e7db47c8a76bf/_grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/b9dbfb858adc399324d4b38fa23e7db47c8a76bf/_visual-grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/be5965b6e6ed500ef28a5d29461951a30433c586/_bourbon-deprecated-upcoming.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/be5965b6e6ed500ef28a5d29461951a30433c586/_bourbon.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/c0a7e0d743c2902e185c298e185f8fd63e4c4add/base-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/cf6d238736358e7871f362e9f5636f26823913d2/plugins-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/d1b1e640c9d8cef578095dc475661d7fb0772784/_bourbon-deprecated-upcoming.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/d1b1e640c9d8cef578095dc475661d7fb0772784/_bourbon.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/d506e44bea78955dc7e756850252ad80f41ed9c9/_new-breakpoint.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/d506e44bea78955dc7e756850252ad80f41ed9c9/_private.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/d91e8df5e4936a9c0edbbdb43cdd11c60358bf11/style.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dbee1dcd083be8a8a8db077c2f69d1c66a2ed365/plugins-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_convert-units.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_directional-values.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_font-source-declaration.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_gradient-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_linear-angle-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_linear-gradient-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_linear-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_linear-side-corner-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_radial-arg-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_radial-gradient-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_radial-positions-parser.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_render-gradients.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_shape-size-stripper.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/dfed3bb5d96c0f68e04bc6239bde3c9d67972403/_str-to-num.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e12988316ff740b2ed4a28d2017a8513c794b788/_asset-pipeline.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e12988316ff740b2ed4a28d2017a8513c794b788/_prefixer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e12988316ff740b2ed4a28d2017a8513c794b788/_px-to-em.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e4c7f38c8072468ef7daf0b2ca0896451a2f58d1/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_border-color.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_border-radius.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_border-style.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_border-width.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_buttons.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_clearfix.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_ellipsis.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_font-stacks.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_hide-text.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_margin.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_padding.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_position.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_prefixer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_retina-image.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_size.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_text-inputs.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_timing-functions.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_triangle.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/e619bd2af141aba8d18a1a56740f284ed12b6091/_word-wrap.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ec9becd9e0fb7dce237c871baa202da6b4cf2267/modules-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/eca6bffa13c80367785e66fb9c90f555fbbdcafd/_asset-pipeline.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/eca6bffa13c80367785e66fb9c90f555fbbdcafd/_prefixer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/eca6bffa13c80367785e66fb9c90f555fbbdcafd/_px-to-em.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_box-sizing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_direction-context.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_display-context.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_fill-parent.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_media.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_omega.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_outer-container.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_pad.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_private.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_row.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_shift.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_span-columns.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_to-deprecate.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/ed06ce94351480de0ca7d45ec259e4febfebae40/_visual-grid.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/f122407811373f7616cc13829162e8876aba8318/plugins-dir.sassc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/f50c8c8ac431dde6d6538d75aa616fffc327746d/_asset-pipeline.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/f50c8c8ac431dde6d6538d75aa616fffc327746d/_prefixer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/f50c8c8ac431dde6d6538d75aa616fffc327746d/_px-to-em.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/.sass-cache/fc6612503cbb0f7b33578fa65e356ec604df6ba6/carousel.sassc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/0fed640b8207cfb9c5179da564535b372e4f6ab8/style.sassc" afterPath="$PROJECT_DIR$/css/.sass-cache/0fed640b8207cfb9c5179da564535b372e4f6ab8/style.sassc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/api/classSql.php" afterPath="$PROJECT_DIR$/admin/api/classSql.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/api/conexion.php" afterPath="$PROJECT_DIR$/admin/api/conexion.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/api/controller.php" afterPath="$PROJECT_DIR$/admin/api/controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/interiores/dashboard.php" afterPath="$PROJECT_DIR$/admin/interiores/dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.php" afterPath="$PROJECT_DIR$/controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" afterPath="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/fondo-puente.sass" afterPath="$PROJECT_DIR$/css/3-layouts/fondo-puente.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/historial-forum.sass" afterPath="$PROJECT_DIR$/css/3-layouts/historial-forum.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/index.sass" afterPath="$PROJECT_DIR$/css/3-layouts/index.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/noticia.sass" afterPath="$PROJECT_DIR$/css/3-layouts/noticia.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/operaciones.sass" afterPath="$PROJECT_DIR$/css/3-layouts/operaciones.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/3-layouts/world-news.sass" afterPath="$PROJECT_DIR$/css/3-layouts/world-news.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/descarga.php" afterPath="$PROJECT_DIR$/descarga.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/team-cards.php" afterPath="$PROJECT_DIR$/includes/team-cards.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icons/icons-08.svg" afterPath="$PROJECT_DIR$/img/icons/icons-08.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/cuarto-de-datos-virtual.php" afterPath="$PROJECT_DIR$/secciones/cuarto-de-datos-virtual.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/detalle.php" afterPath="$PROJECT_DIR$/secciones/detalle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/ficha-tecnica-lisbon.php" afterPath="$PROJECT_DIR$/secciones/ficha-tecnica-lisbon.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/ficha-tecnica-melbourne.php" afterPath="$PROJECT_DIR$/secciones/ficha-tecnica-melbourne.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/historial-forum.php" afterPath="$PROJECT_DIR$/secciones/historial-forum.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/historial-operaciones.php" afterPath="$PROJECT_DIR$/secciones/historial-operaciones.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/home.php" afterPath="$PROJECT_DIR$/secciones/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secciones/noticias.php" afterPath="$PROJECT_DIR$/secciones/noticias.php" />
     </list>
@@ -69,71 +383,166 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - efm_bd@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="blog" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="efm-new" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="classSql.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/api/classSql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1229">
-              <caret line="314" column="180" selection-start-line="314" selection-start-column="174" selection-end-line="314" selection-end-column="180" />
-              <folding>
-                <element signature="e#7#639#0#PHP" expanded="false" />
-                <element signature="e#641#6508#0#PHP" expanded="false" />
-                <element signature="e#6510#7063#0#PHP" expanded="false" />
-                <element signature="e#11838#13194#0#PHP" expanded="false" />
-                <element signature="e#13196#14353#0#PHP" expanded="false" />
-                <element signature="e#14355#18948#0#PHP" expanded="false" />
-                <element signature="e#18950#20223#0#PHP" expanded="false" />
-                <element signature="e#20225#21772#0#PHP" expanded="false" />
-                <marker date="1472258371000" expanded="true" signature="6700:6765" ph="SELECT * FRO... admin" />
-                <marker date="1472258371000" expanded="true" signature="8768:8962" ph="INSERT INTO blog... " />
-                <marker date="1472258371000" expanded="true" signature="9987:10162" ph="UPDATE blog " />
-                <marker date="1472258371000" expanded="true" signature="10944:10977" ph="DELETE FROM " />
-                <marker date="1472258371000" expanded="true" signature="11164:11199" ph="DELETE FROM " />
-                <marker date="1472258371000" expanded="true" signature="11377:11426" ph="INSERT INTO rel_tags... " />
-                <marker date="1472258371000" expanded="true" signature="12171:12243" ph="INSERT INTO categorias... " />
-                <marker date="1472258371000" expanded="true" signature="12505:12588" ph="UPDATE categ... " />
-                <marker date="1472258371000" expanded="true" signature="12802:12842" ph="DELETE FROM " />
-                <marker date="1472258371000" expanded="true" signature="13418:13469" ph="INSERT INTO statuspro... " />
-                <marker date="1472258371000" expanded="true" signature="13711:13769" ph="UPDATE statu... " />
-                <marker date="1472258371000" expanded="true" signature="13964:14001" ph="DELETE FROM " />
-                <marker date="1472258371000" expanded="true" signature="15592:15806" ph="INSERT INTO operaciones... " />
-                <marker date="1472258371000" expanded="true" signature="16373:16562" ph="UPDATE opera... " />
-                <marker date="1472258371000" expanded="true" signature="17040:17248" ph="INSERT INTO operaciones... " />
-                <marker date="1472258371000" expanded="true" signature="17604:17787" ph="UPDATE opera... " />
-                <marker date="1472258371000" expanded="true" signature="18353:18392" ph="DELETE FROM " />
-                <marker date="1472258371000" expanded="true" signature="19282:19348" ph="INSERT INTO tags... " />
-                <marker date="1472258371000" expanded="true" signature="19551:19627" ph="UPDATE tags " />
-                <marker date="1472258371000" expanded="true" signature="19839:19872" ph="DELETE FROM " />
-                <marker date="1472258371000" expanded="true" signature="20356:20452" ph="SELECT *,COU... visitpost" />
-                <marker date="1472258371000" expanded="true" signature="20687:20719" ph="SELECT * FRO... blog" />
-                <marker date="1472258371000" expanded="true" signature="20953:20992" ph="SELECT * FRO... categorias" />
-                <marker date="1472258371000" expanded="true" signature="21391:21440" ph="INSERT INTO visitpost... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controller.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="207">
+                  <caret line="182" column="44" selection-start-line="182" selection-start-column="44" selection-end-line="182" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#1720#2384#0#PHP" expanded="false" />
+                    <element signature="e#3089#4075#0#PHP" expanded="false" />
+                    <element signature="e#5258#6078#0#PHP" expanded="false" />
+                    <element signature="e#8173#8362#0#PHP" expanded="false" />
+                    <element signature="e#8373#8613#0#PHP" expanded="false" />
+                    <element signature="e#8638#8986#0#PHP" expanded="false" />
+                    <element signature="e#9034#9365#0#PHP" expanded="false" />
+                    <element signature="e#9387#9652#0#PHP" expanded="false" />
+                    <element signature="e#9669#9964#0#PHP" expanded="false" />
+                    <element signature="e#9980#10421#0#PHP" expanded="false" />
+                    <element signature="e#10435#15830#0#PHP" expanded="false" />
+                    <element signature="e#11137#11459#0#PHP" expanded="false" />
+                    <element signature="e#11651#11954#0#PHP" expanded="false" />
+                    <element signature="e#12191#13432#0#PHP" expanded="false" />
+                    <element signature="e#15858#16185#0#PHP" expanded="false" />
+                    <element signature="e#22046#24614#0#PHP" expanded="false" />
+                    <element signature="e#23718#24572#0#PHP" expanded="false" />
+                    <element signature="e#24632#26992#0#PHP" expanded="false" />
+                    <marker date="1472494291000" expanded="true" signature="882:956" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="1482:1522" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="1801:1827" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="1801:1915" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="1801:2337" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="1932:1968" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="1932:2046" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="2209:2306" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="2581:2639" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="2581:2640" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="2791:2831" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="3397:4060" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="3574:3708" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="3890:3944" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="3890:4032" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="4306:4380" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="5018:5058" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="5364:6063" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="5532:5674" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="5877:5935" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="5877:6027" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="6258:6332" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="6888:6928" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="7274:7959" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="7420:7564" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="7769:7923" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="8009:8055" ph="SELECT * FRO... operaciones" />
+                    <marker date="1472494291000" expanded="true" signature="10279:10317" ph="SELECT * FRO... operaciones" />
+                    <marker date="1472494291000" expanded="true" signature="10981:11005" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="11300:11443" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="11519:11537" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="11811:11896" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="11811:11938" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="12031:12116" ph="SELECT id,YE... " />
+                    <marker date="1472494291000" expanded="true" signature="12272:12606" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="12387:12557" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="12675:12845" ph="SELECT id_no... " />
+                    <marker date="1472494291000" expanded="true" signature="13206:13247" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="13206:13365" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="13756:13931" ph="..." />
+                    <marker date="1472494291000" expanded="true" signature="14159:14173" ph="SELECT * FRO... " />
+                    <marker date="1472494291000" expanded="true" signature="14159:14209" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="14159:14234" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="14356:14386" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="14356:14439" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="14356:14440" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="14977:15006" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="14977:15019" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="14977:15020" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="14977:15021" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="14977:15045" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="14977:15046" ph="SELECT * FRO... tags" />
+                    <marker date="1472494291000" expanded="true" signature="15210:15246" ph="SELECT * FRO... rel_tags" />
+                    <marker date="1472494291000" expanded="true" signature="15472:15504" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="16985:17009" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="17398:17472" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="18100:18140" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="18370:18430" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="18581:18621" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="20128:20202" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="20840:20880" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="21112:21186" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="21740:21780" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="22435:22487" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="22733:22772" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="23230:23300" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="23456:23520" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="24930:25010" ph="SELECT * FRO... categorias" />
+                    <marker date="1472494291000" expanded="true" signature="25187:25277" ph="SELECT * FRO... blog" />
+                    <marker date="1472494291000" expanded="true" signature="25397:25436" ph="SELECT * FRO... categorias" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="world-news.sass" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/3-layouts/world-news.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+                  <folding>
+                    <marker date="1472494397000" expanded="true" signature="7020:7046" ph="..." />
+                    <marker date="1472494397000" expanded="true" signature="7243:7269" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/secciones/home.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+                  <folding>
+                    <marker date="1472491982000" expanded="true" signature="5406:5443" ph="SELECT * FRO... statuspro" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="noticias.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/secciones/noticias.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="453">
+                  <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -149,8 +558,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/img/data-room.php" />
-        <option value="$PROJECT_DIR$/css/3-layouts/menu.sass" />
         <option value="$PROJECT_DIR$/secciones/recentWtt.php" />
         <option value="$PROJECT_DIR$/js/Gruntfile.js" />
         <option value="$PROJECT_DIR$/secciones/recentPost.php" />
@@ -159,17 +566,13 @@
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/css/3-layouts/tiny-style.sass" />
         <option value="$PROJECT_DIR$/css/3-layouts/login.sass" />
-        <option value="$PROJECT_DIR$/css/style.sass" />
         <option value="$PROJECT_DIR$/css/2-modules/modules-dir.sass" />
         <option value="$PROJECT_DIR$/css/3-layouts/layouts-dir.sass" />
-        <option value="$PROJECT_DIR$/admin/api/conexion.php" />
         <option value="$PROJECT_DIR$/admin/menu.php" />
         <option value="$PROJECT_DIR$/includes/member-cards.php" />
         <option value="$PROJECT_DIR$/secciones/fondo-puente.php" />
         <option value="$PROJECT_DIR$/secciones/lisbon.php" />
         <option value="$PROJECT_DIR$/admin/.htaccess" />
-        <option value="$PROJECT_DIR$/css/3-layouts/world-news.sass" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/secciones/melbourne.php" />
         <option value="$PROJECT_DIR$/admin/interiores/operaciones.php" />
         <option value="$PROJECT_DIR$/css/3-layouts/historial-operaciones.sass" />
@@ -177,7 +580,6 @@
         <option value="$PROJECT_DIR$/js/carousel-js/carousel.js" />
         <option value="$PROJECT_DIR$/css/jquery.bxslider.css" />
         <option value="$PROJECT_DIR$/secciones/historial-operaciones.php" />
-        <option value="$PROJECT_DIR$/css/3-layouts/index.sass" />
         <option value="$PROJECT_DIR$/secciones/cuarto-de-datos-virtual.php" />
         <option value="$PROJECT_DIR$/includes/team-cards.php" />
         <option value="$PROJECT_DIR$/css/3-layouts/historial-forum.sass" />
@@ -188,18 +590,25 @@
         <option value="$PROJECT_DIR$/secciones/ficha-tecnica-lisbon.php" />
         <option value="$PROJECT_DIR$/descarga.php" />
         <option value="$PROJECT_DIR$/admin/api/classSql.php" />
-        <option value="$PROJECT_DIR$/admin/api/controller.php" />
-        <option value="$PROJECT_DIR$/secciones/noticias.php" />
-        <option value="$PROJECT_DIR$/css/3-layouts/fondo-puente.sass" />
         <option value="$PROJECT_DIR$/secciones/request-info-5-steps.php" />
         <option value="$PROJECT_DIR$/secciones/ficha-tecnica-melbourne.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/controller.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/secciones/home.php" />
-        <option value="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" />
         <option value="$PROJECT_DIR$/css/3-layouts/operaciones.sass" />
         <option value="$PROJECT_DIR$/admin/interiores/dashboard.php" />
+        <option value="$PROJECT_DIR$/css/3-layouts/menu.sass" />
+        <option value="$PROJECT_DIR$/admin/api/controller.php" />
+        <option value="$PROJECT_DIR$/css/style.sass" />
+        <option value="$PROJECT_DIR$/admin/api/conexion.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/3-layouts/index.sass" />
+        <option value="$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass" />
+        <option value="$PROJECT_DIR$/img/icons/icons-08.svg" />
+        <option value="$PROJECT_DIR$/secciones/home.php" />
+        <option value="$PROJECT_DIR$/secciones/noticias.php" />
+        <option value="$PROJECT_DIR$/css/3-layouts/fondo-puente.sass" />
+        <option value="$PROJECT_DIR$/css/3-layouts/world-news.sass" />
+        <option value="$PROJECT_DIR$/controller.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -243,6 +652,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,7 +681,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="secciones" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,11 +695,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interiores" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,23 +709,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="3-layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.25554484" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
@@ -457,11 +862,12 @@
       <workItem from="1472132719996" duration="31697000" />
       <workItem from="1472166702622" duration="13943000" />
       <workItem from="1472215997994" duration="41803000" />
+      <workItem from="1472479368218" duration="12497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="548360000" />
+    <option name="totallyTimeSpent" value="560857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,8 +882,8 @@
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18625894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102859415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21723591" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15051629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297785" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20114942" sideWeight="0.5013905" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11000794" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -503,14 +909,14 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20114942" sideWeight="0.5013905" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08695652" sideWeight="0.49860945" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08695652" sideWeight="0.49860945" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32895815" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297785" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16679905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12123746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21723591" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15051629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11040508" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11000794" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32731748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -565,122 +971,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/secciones/lisbon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="88" column="156" selection-start-line="88" selection-start-column="156" selection-end-line="88" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/parallax-js/parallax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin-25-agost/api/classSql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="17" />
-          <folding>
-            <element signature="n#consultar#0;n#!!top" expanded="false" />
-            <marker date="1471983698000" expanded="true" signature="6781:6846" ph="SELECT * FRO... admin" />
-            <marker date="1471983698000" expanded="true" signature="8833:9021" ph="INSERT INTO blog... " />
-            <marker date="1471983698000" expanded="true" signature="9790:9959" ph="UPDATE blog " />
-            <marker date="1471983698000" expanded="true" signature="10495:10528" ph="DELETE FROM " />
-            <marker date="1471983698000" expanded="true" signature="11420:11492" ph="INSERT INTO categorias... " />
-            <marker date="1471983698000" expanded="true" signature="11754:11837" ph="UPDATE categ... " />
-            <marker date="1471983698000" expanded="true" signature="12051:12091" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/c007a7b2/6bc5593e-bcbd-428c-b387-be19323c99d9/efm_bd.visitpost">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/c007a7b2/6bc5593e-bcbd-428c-b387-be19323c99d9/efm_bd.rel_tags">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/historial-operaciones.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/c007a7b2/6bc5593e-bcbd-428c-b387-be19323c99d9/efm_bd.operaciones">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secciones/request-info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="951">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/carousel-js/carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/secciones/historial-operaciones.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <marker date="1472252533000" expanded="true" signature="218:254" ph="SELECT * FRO... statuspro" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-456">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="124" column="62" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="99" column="125" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="125" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="63" column="11" selection-start-line="59" selection-start-column="4" selection-end-line="63" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,15 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="359" column="38" selection-start-line="359" selection-start-column="38" selection-end-line="359" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="2896" column="9" selection-start-line="2896" selection-start-column="1" selection-end-line="2896" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,28 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#1863#2520#0#PHP" expanded="false" />
-            <marker date="1472254990000" expanded="true" signature="1629:1666" ph="SELECT * FRO... rel_tags" />
-            <marker date="1472254990000" expanded="true" signature="1971:2003" ph="SELECT * FRO... tags" />
-            <marker date="1472254990000" expanded="true" signature="3825:3833" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/world-news.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="352" column="17" selection-start-line="352" selection-start-column="1" selection-end-line="352" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/noticia.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +1060,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="19" column="35" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +1067,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -826,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,31 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.bxslider.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="9" column="8277" selection-start-line="9" selection-start-column="8274" selection-end-line="9" selection-end-column="8277" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secciones/noticias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="159" column="42" selection-start-line="159" selection-start-column="42" selection-end-line="159" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/fondo-puente.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="237" column="7" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,14 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/login.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -898,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="999">
           <caret line="91" column="17" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="951">
           <caret line="309" column="170" selection-start-line="309" selection-start-column="170" selection-end-line="309" selection-end-column="170" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,146 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="170" column="40" selection-start-line="170" selection-start-column="40" selection-end-line="170" selection-end-column="40" />
-          <folding>
-            <marker date="1472269722000" expanded="true" signature="7025:7051" ph="..." />
-            <marker date="1472269722000" expanded="true" signature="7248:7274" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="306" column="69" selection-start-line="306" selection-start-column="69" selection-end-line="306" selection-end-column="69" />
-          <folding>
-            <element signature="e#2056#2508#0" expanded="false" />
-            <element signature="e#2548#2949#0" expanded="false" />
-            <element signature="e#3294#3438#0" expanded="false" />
-            <element signature="e#3476#3623#0" expanded="false" />
-            <element signature="n#!!block;n#initMap#0" expanded="false" />
-            <element signature="e#6929#6961#0" expanded="false" />
-            <element signature="e#6993#7098#0" expanded="false" />
-            <element signature="e#7104#7207#0" expanded="false" />
-            <element signature="e#7238#7337#0" expanded="false" />
-            <element signature="e#7343#7448#0" expanded="false" />
-            <element signature="n#!!block;n#valFormularios#0" expanded="false" />
-            <element signature="n#!!block;n#valida#0" expanded="false" />
-            <element signature="n#!!block;n#validarEmail#0" expanded="false" />
-            <element signature="n#!!block;n#fix#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secciones/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="32" />
-          <folding>
-            <marker date="1472270286000" expanded="true" signature="2908:2945" ph="SELECT * FRO... statuspro" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/index.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6336">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/3-layouts/operaciones.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <marker date="1472270762000" expanded="true" signature="676:753" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="62" column="121" selection-start-line="62" selection-start-column="121" selection-end-line="62" selection-end-column="121" />
-          <folding>
-            <element signature="e#442#631#0#PHP" expanded="false" />
-            <element signature="e#642#882#0#PHP" expanded="false" />
-            <element signature="e#907#1255#0#PHP" expanded="false" />
-            <element signature="e#1303#1634#0#PHP" expanded="false" />
-            <element signature="e#1656#1921#0#PHP" expanded="false" />
-            <element signature="e#1937#2232#0#PHP" expanded="false" />
-            <element signature="e#2248#2689#0#PHP" expanded="false" />
-            <element signature="e#2703#8098#0#PHP" expanded="false" />
-            <element signature="e#3405#3727#0#PHP" expanded="false" />
-            <element signature="e#3919#4222#0#PHP" expanded="false" />
-            <element signature="e#4459#5700#0#PHP" expanded="false" />
-            <element signature="e#8126#8453#0#PHP" expanded="false" />
-            <element signature="e#8466#14263#0#PHP" expanded="false" />
-            <element signature="e#14289#16857#0#PHP" expanded="false" />
-            <element signature="e#15961#16815#0#PHP" expanded="false" />
-            <element signature="e#16875#19235#0#PHP" expanded="false" />
-            <marker date="1472269926000" expanded="true" signature="279:316" ph="SELECT * FRO... operaciones" />
-            <marker date="1472269926000" expanded="true" signature="279:325" ph="SELECT * FRO... operaciones" />
-            <marker date="1472269926000" expanded="true" signature="2547:2585" ph="SELECT * FRO... operaciones" />
-            <marker date="1472269926000" expanded="true" signature="3249:3273" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="3568:3711" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="3787:3805" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="4079:4164" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="4079:4206" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="4299:4384" ph="SELECT id,YE... " />
-            <marker date="1472269926000" expanded="true" signature="4540:4874" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="4655:4825" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="4943:5113" ph="SELECT id_no... " />
-            <marker date="1472269926000" expanded="true" signature="5474:5633" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="6024:6199" ph="..." />
-            <marker date="1472269926000" expanded="true" signature="6427:6441" ph="SELECT * FRO... " />
-            <marker date="1472269926000" expanded="true" signature="6427:6477" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="6427:6502" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="6624:6654" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="6624:6707" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="6624:6708" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="7245:7274" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="7245:7287" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="7245:7288" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="7245:7289" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="7245:7313" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="7245:7314" ph="SELECT * FRO... tags" />
-            <marker date="1472269926000" expanded="true" signature="7478:7514" ph="SELECT * FRO... rel_tags" />
-            <marker date="1472269926000" expanded="true" signature="7740:7772" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="9251:9275" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="9664:9738" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="10344:10384" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="10614:10674" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="10825:10865" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="12372:12446" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="13084:13124" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="13356:13430" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="13984:14024" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="14678:14730" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="14976:15015" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="15473:15543" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="15699:15763" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="17173:17253" ph="SELECT * FRO... categorias" />
-            <marker date="1472269926000" expanded="true" signature="17430:17520" ph="SELECT * FRO... blog" />
-            <marker date="1472269926000" expanded="true" signature="17640:17679" ph="SELECT * FRO... categorias" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,77 +1138,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="36" column="39" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/interiores/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/api/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="220" column="27" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="27" />
-          <folding>
-            <element signature="e#425#2487#0#PHP" expanded="false" />
-            <element signature="e#2510#5346#0#PHP" expanded="false" />
-            <element signature="e#5444#6284#0#PHP" expanded="false" />
-            <element signature="e#10739#13270#0#PHP" expanded="false" />
-            <element signature="e#13286#18096#0#PHP" expanded="false" />
-            <element signature="e#18124#20223#0#PHP" expanded="false" />
-            <element signature="e#20244#22274#0#PHP" expanded="false" />
-            <marker date="1472258514000" expanded="true" signature="1305:1344" ph="SELECT * FRO... categorias" />
-            <marker date="1472258514000" expanded="true" signature="1591:1615" ph="SELECT * FRO... categorias" />
-            <marker date="1472258514000" expanded="true" signature="1824:2463" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="1869:1959" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="2014:2436" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="2959:2977" ph="SELECT * FRO... blog" />
-            <marker date="1472258514000" expanded="true" signature="3571:3610" ph="SELECT * FRO... categorias" />
-            <marker date="1472258514000" expanded="true" signature="3813:4708" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="3858:4013" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="4068:4682" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="4744:4768" ph="SELECT * FRO... categorias" />
-            <marker date="1472258514000" expanded="true" signature="5578:5610" ph="SELECT * FRO... blog" />
-            <marker date="1472258514000" expanded="true" signature="5946:5977" ph="DELETE FROM " />
-            <marker date="1472258514000" expanded="true" signature="7907:7939" ph="SELECT * FRO... blog" />
-            <marker date="1472258514000" expanded="true" signature="9659:9683" ph="SELECT * FRO... categorias" />
-            <marker date="1472258514000" expanded="true" signature="10294:10312" ph="SELECT * FRO... tags" />
-            <marker date="1472258514000" expanded="true" signature="10494:10695" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="10955:10990" ph="DELETE FROM " />
-            <marker date="1472258514000" expanded="true" signature="11974:12010" ph="SELECT * FRO... statuspro" />
-            <marker date="1472258514000" expanded="true" signature="12257:12280" ph="SELECT * FRO... statuspro" />
-            <marker date="1472258514000" expanded="true" signature="12491:13246" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="12536:12626" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="12681:13219" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="12797:12934" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="13050:13188" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="15351:15389" ph="SELECT * FRO... operaciones" />
-            <marker date="1472258514000" expanded="true" signature="17511:17534" ph="SELECT * FRO... statuspro" />
-            <marker date="1472258514000" expanded="true" signature="18569:18594" ph="SELECT * FRO... operaciones" />
-            <marker date="1472258514000" expanded="true" signature="18812:19602" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="18857:18943" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="18998:19576" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="19118:19257" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="19407:19544" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="19638:19661" ph="SELECT * FRO... statuspro" />
-            <marker date="1472258514000" expanded="true" signature="21116:21148" ph="SELECT * FRO... tags" />
-            <marker date="1472258514000" expanded="true" signature="21395:21413" ph="SELECT * FRO... tags" />
-            <marker date="1472258514000" expanded="true" signature="21622:22250" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="21667:21757" ph="..." />
-            <marker date="1472258514000" expanded="true" signature="21812:22223" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/api/classSql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1229">
-          <caret line="314" column="180" selection-start-line="314" selection-start-column="174" selection-end-line="314" selection-end-column="180" />
+        <state relative-caret-position="120">
+          <caret line="280" column="29" selection-start-line="280" selection-start-column="29" selection-end-line="280" selection-end-column="29" />
           <folding>
             <element signature="e#7#639#0#PHP" expanded="false" />
             <element signature="e#641#6508#0#PHP" expanded="false" />
@@ -1165,6 +1178,381 @@
             <marker date="1472258371000" expanded="true" signature="20687:20719" ph="SELECT * FRO... blog" />
             <marker date="1472258371000" expanded="true" signature="20953:20992" ph="SELECT * FRO... categorias" />
             <marker date="1472258371000" expanded="true" signature="21391:21440" ph="INSERT INTO visitpost... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/interiores/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/tiny-style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/operaciones.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1472270762000" expanded="true" signature="676:753" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/menu.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/login.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/api/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1137">
+          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+          <folding>
+            <element signature="e#2510#5346#0#PHP" expanded="false" />
+            <element signature="e#5444#6284#0#PHP" expanded="false" />
+            <element signature="e#10745#13276#0#PHP" expanded="false" />
+            <element signature="e#13292#18102#0#PHP" expanded="false" />
+            <element signature="e#18130#20229#0#PHP" expanded="false" />
+            <element signature="e#20250#22280#0#PHP" expanded="false" />
+            <marker date="1472482566000" expanded="true" signature="1305:1344" ph="SELECT * FRO... categorias" />
+            <marker date="1472482566000" expanded="true" signature="1591:1615" ph="SELECT * FRO... categorias" />
+            <marker date="1472482566000" expanded="true" signature="1824:2463" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="1869:1959" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="2014:2436" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="2959:2977" ph="SELECT * FRO... blog" />
+            <marker date="1472482566000" expanded="true" signature="3571:3610" ph="SELECT * FRO... categorias" />
+            <marker date="1472482566000" expanded="true" signature="3813:4708" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="3858:4013" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="4068:4682" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="4744:4768" ph="SELECT * FRO... categorias" />
+            <marker date="1472482566000" expanded="true" signature="5578:5610" ph="SELECT * FRO... blog" />
+            <marker date="1472482566000" expanded="true" signature="5946:5977" ph="DELETE FROM " />
+            <marker date="1472482566000" expanded="true" signature="7907:7939" ph="SELECT * FRO... blog" />
+            <marker date="1472482566000" expanded="true" signature="9665:9689" ph="SELECT * FRO... categorias" />
+            <marker date="1472482566000" expanded="true" signature="10300:10318" ph="SELECT * FRO... tags" />
+            <marker date="1472482566000" expanded="true" signature="10500:10701" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="10961:10996" ph="DELETE FROM " />
+            <marker date="1472482566000" expanded="true" signature="11980:12016" ph="SELECT * FRO... statuspro" />
+            <marker date="1472482566000" expanded="true" signature="12263:12286" ph="SELECT * FRO... statuspro" />
+            <marker date="1472482566000" expanded="true" signature="12497:13252" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="12542:12632" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="12687:13225" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="12803:12940" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="13056:13194" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="15357:15395" ph="SELECT * FRO... operaciones" />
+            <marker date="1472482566000" expanded="true" signature="17517:17540" ph="SELECT * FRO... statuspro" />
+            <marker date="1472482566000" expanded="true" signature="18575:18600" ph="SELECT * FRO... operaciones" />
+            <marker date="1472482566000" expanded="true" signature="18818:19608" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="18863:18949" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="19004:19582" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="19124:19263" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="19413:19550" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="19644:19667" ph="SELECT * FRO... statuspro" />
+            <marker date="1472482566000" expanded="true" signature="21122:21154" ph="SELECT * FRO... tags" />
+            <marker date="1472482566000" expanded="true" signature="21401:21419" ph="SELECT * FRO... tags" />
+            <marker date="1472482566000" expanded="true" signature="21628:22256" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="21673:21763" ph="..." />
+            <marker date="1472482566000" expanded="true" signature="21818:22229" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sweetalert.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.bxslider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/api/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/2-modules/modules-dir.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/layouts-dir.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="1126" column="0" selection-start-line="1126" selection-start-column="0" selection-end-line="1126" selection-end-column="0" />
+          <folding>
+            <marker date="1472494013000" expanded="true" signature="30670:30673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.bxslider.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="9" column="8277" selection-start-line="9" selection-start-column="8274" selection-end-line="9" selection-end-column="8277" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/index.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="760" column="18" selection-start-line="760" selection-start-column="18" selection-end-line="760" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/0-plugins/carousel/carousel.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="513" column="26" selection-start-line="513" selection-start-column="26" selection-end-line="513" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="e#2056#2508#0" expanded="false" />
+            <element signature="e#2548#2949#0" expanded="false" />
+            <element signature="e#3294#3438#0" expanded="false" />
+            <element signature="e#3476#3623#0" expanded="false" />
+            <element signature="n#!!block;n#initMap#0" expanded="false" />
+            <element signature="e#6929#6961#0" expanded="false" />
+            <element signature="e#6993#7098#0" expanded="false" />
+            <element signature="e#7104#7207#0" expanded="false" />
+            <element signature="e#7238#7337#0" expanded="false" />
+            <element signature="e#7343#7448#0" expanded="false" />
+            <element signature="n#!!block;n#valFormularios#0" expanded="false" />
+            <element signature="n#!!block;n#valida#0" expanded="false" />
+            <element signature="n#!!block;n#validarEmail#0" expanded="false" />
+            <element signature="n#!!block;n#fix#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/icons-08.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/noticia.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/fondo-puente.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="90" column="25" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="182" column="44" selection-start-line="182" selection-start-column="44" selection-end-line="182" selection-end-column="44" />
+          <folding>
+            <element signature="e#1720#2384#0#PHP" expanded="false" />
+            <element signature="e#3089#4075#0#PHP" expanded="false" />
+            <element signature="e#5258#6078#0#PHP" expanded="false" />
+            <element signature="e#8173#8362#0#PHP" expanded="false" />
+            <element signature="e#8373#8613#0#PHP" expanded="false" />
+            <element signature="e#8638#8986#0#PHP" expanded="false" />
+            <element signature="e#9034#9365#0#PHP" expanded="false" />
+            <element signature="e#9387#9652#0#PHP" expanded="false" />
+            <element signature="e#9669#9964#0#PHP" expanded="false" />
+            <element signature="e#9980#10421#0#PHP" expanded="false" />
+            <element signature="e#10435#15830#0#PHP" expanded="false" />
+            <element signature="e#11137#11459#0#PHP" expanded="false" />
+            <element signature="e#11651#11954#0#PHP" expanded="false" />
+            <element signature="e#12191#13432#0#PHP" expanded="false" />
+            <element signature="e#15858#16185#0#PHP" expanded="false" />
+            <element signature="e#22046#24614#0#PHP" expanded="false" />
+            <element signature="e#23718#24572#0#PHP" expanded="false" />
+            <element signature="e#24632#26992#0#PHP" expanded="false" />
+            <marker date="1472494291000" expanded="true" signature="882:956" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="1482:1522" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="1801:1827" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="1801:1915" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="1801:2337" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="1932:1968" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="1932:2046" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="2209:2306" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="2581:2639" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="2581:2640" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="2791:2831" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="3397:4060" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="3574:3708" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="3890:3944" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="3890:4032" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="4306:4380" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="5018:5058" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="5364:6063" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="5532:5674" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="5877:5935" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="5877:6027" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="6258:6332" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="6888:6928" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="7274:7959" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="7420:7564" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="7769:7923" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="8009:8055" ph="SELECT * FRO... operaciones" />
+            <marker date="1472494291000" expanded="true" signature="10279:10317" ph="SELECT * FRO... operaciones" />
+            <marker date="1472494291000" expanded="true" signature="10981:11005" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="11300:11443" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="11519:11537" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="11811:11896" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="11811:11938" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="12031:12116" ph="SELECT id,YE... " />
+            <marker date="1472494291000" expanded="true" signature="12272:12606" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="12387:12557" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="12675:12845" ph="SELECT id_no... " />
+            <marker date="1472494291000" expanded="true" signature="13206:13247" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="13206:13365" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="13756:13931" ph="..." />
+            <marker date="1472494291000" expanded="true" signature="14159:14173" ph="SELECT * FRO... " />
+            <marker date="1472494291000" expanded="true" signature="14159:14209" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="14159:14234" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="14356:14386" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="14356:14439" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="14356:14440" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="14977:15006" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="14977:15019" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="14977:15020" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="14977:15021" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="14977:15045" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="14977:15046" ph="SELECT * FRO... tags" />
+            <marker date="1472494291000" expanded="true" signature="15210:15246" ph="SELECT * FRO... rel_tags" />
+            <marker date="1472494291000" expanded="true" signature="15472:15504" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="16985:17009" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="17398:17472" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="18100:18140" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="18370:18430" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="18581:18621" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="20128:20202" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="20840:20880" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="21112:21186" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="21740:21780" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="22435:22487" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="22733:22772" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="23230:23300" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="23456:23520" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="24930:25010" ph="SELECT * FRO... categorias" />
+            <marker date="1472494291000" expanded="true" signature="25187:25277" ph="SELECT * FRO... blog" />
+            <marker date="1472494291000" expanded="true" signature="25397:25436" ph="SELECT * FRO... categorias" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secciones/noticias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/3-layouts/world-news.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="164" column="21" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <marker date="1472494397000" expanded="true" signature="7020:7046" ph="..." />
+            <marker date="1472494397000" expanded="true" signature="7243:7269" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secciones/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding>
+            <marker date="1472491982000" expanded="true" signature="5406:5443" ph="SELECT * FRO... statuspro" />
           </folding>
         </state>
       </provider>
